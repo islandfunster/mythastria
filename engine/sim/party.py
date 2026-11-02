@@ -591,7 +591,7 @@ class Party:
         return "adv" if adv and not dis else "dis" if dis and not adv else ""
 
     def attack(self, me, tid, weapon, extra_adv=(), spell=False, sneak=False, bonus_dice="", note="", retarget_grapple=True,
-               brutal=False, mastery=None, stealth=False, devious=None):
+               brutal=False, mastery=None, stealth=False, devious=None, strikes=()):
         """One attack roll through the fake FG, with sight, Guiding Bolt, Vex, Bless and close-range Disadvantage.
         brutal: Brutal Strike (Barbarian 9; SRD 5.2.1): with Reckless Attack, any Advantage on this Strength attack is
         given up (not when it has Disadvantage); a hit deals 1d10 more of the weapon's type and Hamstring Blow (Speed
@@ -599,7 +599,8 @@ class Party:
         GM 2026-10-26 (sim/high_levels.py): mastery, Tactical Master's Push, Sap or Slow in place of the weapon's own
         (the computer-played Fighter chooses it here); stealth, Supreme Sneak's Stealth Attack (Cunning Strike, one Sneak
         Attack die; the computer-played Rogue uses it whenever it is hidden); Studied Attacks, Radiant Strikes, Improved
-        Brutal Strike and Empowered Evocation on their own."""
+        Brutal Strike and Empowered Evocation on their own. strikes: the Cunning Strike options a player chose (Rogue 5:
+        trip, poison, withdraw; live_play checks them first)."""
         c = self.sim.by_id(me)
         weapon = self.unwasted_attack(me, tid, c, weapon, sneak)
         if mastery is None and not c.get("live") and not spell:
@@ -634,7 +635,7 @@ class Party:
             extra.append(coat_extra)
         if coat_label:
             notes.append(coat_label)
-        trip, dev = 0, None
+        trip, dev, poison = 0, None, False
         if sneak and c.get("sneak") and (weapon.get("finesse") or ranged(weapon)) \
                 and sneak_attack_ok(self.final_mode(me, tid, weapon, mode, spell), self.ally_next_to(tid, me)):
             sneak_dice_now = c["sneak"]
@@ -651,16 +652,22 @@ class Party:
             if c.get("cunning_strike") and not c.get("live") and room - bool(dev) > 0 and int(count or 0) > 1 + bool(sly) + dev_dice \
                     and self.trip_worth(me, tid):
                 trip = int(c["cunning_strike"])
-            forgone = bool(trip) + bool(sly) + dev_dice
+            if "trip" in strikes:
+                trip = int(c["cunning_strike"])
+            chosen = [martial.CUNNING[k][0] for k in strikes if k != "trip"]    # Poison, Withdraw
+            forgone = bool(trip) + bool(sly) + dev_dice + len(chosen)
+            poison = "poison" in strikes
             if forgone:
                 sneak_dice_now = "%dd%s" % (int(count) - forgone, sides)
             if sly:
                 high._state(self, "stealth_attack")[me] = self.s.turnSerial
             extra.append("%s:%s" % (sneak_dice_now, kind))      # Sneak Attack: the weapon's damage type
             high._state(self, "sneak_now")[me] = self.s.turnSerial   # MARTIAL-HIGH: Stroke of Luck on a missed one
-            options = [n for n, on in (("Trip", trip), ("Stealth Attack", sly)) if on] + ([martial.DEVIOUS[dev][0]] if dev else [])
+            options = [n for n, on in (("Trip", trip), ("Stealth Attack", sly)) if on] + chosen + ([martial.DEVIOUS[dev][0]] if dev else [])
             notes.append("Sneak Attack" + (" (Cunning Strike: %s, %s forgone)" % (
                 " and ".join(options), "one die" if forgone == 1 else "%d dice" % forgone) if options else ""))
+        elif strikes:
+            notes.append("Cunning Strike unused: no Sneak dice on this attack")
         if notes:
             self.say("%s: %s" % (c["name"], ", ".join(notes)))
         dice, _, bonus = weapon.get("dmg", "1d4").partition("+")
@@ -699,6 +706,8 @@ class Party:
                 gm.add(tid, "Prone", "(%s's Cunning Strike)" % c["name"], by=me)
             if dev and res in ("hit", "crit"):
                 martial.devious_effect(self, me, tid, dev)          # MARTIAL-HIGH: Devious Strikes
+            if poison and res in ("hit", "crit"):
+                martial.poison_strike(self, me, tid)                # Cunning Strike (Rogue 5)
             if res == "miss" and weapon.get("potent") and not self.down(tid):
                 half = roll(self.sim.rng, weapon.get("dmg", "1d4")) // 2   # PARTY-04: Potent Cantrip (Evoker 3)
                 self.sim.say("dice", "Potent Cantrip: %s takes half the %s damage on the miss (%d)" % (

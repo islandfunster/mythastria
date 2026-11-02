@@ -782,8 +782,8 @@ class LiveFight:
             raise LiveError(stopped or "That route is no longer available.")
         if shift:
             t["shift_ft"] = max(0, t["shift_ft"] - cost)
-            self.sim.say("turn", "%s moves %d ft with Tactical Shift: no Opportunity Attacks (%d ft of it left)" % (
-                self.sim.by_id(me)["name"], cost, t["shift_ft"]))
+            self.sim.say("turn", "%s moves %d ft with %s: no Opportunity Attacks (%d ft of it left)" % (
+                self.sim.by_id(me)["name"], cost, t.get("shift_name", "Tactical Shift"), t["shift_ft"]))
         t["movement"] -= cost
         out = {"ok": True, "moved_ft": cost, "from": before}
         if dashed:
@@ -980,6 +980,11 @@ class LiveFight:
                 raise LiveError(pick["why"] if pick else "Devious Strikes (Rogue 14) needs a Sneak Attack weapon: not this attack.")
             if stealth and not offer["two"]:
                 raise LiveError("One Cunning Strike option per Sneak Attack: two need Improved Cunning Strike (Rogue 11).")
+        strikes = list(cmd.get("strike") or [])                  # Cunning Strike (Rogue 5): Trip, Poison, Withdraw
+        if strikes:
+            why = martial_high.cunning_why(sim.party, me, tid, c, w, strikes, stealth, devious, t["sneak_used"])
+            if why:
+                raise LiveError(why)
         import monk                                              # MONK-01: Stunning Strike, paid only on a hit
         stun = bool(cmd.get("stun"))
         if stun and monk.stun_why(sim.party, me, w):
@@ -1021,7 +1026,7 @@ class LiveFight:
         extra = ";".join(x for x in ("1d6:necrotic" if hexed else "", "1d6:force" if marked else "", poison) if x)
         notes = ", ".join(x for x in ("Hex" if hexed else "", "Hunter's Mark" if marked else "", coated) if x)
         res = sim.party.attack(me, tid, w, sneak=sneak, bonus_dice=extra, note=notes, retarget_grapple=False,
-                               mastery=mastery, stealth=stealth, devious=devious)
+                               mastery=mastery, stealth=stealth, devious=devious, strikes=strikes)
         sim.settle()
         if res == "miss" and plan and plan.get("seeking") and not sim.down(tid):   # Seeking Spell: the d20 again
             self.sorcery.pay_seeking(me, w["name"])
@@ -1046,6 +1051,8 @@ class LiveFight:
             lines = [e["text"] for e in self.log if e["n"] > start]
         if sneak and res in ("hit", "crit") and any("Sneak Attack" in x for x in lines):
             t["sneak_used"] = True                               # once per turn, on a hit (SRD 5.2.1 Sneak Attack)
+            if "withdraw" in strikes:
+                martial_high.withdraw(self, me, c, t)
         if not quick and not light:
             t["attacks_left"] -= 1
             if w.get("light") and key == "weapon":
@@ -1093,6 +1100,9 @@ class LiveFight:
             devious = martial_high.devious_offer(self.sim.party, me, c, c[a["key"]], t["sneak_used"])
             if devious:
                 more["devious"] = devious
+            strike = martial_high.cunning_offer(self.sim.party, me, c, c[a["key"]], t["sneak_used"])
+            if strike:
+                more["cunning_strike"] = strike
             attacks.append(dict(a, targets=ok, refused=no, **({"metamagic": meta} if meta else {}), **more))
         movement = 0 if self.movement_blocked(me) else t["movement"]
         crawl = 2 if self.prone(me) else 1                       # GM 2026-10-24: crawling costs double

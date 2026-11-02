@@ -1005,6 +1005,18 @@ function drawSheet() {
       b.addEventListener('change', () => { pick.hurl = b.checked; });
       l.append(b, document.createTextNode(' Hurl Through Hell')); row.append(l);
     }
+    if (a.cunning_strike) {                                          // Cunning Strike (Rogue 5); two with Improved (Rogue 11)
+      const c = a.cunning_strike;
+      for (let i = 0; i < (c.two ? 2 : 1); i++) {
+        const s = el('select', 'quiet'); s.title = `Cunning Strike: spend Sneak Attack dice on a hit (save DC ${c.dc}). Poison uses a Poisoner's Kit.`;
+        s.setAttribute('aria-label', `${a.name}: Cunning Strike${i ? ', second option' : ''}`);
+        s.append(new Option(i ? 'No second option' : 'No Cunning Strike', ''), ...c.options.map(o => {
+          const opt = new Option(`${o.name} (1 die${o.save ? `, ${o.save === 'con' ? 'Con' : 'Dex'} save` : ''})`, o.key); opt.disabled = !o.ready; opt.title = o.why || ''; return opt; }));
+        s.value = pick.strike?.[i] ?? '';
+        s.addEventListener('change', () => { (pick.strike ??= [])[i] = s.value; });
+        row.append(s);
+      }
+    }
     if (a.devious) {                                                 // MARTIAL-HIGH: Devious Strikes (Rogue 14)
       const s = el('select', 'quiet'); s.title = `Devious Strikes: Cunning Strike on this Sneak Attack (save DC ${a.devious.dc}${a.devious.two ? '; with a Stealth Attack too: Improved Cunning Strike' : ''})`;
       s.setAttribute('aria-label', `${a.name}: Devious Strikes`);
@@ -1972,6 +1984,7 @@ function dropOn(target) {
   else if (key) {
     const a = snap?.offers?.attacks?.find(x => x.key === key);
     choose({ op: 'attack', weapon: key, target, ...(a?.metamagic ? metamagicFields(armed) : {}), ...attackExtras(a, attackPicks[key]) });
+    if (attackPicks[key]) attackPicks[key].strike = null;              // a Cunning Strike costs dice: chosen again each time
   }
 }
 

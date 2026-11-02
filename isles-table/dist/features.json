@@ -72,6 +72,16 @@
      "how": "Play live: the sheet panel on your turn; the GM rules requests in the Asked of the GM panel."
     },
     {
+     "id": "cunning-strike",
+     "name": "Cunning Strike",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "A Rogue of level 5 or more spends Sneak Attack dice on Trip, Poison or Withdraw. At level 11, Improved Cunning Strike allows two options.",
+     "how": "On your turn, pick the option on the attack's row in the sheet, then click the target. It's spent only on a hit that earns Sneak Attack, and you choose again for each attack.",
+     "limits": "Not on Opportunity Attacks or other reactions. Poison presumes a Poisoner's Kit is at hand."
+    },
+    {
      "id": "combat-tracker",
      "name": "Combat tracker",
      "status": "built",

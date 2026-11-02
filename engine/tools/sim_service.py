@@ -1833,6 +1833,12 @@ class Service:
             if req["cunning"] != "stealth_attack":
                 raise ValueError("A Cunning Strike option here is stealth_attack.")
             cmd["cunning"] = req["cunning"]
+        if op == "attack" and "strike" in req:                    # Cunning Strike (Rogue 5): up to two options
+            ks = req["strike"]
+            if not isinstance(ks, list) or not 0 < len(ks) <= 2 or len(set(map(str, ks))) != len(ks) \
+                    or not all(k in ("trip", "poison", "withdraw") for k in ks):
+                raise ValueError("A Cunning Strike is one or two of trip, poison and withdraw.")
+            cmd["strike"] = ks
         if op == "abjure_foes" and "targets" in req:              # GM 2026-10-26: the creatures Abjure Foes takes
             ts = req["targets"]
             if not isinstance(ts, list) or len(ts) > 10 or not all(isinstance(x, str) and 0 < len(x) <= 40 for x in ts):

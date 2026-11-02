@@ -3,12 +3,14 @@
 """
 import copy, json, sys, threading, unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parent
 sys.path[:0] = [str(ROOT / "sim"), str(ROOT / "tools"), str(ROOT / "mythastria_core")]
 import character_build as cb
 import encounter_tuner
 import live_play
+import martial_high
 import rests
 import run_sim
 import sim_service
@@ -232,6 +234,51 @@ class NothingUnusable(Fight):
                  "combat": {"hp_max": 15, "ac": 16, "speed": 30, "attack_bonus": 5, "damage_count": 1, "damage_die": 6, "damage_bonus": 0, "reach": 5},
                  "equipment": ["Mace"], "spells": [], "features": ["Channel Divinity"]}
         self.assertIn("Channel Divinity", [f["name"] for f in cb.member(sheet)["build"]["feature_list"]])
+
+
+class CunningStrike(Fight):
+    """GM 2026-11-02: a Rogue chooses Trip, Poison or Withdraw on the attack row; nothing is spent unasked."""
+    scenario = "test/live_spells.json"
+    build = dict(HERO, **{"class": "rogue", "sneak": "3d6", "cunning_strike": 15, "spell_list": [],
+                          "ranged": {"name": "Shortbow", "atk": 40, "dmg": "1d6+3", "dmgtype": "piercing", "reach": 320, "crit": 20}})
+
+    def shot(self, **cmd):
+        row = next(a for a in self.offers()["attacks"] if a["key"] == "ranged")
+        with mock.patch("party.sneak_attack_ok", lambda *a: True):
+            out = self.act(op="attack", weapon="ranged", target=row["targets"][0], **cmd)
+        return row, out, " | ".join(out.get("lines", []))
+
+    def test_the_row_offers_three_options(self):
+        row = next(a for a in self.offers()["attacks"] if a["key"] == "ranged")
+        self.assertEqual([o["name"] for o in row["cunning_strike"]["options"]], ["Trip", "Poison", "Withdraw"])
+        self.assertEqual((row["cunning_strike"]["dc"], row["cunning_strike"]["two"]), (15, False))
+
+    def test_nothing_is_spent_unasked(self):
+        self.assertNotIn("Cunning Strike", self.shot()[2])
+
+    def test_poison_costs_a_die_and_a_save(self):
+        lines = self.shot(strike=["poison"])[2]
+        self.assertIn("Cunning Strike: Poison, one die forgone", lines)
+        foe = next(c["id"] for c in self.f.sim.sc["combatants"] if c.get("side") == "foe" and not self.f.sim.down(c["id"]))
+        martial_high.poison_strike(self.f.sim.party, self.me, foe)
+        self.assertIn("Cunning Strike (Poison)", " ".join(e["text"] for e in self.f.snapshot(0)["log"]))
+
+    def test_withdraw_gives_half_the_speed(self):
+        self.shot(strike=["withdraw"])
+        t = self.f.turn_state
+        self.assertEqual((t["shift_ft"], t["shift_name"]), (15, "Withdraw"))
+        self.assertEqual(self.offers()["movement"], 45)
+
+    def test_two_options_need_rogue_11(self):
+        self.assertIn("Rogue 11", str(self.shot(strike=["trip", "poison"])[1]))
+
+    def test_it_left_ask_the_gm(self):
+        sheet = {"name": "A", "classes": [{"name": "Rogue", "level": 5}], "abilities": {"str": 10, "dex": 16, "con": 14, "int": 10, "wis": 10, "cha": 10},
+                 "combat": {"hp_max": 33, "ac": 14, "speed": 30, "attack_bonus": 6, "damage_count": 1, "damage_die": 6, "damage_bonus": 3, "reach": 5},
+                 "equipment": ["Rapier"], "spells": [], "features": ["Cunning Strike"]}
+        built = cb.member(sheet)["build"]
+        self.assertNotIn("Cunning Strike", [f["name"] for f in built["feature_list"]])
+        self.assertEqual(built["cunning_strike"], 14)
 
 
 class ActionSurge(Fight):

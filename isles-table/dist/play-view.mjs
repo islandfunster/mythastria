@@ -550,6 +550,8 @@ export function attackExtras(a, pick) {
   if (pick?.stun && a?.stunning_strike?.ready) out.stun = true;         // MONK-01: Stunning Strike, paid only on a hit
   if (pick?.hurl && a?.hurl_through_hell?.ready) out.hurl = true;      // CASTER-HIGH: Hurl Through Hell, on a hit
   if (pick?.devious && a?.devious?.options?.some(o => o.key === pick.devious && o.ready)) out.devious = pick.devious;   // MARTIAL-HIGH
+  const strike = [...new Set(pick?.strike ?? [])].filter(k => a?.cunning_strike?.options?.some(o => o.key === k && o.ready));
+  if (strike.length) out.strike = strike;                               // Cunning Strike (Rogue 5): spent only when asked
   return out;
 }
 export function turnLights(offers) {

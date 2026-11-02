@@ -44,6 +44,7 @@ from high_levels import FT, HighError, _state, aura_ft, has, mod, score
 OPS = ("intimidating_presence", "holy_nimbus")
 DAY_USES = ("stroke_of_luck", "intimidating_presence", "holy_nimbus")    # sim/rests.py USES carries them
 DEVIOUS = {"daze": ("Daze", 2, "con"), "knock_out": ("Knock Out", 6, "con"), "obscure": ("Obscure", 3, "dex")}
+CUNNING = {"trip": ("Trip", "dex"), "poison": ("Poison", "con"), "withdraw": ("Withdraw", None)}   # Rogue 5: one die each
 RESTORE = ("Blinded", "Charmed", "Deafened", "Frightened", "Paralyzed", "Stunned")
 HEROIC, STROKE, TMIND = "Heroic Inspiration", "Stroke of Luck", "Tactical Mind"
 
@@ -247,6 +248,64 @@ def devious_offer(party, me, c, weapon, sneak_used):
             "%s costs %d Sneak Attack dice; %s has %d (one stays)." % (name, cost, c["name"], n)
         out.append({"key": key, "name": name, "dice": cost, "save": save, "ready": not why, "why": why})
     return {"options": out, "dc": int(c.get("cunning_strike") or 0), "two": bool(c.get("improved_cunning_strike"))}
+
+
+def cunning_offer(party, me, c, weapon, sneak_used):
+    """Play live: the attack row's Cunning Strike choices (Rogue 5), or None. One Sneak Attack die each, and one stays."""
+    if not c.get("cunning_strike") or not c.get("sneak") or not (weapon.get("finesse") or weapon.get("reach", 5) > 10) \
+            or weapon.get("cantrip"):                            # Finesse or ranged (party.ranged)
+        return None
+    n = int(str(c["sneak"]).partition("d")[0] or 0)
+    why = "Sneak Attack is used this turn." if sneak_used else "" if n > 1 else \
+        "Cunning Strike costs a Sneak Attack die; %s has %d (one stays)." % (c["name"], n)
+    return {"options": [{"key": key, "name": name, "dice": 1, "save": save, "ready": not why, "why": why}
+                        for key, (name, save) in CUNNING.items()],
+            "dc": int(c["cunning_strike"]), "two": bool(c.get("improved_cunning_strike"))}
+
+
+def cunning_why(party, me, tid, c, weapon, strikes, stealth, devious, sneak_used):
+    """Why this attack can't carry these Cunning Strike options, or "". The dice and the count of options are checked
+    together: Stealth Attack and a Devious Strike are options of the same Sneak Attack."""
+    offer = cunning_offer(party, me, c, weapon, sneak_used)
+    if not offer:
+        return "Cunning Strike (Rogue 5) needs a Sneak Attack weapon: not this attack."
+    if any(not o["ready"] for o in offer["options"]):
+        return offer["options"][0]["why"]
+    if len(strikes) + bool(stealth) + bool(devious) > (2 if offer["two"] else 1):
+        return "One Cunning Strike option per Sneak Attack: two need Improved Cunning Strike (Rogue 11)."
+    n = int(str(c["sneak"]).partition("d")[0] or 0)
+    if len(strikes) + bool(stealth) + (DEVIOUS[devious][1] if devious else 0) >= n:
+        return "%s has %d Sneak Attack dice, and one stays." % (c["name"], n)
+    gm = getattr(party.sim, "gm_rules", None)
+    if "trip" in strikes and (party.sim.size_sq(tid) > 2 or (gm and gm.has(tid, "Prone"))):
+        return "Trip takes a Large or smaller creature that isn't Prone yet."
+    return ""
+
+
+def poison_strike(party, me, tid):
+    """Cunning Strike, Poison: Constitution save or Poisoned for 1 minute, the save again at the end of each of its turns.
+    The Poisoner's Kit is presumed at hand (GM ruling on presumed equipment)."""
+    sim, gm = party.sim, getattr(party.sim, "gm_rules", None)
+    c = sim.by_id(me)
+    if party.down(tid) or not gm:
+        return
+    if gm.cond_immune(tid, "poisoned"):
+        sim.say("dice", "%s can't be Poisoned (Cunning Strike: Poison)" % party.name(tid))
+        return
+    dc = int(c["cunning_strike"])
+    if gm.condition_save(tid, "con", dc, "Cunning Strike (Poison)", adv=gm.antitoxin(tid, "Poisoned")):
+        return
+    gm.add(tid, "Poisoned", "(%s's Cunning Strike: 1 minute; a Constitution save again at the end of each of its turns)" % c["name"],
+           by=me, lib=True, save="con", dc=dc, repeat="end", expires=int(party.s.round() or 1) + 10)
+
+
+def withdraw(fight, me, c, t):
+    """Cunning Strike, Withdraw: right after the attack, up to half the Speed that provokes no Opportunity Attacks."""
+    ft = int(t.get("speed", 30) or 30) // 2
+    t["movement"] += ft
+    t["shift_ft"], t["shift_name"] = int(t.get("shift_ft", 0) or 0) + ft, "Withdraw"
+    fight.sim.say("turn", "%s: Withdraw, %d ft of movement that provokes no Opportunity Attacks (%d ft left)" % (
+        c["name"], ft, t["movement"]))
 
 
 def choose_devious(party, me, tid, c, count):

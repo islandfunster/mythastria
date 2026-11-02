@@ -1189,7 +1189,7 @@ PLAYED = {"Indomitable", "Tactical Master", "Studied Attacks", "Survivor", "Cunn
 SIM_FEATURES |= PLAYED
 # Choices a player makes that no control offers yet: they stay on Ask the GM, so nothing on a sheet is ever unusable
 NOT_AT_THE_TABLE = {"Channel Divinity", "Divine Spark", "Turn Undead", "Preserve Life", "Sacred Weapon", "Reckless Attack", "Frenzy",
-                    "Steady Aim", "Breath Weapon", "Paladin's Smite", "Cunning Strike"}
+                    "Steady Aim", "Breath Weapon", "Paladin's Smite"}
 MASTERY_FLAGS = {"Graze", "Vex", "Sap", "Cleave", "Nick"}       # Nick: GM 2026-10-25 (live play's Light extra attack)
 
 
