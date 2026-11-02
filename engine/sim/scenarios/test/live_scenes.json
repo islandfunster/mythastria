@@ -1,0 +1,548 @@
+{
+ "name": "Scenes test (GM 2026-10-26): a corridor with a hidden pit, a guard room behind a door, two goblins",
+ "source": "Creatures: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (Goblin Warrior). Characters: the SRD pregens. Synthetic map: thick walls (one square), a door into the guard room; the Hidden Pit is SRD 5.2.1 (Traps).",
+ "rounds": 6,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Scenes test corridor",
+ "open_doors": [],
+ "walls": [
+  {
+   "id": "outer north",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     18.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "outer south",
+   "points": [
+    [
+     0.5,
+     9.5
+    ],
+    [
+     18.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "outer west",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "outer east",
+   "points": [
+    [
+     18.5,
+     0.5
+    ],
+    [
+     18.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "mid west face n",
+   "points": [
+    [
+     9.5,
+     0.5
+    ],
+    [
+     9.5,
+     4.5
+    ]
+   ]
+  },
+  {
+   "id": "mid west face s",
+   "points": [
+    [
+     9.5,
+     5.5
+    ],
+    [
+     9.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "mid east face n",
+   "points": [
+    [
+     10.5,
+     0.5
+    ],
+    [
+     10.5,
+     4.5
+    ]
+   ]
+  },
+  {
+   "id": "mid east face s",
+   "points": [
+    [
+     10.5,
+     5.5
+    ],
+    [
+     10.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "doorway cap n",
+   "points": [
+    [
+     9.5,
+     4.5
+    ],
+    [
+     10.5,
+     4.5
+    ]
+   ]
+  },
+  {
+   "id": "doorway cap s",
+   "points": [
+    [
+     9.5,
+     5.5
+    ],
+    [
+     10.5,
+     5.5
+    ]
+   ]
+  },
+  {
+   "id": "guard room door",
+   "door": true,
+   "points": [
+    [
+     9.5,
+     4.5
+    ],
+    [
+     9.5,
+     5.5
+    ]
+   ]
+  }
+ ],
+ "wall_cells": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   0
+  ],
+  [
+   8,
+   0
+  ],
+  [
+   9,
+   0
+  ],
+  [
+   10,
+   0
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   0
+  ],
+  [
+   15,
+   0
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   0
+  ],
+  [
+   18,
+   0
+  ],
+  [
+   19,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   10,
+   1
+  ],
+  [
+   19,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   10,
+   2
+  ],
+  [
+   19,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   10,
+   3
+  ],
+  [
+   19,
+   3
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   10,
+   4
+  ],
+  [
+   19,
+   4
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   19,
+   5
+  ],
+  [
+   0,
+   6
+  ],
+  [
+   10,
+   6
+  ],
+  [
+   19,
+   6
+  ],
+  [
+   0,
+   7
+  ],
+  [
+   10,
+   7
+  ],
+  [
+   19,
+   7
+  ],
+  [
+   0,
+   8
+  ],
+  [
+   10,
+   8
+  ],
+  [
+   19,
+   8
+  ],
+  [
+   0,
+   9
+  ],
+  [
+   10,
+   9
+  ],
+  [
+   19,
+   9
+  ],
+  [
+   0,
+   10
+  ],
+  [
+   1,
+   10
+  ],
+  [
+   2,
+   10
+  ],
+  [
+   3,
+   10
+  ],
+  [
+   4,
+   10
+  ],
+  [
+   5,
+   10
+  ],
+  [
+   6,
+   10
+  ],
+  [
+   7,
+   10
+  ],
+  [
+   8,
+   10
+  ],
+  [
+   9,
+   10
+  ],
+  [
+   10,
+   10
+  ],
+  [
+   11,
+   10
+  ],
+  [
+   12,
+   10
+  ],
+  [
+   13,
+   10
+  ],
+  [
+   14,
+   10
+  ],
+  [
+   15,
+   10
+  ],
+  [
+   16,
+   10
+  ],
+  [
+   17,
+   10
+  ],
+  [
+   18,
+   10
+  ],
+  [
+   19,
+   10
+  ]
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 2,
+   "y": 5,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 2,
+   "y": 4,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 2,
+   "y": 6,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00021",
+   "name": "Goblin Warrior 1",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 5,
+   "x": 14,
+   "y": 4,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00022",
+   "name": "Goblin Warrior 2",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 5,
+   "x": 15,
+   "y": 6,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  }
+ ],
+ "traps": [
+  {
+   "id": "pit-1",
+   "kind": "hidden_pit",
+   "band": "1-4",
+   "squares": [
+    [
+     5,
+     5
+    ]
+   ]
+  }
+ ]
+}

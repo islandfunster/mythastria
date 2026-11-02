@@ -1,0 +1,22 @@
+{
+ "about": "GM 2026-10-25: maps moved into folders; the service still takes the old names (tools/sim_service.py MOVED).",
+ "moved": {
+  "bandit_captain_2024.json": "test/bandit_captain_2024.json",
+  "goblin_den_2024.json": "test/goblin_den_2024.json",
+  "grick_2024.json": "test/grick_2024.json",
+  "kobold_pantry_2024.json": "test/kobold_pantry_2024.json",
+  "instant_drop.json": "test/instant_drop.json",
+  "pc_reactions.json": "test/pc_reactions.json",
+  "two_reactors.json": "test/two_reactors.json",
+  "lab_cover.json": "test/lab_cover.json",
+  "lab_mounted.json": "test/lab_mounted.json",
+  "lab_sky.json": "test/lab_sky.json",
+  "lab_sunlight.json": "test/lab_sunlight.json",
+  "lab_underwater.json": "test/lab_underwater.json",
+  "walls_door.json": "test/walls_door.json",
+  "walls_door_ui.json": "test/walls_door_ui.json",
+  "walls_route.json": "test/walls_route.json",
+  "walls_search.json": "test/walls_search.json",
+  "walls_stub.json": "test/walls_stub.json"
+ }
+}

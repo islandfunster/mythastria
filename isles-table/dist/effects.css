@@ -1,0 +1,47 @@
+/* 2026-10-20: the effect art's animations (flames, mist, sparks, glints, the one-shot hit, miss and burst clocks,
+   reduced motion), moved from style.css so every page that draws effects loads them (effects.mjs, effect-events.mjs). */
+.fx-preview{opacity:.75}
+.fx-flame{animation:fx-flame 1.5s ease-in-out infinite alternate;animation-delay:var(--phase,0s);transform-box:fill-box;transform-origin:50% 100%}
+.fx-mist{animation:fx-mist 4s ease-in-out infinite alternate;animation-delay:var(--phase,0s)}
+.fx-spark{animation:fx-spark 1.7s ease-in-out infinite;animation-delay:var(--phase,0s)}
+.fx-glint,.fx-ring{animation:fx-glint 2.8s ease-in-out infinite alternate;animation-delay:var(--phase,0s)}
+@keyframes fx-flame{from{transform:scale(.85, .75);opacity:.45}to{transform:scale(1.05,1.18);opacity:.95}}
+@keyframes fx-mist{from{transform:translate(-.08px,-.06px);opacity:.16}to{transform:translate(.1px,.08px);opacity:.33}}
+@keyframes fx-spark{0%,40%,70%,100%{opacity:.4}20%,60%,80%{opacity:1}}
+@keyframes fx-glint{from{opacity:.2}to{opacity:.8}}
+.fx-still *{animation:none!important}
+@media(prefers-reduced-motion:reduce){.fx-art *{animation:none!important}}
+.fx-projectile{animation:fx-travel 1.6s ease-in infinite}
+@keyframes fx-travel{0%{transform:translateX(0);opacity:0}8%{opacity:1}85%{opacity:1}100%{transform:translateX(var(--travel));opacity:0}}
+.vfx-flight{animation:vfx-flight .65s linear both;animation-delay:var(--elapsed)}
+.vfx-trail{animation:vfx-trail 1.4s ease-out both;animation-delay:var(--elapsed)}
+.vfx-shock{transform-box:fill-box;transform-origin:center;animation:vfx-shock .65s ease-out both;animation-delay:var(--impact-delay,var(--elapsed))}
+.vfx-slash{animation:vfx-slash .75s ease-out both;animation-delay:var(--impact-delay,var(--elapsed))}
+.vfx-caption{animation:vfx-caption 1s ease-out both;animation-delay:var(--impact-delay,var(--elapsed))}
+.vfx-burst{transform-box:fill-box;transform-origin:center;animation:vfx-burst 1.15s ease-out both;animation-delay:var(--impact-delay,var(--elapsed))}
+.vfx-envelope{animation:vfx-envelope var(--life) ease-in-out both;animation-delay:var(--elapsed)}
+@keyframes vfx-flight{0%{transform:translateX(0);opacity:1}90%{opacity:1}100%{transform:translateX(var(--travel));opacity:0}}
+@keyframes vfx-trail{from{opacity:.35}to{opacity:0}}
+@keyframes vfx-shock{0%{transform:scale(.25);opacity:0}15%{opacity:1}100%{transform:scale(1.4);opacity:0}}
+@keyframes vfx-slash{0%{opacity:0;stroke-dasharray:0 5}30%{opacity:1;stroke-dasharray:5 0}100%{opacity:0;stroke-dasharray:5 0}}
+@keyframes vfx-caption{0%,10%{opacity:0}20%,60%{opacity:1}100%{opacity:0}}
+@keyframes vfx-burst{0%{transform:scale(.12);opacity:0}20%{opacity:.85}100%{transform:scale(1);opacity:0}}
+@keyframes vfx-envelope{0%,100%{opacity:0}15%,65%{opacity:.9}}
+.fx-still .vfx-flight{display:none}
+@media(prefers-reduced-motion:reduce){.vfx-event *{animation:none!important}.vfx-flight{display:none}}
+.fx-acid{animation:fx-drip 2.3s ease-in-out infinite alternate;animation-delay:var(--phase)}
+.fx-heal{animation:fx-lift 3s ease-in-out infinite alternate;animation-delay:var(--phase)}
+.fx-shadow{transform-box:fill-box;transform-origin:center;animation:fx-curl 4.5s ease-in-out infinite alternate;animation-delay:var(--phase)}
+.fx-ripple{transform-box:fill-box;transform-origin:center;animation:fx-ripple 2.6s ease-in-out infinite alternate;animation-delay:var(--phase)}
+.fx-scan{animation:fx-scan 2.2s ease-in-out infinite alternate;animation-delay:var(--phase)}
+@keyframes fx-drip{from{transform:translateY(-.07px);opacity:.35}to{transform:translateY(.12px);opacity:.8}}
+@keyframes fx-lift{from{transform:translateY(.08px);opacity:.2}to{transform:translateY(-.18px);opacity:.85}}
+@keyframes fx-curl{from{transform:rotate(-7deg);opacity:.35}to{transform:rotate(9deg);opacity:.75}}
+@keyframes fx-ripple{from{transform:scale(.85);opacity:.25}to{transform:scale(1.05);opacity:.8}}
+@keyframes fx-scan{from{opacity:.15}to{opacity:.7}}
+.vfx-transport-out{animation:vfx-transport-out 3.2s ease-in-out both;animation-delay:var(--elapsed)}
+.vfx-transport-in{animation:vfx-transport-in 3.2s ease-in-out both;animation-delay:var(--elapsed)}
+.vfx-transport-pad{transform-box:fill-box;transform-origin:center;animation:vfx-transport-pad 3.2s ease-in-out both;animation-delay:var(--elapsed)}
+@keyframes vfx-transport-out{0%{opacity:0}12%,28%{opacity:.95;clip-path:inset(0 0 0 0)}55%,100%{opacity:0;clip-path:inset(100% 0 0 0)}}
+@keyframes vfx-transport-in{0%,30%{opacity:0;clip-path:inset(100% 0 0 0)}62%,82%{opacity:.9;clip-path:inset(0 0 0 0)}100%{opacity:0;clip-path:inset(0 0 0 0)}}
+@keyframes vfx-transport-pad{0%,100%{opacity:0;transform:scale(.8)}12%,80%{opacity:.9;transform:scale(1)}}

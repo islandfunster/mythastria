@@ -1,0 +1,255 @@
+{
+ "name": "Map layers test (MAP-LAYERS-01): fog, darkness and a cloud between the party and a goblin pack; a Riding Horse beside Hero 1",
+ "source": "Riding Horse, Goblin Warrior: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0. Characters: the SRD pregens. Walls are synthetic.",
+ "rounds": 3,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Map layers test field",
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     13.5
+    ],
+    [
+     -0.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     13.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "lighting": {
+  "ambient": "bright",
+  "lights": []
+ },
+ "zones": [],
+ "open_doors": [],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 30,
+   "x": 3,
+   "y": 4,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 25,
+   "x": 3,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 2",
+   "side": "friend",
+   "pc": true,
+   "init": 20,
+   "x": 3,
+   "y": 6,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Riding Horse 1",
+   "side": "friend",
+   "hp": 13,
+   "ac": 11,
+   "speed": "60 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Passive Perception 10",
+   "int": 2,
+   "skills": "",
+   "x": 4.5,
+   "y": 10.5,
+   "init": 5,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Hooves",
+     "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 7 (1d8 + 3) Bludgeoning damage.",
+     "atk": 5,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d8+3",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  },
+  {
+   "id": "id-00021",
+   "name": "Goblin Warrior 1",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "small",
+   "type": "Fey",
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "int": 10,
+   "skills": "Stealth +6",
+   "x": 17,
+   "y": 5,
+   "init": 2,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00022",
+   "name": "Goblin Warrior 2",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "small",
+   "type": "Fey",
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "int": 10,
+   "skills": "Stealth +6",
+   "x": 18,
+   "y": 7,
+   "init": 2,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00023",
+   "name": "Goblin Warrior 3",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "small",
+   "type": "Fey",
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "int": 10,
+   "skills": "Stealth +6",
+   "x": 17,
+   "y": 9,
+   "init": 2,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  }
+ ],
+ "aware": [
+  "id-00021",
+  "id-00022",
+  "id-00023"
+ ]
+}

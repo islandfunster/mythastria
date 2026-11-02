@@ -1,0 +1,9742 @@
+{
+"format": "mythastria-market-srd/1",
+"version": "SRD 5.2.1",
+"about": "SRD 5.2.1 equipment, magic items and spell scrolls with their prices, for the Mythastria market (sim/market.py). Built by tools/build_srd_market.py from the official SRD 5.2.1 PDF; CC-BY-4.0, see the SRD's attribution. Only SRD 5.2.1 content: anything else is the GM's homebrew.",
+"rules": {
+"rarity_value_gp": {
+"Common": 100,
+"Uncommon": 400,
+"Rare": 4000,
+"Very Rare": 40000,
+"Legendary": 200000
+},
+"artifact": "priceless (never sold)",
+"consumable": "half the rarity value, except a Spell Scroll",
+"spell_scroll": "double the scribing cost: Cantrip 30 GP, Level 1 50 GP, Level 2 200 GP, Level 3 300 GP, Level 4 2000 GP, Level 5 3000 GP, Level 6 20000 GP, Level 7 25000 GP, Level 8 30000 GP, Level 9 100000 GP",
+"made_from_equipment": "the armor's or weapon's own cost is added",
+"selling": "Equipment fetches half its cost when sold (SRD 5.2.1, Selling Equipment)"
+},
+"items": [
+{
+"id": "alchemists-supplies",
+"name": "Alchemist’s Supplies",
+"kind": "tool",
+"cost_cp": 5000
+},
+{
+"id": "brewers-supplies",
+"name": "Brewer’s Supplies",
+"kind": "tool",
+"cost_cp": 2000
+},
+{
+"id": "calligraphers-supplies",
+"name": "Calligrapher’s Supplies",
+"kind": "tool",
+"cost_cp": 1000
+},
+{
+"id": "carpenters-tools",
+"name": "Carpenter’s Tools",
+"kind": "tool",
+"cost_cp": 800
+},
+{
+"id": "cartographers-tools",
+"name": "Cartographer’s Tools",
+"kind": "tool",
+"cost_cp": 1500
+},
+{
+"id": "cobblers-tools",
+"name": "Cobbler’s Tools",
+"kind": "tool",
+"cost_cp": 500
+},
+{
+"id": "cooks-utensils",
+"name": "Cook’s Utensils",
+"kind": "tool",
+"cost_cp": 100
+},
+{
+"id": "glassblowers-tools",
+"name": "Glassblower’s Tools",
+"kind": "tool",
+"cost_cp": 3000
+},
+{
+"id": "jewelers-tools",
+"name": "Jeweler’s Tools",
+"kind": "tool",
+"cost_cp": 2500
+},
+{
+"id": "leatherworkers-tools",
+"name": "Leatherworker’s Tools",
+"kind": "tool",
+"cost_cp": 500
+},
+{
+"id": "masons-tools",
+"name": "Mason’s Tools",
+"kind": "tool",
+"cost_cp": 1000
+},
+{
+"id": "painters-supplies",
+"name": "Painter’s Supplies",
+"kind": "tool",
+"cost_cp": 1000
+},
+{
+"id": "potters-tools",
+"name": "Potter’s Tools",
+"kind": "tool",
+"cost_cp": 1000
+},
+{
+"id": "smiths-tools",
+"name": "Smith’s Tools",
+"kind": "tool",
+"cost_cp": 2000
+},
+{
+"id": "tinkers-tools",
+"name": "Tinker’s Tools",
+"kind": "tool",
+"cost_cp": 5000
+},
+{
+"id": "weavers-tools",
+"name": "Weaver’s Tools",
+"kind": "tool",
+"cost_cp": 100
+},
+{
+"id": "woodcarvers-tools",
+"name": "Woodcarver’s Tools",
+"kind": "tool",
+"cost_cp": 100
+},
+{
+"id": "disguise-kit",
+"name": "Disguise Kit",
+"kind": "tool",
+"cost_cp": 2500
+},
+{
+"id": "forgery-kit",
+"name": "Forgery Kit",
+"kind": "tool",
+"cost_cp": 1500
+},
+{
+"id": "herbalism-kit",
+"name": "Herbalism Kit",
+"kind": "tool",
+"cost_cp": 500
+},
+{
+"id": "navigators-tools",
+"name": "Navigator’s Tools",
+"kind": "tool",
+"cost_cp": 2500
+},
+{
+"id": "poisoners-kit",
+"name": "Poisoner’s Kit",
+"kind": "tool",
+"cost_cp": 5000
+},
+{
+"id": "thieves-tools",
+"name": "Thieves’ Tools",
+"kind": "tool",
+"cost_cp": 2500
+},
+{
+"id": "acid",
+"name": "Acid",
+"kind": "gear",
+"cost_cp": 2500
+},
+{
+"id": "alchemists-fire",
+"name": "Alchemist’s Fire",
+"kind": "gear",
+"cost_cp": 5000
+},
+{
+"id": "antitoxin",
+"name": "Antitoxin",
+"kind": "gear",
+"cost_cp": 5000
+},
+{
+"id": "backpack",
+"name": "Backpack",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "ball-bearings",
+"name": "Ball Bearings",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "barrel",
+"name": "Barrel",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "basket",
+"name": "Basket",
+"kind": "gear",
+"cost_cp": 40
+},
+{
+"id": "bedroll",
+"name": "Bedroll",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "bell",
+"name": "Bell",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "blanket",
+"name": "Blanket",
+"kind": "gear",
+"cost_cp": 50
+},
+{
+"id": "block-and-tackle",
+"name": "Block and Tackle",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "book",
+"name": "Book",
+"kind": "gear",
+"cost_cp": 2500
+},
+{
+"id": "bottle-glass",
+"name": "Bottle, Glass",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "bucket",
+"name": "Bucket",
+"kind": "gear",
+"cost_cp": 5
+},
+{
+"id": "burglars-pack",
+"name": "Burglar’s Pack",
+"kind": "gear",
+"cost_cp": 1600
+},
+{
+"id": "caltrops",
+"name": "Caltrops",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "candle",
+"name": "Candle",
+"kind": "gear",
+"cost_cp": 1
+},
+{
+"id": "case-crossbow-bolt",
+"name": "Case, Crossbow Bolt",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "case-map-or-scroll",
+"name": "Case, Map or Scroll",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "chain",
+"name": "Chain",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "chest",
+"name": "Chest",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "climbers-kit",
+"name": "Climber’s Kit",
+"kind": "gear",
+"cost_cp": 2500
+},
+{
+"id": "clothes-fine",
+"name": "Clothes, Fine",
+"kind": "gear",
+"cost_cp": 1500
+},
+{
+"id": "clothes-travelers",
+"name": "Clothes, Traveler’s",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "component-pouch",
+"name": "Component Pouch",
+"kind": "gear",
+"cost_cp": 2500
+},
+{
+"id": "costume",
+"name": "Costume",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "crowbar",
+"name": "Crowbar",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "diplomats-pack",
+"name": "Diplomat’s Pack",
+"kind": "gear",
+"cost_cp": 3900
+},
+{
+"id": "dungeoneers-pack",
+"name": "Dungeoneer’s Pack",
+"kind": "gear",
+"cost_cp": 1200
+},
+{
+"id": "entertainers-pack",
+"name": "Entertainer’s Pack",
+"kind": "gear",
+"cost_cp": 4000
+},
+{
+"id": "explorers-pack",
+"name": "Explorer’s Pack",
+"kind": "gear",
+"cost_cp": 1000
+},
+{
+"id": "flask",
+"name": "Flask",
+"kind": "gear",
+"cost_cp": 2
+},
+{
+"id": "grappling-hook",
+"name": "Grappling Hook",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "healers-kit",
+"name": "Healer’s Kit",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "holy-water",
+"name": "Holy Water",
+"kind": "gear",
+"cost_cp": 2500
+},
+{
+"id": "hunting-trap",
+"name": "Hunting Trap",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "ink",
+"name": "Ink",
+"kind": "gear",
+"cost_cp": 1000
+},
+{
+"id": "ink-pen",
+"name": "Ink Pen",
+"kind": "gear",
+"cost_cp": 2
+},
+{
+"id": "jug",
+"name": "Jug",
+"kind": "gear",
+"cost_cp": 2
+},
+{
+"id": "ladder",
+"name": "Ladder",
+"kind": "gear",
+"cost_cp": 10
+},
+{
+"id": "lamp",
+"name": "Lamp",
+"kind": "gear",
+"cost_cp": 50
+},
+{
+"id": "lantern-bullseye",
+"name": "Lantern, Bullseye",
+"kind": "gear",
+"cost_cp": 1000
+},
+{
+"id": "lantern-hooded",
+"name": "Lantern, Hooded",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "lock",
+"name": "Lock",
+"kind": "gear",
+"cost_cp": 1000
+},
+{
+"id": "magnifying-glass",
+"name": "Magnifying Glass",
+"kind": "gear",
+"cost_cp": 10000
+},
+{
+"id": "manacles",
+"name": "Manacles",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "map",
+"name": "Map",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "mirror",
+"name": "Mirror",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "net",
+"name": "Net",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "oil",
+"name": "Oil",
+"kind": "gear",
+"cost_cp": 10
+},
+{
+"id": "paper",
+"name": "Paper",
+"kind": "gear",
+"cost_cp": 20
+},
+{
+"id": "parchment",
+"name": "Parchment",
+"kind": "gear",
+"cost_cp": 10
+},
+{
+"id": "perfume",
+"name": "Perfume",
+"kind": "gear",
+"cost_cp": 500
+},
+{
+"id": "poison-basic",
+"name": "Poison, Basic",
+"kind": "gear",
+"cost_cp": 10000
+},
+{
+"id": "pole",
+"name": "Pole",
+"kind": "gear",
+"cost_cp": 5
+},
+{
+"id": "pot-iron",
+"name": "Pot, Iron",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "pouch",
+"name": "Pouch",
+"kind": "gear",
+"cost_cp": 50
+},
+{
+"id": "priests-pack",
+"name": "Priest’s Pack",
+"kind": "gear",
+"cost_cp": 3300
+},
+{
+"id": "quiver",
+"name": "Quiver",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "ram-portable",
+"name": "Ram, Portable",
+"kind": "gear",
+"cost_cp": 400
+},
+{
+"id": "rations",
+"name": "Rations",
+"kind": "gear",
+"cost_cp": 50
+},
+{
+"id": "robe",
+"name": "Robe",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "rope",
+"name": "Rope",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "sack",
+"name": "Sack",
+"kind": "gear",
+"cost_cp": 1
+},
+{
+"id": "scholars-pack",
+"name": "Scholar’s Pack",
+"kind": "gear",
+"cost_cp": 4000
+},
+{
+"id": "shovel",
+"name": "Shovel",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "signal-whistle",
+"name": "Signal Whistle",
+"kind": "gear",
+"cost_cp": 5
+},
+{
+"id": "spikes-iron",
+"name": "Spikes, Iron",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "spyglass",
+"name": "Spyglass",
+"kind": "gear",
+"cost_cp": 100000
+},
+{
+"id": "string",
+"name": "String",
+"kind": "gear",
+"cost_cp": 10
+},
+{
+"id": "tent",
+"name": "Tent",
+"kind": "gear",
+"cost_cp": 200
+},
+{
+"id": "tinderbox",
+"name": "Tinderbox",
+"kind": "gear",
+"cost_cp": 50
+},
+{
+"id": "torch",
+"name": "Torch",
+"kind": "gear",
+"cost_cp": 1
+},
+{
+"id": "vial",
+"name": "Vial",
+"kind": "gear",
+"cost_cp": 100
+},
+{
+"id": "waterskin",
+"name": "Waterskin",
+"kind": "gear",
+"cost_cp": 20
+},
+{
+"id": "dice-set",
+"name": "Dice Set",
+"kind": "tool",
+"cost_cp": 10
+},
+{
+"id": "dragonchess-set",
+"name": "Dragonchess Set",
+"kind": "tool",
+"cost_cp": 100
+},
+{
+"id": "playing-cards",
+"name": "Playing Cards",
+"kind": "tool",
+"cost_cp": 50
+},
+{
+"id": "three-dragon-ante-set",
+"name": "Three-Dragon Ante Set",
+"kind": "tool",
+"cost_cp": 100
+},
+{
+"id": "bagpipes",
+"name": "Bagpipes",
+"kind": "tool",
+"cost_cp": 3000
+},
+{
+"id": "drum",
+"name": "Drum",
+"kind": "tool",
+"cost_cp": 600
+},
+{
+"id": "dulcimer",
+"name": "Dulcimer",
+"kind": "tool",
+"cost_cp": 2500
+},
+{
+"id": "flute",
+"name": "Flute",
+"kind": "tool",
+"cost_cp": 200
+},
+{
+"id": "horn",
+"name": "Horn",
+"kind": "tool",
+"cost_cp": 300
+},
+{
+"id": "lute",
+"name": "Lute",
+"kind": "tool",
+"cost_cp": 3500
+},
+{
+"id": "lyre",
+"name": "Lyre",
+"kind": "tool",
+"cost_cp": 3000
+},
+{
+"id": "pan-flute",
+"name": "Pan Flute",
+"kind": "tool",
+"cost_cp": 1200
+},
+{
+"id": "shawm",
+"name": "Shawm",
+"kind": "tool",
+"cost_cp": 200
+},
+{
+"id": "viol",
+"name": "Viol",
+"kind": "tool",
+"cost_cp": 3000
+},
+{
+"id": "arrows-20",
+"name": "Arrows (20)",
+"kind": "ammunition",
+"cost_cp": 100
+},
+{
+"id": "bolts-20",
+"name": "Bolts (20)",
+"kind": "ammunition",
+"cost_cp": 100
+},
+{
+"id": "firearm-bullets-10",
+"name": "Firearm Bullets (10)",
+"kind": "ammunition",
+"cost_cp": 300
+},
+{
+"id": "sling-bullets-20",
+"name": "Sling Bullets (20)",
+"kind": "ammunition",
+"cost_cp": 4
+},
+{
+"id": "blowgun-needles-50",
+"name": "Blowgun Needles (50)",
+"kind": "ammunition",
+"cost_cp": 100
+},
+{
+"id": "crystal-arcane-focus",
+"name": "Crystal (Arcane Focus)",
+"kind": "focus",
+"cost_cp": 1000
+},
+{
+"id": "orb-arcane-focus",
+"name": "Orb (Arcane Focus)",
+"kind": "focus",
+"cost_cp": 2000
+},
+{
+"id": "rod-arcane-focus",
+"name": "Rod (Arcane Focus)",
+"kind": "focus",
+"cost_cp": 1000
+},
+{
+"id": "staff-arcane-focus",
+"name": "Staff (Arcane Focus)",
+"kind": "focus",
+"cost_cp": 500
+},
+{
+"id": "wand-arcane-focus",
+"name": "Wand (Arcane Focus)",
+"kind": "focus",
+"cost_cp": 1000
+},
+{
+"id": "sprig-of-mistletoe-druidic-focus",
+"name": "Sprig of Mistletoe (Druidic Focus)",
+"kind": "focus",
+"cost_cp": 100
+},
+{
+"id": "wooden-staff-druidic-focus",
+"name": "Wooden Staff (Druidic Focus)",
+"kind": "focus",
+"cost_cp": 500
+},
+{
+"id": "yew-wand-druidic-focus",
+"name": "Yew Wand (Druidic Focus)",
+"kind": "focus",
+"cost_cp": 1000
+},
+{
+"id": "amulet-holy-symbol",
+"name": "Amulet (Holy Symbol)",
+"kind": "focus",
+"cost_cp": 500
+},
+{
+"id": "emblem-holy-symbol",
+"name": "Emblem (Holy Symbol)",
+"kind": "focus",
+"cost_cp": 500
+},
+{
+"id": "reliquary-holy-symbol",
+"name": "Reliquary (Holy Symbol)",
+"kind": "focus",
+"cost_cp": 500
+},
+{
+"id": "club",
+"name": "Club",
+"kind": "weapon",
+"cost_cp": 10,
+"weapon": "simple"
+},
+{
+"id": "dagger",
+"name": "Dagger",
+"kind": "weapon",
+"cost_cp": 200,
+"weapon": "simple"
+},
+{
+"id": "greatclub",
+"name": "Greatclub",
+"kind": "weapon",
+"cost_cp": 20,
+"weapon": "simple"
+},
+{
+"id": "handaxe",
+"name": "Handaxe",
+"kind": "weapon",
+"cost_cp": 500,
+"weapon": "simple"
+},
+{
+"id": "javelin",
+"name": "Javelin",
+"kind": "weapon",
+"cost_cp": 50,
+"weapon": "simple"
+},
+{
+"id": "light-hammer",
+"name": "Light Hammer",
+"kind": "weapon",
+"cost_cp": 200,
+"weapon": "simple"
+},
+{
+"id": "mace",
+"name": "Mace",
+"kind": "weapon",
+"cost_cp": 500,
+"weapon": "simple"
+},
+{
+"id": "quarterstaff",
+"name": "Quarterstaff",
+"kind": "weapon",
+"cost_cp": 20,
+"weapon": "simple"
+},
+{
+"id": "sickle",
+"name": "Sickle",
+"kind": "weapon",
+"cost_cp": 100,
+"weapon": "simple"
+},
+{
+"id": "spear",
+"name": "Spear",
+"kind": "weapon",
+"cost_cp": 100,
+"weapon": "simple"
+},
+{
+"id": "dart",
+"name": "Dart",
+"kind": "weapon",
+"cost_cp": 5,
+"weapon": "simple"
+},
+{
+"id": "light-crossbow",
+"name": "Light Crossbow",
+"kind": "weapon",
+"cost_cp": 2500,
+"weapon": "simple"
+},
+{
+"id": "shortbow",
+"name": "Shortbow",
+"kind": "weapon",
+"cost_cp": 2500,
+"weapon": "simple"
+},
+{
+"id": "sling",
+"name": "Sling",
+"kind": "weapon",
+"cost_cp": 10,
+"weapon": "simple"
+},
+{
+"id": "battleaxe",
+"name": "Battleaxe",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "flail",
+"name": "Flail",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "glaive",
+"name": "Glaive",
+"kind": "weapon",
+"cost_cp": 2000,
+"weapon": "martial"
+},
+{
+"id": "greataxe",
+"name": "Greataxe",
+"kind": "weapon",
+"cost_cp": 3000,
+"weapon": "martial"
+},
+{
+"id": "greatsword",
+"name": "Greatsword",
+"kind": "weapon",
+"cost_cp": 5000,
+"weapon": "martial"
+},
+{
+"id": "halberd",
+"name": "Halberd",
+"kind": "weapon",
+"cost_cp": 2000,
+"weapon": "martial"
+},
+{
+"id": "lance",
+"name": "Lance",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "longsword",
+"name": "Longsword",
+"kind": "weapon",
+"cost_cp": 1500,
+"weapon": "martial"
+},
+{
+"id": "maul",
+"name": "Maul",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "morningstar",
+"name": "Morningstar",
+"kind": "weapon",
+"cost_cp": 1500,
+"weapon": "martial"
+},
+{
+"id": "pike",
+"name": "Pike",
+"kind": "weapon",
+"cost_cp": 500,
+"weapon": "martial"
+},
+{
+"id": "rapier",
+"name": "Rapier",
+"kind": "weapon",
+"cost_cp": 2500,
+"weapon": "martial"
+},
+{
+"id": "scimitar",
+"name": "Scimitar",
+"kind": "weapon",
+"cost_cp": 2500,
+"weapon": "martial"
+},
+{
+"id": "shortsword",
+"name": "Shortsword",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "trident",
+"name": "Trident",
+"kind": "weapon",
+"cost_cp": 500,
+"weapon": "martial"
+},
+{
+"id": "warhammer",
+"name": "Warhammer",
+"kind": "weapon",
+"cost_cp": 1500,
+"weapon": "martial"
+},
+{
+"id": "war-pick",
+"name": "War Pick",
+"kind": "weapon",
+"cost_cp": 500,
+"weapon": "martial"
+},
+{
+"id": "whip",
+"name": "Whip",
+"kind": "weapon",
+"cost_cp": 200,
+"weapon": "martial"
+},
+{
+"id": "blowgun",
+"name": "Blowgun",
+"kind": "weapon",
+"cost_cp": 1000,
+"weapon": "martial"
+},
+{
+"id": "hand-crossbow",
+"name": "Hand Crossbow",
+"kind": "weapon",
+"cost_cp": 7500,
+"weapon": "martial"
+},
+{
+"id": "heavy-crossbow",
+"name": "Heavy Crossbow",
+"kind": "weapon",
+"cost_cp": 5000,
+"weapon": "martial"
+},
+{
+"id": "longbow",
+"name": "Longbow",
+"kind": "weapon",
+"cost_cp": 5000,
+"weapon": "martial"
+},
+{
+"id": "musket",
+"name": "Musket",
+"kind": "weapon",
+"cost_cp": 50000,
+"weapon": "martial"
+},
+{
+"id": "pistol",
+"name": "Pistol",
+"kind": "weapon",
+"cost_cp": 25000,
+"weapon": "martial"
+},
+{
+"id": "padded-armor",
+"name": "Padded Armor",
+"kind": "armor",
+"cost_cp": 500,
+"armor": "light"
+},
+{
+"id": "leather-armor",
+"name": "Leather Armor",
+"kind": "armor",
+"cost_cp": 1000,
+"armor": "light"
+},
+{
+"id": "studded-leather-armor",
+"name": "Studded Leather Armor",
+"kind": "armor",
+"cost_cp": 4500,
+"armor": "light"
+},
+{
+"id": "hide-armor",
+"name": "Hide Armor",
+"kind": "armor",
+"cost_cp": 1000,
+"armor": "medium"
+},
+{
+"id": "chain-shirt",
+"name": "Chain Shirt",
+"kind": "armor",
+"cost_cp": 5000,
+"armor": "medium"
+},
+{
+"id": "scale-mail",
+"name": "Scale Mail",
+"kind": "armor",
+"cost_cp": 5000,
+"armor": "medium"
+},
+{
+"id": "breastplate",
+"name": "Breastplate",
+"kind": "armor",
+"cost_cp": 40000,
+"armor": "medium"
+},
+{
+"id": "half-plate-armor",
+"name": "Half Plate Armor",
+"kind": "armor",
+"cost_cp": 75000,
+"armor": "medium"
+},
+{
+"id": "ring-mail",
+"name": "Ring Mail",
+"kind": "armor",
+"cost_cp": 3000,
+"armor": "heavy"
+},
+{
+"id": "chain-mail",
+"name": "Chain Mail",
+"kind": "armor",
+"cost_cp": 7500,
+"armor": "heavy"
+},
+{
+"id": "splint-armor",
+"name": "Splint Armor",
+"kind": "armor",
+"cost_cp": 20000,
+"armor": "heavy"
+},
+{
+"id": "plate-armor",
+"name": "Plate Armor",
+"kind": "armor",
+"cost_cp": 150000,
+"armor": "heavy"
+},
+{
+"id": "shield",
+"name": "Shield",
+"kind": "armor",
+"cost_cp": 1000,
+"armor": "shield"
+},
+{
+"id": "gold-dust",
+"name": "Gold Dust",
+"kind": "gear",
+"cost_cp": 2500,
+"note": "Arcane Lock's Material component (SRD 5.2.1: gold dust worth 25+ GP, which the spell consumes)"
+},
+{
+"id": "diamond",
+"name": "Diamond",
+"kind": "gear",
+"cost_cp": 5000,
+"note": "Chromatic Orb's Material component (SRD 5.2.1: a diamond worth 50+ GP; not consumed)"
+},
+{
+"id": "black-pearl",
+"name": "Black Pearl",
+"kind": "gear",
+"cost_cp": 50000,
+"note": "Circle of Death's Material component (SRD 5.2.1: the powder of a crushed black pearl worth 500+ GP; not consumed)"
+},
+{
+"id": "ruby-dust",
+"name": "Ruby Dust",
+"kind": "gear",
+"cost_cp": 5000,
+"note": "Continual Flame's Material component (SRD 5.2.1: ruby dust worth 50+ GP, which the spell consumes)"
+},
+{
+"id": "diamond-300-gp",
+"name": "Diamond (300 GP)",
+"kind": "gear",
+"cost_cp": 30000,
+"note": "Revivify's Material component (SRD 5.2.1: a diamond worth 300+ GP, which the spell consumes)"
+},
+{
+"id": "adamantine-armor",
+"name": "Adamantine Armor",
+"kind": "magic",
+"category": "Armor (Any Medium or Heavy, Except Hide Armor)",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false,
+"bases": [
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "ammunition-1",
+"name": "Ammunition, +1",
+"kind": "magic",
+"category": "Weapon (Any Ammunition)",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "ammunition-2",
+"name": "Ammunition, +2",
+"kind": "magic",
+"category": "Weapon (Any Ammunition)",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "ammunition-3",
+"name": "Ammunition, +3",
+"kind": "magic",
+"category": "Weapon (Any Ammunition)",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "ammunition-of-slaying",
+"name": "Ammunition of Slaying",
+"kind": "magic",
+"category": "Weapon (Any Ammunition)",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "amulet-of-health",
+"name": "Amulet of Health",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "amulet-of-proof-against-detection-and-location",
+"name": "Amulet of Proof against Detection and Location",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "amulet-of-the-planes",
+"name": "Amulet of the Planes",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "animated-shield",
+"name": "Animated Shield",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Very Rare",
+"cost_cp": 4001000,
+"attunement": true,
+"base": "Shield"
+},
+{
+"id": "apparatus-of-the-crab",
+"name": "Apparatus of the Crab",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "armor-1",
+"name": "Armor, +1",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "armor-2",
+"name": "Armor, +2",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "armor-3",
+"name": "Armor, +3",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "armor-of-invulnerability",
+"name": "Armor of Invulnerability",
+"kind": "magic",
+"category": "Armor (Plate Armor)",
+"rarity": "Legendary",
+"cost_cp": 20150000,
+"attunement": true,
+"base": "Plate Armor"
+},
+{
+"id": "armor-of-resistance",
+"name": "Armor of Resistance",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "armor-of-vulnerability",
+"name": "Armor of Vulnerability",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "arrow-catching-shield",
+"name": "Arrow-Catching Shield",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Rare",
+"cost_cp": 401000,
+"attunement": true,
+"base": "Shield"
+},
+{
+"id": "bag-of-beans",
+"name": "Bag of Beans",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "bag-of-devouring",
+"name": "Bag of Devouring",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "bag-of-holding",
+"name": "Bag of Holding",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "bag-of-tricks",
+"name": "Bag of Tricks",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "bead-of-force",
+"name": "Bead of Force",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "bead-of-nourishment",
+"name": "Bead of Nourishment",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Common",
+"cost_cp": 10000,
+"attunement": false
+},
+{
+"id": "belt-of-dwarvenkind",
+"name": "Belt of Dwarvenkind",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-hill",
+"name": "Belt of Giant Strength (hill)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-frost",
+"name": "Belt of Giant Strength (frost)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-stone",
+"name": "Belt of Giant Strength (stone)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-fire",
+"name": "Belt of Giant Strength (fire)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-cloud",
+"name": "Belt of Giant Strength (cloud)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "belt-of-giant-strength-storm",
+"name": "Belt of Giant Strength (storm)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "berserker-axe",
+"name": "Berserker Axe",
+"kind": "magic",
+"category": "Weapon (Battleaxe, Greataxe, or Halberd)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Battleaxe",
+"Greataxe",
+"Halberd"
+]
+},
+{
+"id": "boots-of-elvenkind",
+"name": "Boots of Elvenkind",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "boots-of-levitation",
+"name": "Boots of Levitation",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "boots-of-speed",
+"name": "Boots of Speed",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "boots-of-striding-and-springing",
+"name": "Boots of Striding and Springing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "boots-of-the-winterlands",
+"name": "Boots of the Winterlands",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "bowl-of-commanding-water-elementals",
+"name": "Bowl of Commanding Water Elementals",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "bracers-of-archery",
+"name": "Bracers of Archery",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "bracers-of-defense",
+"name": "Bracers of Defense",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "brazier-of-commanding-fire-elementals",
+"name": "Brazier of Commanding Fire Elementals",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "brooch-of-shielding",
+"name": "Brooch of Shielding",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "broom-of-flying",
+"name": "Broom of Flying",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "candle-of-invocation",
+"name": "Candle of Invocation",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "cape-of-the-mountebank",
+"name": "Cape of the Mountebank",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "carpet-of-flying",
+"name": "Carpet of Flying",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "censer-of-controlling-air-elementals",
+"name": "Censer of Controlling Air Elementals",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "chime-of-opening",
+"name": "Chime of Opening",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "circlet-of-blasting",
+"name": "Circlet of Blasting",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "cloak-of-arachnida",
+"name": "Cloak of Arachnida",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "cloak-of-displacement",
+"name": "Cloak of Displacement",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "cloak-of-elvenkind",
+"name": "Cloak of Elvenkind",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "cloak-of-invisibility",
+"name": "Cloak of Invisibility",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "cloak-of-protection",
+"name": "Cloak of Protection",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "cloak-of-the-bat",
+"name": "Cloak of the Bat",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "cloak-of-the-manta-ray",
+"name": "Cloak of the Manta Ray",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "crystal-ball",
+"name": "Crystal Ball",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "crystal-ball-of-mind-reading",
+"name": "Crystal Ball of Mind Reading",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "crystal-ball-of-telepathy",
+"name": "Crystal Ball of Telepathy",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "crystal-ball-of-true-seeing",
+"name": "Crystal Ball of True Seeing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "cube-of-force",
+"name": "Cube of Force",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "cubic-gate",
+"name": "Cubic Gate",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "dagger-of-venom",
+"name": "Dagger of Venom",
+"kind": "magic",
+"category": "Weapon (Dagger)",
+"rarity": "Rare",
+"cost_cp": 400200,
+"attunement": false,
+"base": "Dagger"
+},
+{
+"id": "dancing-sword",
+"name": "Dancing Sword",
+"kind": "magic",
+"category": "Weapon (Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Greatsword",
+"Longsword",
+"Rapier",
+"Scimitar",
+"Shortsword"
+]
+},
+{
+"id": "decanter-of-endless-water",
+"name": "Decanter of Endless Water",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "deck-of-illusions",
+"name": "Deck of Illusions",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "defender",
+"name": "Defender",
+"kind": "magic",
+"category": "Weapon (Any Melee Weapon)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip"
+]
+},
+{
+"id": "demon-armor",
+"name": "Demon Armor",
+"kind": "magic",
+"category": "Armor (Any Light, Medium, or Heavy)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Padded Armor",
+"Leather Armor",
+"Studded Leather Armor",
+"Hide Armor",
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "dimensional-shackles",
+"name": "Dimensional Shackles",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "dragon-scale-mail",
+"name": "Dragon Scale Mail",
+"kind": "magic",
+"category": "Armor (Scale Mail)",
+"rarity": "Very Rare",
+"cost_cp": 4005000,
+"attunement": true,
+"base": "Scale Mail"
+},
+{
+"id": "dragon-slayer",
+"name": "Dragon Slayer",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "dust-of-disappearance",
+"name": "Dust of Disappearance",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "dust-of-dryness",
+"name": "Dust of Dryness",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "dust-of-sneezing-and-choking",
+"name": "Dust of Sneezing and Choking",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "dwarven-plate",
+"name": "Dwarven Plate",
+"kind": "magic",
+"category": "Armor (Half Plate Armor or Plate Armor)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false,
+"bases": [
+"Half Plate Armor",
+"Plate Armor"
+]
+},
+{
+"id": "dwarven-thrower",
+"name": "Dwarven Thrower",
+"kind": "magic",
+"category": "Weapon (Warhammer)",
+"rarity": "Very Rare",
+"cost_cp": 4001500,
+"attunement": true,
+"attune_by": [
+"Dwarf",
+"Creature Attuned to a Belt of Dwarvenkind"
+],
+"base": "Warhammer"
+},
+{
+"id": "efficient-quiver",
+"name": "Efficient Quiver",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "efreeti-bottle",
+"name": "Efreeti Bottle",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "elemental-gem",
+"name": "Elemental Gem",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "elixir-of-health",
+"name": "Elixir of Health",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "elven-chain",
+"name": "Elven Chain",
+"kind": "magic",
+"category": "Armor (Chain Mail or Chain Shirt)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Chain Mail",
+"Chain Shirt"
+]
+},
+{
+"id": "energy-bow",
+"name": "Energy Bow",
+"kind": "magic",
+"category": "Weapon (Longbow or Shortbow)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Longbow",
+"Shortbow"
+]
+},
+{
+"id": "eversmoking-bottle",
+"name": "Eversmoking Bottle",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "eyes-of-charming",
+"name": "Eyes of Charming",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "eyes-of-minute-seeing",
+"name": "Eyes of Minute Seeing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "eyes-of-the-eagle",
+"name": "Eyes of the Eagle",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "feather-token-anchor",
+"name": "Feather Token (anchor)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "feather-token-bird",
+"name": "Feather Token (bird)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-fan",
+"name": "Feather Token (fan)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "feather-token-swan-boat",
+"name": "Feather Token (swan boat)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-tree",
+"name": "Feather Token (tree)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "feather-token-whip",
+"name": "Feather Token (whip)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-bronze-griffon",
+"name": "Feather Token (bronze griffon)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-ebony-fly",
+"name": "Feather Token (ebony fly)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-golden-lions",
+"name": "Feather Token (golden lions)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-ivory-goats",
+"name": "Feather Token (ivory goats)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-marble-elephant",
+"name": "Feather Token (marble elephant)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-obsidian-steed",
+"name": "Feather Token (obsidian steed)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "feather-token-onyx-dog",
+"name": "Feather Token (onyx dog)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-serpentine-owl",
+"name": "Feather Token (serpentine owl)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "feather-token-silver-raven",
+"name": "Feather Token (silver raven)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-bronze-griffon",
+"name": "Figurine of Wondrous Power (bronze griffon)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-ebony-fly",
+"name": "Figurine of Wondrous Power (ebony fly)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-golden-lions",
+"name": "Figurine of Wondrous Power (golden lions)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-ivory-goats",
+"name": "Figurine of Wondrous Power (ivory goats)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-marble-elephant",
+"name": "Figurine of Wondrous Power (marble elephant)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-obsidian-steed",
+"name": "Figurine of Wondrous Power (obsidian steed)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-onyx-dog",
+"name": "Figurine of Wondrous Power (onyx dog)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-serpentine-owl",
+"name": "Figurine of Wondrous Power (serpentine owl)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "figurine-of-wondrous-power-silver-raven",
+"name": "Figurine of Wondrous Power (silver raven)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "flame-tongue",
+"name": "Flame Tongue",
+"kind": "magic",
+"category": "Weapon (Any Melee Weapon)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip"
+]
+},
+{
+"id": "folding-boat",
+"name": "Folding Boat",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "frost-brand",
+"name": "Frost Brand",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Rapier",
+"Scimitar",
+"Shortsword"
+]
+},
+{
+"id": "gauntlets-of-ogre-power",
+"name": "Gauntlets of Ogre Power",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "gem-of-brightness",
+"name": "Gem of Brightness",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "gem-of-seeing",
+"name": "Gem of Seeing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "giant-slayer",
+"name": "Giant Slayer",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "glamoured-studded-leather",
+"name": "Glamoured Studded Leather",
+"kind": "magic",
+"category": "Armor (Studded Leather Armor)",
+"rarity": "Rare",
+"cost_cp": 404500,
+"attunement": false,
+"base": "Studded Leather Armor"
+},
+{
+"id": "gloves-of-missile-snaring",
+"name": "Gloves of Missile Snaring",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "gloves-of-swimming-and-climbing",
+"name": "Gloves of Swimming and Climbing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "gloves-of-thievery",
+"name": "Gloves of Thievery",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "goggles-of-night",
+"name": "Goggles of Night",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "hammer-of-thunderbolts",
+"name": "Hammer of Thunderbolts",
+"kind": "magic",
+"category": "Weapon (Maul or Warhammer)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"bases": [
+"Maul",
+"Warhammer"
+]
+},
+{
+"id": "handy-haversack",
+"name": "Handy Haversack",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "hat-of-disguise",
+"name": "Hat of Disguise",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "hat-of-many-spells",
+"name": "Hat of Many Spells",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Wizard"
+]
+},
+{
+"id": "headband-of-intellect",
+"name": "Headband of Intellect",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "helm-of-brilliance",
+"name": "Helm of Brilliance",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "helm-of-comprehending-languages",
+"name": "Helm of Comprehending Languages",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "helm-of-telepathy",
+"name": "Helm of Telepathy",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "helm-of-teleportation",
+"name": "Helm of Teleportation",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "holy-avenger",
+"name": "Holy Avenger",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"attune_by": [
+"Paladin"
+],
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "horn-of-blasting",
+"name": "Horn of Blasting",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "horn-of-valhalla-silver",
+"name": "Horn of Valhalla (silver)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "horn-of-valhalla-brass",
+"name": "Horn of Valhalla (brass)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "horn-of-valhalla-bronze",
+"name": "Horn of Valhalla (bronze)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "horn-of-valhalla-iron",
+"name": "Horn of Valhalla (iron)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "horseshoes-of-a-zephyr",
+"name": "Horseshoes of a Zephyr",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "horseshoes-of-speed",
+"name": "Horseshoes of Speed",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "immovable-rod",
+"name": "Immovable Rod",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "instant-fortress",
+"name": "Instant Fortress",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ioun-stone-absorption",
+"name": "Ioun Stone (absorption)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-agility",
+"name": "Ioun Stone (agility)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-awareness",
+"name": "Ioun Stone (awareness)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ioun-stone-fortitude",
+"name": "Ioun Stone (fortitude)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-greater-absorption",
+"name": "Ioun Stone (greater absorption)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-insight",
+"name": "Ioun Stone (insight)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-intellect",
+"name": "Ioun Stone (intellect)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-leadership",
+"name": "Ioun Stone (leadership)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-mastery",
+"name": "Ioun Stone (mastery)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-protection",
+"name": "Ioun Stone (protection)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ioun-stone-regeneration",
+"name": "Ioun Stone (regeneration)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-reserve",
+"name": "Ioun Stone (reserve)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ioun-stone-strength",
+"name": "Ioun Stone (strength)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ioun-stone-sustenance",
+"name": "Ioun Stone (sustenance)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "iron-bands",
+"name": "Iron Bands",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "iron-flask",
+"name": "Iron Flask",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "javelin-of-lightning",
+"name": "Javelin of Lightning",
+"kind": "magic",
+"category": "Weapon (Javelin)",
+"rarity": "Uncommon",
+"cost_cp": 40050,
+"attunement": false,
+"base": "Javelin"
+},
+{
+"id": "lantern-of-revealing",
+"name": "Lantern of Revealing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "luck-blade",
+"name": "Luck Blade",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, Sickle, or Shortsword)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Rapier",
+"Scimitar",
+"Sickle",
+"Shortsword"
+]
+},
+{
+"id": "mace-of-disruption",
+"name": "Mace of Disruption",
+"kind": "magic",
+"category": "Weapon (Mace)",
+"rarity": "Rare",
+"cost_cp": 400500,
+"attunement": true,
+"base": "Mace"
+},
+{
+"id": "mace-of-smiting",
+"name": "Mace of Smiting",
+"kind": "magic",
+"category": "Weapon (Mace)",
+"rarity": "Rare",
+"cost_cp": 400500,
+"attunement": false,
+"base": "Mace"
+},
+{
+"id": "mace-of-terror",
+"name": "Mace of Terror",
+"kind": "magic",
+"category": "Weapon (Mace)",
+"rarity": "Rare",
+"cost_cp": 400500,
+"attunement": true,
+"base": "Mace"
+},
+{
+"id": "mantle-of-spell-resistance",
+"name": "Mantle of Spell Resistance",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "manual-of-bodily-health",
+"name": "Manual of Bodily Health",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "manual-of-gainful-exercise",
+"name": "Manual of Gainful Exercise",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "manual-of-golems",
+"name": "Manual of Golems",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "manual-of-quickness-of-action",
+"name": "Manual of Quickness of Action",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "marvelous-pigments",
+"name": "Marvelous Pigments",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "medallion-of-thoughts",
+"name": "Medallion of Thoughts",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "mirror-of-life-trapping",
+"name": "Mirror of Life Trapping",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "mithral-armor",
+"name": "Mithral Armor",
+"kind": "magic",
+"category": "Armor (Any Medium or Heavy, Except Hide Armor)",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false,
+"bases": [
+"Chain Shirt",
+"Scale Mail",
+"Breastplate",
+"Half Plate Armor",
+"Ring Mail",
+"Chain Mail",
+"Splint Armor",
+"Plate Armor"
+]
+},
+{
+"id": "mysterious-deck",
+"name": "Mysterious Deck",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "necklace-of-adaptation",
+"name": "Necklace of Adaptation",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "necklace-of-fireballs",
+"name": "Necklace of Fireballs",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "necklace-of-prayer-beads",
+"name": "Necklace of Prayer Beads",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Cleric",
+"Druid",
+"Paladin"
+]
+},
+{
+"id": "nine-lives-stealer",
+"name": "Nine Lives Stealer",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "oathbow",
+"name": "Oathbow",
+"kind": "magic",
+"category": "Weapon (Longbow or Shortbow)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Longbow",
+"Shortbow"
+]
+},
+{
+"id": "oil-of-etherealness",
+"name": "Oil of Etherealness",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "oil-of-sharpness",
+"name": "Oil of Sharpness",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "oil-of-slipperiness",
+"name": "Oil of Slipperiness",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "pearl-of-power",
+"name": "Pearl of Power",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "periapt-of-health",
+"name": "Periapt of Health",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "periapt-of-proof-against-poison",
+"name": "Periapt of Proof against Poison",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "periapt-of-wound-closure",
+"name": "Periapt of Wound Closure",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "philter-of-love",
+"name": "Philter of Love",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "pipes-of-haunting",
+"name": "Pipes of Haunting",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "pipes-of-the-sewers",
+"name": "Pipes of the Sewers",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "plate-armor-of-etherealness",
+"name": "Plate Armor of Etherealness",
+"kind": "magic",
+"category": "Armor (Half Plate Armor or Plate Armor)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"bases": [
+"Half Plate Armor",
+"Plate Armor"
+]
+},
+{
+"id": "portable-hole",
+"name": "Portable Hole",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "potion-of-animal-friendship",
+"name": "Potion of Animal Friendship",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-clairvoyance",
+"name": "Potion of Clairvoyance",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-climbing",
+"name": "Potion of Climbing",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Common",
+"cost_cp": 5000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-diminution",
+"name": "Potion of Diminution",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-flying",
+"name": "Potion of Flying",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-gaseous-form",
+"name": "Potion of Gaseous Form",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-hill",
+"name": "Potion of Giant Strength (hill)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-frost",
+"name": "Potion of Giant Strength (frost)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-stone",
+"name": "Potion of Giant Strength (stone)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-fire",
+"name": "Potion of Giant Strength (fire)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-cloud",
+"name": "Potion of Giant Strength (cloud)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-giant-strength-storm",
+"name": "Potion of Giant Strength (storm)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-growth",
+"name": "Potion of Growth",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-healing",
+"name": "Potion of Healing",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Common",
+"cost_cp": 5000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-healing-greater",
+"name": "Potion of Healing (greater)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-healing-superior",
+"name": "Potion of Healing (superior)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-healing-supreme",
+"name": "Potion of Healing (supreme)",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-heroism",
+"name": "Potion of Heroism",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-invisibility",
+"name": "Potion of Invisibility",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-invulnerability",
+"name": "Potion of Invulnerability",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-longevity",
+"name": "Potion of Longevity",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-mind-reading",
+"name": "Potion of Mind Reading",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Rare",
+"cost_cp": 200000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-poison",
+"name": "Potion of Poison",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-resistance",
+"name": "Potion of Resistance",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-speed",
+"name": "Potion of Speed",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-vitality",
+"name": "Potion of Vitality",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "potion-of-water-breathing",
+"name": "Potion of Water Breathing",
+"kind": "potion",
+"category": "Potion",
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"attunement": false,
+"consumable": true
+},
+{
+"id": "quarterstaff-of-the-acrobat",
+"name": "Quarterstaff of the Acrobat",
+"kind": "magic",
+"category": "Weapon (Quarterstaff)",
+"rarity": "Very Rare",
+"cost_cp": 4000020,
+"attunement": true,
+"base": "Quarterstaff"
+},
+{
+"id": "ring-of-animal-influence",
+"name": "Ring of Animal Influence",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "ring-of-djinni-summoning",
+"name": "Ring of Djinni Summoning",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ring-of-elemental-command",
+"name": "Ring of Elemental Command",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ring-of-evasion",
+"name": "Ring of Evasion",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-feather-falling",
+"name": "Ring of Feather Falling",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-free-action",
+"name": "Ring of Free Action",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-invisibility",
+"name": "Ring of Invisibility",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ring-of-jumping",
+"name": "Ring of Jumping",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "ring-of-mind-shielding",
+"name": "Ring of Mind Shielding",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "ring-of-protection",
+"name": "Ring of Protection",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-regeneration",
+"name": "Ring of Regeneration",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ring-of-resistance",
+"name": "Ring of Resistance",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "ring-of-shooting-stars",
+"name": "Ring of Shooting Stars",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ring-of-spell-storing",
+"name": "Ring of Spell Storing",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-spell-turning",
+"name": "Ring of Spell Turning",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "ring-of-swimming",
+"name": "Ring of Swimming",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "ring-of-telekinesis",
+"name": "Ring of Telekinesis",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "ring-of-the-ram",
+"name": "Ring of the Ram",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "ring-of-three-wishes",
+"name": "Ring of Three Wishes",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "ring-of-warmth",
+"name": "Ring of Warmth",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "ring-of-water-walking",
+"name": "Ring of Water Walking",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "ring-of-x-ray-vision",
+"name": "Ring of X-ray Vision",
+"kind": "magic",
+"category": "Ring",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "robe-of-eyes",
+"name": "Robe of Eyes",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "robe-of-scintillating-colors",
+"name": "Robe of Scintillating Colors",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "robe-of-stars",
+"name": "Robe of Stars",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "robe-of-the-archmagi",
+"name": "Robe of the Archmagi",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"attune_by": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "robe-of-useful-items",
+"name": "Robe of Useful Items",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "rod-of-absorption",
+"name": "Rod of Absorption",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "rod-of-alertness",
+"name": "Rod of Alertness",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "rod-of-lordly-might",
+"name": "Rod of Lordly Might",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "rod-of-resurrection",
+"name": "Rod of Resurrection",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "rod-of-rulership",
+"name": "Rod of Rulership",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "rod-of-security",
+"name": "Rod of Security",
+"kind": "magic",
+"category": "Rod",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "rope-of-climbing",
+"name": "Rope of Climbing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "rope-of-entanglement",
+"name": "Rope of Entanglement",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "scarab-of-protection",
+"name": "Scarab of Protection",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "scimitar-of-speed",
+"name": "Scimitar of Speed",
+"kind": "magic",
+"category": "Weapon (Scimitar)",
+"rarity": "Very Rare",
+"cost_cp": 4002500,
+"attunement": true,
+"base": "Scimitar"
+},
+{
+"id": "sending-stones",
+"name": "Sending Stones",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "sentinel-shield",
+"name": "Sentinel Shield",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Uncommon",
+"cost_cp": 41000,
+"attunement": false,
+"base": "Shield"
+},
+{
+"id": "shield-1",
+"name": "Shield, +1",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Uncommon",
+"cost_cp": 41000,
+"attunement": false,
+"base": "Shield"
+},
+{
+"id": "shield-2",
+"name": "Shield, +2",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Rare",
+"cost_cp": 401000,
+"attunement": false,
+"base": "Shield"
+},
+{
+"id": "shield-3",
+"name": "Shield, +3",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Very Rare",
+"cost_cp": 4001000,
+"attunement": false,
+"base": "Shield"
+},
+{
+"id": "shield-of-missile-attraction",
+"name": "Shield of Missile Attraction",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Rare",
+"cost_cp": 401000,
+"attunement": true,
+"base": "Shield"
+},
+{
+"id": "shield-of-the-cavalier",
+"name": "Shield of the Cavalier",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Very Rare",
+"cost_cp": 4001000,
+"attunement": true,
+"base": "Shield"
+},
+{
+"id": "slippers-of-spider-climbing",
+"name": "Slippers of Spider Climbing",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "sovereign-glue",
+"name": "Sovereign Glue",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "spellguard-shield",
+"name": "Spellguard Shield",
+"kind": "magic",
+"category": "Armor (Shield)",
+"rarity": "Very Rare",
+"cost_cp": 4001000,
+"attunement": true,
+"base": "Shield"
+},
+{
+"id": "sphere-of-annihilation",
+"name": "Sphere of Annihilation",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "staff-of-charming",
+"name": "Staff of Charming",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Bard",
+"Cleric",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-fire",
+"name": "Staff of Fire",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-frost",
+"name": "Staff of Frost",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-healing",
+"name": "Staff of Healing",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Bard",
+"Cleric",
+"Druid"
+]
+},
+{
+"id": "staff-of-power",
+"name": "Staff of Power",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-striking",
+"name": "Staff of Striking",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "staff-of-swarming-insects",
+"name": "Staff of Swarming Insects",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Bard",
+"Cleric",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-the-magi",
+"name": "Staff of the Magi",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"attune_by": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+]
+},
+{
+"id": "staff-of-the-python",
+"name": "Staff of the Python",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "staff-of-the-woodlands",
+"name": "Staff of the Woodlands",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Druid"
+]
+},
+{
+"id": "staff-of-thunder-and-lightning",
+"name": "Staff of Thunder and Lightning",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true
+},
+{
+"id": "staff-of-withering",
+"name": "Staff of Withering",
+"kind": "magic",
+"category": "Staff",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "stone-of-controlling-earth-elementals",
+"name": "Stone of Controlling Earth Elementals",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false
+},
+{
+"id": "stone-of-good-luck-luckstone",
+"name": "Stone of Good Luck (Luckstone)",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "sun-blade",
+"name": "Sun Blade",
+"kind": "magic",
+"category": "Weapon (Longsword)",
+"rarity": "Rare",
+"cost_cp": 401500,
+"attunement": true,
+"base": "Longsword"
+},
+{
+"id": "sword-of-life-stealing",
+"name": "Sword of Life Stealing",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Rapier",
+"Scimitar",
+"Shortsword"
+]
+},
+{
+"id": "sword-of-sharpness",
+"name": "Sword of Sharpness",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, or Scimitar)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Scimitar"
+]
+},
+{
+"id": "sword-of-wounding",
+"name": "Sword of Wounding",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, Rapier, Scimitar, or Shortsword)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Rapier",
+"Scimitar",
+"Shortsword"
+]
+},
+{
+"id": "talisman-of-pure-good",
+"name": "Talisman of Pure Good",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"attune_by": [
+"Cleric",
+"Paladin"
+]
+},
+{
+"id": "talisman-of-the-sphere",
+"name": "Talisman of the Sphere",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "talisman-of-ultimate-evil",
+"name": "Talisman of Ultimate Evil",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true
+},
+{
+"id": "thunderous-greatclub",
+"name": "Thunderous Greatclub",
+"kind": "magic",
+"category": "Weapon (Greatclub)",
+"rarity": "Very Rare",
+"cost_cp": 4000020,
+"attunement": true,
+"base": "Greatclub"
+},
+{
+"id": "tome-of-clear-thought",
+"name": "Tome of Clear Thought",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "tome-of-leadership-and-influence",
+"name": "Tome of Leadership and Influence",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "tome-of-understanding",
+"name": "Tome of Understanding",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false
+},
+{
+"id": "trident-of-fish-command",
+"name": "Trident of Fish Command",
+"kind": "magic",
+"category": "Weapon (Trident)",
+"rarity": "Uncommon",
+"cost_cp": 40500,
+"attunement": true,
+"base": "Trident"
+},
+{
+"id": "universal-solvent",
+"name": "Universal Solvent",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "vicious-weapon",
+"name": "Vicious Weapon",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "vorpal-sword",
+"name": "Vorpal Sword",
+"kind": "magic",
+"category": "Weapon (Glaive, Greatsword, Longsword, or Scimitar)",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": true,
+"bases": [
+"Glaive",
+"Greatsword",
+"Longsword",
+"Scimitar"
+]
+},
+{
+"id": "wand-of-binding",
+"name": "Wand of Binding",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "wand-of-enemy-detection",
+"name": "Wand of Enemy Detection",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "wand-of-fear",
+"name": "Wand of Fear",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "wand-of-fireballs",
+"name": "Wand of Fireballs",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-lightning-bolts",
+"name": "Wand of Lightning Bolts",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-magic-detection",
+"name": "Wand of Magic Detection",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "wand-of-magic-missiles",
+"name": "Wand of Magic Missiles",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "wand-of-paralysis",
+"name": "Wand of Paralysis",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-polymorph",
+"name": "Wand of Polymorph",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-secrets",
+"name": "Wand of Secrets",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "wand-of-the-war-mage-1",
+"name": "Wand of the War Mage, +1",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-the-war-mage-2",
+"name": "Wand of the War Mage, +2",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-the-war-mage-3",
+"name": "Wand of the War Mage, +3",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-web",
+"name": "Wand of Web",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true,
+"attune_by": [
+"Spellcaster"
+]
+},
+{
+"id": "wand-of-wonder",
+"name": "Wand of Wonder",
+"kind": "magic",
+"category": "Wand",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "weapon-1",
+"name": "Weapon, +1",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "weapon-2",
+"name": "Weapon, +2",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "weapon-3",
+"name": "Weapon, +3",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Very Rare",
+"cost_cp": 4000000,
+"attunement": false,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "weapon-of-warning",
+"name": "Weapon of Warning",
+"kind": "magic",
+"category": "Weapon (Any Simple or Martial)",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true,
+"bases": [
+"Club",
+"Dagger",
+"Greatclub",
+"Handaxe",
+"Javelin",
+"Light Hammer",
+"Mace",
+"Quarterstaff",
+"Sickle",
+"Spear",
+"Dart",
+"Light Crossbow",
+"Shortbow",
+"Sling",
+"Battleaxe",
+"Flail",
+"Glaive",
+"Greataxe",
+"Greatsword",
+"Halberd",
+"Lance",
+"Longsword",
+"Maul",
+"Morningstar",
+"Pike",
+"Rapier",
+"Scimitar",
+"Shortsword",
+"Trident",
+"Warhammer",
+"War Pick",
+"Whip",
+"Blowgun",
+"Hand Crossbow",
+"Heavy Crossbow",
+"Longbow",
+"Musket",
+"Pistol"
+]
+},
+{
+"id": "well-of-many-worlds",
+"name": "Well of Many Worlds",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Legendary",
+"cost_cp": 20000000,
+"attunement": false
+},
+{
+"id": "wind-fan",
+"name": "Wind Fan",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": false
+},
+{
+"id": "winged-boots",
+"name": "Winged Boots",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Uncommon",
+"cost_cp": 40000,
+"attunement": true
+},
+{
+"id": "wings-of-flying",
+"name": "Wings of Flying",
+"kind": "magic",
+"category": "Wondrous Item",
+"rarity": "Rare",
+"cost_cp": 400000,
+"attunement": true
+},
+{
+"id": "spell-scroll-acid-arrow",
+"name": "Spell Scroll (Acid Arrow)",
+"kind": "scroll",
+"spell": "Acid Arrow",
+"level": 2,
+"classes": [
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-acid-splash",
+"name": "Spell Scroll (Acid Splash)",
+"kind": "scroll",
+"spell": "Acid Splash",
+"level": 0,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-aid",
+"name": "Spell Scroll (Aid)",
+"kind": "scroll",
+"spell": "Aid",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-alarm",
+"name": "Spell Scroll (Alarm)",
+"kind": "scroll",
+"spell": "Alarm",
+"level": 1,
+"classes": [
+"Ranger",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-alter-self",
+"name": "Spell Scroll (Alter Self)",
+"kind": "scroll",
+"spell": "Alter Self",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-animal-friendship",
+"name": "Spell Scroll (Animal Friendship)",
+"kind": "scroll",
+"spell": "Animal Friendship",
+"level": 1,
+"classes": [
+"Bard",
+"Druid",
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-animal-messenger",
+"name": "Spell Scroll (Animal Messenger)",
+"kind": "scroll",
+"spell": "Animal Messenger",
+"level": 2,
+"classes": [
+"Bard",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-animal-shapes",
+"name": "Spell Scroll (Animal Shapes)",
+"kind": "scroll",
+"spell": "Animal Shapes",
+"level": 8,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-animate-dead",
+"name": "Spell Scroll (Animate Dead)",
+"kind": "scroll",
+"spell": "Animate Dead",
+"level": 3,
+"classes": [
+"Cleric",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-animate-objects",
+"name": "Spell Scroll (Animate Objects)",
+"kind": "scroll",
+"spell": "Animate Objects",
+"level": 5,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-antilife-shell",
+"name": "Spell Scroll (Antilife Shell)",
+"kind": "scroll",
+"spell": "Antilife Shell",
+"level": 5,
+"classes": [
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-antimagic-field",
+"name": "Spell Scroll (Antimagic Field)",
+"kind": "scroll",
+"spell": "Antimagic Field",
+"level": 8,
+"classes": [
+"Cleric",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-antipathy-sympathy",
+"name": "Spell Scroll (Antipathy/Sympathy)",
+"kind": "scroll",
+"spell": "Antipathy/Sympathy",
+"level": 8,
+"classes": [
+"Bard",
+"Druid",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-arcane-eye",
+"name": "Spell Scroll (Arcane Eye)",
+"kind": "scroll",
+"spell": "Arcane Eye",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-arcane-hand",
+"name": "Spell Scroll (Arcane Hand)",
+"kind": "scroll",
+"spell": "Arcane Hand",
+"level": 5,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-arcane-lock",
+"name": "Spell Scroll (Arcane Lock)",
+"kind": "scroll",
+"spell": "Arcane Lock",
+"level": 2,
+"classes": [
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-arcane-sword",
+"name": "Spell Scroll (Arcane Sword)",
+"kind": "scroll",
+"spell": "Arcane Sword",
+"level": 7,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-arcanist-s-magic-aura",
+"name": "Spell Scroll (Arcanist's Magic Aura)",
+"kind": "scroll",
+"spell": "Arcanist's Magic Aura",
+"level": 2,
+"classes": [
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-astral-projection",
+"name": "Spell Scroll (Astral Projection)",
+"kind": "scroll",
+"spell": "Astral Projection",
+"level": 9,
+"classes": [
+"Cleric",
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-augury",
+"name": "Spell Scroll (Augury)",
+"kind": "scroll",
+"spell": "Augury",
+"level": 2,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-aura-of-life",
+"name": "Spell Scroll (Aura of Life)",
+"kind": "scroll",
+"spell": "Aura of Life",
+"level": 4,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-awaken",
+"name": "Spell Scroll (Awaken)",
+"kind": "scroll",
+"spell": "Awaken",
+"level": 5,
+"classes": [
+"Bard",
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-bane",
+"name": "Spell Scroll (Bane)",
+"kind": "scroll",
+"spell": "Bane",
+"level": 1,
+"classes": [
+"Bard",
+"Cleric",
+"Warlock"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-banishment",
+"name": "Spell Scroll (Banishment)",
+"kind": "scroll",
+"spell": "Banishment",
+"level": 4,
+"classes": [
+"Cleric",
+"Paladin",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-barkskin",
+"name": "Spell Scroll (Barkskin)",
+"kind": "scroll",
+"spell": "Barkskin",
+"level": 2,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-beacon-of-hope",
+"name": "Spell Scroll (Beacon of Hope)",
+"kind": "scroll",
+"spell": "Beacon of Hope",
+"level": 3,
+"classes": [
+"Cleric"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-befuddlement",
+"name": "Spell Scroll (Befuddlement)",
+"kind": "scroll",
+"spell": "Befuddlement",
+"level": 8,
+"classes": [
+"Bard",
+"Druid",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-bestow-curse",
+"name": "Spell Scroll (Bestow Curse)",
+"kind": "scroll",
+"spell": "Bestow Curse",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-black-tentacles",
+"name": "Spell Scroll (Black Tentacles)",
+"kind": "scroll",
+"spell": "Black Tentacles",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-blade-barrier",
+"name": "Spell Scroll (Blade Barrier)",
+"kind": "scroll",
+"spell": "Blade Barrier",
+"level": 6,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-bless",
+"name": "Spell Scroll (Bless)",
+"kind": "scroll",
+"spell": "Bless",
+"level": 1,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-blight",
+"name": "Spell Scroll (Blight)",
+"kind": "scroll",
+"spell": "Blight",
+"level": 4,
+"classes": [
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-blindness-deafness",
+"name": "Spell Scroll (Blindness/Deafness)",
+"kind": "scroll",
+"spell": "Blindness/Deafness",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-blink",
+"name": "Spell Scroll (Blink)",
+"kind": "scroll",
+"spell": "Blink",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-blur",
+"name": "Spell Scroll (Blur)",
+"kind": "scroll",
+"spell": "Blur",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-burning-hands",
+"name": "Spell Scroll (Burning Hands)",
+"kind": "scroll",
+"spell": "Burning Hands",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-call-lightning",
+"name": "Spell Scroll (Call Lightning)",
+"kind": "scroll",
+"spell": "Call Lightning",
+"level": 3,
+"classes": [
+"Druid"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-calm-emotions",
+"name": "Spell Scroll (Calm Emotions)",
+"kind": "scroll",
+"spell": "Calm Emotions",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-chain-lightning",
+"name": "Spell Scroll (Chain Lightning)",
+"kind": "scroll",
+"spell": "Chain Lightning",
+"level": 6,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-charm-monster",
+"name": "Spell Scroll (Charm Monster)",
+"kind": "scroll",
+"spell": "Charm Monster",
+"level": 4,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-charm-person",
+"name": "Spell Scroll (Charm Person)",
+"kind": "scroll",
+"spell": "Charm Person",
+"level": 1,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-chill-touch",
+"name": "Spell Scroll (Chill Touch)",
+"kind": "scroll",
+"spell": "Chill Touch",
+"level": 0,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-chromatic-orb",
+"name": "Spell Scroll (Chromatic Orb)",
+"kind": "scroll",
+"spell": "Chromatic Orb",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-circle-of-death",
+"name": "Spell Scroll (Circle of Death)",
+"kind": "scroll",
+"spell": "Circle of Death",
+"level": 6,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-clairvoyance",
+"name": "Spell Scroll (Clairvoyance)",
+"kind": "scroll",
+"spell": "Clairvoyance",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-clone",
+"name": "Spell Scroll (Clone)",
+"kind": "scroll",
+"spell": "Clone",
+"level": 8,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-cloudkill",
+"name": "Spell Scroll (Cloudkill)",
+"kind": "scroll",
+"spell": "Cloudkill",
+"level": 5,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-color-spray",
+"name": "Spell Scroll (Color Spray)",
+"kind": "scroll",
+"spell": "Color Spray",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-command",
+"name": "Spell Scroll (Command)",
+"kind": "scroll",
+"spell": "Command",
+"level": 1,
+"classes": [
+"Bard",
+"Cleric",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-commune",
+"name": "Spell Scroll (Commune)",
+"kind": "scroll",
+"spell": "Commune",
+"level": 5,
+"classes": [
+"Cleric"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-commune-with-nature",
+"name": "Spell Scroll (Commune with Nature)",
+"kind": "scroll",
+"spell": "Commune with Nature",
+"level": 5,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-comprehend-languages",
+"name": "Spell Scroll (Comprehend Languages)",
+"kind": "scroll",
+"spell": "Comprehend Languages",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-compulsion",
+"name": "Spell Scroll (Compulsion)",
+"kind": "scroll",
+"spell": "Compulsion",
+"level": 4,
+"classes": [
+"Bard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-cone-of-cold",
+"name": "Spell Scroll (Cone of Cold)",
+"kind": "scroll",
+"spell": "Cone of Cold",
+"level": 5,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-confusion",
+"name": "Spell Scroll (Confusion)",
+"kind": "scroll",
+"spell": "Confusion",
+"level": 4,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-animals",
+"name": "Spell Scroll (Conjure Animals)",
+"kind": "scroll",
+"spell": "Conjure Animals",
+"level": 3,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-celestial",
+"name": "Spell Scroll (Conjure Celestial)",
+"kind": "scroll",
+"spell": "Conjure Celestial",
+"level": 7,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-elemental",
+"name": "Spell Scroll (Conjure Elemental)",
+"kind": "scroll",
+"spell": "Conjure Elemental",
+"level": 5,
+"classes": [
+"Druid",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-fey",
+"name": "Spell Scroll (Conjure Fey)",
+"kind": "scroll",
+"spell": "Conjure Fey",
+"level": 6,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-minor-elementals",
+"name": "Spell Scroll (Conjure Minor Elementals)",
+"kind": "scroll",
+"spell": "Conjure Minor Elementals",
+"level": 4,
+"classes": [
+"Druid",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-conjure-woodland-beings",
+"name": "Spell Scroll (Conjure Woodland Beings)",
+"kind": "scroll",
+"spell": "Conjure Woodland Beings",
+"level": 4,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-contact-other-plane",
+"name": "Spell Scroll (Contact Other Plane)",
+"kind": "scroll",
+"spell": "Contact Other Plane",
+"level": 5,
+"classes": [
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-contagion",
+"name": "Spell Scroll (Contagion)",
+"kind": "scroll",
+"spell": "Contagion",
+"level": 5,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-contingency",
+"name": "Spell Scroll (Contingency)",
+"kind": "scroll",
+"spell": "Contingency",
+"level": 6,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-continual-flame",
+"name": "Spell Scroll (Continual Flame)",
+"kind": "scroll",
+"spell": "Continual Flame",
+"level": 2,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-control-water",
+"name": "Spell Scroll (Control Water)",
+"kind": "scroll",
+"spell": "Control Water",
+"level": 4,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-control-weather",
+"name": "Spell Scroll (Control Weather)",
+"kind": "scroll",
+"spell": "Control Weather",
+"level": 8,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-counterspell",
+"name": "Spell Scroll (Counterspell)",
+"kind": "scroll",
+"spell": "Counterspell",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-create-food-and-water",
+"name": "Spell Scroll (Create Food and Water)",
+"kind": "scroll",
+"spell": "Create Food and Water",
+"level": 3,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-create-undead",
+"name": "Spell Scroll (Create Undead)",
+"kind": "scroll",
+"spell": "Create Undead",
+"level": 6,
+"classes": [
+"Cleric",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-create-or-destroy-water",
+"name": "Spell Scroll (Create or Destroy Water)",
+"kind": "scroll",
+"spell": "Create or Destroy Water",
+"level": 1,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-creation",
+"name": "Spell Scroll (Creation)",
+"kind": "scroll",
+"spell": "Creation",
+"level": 5,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-cure-wounds",
+"name": "Spell Scroll (Cure Wounds)",
+"kind": "scroll",
+"spell": "Cure Wounds",
+"level": 1,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dancing-lights",
+"name": "Spell Scroll (Dancing Lights)",
+"kind": "scroll",
+"spell": "Dancing Lights",
+"level": 0,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-darkness",
+"name": "Spell Scroll (Darkness)",
+"kind": "scroll",
+"spell": "Darkness",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-darkvision",
+"name": "Spell Scroll (Darkvision)",
+"kind": "scroll",
+"spell": "Darkvision",
+"level": 2,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-daylight",
+"name": "Spell Scroll (Daylight)",
+"kind": "scroll",
+"spell": "Daylight",
+"level": 3,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger",
+"Sorcerer"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-death-ward",
+"name": "Spell Scroll (Death Ward)",
+"kind": "scroll",
+"spell": "Death Ward",
+"level": 4,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-delayed-blast-fireball",
+"name": "Spell Scroll (Delayed Blast Fireball)",
+"kind": "scroll",
+"spell": "Delayed Blast Fireball",
+"level": 7,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-demiplane",
+"name": "Spell Scroll (Demiplane)",
+"kind": "scroll",
+"spell": "Demiplane",
+"level": 8,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-detect-evil-and-good",
+"name": "Spell Scroll (Detect Evil and Good)",
+"kind": "scroll",
+"spell": "Detect Evil and Good",
+"level": 1,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-detect-magic",
+"name": "Spell Scroll (Detect Magic)",
+"kind": "scroll",
+"spell": "Detect Magic",
+"level": 1,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-detect-poison-and-disease",
+"name": "Spell Scroll (Detect Poison and Disease)",
+"kind": "scroll",
+"spell": "Detect Poison and Disease",
+"level": 1,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-detect-thoughts",
+"name": "Spell Scroll (Detect Thoughts)",
+"kind": "scroll",
+"spell": "Detect Thoughts",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dimension-door",
+"name": "Spell Scroll (Dimension Door)",
+"kind": "scroll",
+"spell": "Dimension Door",
+"level": 4,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-disguise-self",
+"name": "Spell Scroll (Disguise Self)",
+"kind": "scroll",
+"spell": "Disguise Self",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-disintegrate",
+"name": "Spell Scroll (Disintegrate)",
+"kind": "scroll",
+"spell": "Disintegrate",
+"level": 6,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dispel-evil-and-good",
+"name": "Spell Scroll (Dispel Evil and Good)",
+"kind": "scroll",
+"spell": "Dispel Evil and Good",
+"level": 5,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dispel-magic",
+"name": "Spell Scroll (Dispel Magic)",
+"kind": "scroll",
+"spell": "Dispel Magic",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dissonant-whispers",
+"name": "Spell Scroll (Dissonant Whispers)",
+"kind": "scroll",
+"spell": "Dissonant Whispers",
+"level": 1,
+"classes": [
+"Bard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-divination",
+"name": "Spell Scroll (Divination)",
+"kind": "scroll",
+"spell": "Divination",
+"level": 4,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-divine-favor",
+"name": "Spell Scroll (Divine Favor)",
+"kind": "scroll",
+"spell": "Divine Favor",
+"level": 1,
+"classes": [
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-divine-smite",
+"name": "Spell Scroll (Divine Smite)",
+"kind": "scroll",
+"spell": "Divine Smite",
+"level": 1,
+"classes": [
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-divine-word",
+"name": "Spell Scroll (Divine Word)",
+"kind": "scroll",
+"spell": "Divine Word",
+"level": 7,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dominate-beast",
+"name": "Spell Scroll (Dominate Beast)",
+"kind": "scroll",
+"spell": "Dominate Beast",
+"level": 4,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dominate-monster",
+"name": "Spell Scroll (Dominate Monster)",
+"kind": "scroll",
+"spell": "Dominate Monster",
+"level": 8,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dominate-person",
+"name": "Spell Scroll (Dominate Person)",
+"kind": "scroll",
+"spell": "Dominate Person",
+"level": 5,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dragon-s-breath",
+"name": "Spell Scroll (Dragon's Breath)",
+"kind": "scroll",
+"spell": "Dragon's Breath",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-dream",
+"name": "Spell Scroll (Dream)",
+"kind": "scroll",
+"spell": "Dream",
+"level": 5,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-druidcraft",
+"name": "Spell Scroll (Druidcraft)",
+"kind": "scroll",
+"spell": "Druidcraft",
+"level": 0,
+"classes": [
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-earthquake",
+"name": "Spell Scroll (Earthquake)",
+"kind": "scroll",
+"spell": "Earthquake",
+"level": 8,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-eldritch-blast",
+"name": "Spell Scroll (Eldritch Blast)",
+"kind": "scroll",
+"spell": "Eldritch Blast",
+"level": 0,
+"classes": [
+"Warlock"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-elementalism",
+"name": "Spell Scroll (Elementalism)",
+"kind": "scroll",
+"spell": "Elementalism",
+"level": 0,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-enhance-ability",
+"name": "Spell Scroll (Enhance Ability)",
+"kind": "scroll",
+"spell": "Enhance Ability",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-enlarge-reduce",
+"name": "Spell Scroll (Enlarge/Reduce)",
+"kind": "scroll",
+"spell": "Enlarge/Reduce",
+"level": 2,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ensnaring-strike",
+"name": "Spell Scroll (Ensnaring Strike)",
+"kind": "scroll",
+"spell": "Ensnaring Strike",
+"level": 1,
+"classes": [
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-entangle",
+"name": "Spell Scroll (Entangle)",
+"kind": "scroll",
+"spell": "Entangle",
+"level": 1,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-enthrall",
+"name": "Spell Scroll (Enthrall)",
+"kind": "scroll",
+"spell": "Enthrall",
+"level": 2,
+"classes": [
+"Bard",
+"Warlock"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-etherealness",
+"name": "Spell Scroll (Etherealness)",
+"kind": "scroll",
+"spell": "Etherealness",
+"level": 7,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-expeditious-retreat",
+"name": "Spell Scroll (Expeditious Retreat)",
+"kind": "scroll",
+"spell": "Expeditious Retreat",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-eyebite",
+"name": "Spell Scroll (Eyebite)",
+"kind": "scroll",
+"spell": "Eyebite",
+"level": 6,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fabricate",
+"name": "Spell Scroll (Fabricate)",
+"kind": "scroll",
+"spell": "Fabricate",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-faerie-fire",
+"name": "Spell Scroll (Faerie Fire)",
+"kind": "scroll",
+"spell": "Faerie Fire",
+"level": 1,
+"classes": [
+"Bard",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-faithful-hound",
+"name": "Spell Scroll (Faithful Hound)",
+"kind": "scroll",
+"spell": "Faithful Hound",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-false-life",
+"name": "Spell Scroll (False Life)",
+"kind": "scroll",
+"spell": "False Life",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fear",
+"name": "Spell Scroll (Fear)",
+"kind": "scroll",
+"spell": "Fear",
+"level": 3,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-feather-fall",
+"name": "Spell Scroll (Feather Fall)",
+"kind": "scroll",
+"spell": "Feather Fall",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-find-familiar",
+"name": "Spell Scroll (Find Familiar)",
+"kind": "scroll",
+"spell": "Find Familiar",
+"level": 1,
+"classes": [
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-find-steed",
+"name": "Spell Scroll (Find Steed)",
+"kind": "scroll",
+"spell": "Find Steed",
+"level": 2,
+"classes": [
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-find-traps",
+"name": "Spell Scroll (Find Traps)",
+"kind": "scroll",
+"spell": "Find Traps",
+"level": 2,
+"classes": [
+"Cleric",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-find-the-path",
+"name": "Spell Scroll (Find the Path)",
+"kind": "scroll",
+"spell": "Find the Path",
+"level": 6,
+"classes": [
+"Bard",
+"Cleric",
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-finger-of-death",
+"name": "Spell Scroll (Finger of Death)",
+"kind": "scroll",
+"spell": "Finger of Death",
+"level": 7,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fire-bolt",
+"name": "Spell Scroll (Fire Bolt)",
+"kind": "scroll",
+"spell": "Fire Bolt",
+"level": 0,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fire-shield",
+"name": "Spell Scroll (Fire Shield)",
+"kind": "scroll",
+"spell": "Fire Shield",
+"level": 4,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fire-storm",
+"name": "Spell Scroll (Fire Storm)",
+"kind": "scroll",
+"spell": "Fire Storm",
+"level": 7,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fireball",
+"name": "Spell Scroll (Fireball)",
+"kind": "scroll",
+"spell": "Fireball",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-flame-blade",
+"name": "Spell Scroll (Flame Blade)",
+"kind": "scroll",
+"spell": "Flame Blade",
+"level": 2,
+"classes": [
+"Druid",
+"Sorcerer"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-flame-strike",
+"name": "Spell Scroll (Flame Strike)",
+"kind": "scroll",
+"spell": "Flame Strike",
+"level": 5,
+"classes": [
+"Cleric"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-flaming-sphere",
+"name": "Spell Scroll (Flaming Sphere)",
+"kind": "scroll",
+"spell": "Flaming Sphere",
+"level": 2,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-flesh-to-stone",
+"name": "Spell Scroll (Flesh to Stone)",
+"kind": "scroll",
+"spell": "Flesh to Stone",
+"level": 6,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-floating-disk",
+"name": "Spell Scroll (Floating Disk)",
+"kind": "scroll",
+"spell": "Floating Disk",
+"level": 1,
+"classes": [
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fly",
+"name": "Spell Scroll (Fly)",
+"kind": "scroll",
+"spell": "Fly",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-fog-cloud",
+"name": "Spell Scroll (Fog Cloud)",
+"kind": "scroll",
+"spell": "Fog Cloud",
+"level": 1,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-forbiddance",
+"name": "Spell Scroll (Forbiddance)",
+"kind": "scroll",
+"spell": "Forbiddance",
+"level": 6,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-forcecage",
+"name": "Spell Scroll (Forcecage)",
+"kind": "scroll",
+"spell": "Forcecage",
+"level": 7,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-foresight",
+"name": "Spell Scroll (Foresight)",
+"kind": "scroll",
+"spell": "Foresight",
+"level": 9,
+"classes": [
+"Bard",
+"Druid",
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-freedom-of-movement",
+"name": "Spell Scroll (Freedom of Movement)",
+"kind": "scroll",
+"spell": "Freedom of Movement",
+"level": 4,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Ranger"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-freezing-sphere",
+"name": "Spell Scroll (Freezing Sphere)",
+"kind": "scroll",
+"spell": "Freezing Sphere",
+"level": 6,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-gaseous-form",
+"name": "Spell Scroll (Gaseous Form)",
+"kind": "scroll",
+"spell": "Gaseous Form",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-gate",
+"name": "Spell Scroll (Gate)",
+"kind": "scroll",
+"spell": "Gate",
+"level": 9,
+"classes": [
+"Cleric",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-geas",
+"name": "Spell Scroll (Geas)",
+"kind": "scroll",
+"spell": "Geas",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-gentle-repose",
+"name": "Spell Scroll (Gentle Repose)",
+"kind": "scroll",
+"spell": "Gentle Repose",
+"level": 2,
+"classes": [
+"Cleric",
+"Paladin",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-giant-insect",
+"name": "Spell Scroll (Giant Insect)",
+"kind": "scroll",
+"spell": "Giant Insect",
+"level": 4,
+"classes": [
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-glibness",
+"name": "Spell Scroll (Glibness)",
+"kind": "scroll",
+"spell": "Glibness",
+"level": 8,
+"classes": [
+"Bard",
+"Warlock"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-globe-of-invulnerability",
+"name": "Spell Scroll (Globe of Invulnerability)",
+"kind": "scroll",
+"spell": "Globe of Invulnerability",
+"level": 6,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-glyph-of-warding",
+"name": "Spell Scroll (Glyph of Warding)",
+"kind": "scroll",
+"spell": "Glyph of Warding",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-goodberry",
+"name": "Spell Scroll (Goodberry)",
+"kind": "scroll",
+"spell": "Goodberry",
+"level": 1,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-grease",
+"name": "Spell Scroll (Grease)",
+"kind": "scroll",
+"spell": "Grease",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-greater-invisibility",
+"name": "Spell Scroll (Greater Invisibility)",
+"kind": "scroll",
+"spell": "Greater Invisibility",
+"level": 4,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-greater-restoration",
+"name": "Spell Scroll (Greater Restoration)",
+"kind": "scroll",
+"spell": "Greater Restoration",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-guardian-of-faith",
+"name": "Spell Scroll (Guardian of Faith)",
+"kind": "scroll",
+"spell": "Guardian of Faith",
+"level": 4,
+"classes": [
+"Cleric"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-guards-and-wards",
+"name": "Spell Scroll (Guards and Wards)",
+"kind": "scroll",
+"spell": "Guards and Wards",
+"level": 6,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-guidance",
+"name": "Spell Scroll (Guidance)",
+"kind": "scroll",
+"spell": "Guidance",
+"level": 0,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-guiding-bolt",
+"name": "Spell Scroll (Guiding Bolt)",
+"kind": "scroll",
+"spell": "Guiding Bolt",
+"level": 1,
+"classes": [
+"Cleric"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-gust-of-wind",
+"name": "Spell Scroll (Gust of Wind)",
+"kind": "scroll",
+"spell": "Gust of Wind",
+"level": 2,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hallow",
+"name": "Spell Scroll (Hallow)",
+"kind": "scroll",
+"spell": "Hallow",
+"level": 5,
+"classes": [
+"Cleric"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hallucinatory-terrain",
+"name": "Spell Scroll (Hallucinatory Terrain)",
+"kind": "scroll",
+"spell": "Hallucinatory Terrain",
+"level": 4,
+"classes": [
+"Bard",
+"Druid",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-harm",
+"name": "Spell Scroll (Harm)",
+"kind": "scroll",
+"spell": "Harm",
+"level": 6,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-haste",
+"name": "Spell Scroll (Haste)",
+"kind": "scroll",
+"spell": "Haste",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-heal",
+"name": "Spell Scroll (Heal)",
+"kind": "scroll",
+"spell": "Heal",
+"level": 6,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-healing-word",
+"name": "Spell Scroll (Healing Word)",
+"kind": "scroll",
+"spell": "Healing Word",
+"level": 1,
+"classes": [
+"Bard",
+"Cleric",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-heat-metal",
+"name": "Spell Scroll (Heat Metal)",
+"kind": "scroll",
+"spell": "Heat Metal",
+"level": 2,
+"classes": [
+"Bard",
+"Druid"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hellish-rebuke",
+"name": "Spell Scroll (Hellish Rebuke)",
+"kind": "scroll",
+"spell": "Hellish Rebuke",
+"level": 1,
+"classes": [
+"Warlock"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-heroes-feast",
+"name": "Spell Scroll (Heroes' Feast)",
+"kind": "scroll",
+"spell": "Heroes' Feast",
+"level": 6,
+"classes": [
+"Bard",
+"Cleric",
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-heroism",
+"name": "Spell Scroll (Heroism)",
+"kind": "scroll",
+"spell": "Heroism",
+"level": 1,
+"classes": [
+"Bard",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hex",
+"name": "Spell Scroll (Hex)",
+"kind": "scroll",
+"spell": "Hex",
+"level": 1,
+"classes": [
+"Warlock"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hideous-laughter",
+"name": "Spell Scroll (Hideous Laughter)",
+"kind": "scroll",
+"spell": "Hideous Laughter",
+"level": 1,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hold-monster",
+"name": "Spell Scroll (Hold Monster)",
+"kind": "scroll",
+"spell": "Hold Monster",
+"level": 5,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hold-person",
+"name": "Spell Scroll (Hold Person)",
+"kind": "scroll",
+"spell": "Hold Person",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-holy-aura",
+"name": "Spell Scroll (Holy Aura)",
+"kind": "scroll",
+"spell": "Holy Aura",
+"level": 8,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hunter-s-mark",
+"name": "Spell Scroll (Hunter's Mark)",
+"kind": "scroll",
+"spell": "Hunter's Mark",
+"level": 1,
+"classes": [
+"Ranger"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-hypnotic-pattern",
+"name": "Spell Scroll (Hypnotic Pattern)",
+"kind": "scroll",
+"spell": "Hypnotic Pattern",
+"level": 3,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ice-knife",
+"name": "Spell Scroll (Ice Knife)",
+"kind": "scroll",
+"spell": "Ice Knife",
+"level": 1,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ice-storm",
+"name": "Spell Scroll (Ice Storm)",
+"kind": "scroll",
+"spell": "Ice Storm",
+"level": 4,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-identify",
+"name": "Spell Scroll (Identify)",
+"kind": "scroll",
+"spell": "Identify",
+"level": 1,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-illusory-script",
+"name": "Spell Scroll (Illusory Script)",
+"kind": "scroll",
+"spell": "Illusory Script",
+"level": 1,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-imprisonment",
+"name": "Spell Scroll (Imprisonment)",
+"kind": "scroll",
+"spell": "Imprisonment",
+"level": 9,
+"classes": [
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-incendiary-cloud",
+"name": "Spell Scroll (Incendiary Cloud)",
+"kind": "scroll",
+"spell": "Incendiary Cloud",
+"level": 8,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-inflict-wounds",
+"name": "Spell Scroll (Inflict Wounds)",
+"kind": "scroll",
+"spell": "Inflict Wounds",
+"level": 1,
+"classes": [
+"Cleric"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-insect-plague",
+"name": "Spell Scroll (Insect Plague)",
+"kind": "scroll",
+"spell": "Insect Plague",
+"level": 5,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-instant-summons",
+"name": "Spell Scroll (Instant Summons)",
+"kind": "scroll",
+"spell": "Instant Summons",
+"level": 6,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-invisibility",
+"name": "Spell Scroll (Invisibility)",
+"kind": "scroll",
+"spell": "Invisibility",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-irresistible-dance",
+"name": "Spell Scroll (Irresistible Dance)",
+"kind": "scroll",
+"spell": "Irresistible Dance",
+"level": 6,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-jump",
+"name": "Spell Scroll (Jump)",
+"kind": "scroll",
+"spell": "Jump",
+"level": 1,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-knock",
+"name": "Spell Scroll (Knock)",
+"kind": "scroll",
+"spell": "Knock",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-legend-lore",
+"name": "Spell Scroll (Legend Lore)",
+"kind": "scroll",
+"spell": "Legend Lore",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-lesser-restoration",
+"name": "Spell Scroll (Lesser Restoration)",
+"kind": "scroll",
+"spell": "Lesser Restoration",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-levitate",
+"name": "Spell Scroll (Levitate)",
+"kind": "scroll",
+"spell": "Levitate",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-light",
+"name": "Spell Scroll (Light)",
+"kind": "scroll",
+"spell": "Light",
+"level": 0,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-lightning-bolt",
+"name": "Spell Scroll (Lightning Bolt)",
+"kind": "scroll",
+"spell": "Lightning Bolt",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-locate-animals-or-plants",
+"name": "Spell Scroll (Locate Animals or Plants)",
+"kind": "scroll",
+"spell": "Locate Animals or Plants",
+"level": 2,
+"classes": [
+"Bard",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-locate-creature",
+"name": "Spell Scroll (Locate Creature)",
+"kind": "scroll",
+"spell": "Locate Creature",
+"level": 4,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-locate-object",
+"name": "Spell Scroll (Locate Object)",
+"kind": "scroll",
+"spell": "Locate Object",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-longstrider",
+"name": "Spell Scroll (Longstrider)",
+"kind": "scroll",
+"spell": "Longstrider",
+"level": 1,
+"classes": [
+"Bard",
+"Druid",
+"Ranger",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mage-armor",
+"name": "Spell Scroll (Mage Armor)",
+"kind": "scroll",
+"spell": "Mage Armor",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mage-hand",
+"name": "Spell Scroll (Mage Hand)",
+"kind": "scroll",
+"spell": "Mage Hand",
+"level": 0,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magic-circle",
+"name": "Spell Scroll (Magic Circle)",
+"kind": "scroll",
+"spell": "Magic Circle",
+"level": 3,
+"classes": [
+"Cleric",
+"Paladin",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magic-jar",
+"name": "Spell Scroll (Magic Jar)",
+"kind": "scroll",
+"spell": "Magic Jar",
+"level": 6,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magic-missile",
+"name": "Spell Scroll (Magic Missile)",
+"kind": "scroll",
+"spell": "Magic Missile",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magic-mouth",
+"name": "Spell Scroll (Magic Mouth)",
+"kind": "scroll",
+"spell": "Magic Mouth",
+"level": 2,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magic-weapon",
+"name": "Spell Scroll (Magic Weapon)",
+"kind": "scroll",
+"spell": "Magic Weapon",
+"level": 2,
+"classes": [
+"Paladin",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-magnificent-mansion",
+"name": "Spell Scroll (Magnificent Mansion)",
+"kind": "scroll",
+"spell": "Magnificent Mansion",
+"level": 7,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-major-image",
+"name": "Spell Scroll (Major Image)",
+"kind": "scroll",
+"spell": "Major Image",
+"level": 3,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mass-cure-wounds",
+"name": "Spell Scroll (Mass Cure Wounds)",
+"kind": "scroll",
+"spell": "Mass Cure Wounds",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mass-heal",
+"name": "Spell Scroll (Mass Heal)",
+"kind": "scroll",
+"spell": "Mass Heal",
+"level": 9,
+"classes": [
+"Cleric"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mass-healing-word",
+"name": "Spell Scroll (Mass Healing Word)",
+"kind": "scroll",
+"spell": "Mass Healing Word",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mass-suggestion",
+"name": "Spell Scroll (Mass Suggestion)",
+"kind": "scroll",
+"spell": "Mass Suggestion",
+"level": 6,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-maze",
+"name": "Spell Scroll (Maze)",
+"kind": "scroll",
+"spell": "Maze",
+"level": 8,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-meld-into-stone",
+"name": "Spell Scroll (Meld into Stone)",
+"kind": "scroll",
+"spell": "Meld into Stone",
+"level": 3,
+"classes": [
+"Cleric",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mending",
+"name": "Spell Scroll (Mending)",
+"kind": "scroll",
+"spell": "Mending",
+"level": 0,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-message",
+"name": "Spell Scroll (Message)",
+"kind": "scroll",
+"spell": "Message",
+"level": 0,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-meteor-swarm",
+"name": "Spell Scroll (Meteor Swarm)",
+"kind": "scroll",
+"spell": "Meteor Swarm",
+"level": 9,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mind-blank",
+"name": "Spell Scroll (Mind Blank)",
+"kind": "scroll",
+"spell": "Mind Blank",
+"level": 8,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mind-spike",
+"name": "Spell Scroll (Mind Spike)",
+"kind": "scroll",
+"spell": "Mind Spike",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-minor-illusion",
+"name": "Spell Scroll (Minor Illusion)",
+"kind": "scroll",
+"spell": "Minor Illusion",
+"level": 0,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mirage-arcane",
+"name": "Spell Scroll (Mirage Arcane)",
+"kind": "scroll",
+"spell": "Mirage Arcane",
+"level": 7,
+"classes": [
+"Bard",
+"Druid",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mirror-image",
+"name": "Spell Scroll (Mirror Image)",
+"kind": "scroll",
+"spell": "Mirror Image",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-mislead",
+"name": "Spell Scroll (Mislead)",
+"kind": "scroll",
+"spell": "Mislead",
+"level": 5,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-misty-step",
+"name": "Spell Scroll (Misty Step)",
+"kind": "scroll",
+"spell": "Misty Step",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-modify-memory",
+"name": "Spell Scroll (Modify Memory)",
+"kind": "scroll",
+"spell": "Modify Memory",
+"level": 5,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-moonbeam",
+"name": "Spell Scroll (Moonbeam)",
+"kind": "scroll",
+"spell": "Moonbeam",
+"level": 2,
+"classes": [
+"Druid"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-move-earth",
+"name": "Spell Scroll (Move Earth)",
+"kind": "scroll",
+"spell": "Move Earth",
+"level": 6,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-nondetection",
+"name": "Spell Scroll (Nondetection)",
+"kind": "scroll",
+"spell": "Nondetection",
+"level": 3,
+"classes": [
+"Bard",
+"Ranger",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-pass-without-trace",
+"name": "Spell Scroll (Pass without Trace)",
+"kind": "scroll",
+"spell": "Pass without Trace",
+"level": 2,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-passwall",
+"name": "Spell Scroll (Passwall)",
+"kind": "scroll",
+"spell": "Passwall",
+"level": 5,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-phantasmal-force",
+"name": "Spell Scroll (Phantasmal Force)",
+"kind": "scroll",
+"spell": "Phantasmal Force",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-phantasmal-killer",
+"name": "Spell Scroll (Phantasmal Killer)",
+"kind": "scroll",
+"spell": "Phantasmal Killer",
+"level": 4,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-phantom-steed",
+"name": "Spell Scroll (Phantom Steed)",
+"kind": "scroll",
+"spell": "Phantom Steed",
+"level": 3,
+"classes": [
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-planar-ally",
+"name": "Spell Scroll (Planar Ally)",
+"kind": "scroll",
+"spell": "Planar Ally",
+"level": 6,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-planar-binding",
+"name": "Spell Scroll (Planar Binding)",
+"kind": "scroll",
+"spell": "Planar Binding",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-plane-shift",
+"name": "Spell Scroll (Plane Shift)",
+"kind": "scroll",
+"spell": "Plane Shift",
+"level": 7,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-plant-growth",
+"name": "Spell Scroll (Plant Growth)",
+"kind": "scroll",
+"spell": "Plant Growth",
+"level": 3,
+"classes": [
+"Bard",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-poison-spray",
+"name": "Spell Scroll (Poison Spray)",
+"kind": "scroll",
+"spell": "Poison Spray",
+"level": 0,
+"classes": [
+"Druid",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-polymorph",
+"name": "Spell Scroll (Polymorph)",
+"kind": "scroll",
+"spell": "Polymorph",
+"level": 4,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-power-word-heal",
+"name": "Spell Scroll (Power Word Heal)",
+"kind": "scroll",
+"spell": "Power Word Heal",
+"level": 9,
+"classes": [
+"Bard",
+"Cleric"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-power-word-kill",
+"name": "Spell Scroll (Power Word Kill)",
+"kind": "scroll",
+"spell": "Power Word Kill",
+"level": 9,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-power-word-stun",
+"name": "Spell Scroll (Power Word Stun)",
+"kind": "scroll",
+"spell": "Power Word Stun",
+"level": 8,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-prayer-of-healing",
+"name": "Spell Scroll (Prayer of Healing)",
+"kind": "scroll",
+"spell": "Prayer of Healing",
+"level": 2,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-prestidigitation",
+"name": "Spell Scroll (Prestidigitation)",
+"kind": "scroll",
+"spell": "Prestidigitation",
+"level": 0,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-prismatic-spray",
+"name": "Spell Scroll (Prismatic Spray)",
+"kind": "scroll",
+"spell": "Prismatic Spray",
+"level": 7,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-prismatic-wall",
+"name": "Spell Scroll (Prismatic Wall)",
+"kind": "scroll",
+"spell": "Prismatic Wall",
+"level": 9,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-private-sanctum",
+"name": "Spell Scroll (Private Sanctum)",
+"kind": "scroll",
+"spell": "Private Sanctum",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-produce-flame",
+"name": "Spell Scroll (Produce Flame)",
+"kind": "scroll",
+"spell": "Produce Flame",
+"level": 0,
+"classes": [
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-programmed-illusion",
+"name": "Spell Scroll (Programmed Illusion)",
+"kind": "scroll",
+"spell": "Programmed Illusion",
+"level": 6,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-project-image",
+"name": "Spell Scroll (Project Image)",
+"kind": "scroll",
+"spell": "Project Image",
+"level": 7,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-protection-from-energy",
+"name": "Spell Scroll (Protection from Energy)",
+"kind": "scroll",
+"spell": "Protection from Energy",
+"level": 3,
+"classes": [
+"Cleric",
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-protection-from-evil-and-good",
+"name": "Spell Scroll (Protection from Evil and Good)",
+"kind": "scroll",
+"spell": "Protection from Evil and Good",
+"level": 1,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-protection-from-poison",
+"name": "Spell Scroll (Protection from Poison)",
+"kind": "scroll",
+"spell": "Protection from Poison",
+"level": 2,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-purify-food-and-drink",
+"name": "Spell Scroll (Purify Food and Drink)",
+"kind": "scroll",
+"spell": "Purify Food and Drink",
+"level": 1,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-raise-dead",
+"name": "Spell Scroll (Raise Dead)",
+"kind": "scroll",
+"spell": "Raise Dead",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Paladin"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ray-of-enfeeblement",
+"name": "Spell Scroll (Ray of Enfeeblement)",
+"kind": "scroll",
+"spell": "Ray of Enfeeblement",
+"level": 2,
+"classes": [
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ray-of-frost",
+"name": "Spell Scroll (Ray of Frost)",
+"kind": "scroll",
+"spell": "Ray of Frost",
+"level": 0,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-ray-of-sickness",
+"name": "Spell Scroll (Ray of Sickness)",
+"kind": "scroll",
+"spell": "Ray of Sickness",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-regenerate",
+"name": "Spell Scroll (Regenerate)",
+"kind": "scroll",
+"spell": "Regenerate",
+"level": 7,
+"classes": [
+"Bard",
+"Cleric",
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-reincarnate",
+"name": "Spell Scroll (Reincarnate)",
+"kind": "scroll",
+"spell": "Reincarnate",
+"level": 5,
+"classes": [
+"Druid"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-remove-curse",
+"name": "Spell Scroll (Remove Curse)",
+"kind": "scroll",
+"spell": "Remove Curse",
+"level": 3,
+"classes": [
+"Cleric",
+"Paladin",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-resilient-sphere",
+"name": "Spell Scroll (Resilient Sphere)",
+"kind": "scroll",
+"spell": "Resilient Sphere",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-resistance",
+"name": "Spell Scroll (Resistance)",
+"kind": "scroll",
+"spell": "Resistance",
+"level": 0,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-resurrection",
+"name": "Spell Scroll (Resurrection)",
+"kind": "scroll",
+"spell": "Resurrection",
+"level": 7,
+"classes": [
+"Bard",
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-reverse-gravity",
+"name": "Spell Scroll (Reverse Gravity)",
+"kind": "scroll",
+"spell": "Reverse Gravity",
+"level": 7,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-revivify",
+"name": "Spell Scroll (Revivify)",
+"kind": "scroll",
+"spell": "Revivify",
+"level": 3,
+"classes": [
+"Cleric",
+"Druid",
+"Paladin",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-rope-trick",
+"name": "Spell Scroll (Rope Trick)",
+"kind": "scroll",
+"spell": "Rope Trick",
+"level": 2,
+"classes": [
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sacred-flame",
+"name": "Spell Scroll (Sacred Flame)",
+"kind": "scroll",
+"spell": "Sacred Flame",
+"level": 0,
+"classes": [
+"Cleric"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sanctuary",
+"name": "Spell Scroll (Sanctuary)",
+"kind": "scroll",
+"spell": "Sanctuary",
+"level": 1,
+"classes": [
+"Cleric"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-scorching-ray",
+"name": "Spell Scroll (Scorching Ray)",
+"kind": "scroll",
+"spell": "Scorching Ray",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-scrying",
+"name": "Spell Scroll (Scrying)",
+"kind": "scroll",
+"spell": "Scrying",
+"level": 5,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-searing-smite",
+"name": "Spell Scroll (Searing Smite)",
+"kind": "scroll",
+"spell": "Searing Smite",
+"level": 1,
+"classes": [
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-secret-chest",
+"name": "Spell Scroll (Secret Chest)",
+"kind": "scroll",
+"spell": "Secret Chest",
+"level": 4,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-see-invisibility",
+"name": "Spell Scroll (See Invisibility)",
+"kind": "scroll",
+"spell": "See Invisibility",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-seeming",
+"name": "Spell Scroll (Seeming)",
+"kind": "scroll",
+"spell": "Seeming",
+"level": 5,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sending",
+"name": "Spell Scroll (Sending)",
+"kind": "scroll",
+"spell": "Sending",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sequester",
+"name": "Spell Scroll (Sequester)",
+"kind": "scroll",
+"spell": "Sequester",
+"level": 7,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shapechange",
+"name": "Spell Scroll (Shapechange)",
+"kind": "scroll",
+"spell": "Shapechange",
+"level": 9,
+"classes": [
+"Druid",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shatter",
+"name": "Spell Scroll (Shatter)",
+"kind": "scroll",
+"spell": "Shatter",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shield",
+"name": "Spell Scroll (Shield)",
+"kind": "scroll",
+"spell": "Shield",
+"level": 1,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shield-of-faith",
+"name": "Spell Scroll (Shield of Faith)",
+"kind": "scroll",
+"spell": "Shield of Faith",
+"level": 1,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shillelagh",
+"name": "Spell Scroll (Shillelagh)",
+"kind": "scroll",
+"spell": "Shillelagh",
+"level": 0,
+"classes": [
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shining-smite",
+"name": "Spell Scroll (Shining Smite)",
+"kind": "scroll",
+"spell": "Shining Smite",
+"level": 2,
+"classes": [
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-shocking-grasp",
+"name": "Spell Scroll (Shocking Grasp)",
+"kind": "scroll",
+"spell": "Shocking Grasp",
+"level": 0,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-silence",
+"name": "Spell Scroll (Silence)",
+"kind": "scroll",
+"spell": "Silence",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-silent-image",
+"name": "Spell Scroll (Silent Image)",
+"kind": "scroll",
+"spell": "Silent Image",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-simulacrum",
+"name": "Spell Scroll (Simulacrum)",
+"kind": "scroll",
+"spell": "Simulacrum",
+"level": 7,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sleep",
+"name": "Spell Scroll (Sleep)",
+"kind": "scroll",
+"spell": "Sleep",
+"level": 1,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sleet-storm",
+"name": "Spell Scroll (Sleet Storm)",
+"kind": "scroll",
+"spell": "Sleet Storm",
+"level": 3,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-slow",
+"name": "Spell Scroll (Slow)",
+"kind": "scroll",
+"spell": "Slow",
+"level": 3,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sorcerous-burst",
+"name": "Spell Scroll (Sorcerous Burst)",
+"kind": "scroll",
+"spell": "Sorcerous Burst",
+"level": 0,
+"classes": [
+"Sorcerer"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-spare-the-dying",
+"name": "Spell Scroll (Spare the Dying)",
+"kind": "scroll",
+"spell": "Spare the Dying",
+"level": 0,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-speak-with-animals",
+"name": "Spell Scroll (Speak with Animals)",
+"kind": "scroll",
+"spell": "Speak with Animals",
+"level": 1,
+"classes": [
+"Bard",
+"Druid",
+"Ranger",
+"Warlock"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-speak-with-dead",
+"name": "Spell Scroll (Speak with Dead)",
+"kind": "scroll",
+"spell": "Speak with Dead",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-speak-with-plants",
+"name": "Spell Scroll (Speak with Plants)",
+"kind": "scroll",
+"spell": "Speak with Plants",
+"level": 3,
+"classes": [
+"Bard",
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-spider-climb",
+"name": "Spell Scroll (Spider Climb)",
+"kind": "scroll",
+"spell": "Spider Climb",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-spike-growth",
+"name": "Spell Scroll (Spike Growth)",
+"kind": "scroll",
+"spell": "Spike Growth",
+"level": 2,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-spirit-guardians",
+"name": "Spell Scroll (Spirit Guardians)",
+"kind": "scroll",
+"spell": "Spirit Guardians",
+"level": 3,
+"classes": [
+"Cleric"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-spiritual-weapon",
+"name": "Spell Scroll (Spiritual Weapon)",
+"kind": "scroll",
+"spell": "Spiritual Weapon",
+"level": 2,
+"classes": [
+"Cleric"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-starry-wisp",
+"name": "Spell Scroll (Starry Wisp)",
+"kind": "scroll",
+"spell": "Starry Wisp",
+"level": 0,
+"classes": [
+"Bard",
+"Druid"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-stinking-cloud",
+"name": "Spell Scroll (Stinking Cloud)",
+"kind": "scroll",
+"spell": "Stinking Cloud",
+"level": 3,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-stone-shape",
+"name": "Spell Scroll (Stone Shape)",
+"kind": "scroll",
+"spell": "Stone Shape",
+"level": 4,
+"classes": [
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-stoneskin",
+"name": "Spell Scroll (Stoneskin)",
+"kind": "scroll",
+"spell": "Stoneskin",
+"level": 4,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-storm-of-vengeance",
+"name": "Spell Scroll (Storm of Vengeance)",
+"kind": "scroll",
+"spell": "Storm of Vengeance",
+"level": 9,
+"classes": [
+"Druid"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-suggestion",
+"name": "Spell Scroll (Suggestion)",
+"kind": "scroll",
+"spell": "Suggestion",
+"level": 2,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-summon-dragon",
+"name": "Spell Scroll (Summon Dragon)",
+"kind": "scroll",
+"spell": "Summon Dragon",
+"level": 5,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sunbeam",
+"name": "Spell Scroll (Sunbeam)",
+"kind": "scroll",
+"spell": "Sunbeam",
+"level": 6,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-sunburst",
+"name": "Spell Scroll (Sunburst)",
+"kind": "scroll",
+"spell": "Sunburst",
+"level": 8,
+"classes": [
+"Cleric",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-symbol",
+"name": "Spell Scroll (Symbol)",
+"kind": "scroll",
+"spell": "Symbol",
+"level": 7,
+"classes": [
+"Bard",
+"Cleric",
+"Druid",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-telekinesis",
+"name": "Spell Scroll (Telekinesis)",
+"kind": "scroll",
+"spell": "Telekinesis",
+"level": 5,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-telepathic-bond",
+"name": "Spell Scroll (Telepathic Bond)",
+"kind": "scroll",
+"spell": "Telepathic Bond",
+"level": 5,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-teleport",
+"name": "Spell Scroll (Teleport)",
+"kind": "scroll",
+"spell": "Teleport",
+"level": 7,
+"classes": [
+"Bard",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2500000,
+"consumable": true
+},
+{
+"id": "spell-scroll-teleportation-circle",
+"name": "Spell Scroll (Teleportation Circle)",
+"kind": "scroll",
+"spell": "Teleportation Circle",
+"level": 5,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-thaumaturgy",
+"name": "Spell Scroll (Thaumaturgy)",
+"kind": "scroll",
+"spell": "Thaumaturgy",
+"level": 0,
+"classes": [
+"Cleric"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-thunderwave",
+"name": "Spell Scroll (Thunderwave)",
+"kind": "scroll",
+"spell": "Thunderwave",
+"level": 1,
+"classes": [
+"Bard",
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-time-stop",
+"name": "Spell Scroll (Time Stop)",
+"kind": "scroll",
+"spell": "Time Stop",
+"level": 9,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-tiny-hut",
+"name": "Spell Scroll (Tiny Hut)",
+"kind": "scroll",
+"spell": "Tiny Hut",
+"level": 3,
+"classes": [
+"Bard",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-tongues",
+"name": "Spell Scroll (Tongues)",
+"kind": "scroll",
+"spell": "Tongues",
+"level": 3,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-transport-via-plants",
+"name": "Spell Scroll (Transport via Plants)",
+"kind": "scroll",
+"spell": "Transport via Plants",
+"level": 6,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-tree-stride",
+"name": "Spell Scroll (Tree Stride)",
+"kind": "scroll",
+"spell": "Tree Stride",
+"level": 5,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-true-polymorph",
+"name": "Spell Scroll (True Polymorph)",
+"kind": "scroll",
+"spell": "True Polymorph",
+"level": 9,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-true-resurrection",
+"name": "Spell Scroll (True Resurrection)",
+"kind": "scroll",
+"spell": "True Resurrection",
+"level": 9,
+"classes": [
+"Cleric",
+"Druid"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-true-seeing",
+"name": "Spell Scroll (True Seeing)",
+"kind": "scroll",
+"spell": "True Seeing",
+"level": 6,
+"classes": [
+"Bard",
+"Cleric",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-true-strike",
+"name": "Spell Scroll (True Strike)",
+"kind": "scroll",
+"spell": "True Strike",
+"level": 0,
+"classes": [
+"Bard",
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-tsunami",
+"name": "Spell Scroll (Tsunami)",
+"kind": "scroll",
+"spell": "Tsunami",
+"level": 8,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 3000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-unseen-servant",
+"name": "Spell Scroll (Unseen Servant)",
+"kind": "scroll",
+"spell": "Unseen Servant",
+"level": 1,
+"classes": [
+"Bard",
+"Warlock",
+"Wizard"
+],
+"rarity": "Common",
+"cost_cp": 5000,
+"consumable": true
+},
+{
+"id": "spell-scroll-vampiric-touch",
+"name": "Spell Scroll (Vampiric Touch)",
+"kind": "scroll",
+"spell": "Vampiric Touch",
+"level": 3,
+"classes": [
+"Sorcerer",
+"Warlock",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-vicious-mockery",
+"name": "Spell Scroll (Vicious Mockery)",
+"kind": "scroll",
+"spell": "Vicious Mockery",
+"level": 0,
+"classes": [
+"Bard"
+],
+"rarity": "Common",
+"cost_cp": 3000,
+"consumable": true
+},
+{
+"id": "spell-scroll-vitriolic-sphere",
+"name": "Spell Scroll (Vitriolic Sphere)",
+"kind": "scroll",
+"spell": "Vitriolic Sphere",
+"level": 4,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wall-of-fire",
+"name": "Spell Scroll (Wall of Fire)",
+"kind": "scroll",
+"spell": "Wall of Fire",
+"level": 4,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 200000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wall-of-force",
+"name": "Spell Scroll (Wall of Force)",
+"kind": "scroll",
+"spell": "Wall of Force",
+"level": 5,
+"classes": [
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wall-of-ice",
+"name": "Spell Scroll (Wall of Ice)",
+"kind": "scroll",
+"spell": "Wall of Ice",
+"level": 6,
+"classes": [
+"Wizard"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wall-of-stone",
+"name": "Spell Scroll (Wall of Stone)",
+"kind": "scroll",
+"spell": "Wall of Stone",
+"level": 5,
+"classes": [
+"Druid",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Rare",
+"cost_cp": 300000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wall-of-thorns",
+"name": "Spell Scroll (Wall of Thorns)",
+"kind": "scroll",
+"spell": "Wall of Thorns",
+"level": 6,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-warding-bond",
+"name": "Spell Scroll (Warding Bond)",
+"kind": "scroll",
+"spell": "Warding Bond",
+"level": 2,
+"classes": [
+"Cleric",
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-water-breathing",
+"name": "Spell Scroll (Water Breathing)",
+"kind": "scroll",
+"spell": "Water Breathing",
+"level": 3,
+"classes": [
+"Druid",
+"Ranger",
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-water-walk",
+"name": "Spell Scroll (Water Walk)",
+"kind": "scroll",
+"spell": "Water Walk",
+"level": 3,
+"classes": [
+"Cleric",
+"Druid",
+"Ranger",
+"Sorcerer"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-web",
+"name": "Spell Scroll (Web)",
+"kind": "scroll",
+"spell": "Web",
+"level": 2,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+},
+{
+"id": "spell-scroll-weird",
+"name": "Spell Scroll (Weird)",
+"kind": "scroll",
+"spell": "Weird",
+"level": 9,
+"classes": [
+"Warlock",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wind-walk",
+"name": "Spell Scroll (Wind Walk)",
+"kind": "scroll",
+"spell": "Wind Walk",
+"level": 6,
+"classes": [
+"Druid"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wind-wall",
+"name": "Spell Scroll (Wind Wall)",
+"kind": "scroll",
+"spell": "Wind Wall",
+"level": 3,
+"classes": [
+"Druid",
+"Ranger"
+],
+"rarity": "Uncommon",
+"cost_cp": 30000,
+"consumable": true
+},
+{
+"id": "spell-scroll-wish",
+"name": "Spell Scroll (Wish)",
+"kind": "scroll",
+"spell": "Wish",
+"level": 9,
+"classes": [
+"Sorcerer",
+"Wizard"
+],
+"rarity": "Legendary",
+"cost_cp": 10000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-word-of-recall",
+"name": "Spell Scroll (Word of Recall)",
+"kind": "scroll",
+"spell": "Word of Recall",
+"level": 6,
+"classes": [
+"Cleric"
+],
+"rarity": "Very Rare",
+"cost_cp": 2000000,
+"consumable": true
+},
+{
+"id": "spell-scroll-zone-of-truth",
+"name": "Spell Scroll (Zone of Truth)",
+"kind": "scroll",
+"spell": "Zone of Truth",
+"level": 2,
+"classes": [
+"Bard",
+"Cleric",
+"Paladin"
+],
+"rarity": "Uncommon",
+"cost_cp": 20000,
+"consumable": true
+}
+]
+}

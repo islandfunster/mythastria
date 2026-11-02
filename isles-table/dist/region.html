@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Region Map</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+/* REGION-01 (GM 2026-10-20): the regional hex map, 2D only.
+   REGION-FRAME (GM 2026-10-24): every control borders the map (top bar, side rails, bottom bar) and the page fits the window. */
+html,body{height:100%}
+body{display:flex;flex-direction:column;overflow:hidden}
+body>.site-header{flex:none}
+main{flex:1;min-height:0;display:grid;grid-template-columns:17rem minmax(0,1fr) 18rem;grid-template-rows:auto minmax(0,1fr) auto;
+ grid-template-areas:"top top top" "left map right" "bottom bottom bottom";padding:8px 12px 10px}
+main>.bar,main>.rail{background:var(--panel);border:1px solid var(--line);box-shadow:inset 0 1px 0 #ffffff12,inset 0 -1px 0 #0008}
+#top-bar{grid-area:top;border-radius:6px 6px 0 0;border-bottom-color:var(--brass);padding:5px 10px;display:grid;gap:4px}
+#left-rail{grid-area:left;border-top:0;border-right-color:var(--brass)}
+#right-rail{grid-area:right;border-top:0;border-left-color:var(--brass);display:flex;flex-direction:column}
+#bottom-bar{grid-area:bottom;border-radius:0 0 6px 6px;border-top-color:var(--brass);padding:4px 10px;display:flex;gap:14px;align-items:center;min-height:26px}
+.rail{overflow-y:auto;overflow-x:hidden;min-height:0;scrollbar-width:thin}
+main .rail>section{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;margin:0;padding:6px 9px}
+main .rail>section:last-child{border-bottom:0}
+main .rail>section>h2{margin:0 0 4px}
+.map-cell{grid-area:map;min-width:0;min-height:0;box-shadow:inset 0 0 18px #000c}
+#region{display:block;width:100%;height:100%;background:var(--well);touch-action:none;user-select:none;cursor:crosshair}
+#status{color:var(--muted);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#status.error{color:var(--no)}
+#hint{margin:0;flex:none;max-width:48%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#atlas-links{margin:0;flex:none;max-width:30%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#atlas-links:empty{display:none}
+.bar-row{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.bar-row .group-label{font-size:11px;min-width:4.6rem;cursor:help}
+.bar-row .sep{width:1px;align-self:stretch;background:var(--line);margin:0 4px}
+.row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:.3rem 0}
+.rail .note{margin:.25rem 0;font-size:11px;line-height:1.35}
+.tool.on{border-color:var(--brass);color:var(--brass);background:color-mix(in srgb,var(--brass) 18%,var(--panel))}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px;border:1px solid #0006}
+.small{padding:4px 8px;font-size:12px}
+body[data-skin] main button.small{padding:2px 7px;font-size:12px;line-height:1.3}   /* keep the Gilded bevel, slimmer face */
+.row.tight{gap:3px;flex-wrap:nowrap}body[data-skin] main .row.tight button.small{padding:2px 6px}
+#palette{display:grid;grid-template-columns:1fr 1fr;gap:4px}#palette button{text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:1500px){#atlas-project{min-width:7rem!important}#atlas-list{min-width:8rem!important;max-width:11rem!important}#name{width:10rem!important}
+ .bar-row .group-label{min-width:3.6rem}.bar-row .sep{margin:0 1px}}
+@media (max-width:900px){main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 70vh auto auto auto;
+ grid-template-areas:"top" "map" "left" "right" "bottom";overflow-y:auto}   /* tablet and phone: the map first, the rails below it */
+ .rail{overflow:visible}#left-rail,#right-rail{border-top:1px solid var(--line)}#hint{max-width:none;white-space:normal}}
+main select,main input:not([type=checkbox]):not([type=file]){padding:4px 7px}
+#places li,#log li{margin:.2rem 0}#places button{margin-left:.3rem}#places{padding-left:1.1rem;margin:.3rem 0}
+#party-section{flex:none}
+#places-section,#log-section{flex:1 1 0;min-height:6.5rem;display:flex;flex-direction:column}
+#places{flex:1;min-height:0;overflow:auto}#places-section{flex-grow:2}
+#log{flex:1;min-height:0;overflow:auto;padding-left:1.1rem;margin:.2rem 0}
+.clock{font:600 16px 'Cormorant Garamond',Georgia,serif;color:var(--brass)}
+input[type=number]{width:5rem}
+.r-grid-1{stroke-dasharray:var(--d1)}.r-grid-6{stroke-dasharray:var(--d6)}
+.r-label{font:600 13px Inter,sans-serif;paint-order:stroke;stroke:#000a;stroke-width:3px;fill:#f6edd4}
+body.player-view main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr);grid-template-areas:"map";padding:6px}
+body.player-view .gm-only{display:none!important}
+body.player-view .map-cell{border:1px solid var(--brass);border-radius:6px;overflow:hidden}
+#hint.tool-on{color:var(--brass);font-weight:600}   /* the chosen tool says what to do */
+#trip button{margin-left:.4rem}
+@media (max-width:900px){body{overflow:auto;display:block}main{grid-template-columns:1fr;grid-template-rows:auto 70vh auto auto auto;
+ grid-template-areas:"top" "map" "bottom" "left" "right"}.rail{overflow:visible}}
+</style></head>
+<body>
+<header class="site-header" data-page="region"></header>
+<main>
+ <div class="bar gm-only" id="top-bar">
+  <div class="bar-row"><span class="group-label" title="Filing: every map is in one project, or in Spare maps. A map made from a place or a portal joins its project. Deleting a project moves its maps to Spare maps. Everything is kept in Mythastria on this PC.">Maps</span>
+   <label>Project <select id="atlas-project" aria-label="Project" style="min-width:9rem"></select></label>
+   <button id="proj-new" class="small quiet">New project…</button><button id="proj-rename" class="small quiet">Rename…</button>
+   <button id="proj-delete" class="small quiet">Delete project…</button>
+   <span class="sep"></span>
+   <button id="atlas-back" class="small" hidden>Back</button>
+   <select id="atlas-list" aria-label="Its maps" style="min-width:10rem;max-width:16rem"></select><button id="atlas-open" class="small">Open</button>
+   <button id="atlas-delete" class="small quiet">Delete…</button>
+   <label>File this map in <select id="atlas-move" aria-label="File this map in"></select></label>
+   <span class="sep"></span>
+   <button id="proj-export" class="small quiet">Export project</button>
+   <label><input type="file" id="proj-import-file" accept=".json,application/json" hidden><button id="proj-import" class="small quiet">Import project…</button></label></div>
+  <div class="bar-row"><span class="group-label" title="Kept in Maps on this PC. Export saves a file you can keep or move to another PC (with its picture).">Region</span>
+   <input id="name" aria-label="Region name" value="Region" style="width:14rem">
+   <label><input type="file" id="picture" accept="image/png,image/jpeg,image/webp" hidden><button id="pick-picture" class="small">Load picture…</button></label>
+   <button id="make-region" class="small" title="Make a region from your design preferences">Make a region…</button>
+   <button id="export" class="small quiet" title="Saves a file you can keep or move to another PC (with its picture)">Export…</button>
+   <label><input type="file" id="import-file" accept=".json,application/json" hidden><button id="import" class="small quiet">Import…</button></label>
+   <span class="sep"></span>
+   <button id="player-view" class="small">Open player view</button><button id="reset-region" class="small quiet" title="Put this map back to its original design: as it was made, imported or first opened">Reset…</button><button id="clear-region" class="small quiet" title="Start an empty region map (it offers to save this one first)">Clear…</button></div>
+ </div>
+ <div class="rail gm-only" id="left-rail">
+  <section><h2>Hex grid</h2>
+   <div class="row"><label><input type="checkbox" id="show-1" checked> 1 mile (dotted)</label></div>
+   <div class="row"><label><input type="checkbox" id="show-6" checked> 6 miles (dashed)</label><label><input type="checkbox" id="show-24" checked> 24 miles (solid)</label></div>
+   <p class="note">The players' window shows the grids ticked here.</p>
+   <div class="row"><button class="tool small" data-tool="centres">Align to printed hexes</button><button class="tool small" data-tool="survey">Survey</button></div>
+   <div class="row" id="align-input" hidden><label id="align-label">Hexes between them</label><input type="number" id="align-n" min="0.01" step="any" value="4"></div>
+   <p class="note" id="align-help"></p>
+   <div class="row tight"><button class="small quiet" data-nudge="-1,0">←</button><button class="small quiet" data-nudge="1,0">→</button><button class="small quiet" data-nudge="0,-1">↑</button>
+    <button class="small quiet" data-nudge="0,1">↓</button><button class="small quiet" data-scale="0.995">smaller</button><button class="small quiet" data-scale="1.005">larger</button></div>
+  </section>
+  <section><h2>Terrain and fog</h2>
+   <div class="row" id="palette"></div>
+   <div class="row"><button class="tool small" data-tool="reveal">Reveal</button><button class="tool small" data-tool="hide">Hide</button>
+    <label>Brush <select id="brush"><option value="0">1 hex</option><option value="1">7 hexes</option><option value="2">19 hexes</option></select></label></div>
+   <div class="row"><label><input type="checkbox" id="show-terrain" checked> Show terrain colours</label><label><input type="checkbox" id="show-fog" checked> Fog</label></div>
+   <p class="note">SRD 5.2.1 Travel Terrain: each terrain has a maximum pace (plains and roads Fast; forest, hills, coast and desert Normal; mountains and swamp Slow; hover a terrain to see it); open water can't be walked.</p>
+  </section>
+ </div>
+ <div class="map-cell"><svg id="region" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" aria-label="Region map"></svg></div>
+ <div class="rail gm-only" id="right-rail">
+  <section id="party-section"><h2>Party</h2>
+   <div class="clock" id="clock">Day 1, 08:00</div>
+   <div class="row"><button class="tool small" data-tool="party">Place the party</button><button class="tool small" data-tool="travel">Travel to…</button>
+    <label>Pace <select id="pace"><option value="fast">Fast (4 mph)</option><option value="normal" selected>Normal (3 mph)</option><option value="slow">Slow (2 mph)</option></select></label></div>
+   <p id="pace-effect" class="note"></p>
+   <!-- HAZARDS-01 (GM 2026-10-26): the region's weather and Extended Travel; the saves are rolled on the adventure day -->
+   <details id="weather-box"><summary>Weather and the march</summary>
+    <div class="row weather-row"><label title="0 °F or lower: a DC 10 Constitution save each hour or 1 Exhaustion level"><input type="checkbox" id="w-cold"> Extreme cold</label>
+     <label title="100 °F or higher: a Constitution save each hour without drinkable water (DC 5, +1 each hour)"><input type="checkbox" id="w-heat"> Extreme heat</label>
+     <label title="Drinkable water at hand: no Extreme Heat saves"><input type="checkbox" id="w-water" checked> Water at hand</label>
+     <label title="In fights: Disadvantage on ranged weapon attacks; fliers land or fall"><input type="checkbox" id="w-wind"> Strong wind</label>
+     <label title="Strong wind in a desert: also Disadvantage on Wisdom (Perception) checks"><input type="checkbox" id="w-sand"> Sandstorm</label>
+     <label title="In fights: Lightly Obscured, Disadvantage on Wisdom (Perception) checks"><input type="checkbox" id="w-rain"> Heavy rain or snow</label>
+     <label title="10,000 feet or higher: each hour of travel in the mountains counts as 2 hours"><input type="checkbox" id="w-altitude"> High altitude (mountains)</label></div>
+    <div class="row"><label title="SRD 5.2.1 Extended Travel: past 8 hours, each character makes a Constitution save at the end of each hour (DC 10 + the hours past 8) or gains 1 Exhaustion level"><input type="checkbox" id="push"> Push on past 8 hours (Extended Travel)</label></div>
+    <p id="day-link" class="note"></p>
+   </details>
+   <div id="trip" class="note"></div>
+   <div class="row"><button id="go" class="small" hidden>Travel</button><button id="go-fast" class="small" hidden>Fast travel</button><button id="rest" class="quiet small">Rest until morning</button>
+    <button id="battle-here" class="quiet small" title="A standard battle map for the terrain the party is in">Battle here…</button></div>
+   <div class="row"><label>Encounter on a d20 of <input type="number" id="enc-chance" min="0" max="20" value="3" style="width:3.5rem"> highest</label></div>
+  </section>
+  <section id="places-section"><h2>Places</h2>
+   <div class="row"><button class="tool small" data-tool="place">Add a place</button></div>
+   <ul id="places"></ul>
+  </section>
+  <section id="log-section"><h2>Journey log</h2>
+   <ol id="log"></ol>
+  </section>
+ </div>
+ <div class="bar gm-only" id="bottom-bar">
+  <div id="status" role="status">Load a picture of the region to begin.</div>
+  <p class="note" id="atlas-links"></p>
+  <p class="note" id="hint">Wheel to zoom · right- or middle-drag to pan (or drag with no tool chosen).</p>
+ </div>
+</main>
+<dialog id="proj-dialog" aria-labelledby="pj-title"><form method="dialog"><h2 id="pj-title">Project</h2>
+ <p><label>Name <input id="pj-name" maxlength="80"></label></p>
+ <p><button id="pj-go">Save</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="place-dialog" aria-labelledby="pd-title"><form method="dialog"><h2 id="pd-title">A place</h2>
+ <p><label>Kind <select id="pd-kind"><option value="place">A place</option><option value="portal">A portal (a jump to another map)</option></select></label></p>
+ <p><label>Name <input id="pd-name" maxlength="80" placeholder="Leave empty to show its number"></label></p>
+ <p><label><span id="pd-leads">Leads to</span> <select id="pd-map"><option value="">(nowhere)</option></select></label></p>
+ <p id="pd-portal" hidden><label><input type="checkbox" id="pd-twoway" checked> Two-way: then click where it comes out on that map</label></p>
+ <p><label>Note <input id="pd-note" maxlength="300"></label></p>
+ <p id="pd-site-row" hidden><button type="button" id="pd-site" class="quiet">Draw this site as indoor maps…</button></p>
+ <p><button value="save" id="pd-save">Save</button> <button value="delete" id="pd-delete" class="quiet">Remove</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="delete-dialog" aria-labelledby="dl-title"><form method="dialog"><h2 id="dl-title">Delete this map?</h2>
+ <p id="dl-what"></p>
+ <p><button id="dl-go">Delete it</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="reset-dialog" aria-labelledby="rs-title"><form method="dialog"><h2 id="rs-title">Reset the region map?</h2>
+ <p id="rs-what"></p>
+ <p class="note">Everything goes back: places, terrain and the grid. The party is taken off the map, the fog closes and its travels are cleared. Other maps keep their own places and portals.</p>
+ <p><button id="rs-go">Reset to the original</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="clear-dialog" aria-labelledby="cl-title"><form method="dialog"><h2 id="cl-title">Clear the region map?</h2>
+ <p id="cl-what"></p>
+ <p class="note">Keep it: it stays in Maps (open it again any time). Delete it: it is gone, unless you exported it.</p>
+ <p><button id="cl-save">Keep it in Maps, then clear</button> <button id="cl-clear" class="quiet">Delete it and clear</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="make-dialog" aria-labelledby="mk-title"><form method="dialog"><h2 id="mk-title">Make a region</h2>
+ <p class="note">Mythastria draws a region from your preferences: terrain, rivers, settlements joined by roads, and sites for
+  adventures (dungeons, caves, ruins, lairs). The same preferences and number give the same region. This replaces the current
+  region: Export it first to keep it.</p>
+ <p><label>Name <input id="mk-name" maxlength="80" value="New region"></label></p>
+ <p><label>Size <select id="mk-size"><option value="small">Small (24 x 18 miles)</option><option value="medium" selected>Medium (48 x 36 miles)</option><option value="large">Large (96 x 72 miles)</option></select></label>
+  <label>Climate <select id="mk-climate"></select></label> <label>Land <select id="mk-land"></select></label></p>
+ <p><label>Rugged <input type="range" id="mk-rugged" min="0" max="100"></label> <label>Wooded <input type="range" id="mk-forest" min="0" max="100"></label>
+  <label>Wet <input type="range" id="mk-wet" min="0" max="100"></label></p>
+ <p><label>Settlements <input type="number" id="mk-settlements" min="0" max="20" style="width:4rem"></label>
+  <label>Sites <input type="number" id="mk-sites" min="0" max="20" style="width:4rem"></label>
+  <label><input type="checkbox" id="mk-roads"> Roads between settlements</label></p>
+ <p><label>Number <input type="number" id="mk-seed" min="1" style="width:6rem" title="Another number gives another region"></label>
+  <button id="mk-another" class="quiet small" type="button">Another</button></p>
+ <p><button id="mk-go">Make it</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<dialog id="battle-dialog" aria-labelledby="bd-title"><form method="dialog"><h2 id="bd-title">Battle</h2>
+ <p id="bd-what" class="note"></p>
+ <p><label>Creatures <select id="bd-creature"></select></label> <label>How many <input type="number" id="bd-count" min="1" max="12" value="4" style="width:4rem"></label></p>
+ <p class="note" id="bd-hex"></p>
+ <p><label>Layout <select id="bd-density"><option value="open">Open</option><option value="normal" selected>Normal</option><option value="dense">Dense</option></select></label>
+  <label>Size <select id="bd-size"><option value="small">Small (18 x 14)</option><option value="normal" selected>Normal (24 x 18)</option><option value="large">Large (32 x 24)</option></select></label></p>
+ <p><label><input type="checkbox" id="bd-night"> Night (dim light)</label> <label>Map <input type="number" id="bd-seed" min="1" value="1" style="width:4rem" title="Another number gives another layout"></label></p>
+ <p class="note">A standard battle map for this terrain opens in Play live, in its own window. Choose the party there.</p>
+ <p><button id="bd-fight">Fight on a battle map</button> <button value="cancel" class="quiet">Not now</button></p>
+</form></dialog>
+<dialog id="site-dialog" aria-labelledby="sd-title"><form method="dialog"><h2 id="sd-title">Draw the site</h2>
+ <p class="note">The local model (LM Studio) designs the rooms from your preferences; Mythastria lays them out on the grid and
+  checks them: walls a whole square thick, doors in walls, every room reachable. It takes a minute or two. The maps open in
+  Play live and are filed under Region sites, then this project and this region.</p>
+ <p id="sd-model" class="note"></p>
+ <p><label>Kind <select id="sd-kind"><option value="dungeon">Dungeon</option><option value="cave">Cave</option><option value="ruin">Ruin</option><option value="lair">Lair</option></select></label>
+  <label>Size <select id="sd-size"><option value="small">Small (4-6 rooms)</option><option value="normal" selected>Normal (7-10 rooms)</option><option value="large">Large (11-15 rooms)</option></select></label>
+  <label>Levels <input type="number" id="sd-levels" min="1" max="3" value="1" style="width:4rem"></label></p>
+ <p><label>Layout <select id="sd-layout"><option value="linear">Linear</option><option value="branching" selected>Branching</option><option value="looping">Looping</option></select></label>
+  <label>Walls <select id="sd-walls"><option value="cut stone">Cut stone</option><option value="natural cave">Natural cave</option><option value="mixed">Mixed</option></select></label>
+  <label>Doors <select id="sd-doors"><option value="few">Few</option><option value="some" selected>Some</option><option value="many">Many</option></select></label></p>
+ <p><label>Theme <input id="sd-theme" maxlength="300" style="width:30rem" placeholder="Your own words: who built it, what happened, who lives there now"></label></p>
+ <p><label>Creatures <select id="sd-creature"></select></label> <label>How many <input type="number" id="sd-count" min="1" max="12" value="4" style="width:4rem"></label></p>
+ <p><label>Map <input type="number" id="sd-seed" min="1" value="1" style="width:6rem" title="Another number gives another design"></label>
+  <button id="sd-another" class="quiet small" type="button">Another</button></p>
+ <p id="sd-what" class="note" role="status"></p>
+ <p><button id="sd-go">Draw it</button> <button value="cancel" class="quiet">Cancel</button></p>
+</form></dialog>
+<script type="module" src="region-ui.mjs"></script>
+</body></html>

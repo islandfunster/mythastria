@@ -1,0 +1,389 @@
+{
+ "name": "Test lab: mounted combat (simulator only)",
+ "rounds": 6,
+ "level": 5,
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode. Simulator test map (SIM-LAB-01): not an adventure map. Controlled mounts move with their riders and take no turn of their own.",
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Test lab - mounted",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     15.5
+    ],
+    [
+     -0.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     15.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [],
+ "locked_doors": [],
+ "lighting": {
+  "ambient": "bright",
+  "lights": []
+ },
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013",
+  "id-00014",
+  "id-00015",
+  "id-00016"
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 4,
+   "y": 6,
+   "mount": "id-00021",
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 6",
+   "side": "friend",
+   "pc": true,
+   "init": 14,
+   "x": 4,
+   "y": 10,
+   "mount": "id-00022",
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 2,
+   "y": 8,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 12,
+   "x": 1,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00021",
+   "name": "Warhorse 1",
+   "side": "friend",
+   "hp": 19,
+   "ac": 11,
+   "speed": "60 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Passive Perception 11",
+   "int": 2,
+   "skills": "",
+   "x": 4,
+   "y": 6,
+   "init": 15,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Hooves",
+     "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and has the Prone condition.",
+     "atk": 6,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d4+4",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  },
+  {
+   "id": "id-00022",
+   "name": "Warhorse 2",
+   "side": "friend",
+   "hp": 19,
+   "ac": 11,
+   "speed": "60 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Passive Perception 11",
+   "int": 2,
+   "skills": "",
+   "x": 4,
+   "y": 10,
+   "init": 14,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Hooves",
+     "desc": "Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage. If the target is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, the target takes an extra 5 (2d4) Bludgeoning damage and has the Prone condition.",
+     "atk": 6,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d4+4",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  },
+  {
+   "id": "id-00011",
+   "name": "Guard 1",
+   "side": "foe",
+   "hp": 11,
+   "ac": 16,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 12",
+   "int": 10,
+   "skills": "Perception +2",
+   "x": 19,
+   "y": 6,
+   "init": 11,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Spear",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. Or Ranged Attack Roll: +3, range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00012",
+   "name": "Guard 2",
+   "side": "foe",
+   "hp": 11,
+   "ac": 16,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 12",
+   "int": 10,
+   "skills": "Perception +2",
+   "x": 19,
+   "y": 8,
+   "init": 10,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Spear",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. Or Ranged Attack Roll: +3, range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00013",
+   "name": "Guard 3",
+   "side": "foe",
+   "hp": 11,
+   "ac": 16,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 12",
+   "int": 10,
+   "skills": "Perception +2",
+   "x": 19,
+   "y": 10,
+   "init": 9,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Spear",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. Or Ranged Attack Roll: +3, range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00014",
+   "name": "Guard 4",
+   "side": "foe",
+   "hp": 11,
+   "ac": 16,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 12",
+   "int": 10,
+   "skills": "Perception +2",
+   "x": 19,
+   "y": 12,
+   "init": 8,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Spear",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Piercing damage. Or Ranged Attack Roll: +3, range 20/60 ft. Hit: 4 (1d6 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00015",
+   "name": "Scout 1",
+   "side": "foe",
+   "hp": 16,
+   "ac": 13,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 15",
+   "int": 11,
+   "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+   "x": 22,
+   "y": 5,
+   "init": 13,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortsword",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Longbow",
+     "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 150,
+     "dmg": "1d8+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00016",
+   "name": "Scout 2",
+   "side": "foe",
+   "hp": 16,
+   "ac": 13,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 15",
+   "int": 11,
+   "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+   "x": 22,
+   "y": 11,
+   "init": 8,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortsword",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Longbow",
+     "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 150,
+     "dmg": "1d8+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "comment": "Reviewed rules-cache sources (RULES-CACHE-01). Only these are imported; nothing else is scanned. Export policy is a reviewed declaration: SRD 5.2.1 is CC-BY-4.0 per the module's own Legal Information page (checked 2026-10-11). Read projections may carry the separately versioned official_rules_overlay.json; imports and immutable revisions remain the unmodified source. No purchased book is listed here: this version is SRD only.",
+  "sources": [
+    {
+      "source_id": "srd521-player",
+      "kind": "offline_srd",
+      "file": "modules/DNDSRD521PLAYER.mod",
+      "module": "DNDSRD521PLAYER",
+      "member": "client.xml",
+      "declared_edition": "2024",
+      "policy": "cloud_allowed",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

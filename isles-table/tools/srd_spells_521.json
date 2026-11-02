@@ -1,0 +1,801 @@
+[
+  {
+    "name": "Acid Splash",
+    "level": 0,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 107
+  },
+  {
+    "name": "Alarm",
+    "level": 1,
+    "classes": [
+      "Ranger",
+      "Wizard"
+    ],
+    "page": 107
+  },
+  {
+    "name": "Animal Friendship",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger"
+    ],
+    "page": 107
+  },
+  {
+    "name": "Bane",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Warlock"
+    ],
+    "page": 112
+  },
+  {
+    "name": "Bless",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ],
+    "page": 113
+  },
+  {
+    "name": "Burning Hands",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 114
+  },
+  {
+    "name": "Charm Person",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 115
+  },
+  {
+    "name": "Chill Touch",
+    "level": 0,
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 115
+  },
+  {
+    "name": "Chromatic Orb",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 115
+  },
+  {
+    "name": "Color Spray",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 116
+  },
+  {
+    "name": "Command",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Paladin"
+    ],
+    "page": 116
+  },
+  {
+    "name": "Comprehend Languages",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 117
+  },
+  {
+    "name": "Create or Destroy Water",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Druid"
+    ],
+    "page": 121
+  },
+  {
+    "name": "Cure Wounds",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ],
+    "page": 121
+  },
+  {
+    "name": "Dancing Lights",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 121
+  },
+  {
+    "name": "Detect Evil and Good",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ],
+    "page": 123
+  },
+  {
+    "name": "Detect Magic",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 123
+  },
+  {
+    "name": "Detect Poison and Disease",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Ranger"
+    ],
+    "page": 123
+  },
+  {
+    "name": "Disguise Self",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 124
+  },
+  {
+    "name": "Dissonant Whispers",
+    "level": 1,
+    "classes": [
+      "Bard"
+    ],
+    "page": 124
+  },
+  {
+    "name": "Divine Favor",
+    "level": 1,
+    "classes": [
+      "Paladin"
+    ],
+    "page": 125
+  },
+  {
+    "name": "Divine Smite",
+    "level": 1,
+    "classes": [
+      "Paladin"
+    ],
+    "page": 125
+  },
+  {
+    "name": "Druidcraft",
+    "level": 0,
+    "classes": [
+      "Druid"
+    ],
+    "page": 126
+  },
+  {
+    "name": "Eldritch Blast",
+    "level": 0,
+    "classes": [
+      "Warlock"
+    ],
+    "page": 127
+  },
+  {
+    "name": "Elementalism",
+    "level": 0,
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 127
+  },
+  {
+    "name": "Ensnaring Strike",
+    "level": 1,
+    "classes": [
+      "Ranger"
+    ],
+    "page": 128
+  },
+  {
+    "name": "Entangle",
+    "level": 1,
+    "classes": [
+      "Druid",
+      "Ranger"
+    ],
+    "page": 128
+  },
+  {
+    "name": "Expeditious Retreat",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 129
+  },
+  {
+    "name": "Faerie Fire",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid"
+    ],
+    "page": 129
+  },
+  {
+    "name": "False Life",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 129
+  },
+  {
+    "name": "Feather Fall",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 130
+  },
+  {
+    "name": "Find Familiar",
+    "level": 1,
+    "classes": [
+      "Wizard"
+    ],
+    "page": 130
+  },
+  {
+    "name": "Fire Bolt",
+    "level": 0,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 132
+  },
+  {
+    "name": "Floating Disk",
+    "level": 1,
+    "classes": [
+      "Wizard"
+    ],
+    "page": 133
+  },
+  {
+    "name": "Fog Cloud",
+    "level": 1,
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 133
+  },
+  {
+    "name": "Goodberry",
+    "level": 1,
+    "classes": [
+      "Druid",
+      "Ranger"
+    ],
+    "page": 137
+  },
+  {
+    "name": "Grease",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 137
+  },
+  {
+    "name": "Guidance",
+    "level": 0,
+    "classes": [
+      "Cleric",
+      "Druid"
+    ],
+    "page": 138
+  },
+  {
+    "name": "Guiding Bolt",
+    "level": 1,
+    "classes": [
+      "Cleric"
+    ],
+    "page": 138
+  },
+  {
+    "name": "Healing Word",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid"
+    ],
+    "page": 139
+  },
+  {
+    "name": "Hellish Rebuke",
+    "level": 1,
+    "classes": [
+      "Warlock"
+    ],
+    "page": 140
+  },
+  {
+    "name": "Heroism",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Paladin"
+    ],
+    "page": 140
+  },
+  {
+    "name": "Hex",
+    "level": 1,
+    "classes": [
+      "Warlock"
+    ],
+    "page": 140
+  },
+  {
+    "name": "Hideous Laughter",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 140
+  },
+  {
+    "name": "Hunter’s Mark",
+    "level": 1,
+    "classes": [
+      "Ranger"
+    ],
+    "page": 141
+  },
+  {
+    "name": "Ice Knife",
+    "level": 1,
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 141
+  },
+  {
+    "name": "Identify",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Wizard"
+    ],
+    "page": 142
+  },
+  {
+    "name": "Illusory Script",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 142
+  },
+  {
+    "name": "Inflict Wounds",
+    "level": 1,
+    "classes": [
+      "Cleric"
+    ],
+    "page": 143
+  },
+  {
+    "name": "Jump",
+    "level": 1,
+    "classes": [
+      "Druid",
+      "Ranger",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 143
+  },
+  {
+    "name": "Light",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 144
+  },
+  {
+    "name": "Longstrider",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger",
+      "Wizard"
+    ],
+    "page": 145
+  },
+  {
+    "name": "Mage Armor",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 145
+  },
+  {
+    "name": "Mage Hand",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 145
+  },
+  {
+    "name": "Magic Missile",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 146
+  },
+  {
+    "name": "Mending",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Cleric",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 148
+  },
+  {
+    "name": "Message",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 148
+  },
+  {
+    "name": "Minor Illusion",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 149
+  },
+  {
+    "name": "Poison Spray",
+    "level": 0,
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 153
+  },
+  {
+    "name": "Prestidigitation",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 154
+  },
+  {
+    "name": "Produce Flame",
+    "level": 0,
+    "classes": [
+      "Druid"
+    ],
+    "page": 156
+  },
+  {
+    "name": "Protection from Evil and Good",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 157
+  },
+  {
+    "name": "Purify Food and Drink",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Druid",
+      "Paladin"
+    ],
+    "page": 157
+  },
+  {
+    "name": "Ray of Frost",
+    "level": 0,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 157
+  },
+  {
+    "name": "Ray of Sickness",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 158
+  },
+  {
+    "name": "Resistance",
+    "level": 0,
+    "classes": [
+      "Cleric",
+      "Druid"
+    ],
+    "page": 158
+  },
+  {
+    "name": "Sacred Flame",
+    "level": 0,
+    "classes": [
+      "Cleric"
+    ],
+    "page": 159
+  },
+  {
+    "name": "Sanctuary",
+    "level": 1,
+    "classes": [
+      "Cleric"
+    ],
+    "page": 159
+  },
+  {
+    "name": "Searing Smite",
+    "level": 1,
+    "classes": [
+      "Paladin"
+    ],
+    "page": 160
+  },
+  {
+    "name": "Shield",
+    "level": 1,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 161
+  },
+  {
+    "name": "Shield of Faith",
+    "level": 1,
+    "classes": [
+      "Cleric",
+      "Paladin"
+    ],
+    "page": 162
+  },
+  {
+    "name": "Shillelagh",
+    "level": 0,
+    "classes": [
+      "Druid"
+    ],
+    "page": 162
+  },
+  {
+    "name": "Shocking Grasp",
+    "level": 0,
+    "classes": [
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 162
+  },
+  {
+    "name": "Silent Image",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 162
+  },
+  {
+    "name": "Sleep",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 163
+  },
+  {
+    "name": "Sorcerous Burst",
+    "level": 0,
+    "classes": [
+      "Sorcerer"
+    ],
+    "page": 163
+  },
+  {
+    "name": "Spare the Dying",
+    "level": 0,
+    "classes": [
+      "Cleric",
+      "Druid"
+    ],
+    "page": 163
+  },
+  {
+    "name": "Speak with Animals",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Ranger",
+      "Warlock"
+    ],
+    "page": 164
+  },
+  {
+    "name": "Starry Wisp",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Druid"
+    ],
+    "page": 165
+  },
+  {
+    "name": "Thaumaturgy",
+    "level": 0,
+    "classes": [
+      "Cleric"
+    ],
+    "page": 169
+  },
+  {
+    "name": "Thunderwave",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Druid",
+      "Sorcerer",
+      "Wizard"
+    ],
+    "page": 169
+  },
+  {
+    "name": "True Strike",
+    "level": 0,
+    "classes": [
+      "Bard",
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 171
+  },
+  {
+    "name": "Unseen Servant",
+    "level": 1,
+    "classes": [
+      "Bard",
+      "Warlock",
+      "Wizard"
+    ],
+    "page": 171
+  },
+  {
+    "name": "Vicious Mockery",
+    "level": 0,
+    "classes": [
+      "Bard"
+    ],
+    "page": 171
+  }
+]

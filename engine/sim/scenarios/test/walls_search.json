@@ -1,0 +1,64 @@
+{
+ "name": "Unaware goblin behind a wall: Search first (Perception DC 12), then close in",
+ "source": "Kobold Warrior: the simulator's SRD-based block (sim/creatures/srd_library.json; 2026-10-20: was the 5.1 Goblin; melee only, for this movement test). Hero 7 is a test character. Walls are synthetic.",
+ "rounds": 4,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Walled room",
+ "walls": [
+  {
+   "id": "1",
+   "points": [
+    [
+     2.5,
+     0.5
+    ],
+    [
+     2.5,
+     3.5
+    ]
+   ]
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 4,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Kobold Warrior",
+   "side": "foe",
+   "hp": 7,
+   "ac": 14,
+   "init": 20,
+   "x": 2,
+   "y": 2,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Dagger",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d4+2",
+     "dmgtype": "piercing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage. Or Ranged Attack Roll: +4, range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage."
+    }
+   ],
+   "wis_mod": -2,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 8"
+  }
+ ],
+ "perception_dc": 12
+}

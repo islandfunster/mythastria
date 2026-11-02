@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Node test scripts (browser)</title>
+<style>body{font:14px/1.4 monospace;background:#151614;color:#e8e2d4;padding:1rem}.fail{color:#e07a6a}</style>
+<script type="importmap">{"imports": {"node:assert/strict": "./node-assert-shim.mjs"}}</script></head>
+<body><h1>Node test scripts, run in the browser (no Node on this PC)</h1><pre id="out">running…</pre>
+<script type="module">
+// Serve the isles-table folder (not only dist) to run this page: py -3 -m http.server 8770 --bind 127.0.0.1
+// Runs the Node scripts that need no file system: test_live_port.mjs (LIVE-REVIEW-01). test_remix.mjs needs Node's own
+// DOM stand-in (it replaces document), so it runs only under Node. Add a script to the list below
+// when it imports only node:assert/strict (test_flavor.mjs: Flavor, installed 2026-10-21).
+const out = document.getElementById('out'), lines = [], log = console.log;
+console.log = (...a) => { lines.push(a.join(' ')); log(...a); };
+let failed = 0;
+for (const script of ['../test_live_port.mjs', '../test_flavor.mjs']) {
+  try { await import(script); lines.push(`OK   ${script}`); }
+  catch (e) { failed++; lines.push(`FAIL ${script}: ${e?.message ?? e}`); }
+}
+console.log = log;
+out.innerHTML = lines.map(l => l.startsWith('FAIL') ? `<span class="fail">${l.replace(/</g, '&lt;')}</span>` : l.replace(/</g, '&lt;')).join('\n');
+document.title = failed ? 'FAILED' : 'PASSED';
+</script></body></html>

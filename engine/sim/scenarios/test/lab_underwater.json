@@ -1,0 +1,315 @@
+{
+ "name": "Test lab: underwater (simulator only)",
+ "rounds": 6,
+ "level": 8,
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode. Simulator test map (SIM-LAB-01): not an adventure map. Monsters move at their listed speed (the bridge plans their moves); only the party pays the swimming cost.",
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Test lab - underwater",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     15.5
+    ],
+    [
+     -0.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     15.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [],
+ "locked_doors": [],
+ "lighting": {
+  "ambient": "dim",
+  "lights": []
+ },
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013",
+  "id-00014",
+  "id-00015"
+ ],
+ "zones": [
+  {
+   "id": "pool",
+   "kind": "water",
+   "rect": [
+    0,
+    0,
+    13,
+    15
+   ]
+  },
+  {
+   "id": "race",
+   "kind": "current",
+   "rect": [
+    0,
+    0,
+    13,
+    2
+   ],
+   "dx": 1,
+   "dy": 0,
+   "ft": 10
+  },
+  {
+   "id": "silt",
+   "kind": "obscured",
+   "rect": [
+    5,
+    6,
+    7,
+    9
+   ],
+   "level": "heavy"
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 16,
+   "y": 7,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 14,
+   "x": 16,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 2",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 18,
+   "y": 8,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 12,
+   "x": 19,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Hunter Shark 1",
+   "side": "foe",
+   "hp": 45,
+   "ac": 12,
+   "speed": "5 ft., Swim 40 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Blindsight 60 ft.; Passive Perception 12",
+   "int": 1,
+   "skills": "Perception +2",
+   "x": 4,
+   "y": 8,
+   "init": 12,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Bite",
+     "desc": "Melee Attack Roll: +6 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage.",
+     "atk": 6,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "3d6+4",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00012",
+   "name": "Hunter Shark 2",
+   "side": "foe",
+   "hp": 45,
+   "ac": 12,
+   "speed": "5 ft., Swim 40 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Blindsight 60 ft.; Passive Perception 12",
+   "int": 1,
+   "skills": "Perception +2",
+   "x": 6,
+   "y": 12,
+   "init": 8,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Bite",
+     "desc": "Melee Attack Roll: +6 (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage.",
+     "atk": 6,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "3d6+4",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00013",
+   "name": "Sahuagin Warrior 1",
+   "side": "foe",
+   "hp": 22,
+   "ac": 12,
+   "speed": "30 ft., Swim 40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Fiend",
+   "senses": "Darkvision 120 ft.; Passive Perception 15",
+   "int": 12,
+   "skills": "Perception +5",
+   "x": 9,
+   "y": 5,
+   "init": 11,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The sahuagin makes two Claw attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Claw",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    }
+   ]
+  },
+  {
+   "id": "id-00014",
+   "name": "Sahuagin Warrior 2",
+   "side": "foe",
+   "hp": 22,
+   "ac": 12,
+   "speed": "30 ft., Swim 40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Fiend",
+   "senses": "Darkvision 120 ft.; Passive Perception 15",
+   "int": 12,
+   "skills": "Perception +5",
+   "x": 10,
+   "y": 10,
+   "init": 9,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The sahuagin makes two Claw attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Claw",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    }
+   ]
+  },
+  {
+   "id": "id-00015",
+   "name": "Giant Octopus 1",
+   "side": "foe",
+   "hp": 45,
+   "ac": 11,
+   "speed": "10 ft., Swim 60 ft.",
+   "space": 10,
+   "size": "large",
+   "type": "Beast",
+   "senses": "Darkvision 60 ft.; Passive Perception 14",
+   "int": 5,
+   "skills": "Perception +4, Stealth +5",
+   "x": 2,
+   "y": 3,
+   "init": 7,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Tentacles",
+     "desc": "Melee Attack Roll: +5, reach 10 ft. Hit: 10 (2d6 + 3) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from all eight tentacles. While Grappled, the target has the Restrained condition.",
+     "atk": 5,
+     "atktype": "melee",
+     "reach": 10,
+     "dmg": "2d6+3",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  }
+ ]
+}

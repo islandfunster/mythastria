@@ -1,0 +1,398 @@
+{
+ "name": "Test lab: cover and hiding (simulator only)",
+ "rounds": 6,
+ "level": 5,
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode. Simulator test map (SIM-LAB-01): not an adventure map.",
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Test lab - cover",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     15.5
+    ],
+    [
+     -0.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     15.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [],
+ "locked_doors": [],
+ "lighting": {
+  "ambient": "dark",
+  "lights": [
+   {
+    "x": 11,
+    "y": 8,
+    "bright_ft": 20,
+    "dim_ft": 40,
+    "label": "lantern"
+   },
+   {
+    "carrier": "id-00001",
+    "bright_ft": 20,
+    "dim_ft": 40,
+    "label": "Hero 1's Torch (SRD 5.2.1)"
+   }
+  ]
+ },
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013",
+  "id-00014",
+  "id-00015",
+  "id-00016"
+ ],
+ "zones": [
+  {
+   "id": "low wall north",
+   "kind": "cover",
+   "rect": [
+    8,
+    2,
+    8,
+    6
+   ],
+   "level": "half"
+  },
+  {
+   "id": "low wall south",
+   "kind": "cover",
+   "rect": [
+    8,
+    10,
+    8,
+    13
+   ],
+   "level": "half"
+  },
+  {
+   "id": "barricade",
+   "kind": "cover",
+   "rect": [
+    16,
+    4,
+    16,
+    11
+   ],
+   "level": "three-quarters"
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 3,
+   "y": 7,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 14,
+   "x": 4,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 2",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 2,
+   "y": 8,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 12,
+   "x": 2,
+   "y": 10,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Scout 1",
+   "side": "foe",
+   "hp": 16,
+   "ac": 13,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 15",
+   "int": 11,
+   "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+   "x": 18,
+   "y": 6,
+   "init": 13,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortsword",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Longbow",
+     "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 150,
+     "dmg": "1d8+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00012",
+   "name": "Scout 2",
+   "side": "foe",
+   "hp": 16,
+   "ac": 13,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 15",
+   "int": 11,
+   "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+   "x": 18,
+   "y": 9,
+   "init": 12,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortsword",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Longbow",
+     "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 150,
+     "dmg": "1d8+2",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00013",
+   "name": "Bandit 1",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "x": 11,
+   "y": 4,
+   "init": 10,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00014",
+   "name": "Bandit 2",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "x": 11,
+   "y": 11,
+   "init": 9,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00015",
+   "name": "Shadow 1",
+   "side": "foe",
+   "hp": 27,
+   "ac": 12,
+   "speed": "40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +6",
+   "x": 21,
+   "y": 1,
+   "init": 8,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Draining Swipe",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "necrotic"
+    }
+   ]
+  },
+  {
+   "id": "id-00016",
+   "name": "Shadow 2",
+   "side": "foe",
+   "hp": 27,
+   "ac": 12,
+   "speed": "40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +6",
+   "x": 22,
+   "y": 2,
+   "init": 7,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Draining Swipe",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "necrotic"
+    }
+   ]
+  }
+ ]
+}

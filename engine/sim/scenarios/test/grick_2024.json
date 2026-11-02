@@ -1,0 +1,102 @@
+{
+ "name": "Grick (SRD 5.2.1: Beak and Tentacles) vs Hero 7 and Hero 8",
+ "source": "Grick: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (2026-10-20: was the SRD 5.1 Grick). Hero 7 and Hero 8 are test characters.",
+ "rounds": 3,
+ "approve_plans": true,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Cave",
+ "fake_plan": {
+  "patterns": [
+   {
+    "steps": [
+     {
+      "attacks": [
+       "Beak"
+      ],
+      "only_if_previous_hit_same_target": false
+     },
+     {
+      "attacks": [
+       "Tentacles"
+      ],
+      "only_if_previous_hit_same_target": false
+     }
+    ]
+   }
+  ],
+  "notes": "SRD 5.2.1 Grick: one Beak attack and one Tentacles attack (2026-10-20; the 2014 beak-after-a-hit rule is gone)."
+ },
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 18,
+   "x": 5,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 8",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 3,
+   "y": 3,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "hp": 54,
+   "ac": 14,
+   "speed": "30 ft., Climb 30 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Aberration",
+   "senses": "Darkvision 60 ft.; Passive Perception 12",
+   "int": 3,
+   "skills": "Stealth +4",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The grick makes one Beak attack and one Tentacles attack."
+    },
+    {
+     "id": "id-00002",
+     "name": "Beak",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 9 (2d6 + 2) Piercing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d6+2",
+     "dmgtype": "piercing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Tentacles",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12) from all four tentacles.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d10+2",
+     "dmgtype": "slashing",
+     "gm": "GM rules this: the rest: If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12) from all four tentacles"
+    }
+   ],
+   "wis_mod": 2,
+   "id": "id-00008",
+   "name": "Grick",
+   "side": "foe",
+   "x": 4,
+   "y": 2,
+   "init": 12,
+   "srd_name": "Grick"
+  }
+ ]
+}

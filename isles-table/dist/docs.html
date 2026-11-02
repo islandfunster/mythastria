@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Documents</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+/* DOCS-01 (GM 2026-10-22): the features of Mythastria, kept up to date as they are built (dist/features.json) */
+main{max-width:1100px;margin:0 auto;padding:1rem}
+#status{padding:.4rem 1rem;color:var(--muted)}#status.error{color:var(--no)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.35rem 0}
+.feature{border-top:1px solid var(--line);padding:10px 2px}
+.feature h3{margin:0 0 4px;font:600 15px Inter,sans-serif;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.feature p{margin:3px 0}.feature .how{color:var(--muted)}.feature .limits{color:var(--ally,#e0b050)}
+.tag{font-size:11px;padding:1px 7px;border-radius:9px;border:1px solid var(--line);font-weight:500}
+.tag.built{border-color:var(--ok);color:var(--ok)}.tag.partly{border-color:var(--brass);color:var(--brass)}.tag.planned{color:var(--muted)}
+.since{font-size:11px;color:var(--muted);font-weight:400}
+.counts{color:var(--muted);font-size:12px}
+</style></head>
+<body>
+<header class="site-header" data-page="docs"></header>
+<div id="status" role="status">Loading the features…</div>
+<main>
+ <section class="panel"><h2>Documents</h2>
+  <p class="note">Everything Mythastria does, kept up to date as it is built: what each feature does, how to use it, and whether it is
+   built, partly built (its limits said) or planned.</p>
+  <div class="row"><input id="find" placeholder="Find a feature" aria-label="Find a feature" style="flex:1">
+   <select id="status-filter" aria-label="Status"><option value="">All</option><option value="built">Built</option><option value="partly">Partly built</option><option value="planned">Planned</option></select></div>
+  <p class="counts" id="counts"></p>
+ </section>
+ <div id="groups"></div>
+ <section class="panel"><h2>More</h2>
+  <p><a href="style-guide.html">Mythastria style guide</a>: how Mythastria reads and looks (words, screens, art), with a checklist</p>
+  <p><a href="SRD_ATTRIBUTION.md">SRD attribution and licences</a></p>
+ </section>
+</main>
+<script type="module" src="docs-page.mjs"></script>
+</body></html>

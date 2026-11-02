@@ -1,0 +1,5 @@
+# VIEW-01: maps the GM imports (their own campaign files) stay out of the source
+isles-table/dist/maps/imported/
+
+# ONE-SHOT-01 (2026-11-02): adventure packs, and the one-shots the builder writes, stay on this PC
+adventures/

@@ -1,0 +1,17 @@
+/* RULES-MONITOR-01: the GM's Rules monitor (rules-monitor-ui.mjs): a panel beside play, not in the way of the map */
+.monitor-dialog{position:fixed;inset:auto 12px 12px auto;margin:0;width:min(30rem,calc(100vw - 24px));max-height:70vh;overflow:auto;background:var(--panel);color:var(--paper);border:1px solid var(--brass);border-radius:6px;padding:12px;z-index:50}
+.monitor-dialog h2{margin:0 0 .4rem}
+.monitor-dialog .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.35rem 0}
+.monitor-dialog .error{color:var(--no)}
+.monitor-list{list-style:none;margin:.5rem 0;padding:0}
+.monitor-item{border-top:1px solid var(--line);padding:.5rem 0}
+.monitor-head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.monitor-when{color:var(--muted);font-size:11px;margin-left:auto}
+.monitor-tag{font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);white-space:nowrap}
+.monitor-tag.break{border-color:#d87a6a;color:#f0a090}.monitor-tag.question{border-color:#d8b46a;color:#f0d090}.monitor-tag.ok{color:var(--muted)}
+.monitor-item p{margin:.25rem 0}
+.monitor-fix{color:var(--brass)}
+.monitor-quote{font-style:italic;color:var(--muted)}
+.monitor-item pre{white-space:pre-wrap;font-size:11px;background:var(--well);padding:6px;border-radius:4px;max-height:12rem;overflow:auto}
+.monitor-count{display:inline-block;margin-left:6px;min-width:1.2em;padding:0 5px;border-radius:9px;background:#b5533f;color:#fff;font-size:11px;text-align:center}
+.monitor-ok{font-size:12px;color:var(--muted)}

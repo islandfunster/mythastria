@@ -1,0 +1,2428 @@
+{
+ "name": "The Broken Keep (live play test): a walled courtyard, a pillared hall, two side rooms behind doors, a south yard",
+ "source": "Goblin Warrior: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (2026-10-20: was the 5.1 Goblin; GM: goblins and kobolds may be player characters, so creatures carry a vocation). Characters: the SRD pregens. Walls are synthetic. Map: synthetic simulator test map (not adventure content).",
+ "rounds": 6,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "The Broken Keep (test)",
+ "walls": [
+  {
+   "id": "w0",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     27.5
+    ]
+   ]
+  },
+  {
+   "id": "w1",
+   "points": [
+    [
+     5.5,
+     17.5
+    ],
+    [
+     5.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w2",
+   "points": [
+    [
+     6.5,
+     8.5
+    ],
+    [
+     6.5,
+     10.5
+    ]
+   ]
+  },
+  {
+   "id": "w3",
+   "points": [
+    [
+     7.5,
+     8.5
+    ],
+    [
+     7.5,
+     10.5
+    ]
+   ]
+  },
+  {
+   "id": "w4",
+   "points": [
+    [
+     8.5,
+     17.5
+    ],
+    [
+     8.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w5",
+   "points": [
+    [
+     11.5,
+     4.5
+    ],
+    [
+     11.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "w6",
+   "points": [
+    [
+     11.5,
+     14.5
+    ],
+    [
+     11.5,
+     22.5
+    ]
+   ]
+  },
+  {
+   "id": "w7",
+   "points": [
+    [
+     12.5,
+     5.5
+    ],
+    [
+     12.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "w8",
+   "points": [
+    [
+     12.5,
+     14.5
+    ],
+    [
+     12.5,
+     21.5
+    ]
+   ]
+  },
+  {
+   "id": "w9",
+   "points": [
+    [
+     15.5,
+     8.5
+    ],
+    [
+     15.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w10",
+   "points": [
+    [
+     15.5,
+     16.5
+    ],
+    [
+     15.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w11",
+   "points": [
+    [
+     15.5,
+     24.5
+    ],
+    [
+     15.5,
+     25.5
+    ]
+   ]
+  },
+  {
+   "id": "w12",
+   "points": [
+    [
+     16.5,
+     8.5
+    ],
+    [
+     16.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w13",
+   "points": [
+    [
+     16.5,
+     16.5
+    ],
+    [
+     16.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w14",
+   "points": [
+    [
+     18.5,
+     24.5
+    ],
+    [
+     18.5,
+     25.5
+    ]
+   ]
+  },
+  {
+   "id": "w15",
+   "points": [
+    [
+     20.5,
+     8.5
+    ],
+    [
+     20.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w16",
+   "points": [
+    [
+     20.5,
+     16.5
+    ],
+    [
+     20.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w17",
+   "points": [
+    [
+     21.5,
+     8.5
+    ],
+    [
+     21.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w18",
+   "points": [
+    [
+     21.5,
+     16.5
+    ],
+    [
+     21.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w19",
+   "points": [
+    [
+     24.5,
+     5.5
+    ],
+    [
+     24.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w20",
+   "points": [
+    [
+     24.5,
+     9.5
+    ],
+    [
+     24.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w21",
+   "points": [
+    [
+     24.5,
+     19.5
+    ],
+    [
+     24.5,
+     21.5
+    ]
+   ]
+  },
+  {
+   "id": "w22",
+   "points": [
+    [
+     25.5,
+     4.5
+    ],
+    [
+     25.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w23",
+   "points": [
+    [
+     25.5,
+     9.5
+    ],
+    [
+     25.5,
+     12.5
+    ]
+   ]
+  },
+  {
+   "id": "w24",
+   "points": [
+    [
+     25.5,
+     13.5
+    ],
+    [
+     25.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w25",
+   "points": [
+    [
+     25.5,
+     19.5
+    ],
+    [
+     25.5,
+     22.5
+    ]
+   ]
+  },
+  {
+   "id": "w26",
+   "points": [
+    [
+     35.5,
+     0.5
+    ],
+    [
+     35.5,
+     12.5
+    ]
+   ]
+  },
+  {
+   "id": "w27",
+   "points": [
+    [
+     35.5,
+     13.5
+    ],
+    [
+     35.5,
+     27.5
+    ]
+   ]
+  },
+  {
+   "id": "w28",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     35.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "w29",
+   "points": [
+    [
+     11.5,
+     4.5
+    ],
+    [
+     25.5,
+     4.5
+    ]
+   ]
+  },
+  {
+   "id": "w30",
+   "points": [
+    [
+     12.5,
+     5.5
+    ],
+    [
+     24.5,
+     5.5
+    ]
+   ]
+  },
+  {
+   "id": "w31",
+   "points": [
+    [
+     6.5,
+     8.5
+    ],
+    [
+     7.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w32",
+   "points": [
+    [
+     15.5,
+     8.5
+    ],
+    [
+     16.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w33",
+   "points": [
+    [
+     20.5,
+     8.5
+    ],
+    [
+     21.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w34",
+   "points": [
+    [
+     24.5,
+     8.5
+    ],
+    [
+     25.5,
+     8.5
+    ]
+   ]
+  },
+  {
+   "id": "w35",
+   "points": [
+    [
+     15.5,
+     9.5
+    ],
+    [
+     16.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w36",
+   "points": [
+    [
+     20.5,
+     9.5
+    ],
+    [
+     21.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w37",
+   "points": [
+    [
+     24.5,
+     9.5
+    ],
+    [
+     25.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "w38",
+   "points": [
+    [
+     6.5,
+     10.5
+    ],
+    [
+     7.5,
+     10.5
+    ]
+   ]
+  },
+  {
+   "id": "w39",
+   "points": [
+    [
+     25.5,
+     12.5
+    ],
+    [
+     35.5,
+     12.5
+    ]
+   ]
+  },
+  {
+   "id": "w40",
+   "points": [
+    [
+     11.5,
+     13.5
+    ],
+    [
+     12.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "w41",
+   "points": [
+    [
+     25.5,
+     13.5
+    ],
+    [
+     35.5,
+     13.5
+    ]
+   ]
+  },
+  {
+   "id": "w42",
+   "points": [
+    [
+     11.5,
+     14.5
+    ],
+    [
+     12.5,
+     14.5
+    ]
+   ]
+  },
+  {
+   "id": "w43",
+   "points": [
+    [
+     15.5,
+     16.5
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ]
+  },
+  {
+   "id": "w44",
+   "points": [
+    [
+     20.5,
+     16.5
+    ],
+    [
+     21.5,
+     16.5
+    ]
+   ]
+  },
+  {
+   "id": "w45",
+   "points": [
+    [
+     5.5,
+     17.5
+    ],
+    [
+     8.5,
+     17.5
+    ]
+   ]
+  },
+  {
+   "id": "w46",
+   "points": [
+    [
+     5.5,
+     18.5
+    ],
+    [
+     8.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w47",
+   "points": [
+    [
+     15.5,
+     18.5
+    ],
+    [
+     16.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w48",
+   "points": [
+    [
+     20.5,
+     18.5
+    ],
+    [
+     21.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w49",
+   "points": [
+    [
+     24.5,
+     18.5
+    ],
+    [
+     25.5,
+     18.5
+    ]
+   ]
+  },
+  {
+   "id": "w50",
+   "points": [
+    [
+     24.5,
+     19.5
+    ],
+    [
+     25.5,
+     19.5
+    ]
+   ]
+  },
+  {
+   "id": "w51",
+   "points": [
+    [
+     12.5,
+     21.5
+    ],
+    [
+     24.5,
+     21.5
+    ]
+   ]
+  },
+  {
+   "id": "w52",
+   "points": [
+    [
+     11.5,
+     22.5
+    ],
+    [
+     25.5,
+     22.5
+    ]
+   ]
+  },
+  {
+   "id": "w53",
+   "points": [
+    [
+     15.5,
+     24.5
+    ],
+    [
+     18.5,
+     24.5
+    ]
+   ]
+  },
+  {
+   "id": "w54",
+   "points": [
+    [
+     15.5,
+     25.5
+    ],
+    [
+     18.5,
+     25.5
+    ]
+   ]
+  },
+  {
+   "id": "w55",
+   "points": [
+    [
+     0.5,
+     27.5
+    ],
+    [
+     35.5,
+     27.5
+    ]
+   ]
+  },
+  {
+   "id": "hall door west",
+   "door": true,
+   "points": [
+    [
+     11.5,
+     13.5
+    ],
+    [
+     11.5,
+     14.5
+    ]
+   ]
+  },
+  {
+   "id": "north room door",
+   "door": true,
+   "points": [
+    [
+     24.5,
+     8.5
+    ],
+    [
+     24.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "id": "south room door",
+   "door": true,
+   "points": [
+    [
+     24.5,
+     18.5
+    ],
+    [
+     24.5,
+     19.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [
+  "hall door west"
+ ],
+ "locked_doors": [],
+ "aware": [
+  "id-00021",
+  "id-00022",
+  "id-00023",
+  "id-00029",
+  "id-00030"
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 30,
+   "x": 5,
+   "y": 14,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 2",
+   "side": "friend",
+   "pc": true,
+   "init": 25,
+   "x": 4,
+   "y": 16,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 20,
+   "x": 3,
+   "y": 15,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00021",
+   "name": "Goblin Warrior 1",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 18,
+   "y": 11,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00022",
+   "name": "Goblin Warrior 2",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 19,
+   "y": 12,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00023",
+   "name": "Goblin Warrior 3",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 18,
+   "y": 15,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00024",
+   "name": "Goblin Warrior 4",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 30,
+   "y": 7,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00025",
+   "name": "Goblin Warrior 5",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 31,
+   "y": 8,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00026",
+   "name": "Goblin Warrior 6",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 30,
+   "y": 10,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00027",
+   "name": "Goblin Warrior 7",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 30,
+   "y": 17,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00028",
+   "name": "Goblin Warrior 8",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 31,
+   "y": 20,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00029",
+   "name": "Goblin Warrior 9",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 17,
+   "y": 26,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00030",
+   "name": "Goblin Warrior 10",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 20,
+   "y": 27,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  }
+ ],
+ "ceilings": [
+  {
+   "room": "courtyard",
+   "rect": [
+    1,
+    1,
+    11,
+    27
+   ],
+   "ft": null,
+   "description": "Open sky over the broken courtyard."
+  },
+  {
+   "room": "hall",
+   "rect": [
+    13,
+    6,
+    24,
+    21
+   ],
+   "ft": 20,
+   "description": "A 20-ft vault on four pillars."
+  },
+  {
+   "room": "north room",
+   "rect": [
+    26,
+    1,
+    35,
+    12
+   ],
+   "ft": 10,
+   "description": "A 10-ft barracks room."
+  },
+  {
+   "room": "south room",
+   "rect": [
+    26,
+    14,
+    35,
+    27
+   ],
+   "ft": 10,
+   "description": "A 10-ft storeroom."
+  }
+ ],
+ "props": [
+  {
+   "kind": "statue",
+   "x": 18,
+   "y": 12,
+   "rot": 0,
+   "label": "statue"
+  },
+  {
+   "kind": "brazier",
+   "x": 14,
+   "y": 7,
+   "rot": 0,
+   "label": "brazier"
+  },
+  {
+   "kind": "brazier",
+   "x": 23,
+   "y": 20,
+   "rot": 0,
+   "label": "brazier"
+  },
+  {
+   "kind": "rock",
+   "x": 8,
+   "y": 6,
+   "rot": 0,
+   "label": "rubble"
+  },
+  {
+   "kind": "broken_column",
+   "x": 9,
+   "y": 21,
+   "rot": 0,
+   "label": "fallen column"
+  },
+  {
+   "kind": "barrel",
+   "x": 34,
+   "y": 26,
+   "rot": 0,
+   "label": "barrel"
+  },
+  {
+   "kind": "crate",
+   "x": 33,
+   "y": 26,
+   "rot": 0,
+   "label": "crates"
+  },
+  {
+   "kind": "bench",
+   "x": 32,
+   "y": 3,
+   "rot": 0,
+   "label": "bench"
+  }
+ ],
+ "wall_cells": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   0
+  ],
+  [
+   8,
+   0
+  ],
+  [
+   9,
+   0
+  ],
+  [
+   10,
+   0
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   0
+  ],
+  [
+   15,
+   0
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   0
+  ],
+  [
+   18,
+   0
+  ],
+  [
+   19,
+   0
+  ],
+  [
+   20,
+   0
+  ],
+  [
+   21,
+   0
+  ],
+  [
+   22,
+   0
+  ],
+  [
+   23,
+   0
+  ],
+  [
+   24,
+   0
+  ],
+  [
+   25,
+   0
+  ],
+  [
+   26,
+   0
+  ],
+  [
+   27,
+   0
+  ],
+  [
+   28,
+   0
+  ],
+  [
+   29,
+   0
+  ],
+  [
+   30,
+   0
+  ],
+  [
+   31,
+   0
+  ],
+  [
+   32,
+   0
+  ],
+  [
+   33,
+   0
+  ],
+  [
+   34,
+   0
+  ],
+  [
+   35,
+   0
+  ],
+  [
+   36,
+   0
+  ],
+  [
+   37,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   36,
+   1
+  ],
+  [
+   37,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   36,
+   2
+  ],
+  [
+   37,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   36,
+   3
+  ],
+  [
+   37,
+   3
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   36,
+   4
+  ],
+  [
+   37,
+   4
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   12,
+   5
+  ],
+  [
+   13,
+   5
+  ],
+  [
+   14,
+   5
+  ],
+  [
+   15,
+   5
+  ],
+  [
+   16,
+   5
+  ],
+  [
+   17,
+   5
+  ],
+  [
+   18,
+   5
+  ],
+  [
+   19,
+   5
+  ],
+  [
+   20,
+   5
+  ],
+  [
+   21,
+   5
+  ],
+  [
+   22,
+   5
+  ],
+  [
+   23,
+   5
+  ],
+  [
+   24,
+   5
+  ],
+  [
+   25,
+   5
+  ],
+  [
+   36,
+   5
+  ],
+  [
+   37,
+   5
+  ],
+  [
+   0,
+   6
+  ],
+  [
+   12,
+   6
+  ],
+  [
+   25,
+   6
+  ],
+  [
+   36,
+   6
+  ],
+  [
+   37,
+   6
+  ],
+  [
+   0,
+   7
+  ],
+  [
+   12,
+   7
+  ],
+  [
+   25,
+   7
+  ],
+  [
+   36,
+   7
+  ],
+  [
+   37,
+   7
+  ],
+  [
+   0,
+   8
+  ],
+  [
+   12,
+   8
+  ],
+  [
+   25,
+   8
+  ],
+  [
+   36,
+   8
+  ],
+  [
+   37,
+   8
+  ],
+  [
+   0,
+   9
+  ],
+  [
+   7,
+   9
+  ],
+  [
+   12,
+   9
+  ],
+  [
+   16,
+   9
+  ],
+  [
+   21,
+   9
+  ],
+  [
+   36,
+   9
+  ],
+  [
+   37,
+   9
+  ],
+  [
+   0,
+   10
+  ],
+  [
+   7,
+   10
+  ],
+  [
+   12,
+   10
+  ],
+  [
+   25,
+   10
+  ],
+  [
+   36,
+   10
+  ],
+  [
+   37,
+   10
+  ],
+  [
+   0,
+   11
+  ],
+  [
+   12,
+   11
+  ],
+  [
+   25,
+   11
+  ],
+  [
+   36,
+   11
+  ],
+  [
+   37,
+   11
+  ],
+  [
+   0,
+   12
+  ],
+  [
+   12,
+   12
+  ],
+  [
+   25,
+   12
+  ],
+  [
+   36,
+   12
+  ],
+  [
+   37,
+   12
+  ],
+  [
+   0,
+   13
+  ],
+  [
+   12,
+   13
+  ],
+  [
+   25,
+   13
+  ],
+  [
+   26,
+   13
+  ],
+  [
+   27,
+   13
+  ],
+  [
+   28,
+   13
+  ],
+  [
+   29,
+   13
+  ],
+  [
+   30,
+   13
+  ],
+  [
+   31,
+   13
+  ],
+  [
+   32,
+   13
+  ],
+  [
+   33,
+   13
+  ],
+  [
+   34,
+   13
+  ],
+  [
+   35,
+   13
+  ],
+  [
+   36,
+   13
+  ],
+  [
+   37,
+   13
+  ],
+  [
+   0,
+   14
+  ],
+  [
+   25,
+   14
+  ],
+  [
+   36,
+   14
+  ],
+  [
+   37,
+   14
+  ],
+  [
+   0,
+   15
+  ],
+  [
+   12,
+   15
+  ],
+  [
+   25,
+   15
+  ],
+  [
+   36,
+   15
+  ],
+  [
+   37,
+   15
+  ],
+  [
+   0,
+   16
+  ],
+  [
+   12,
+   16
+  ],
+  [
+   25,
+   16
+  ],
+  [
+   36,
+   16
+  ],
+  [
+   37,
+   16
+  ],
+  [
+   0,
+   17
+  ],
+  [
+   12,
+   17
+  ],
+  [
+   16,
+   17
+  ],
+  [
+   21,
+   17
+  ],
+  [
+   25,
+   17
+  ],
+  [
+   36,
+   17
+  ],
+  [
+   37,
+   17
+  ],
+  [
+   0,
+   18
+  ],
+  [
+   6,
+   18
+  ],
+  [
+   7,
+   18
+  ],
+  [
+   8,
+   18
+  ],
+  [
+   12,
+   18
+  ],
+  [
+   16,
+   18
+  ],
+  [
+   21,
+   18
+  ],
+  [
+   25,
+   18
+  ],
+  [
+   36,
+   18
+  ],
+  [
+   37,
+   18
+  ],
+  [
+   0,
+   19
+  ],
+  [
+   12,
+   19
+  ],
+  [
+   36,
+   19
+  ],
+  [
+   37,
+   19
+  ],
+  [
+   0,
+   20
+  ],
+  [
+   12,
+   20
+  ],
+  [
+   25,
+   20
+  ],
+  [
+   36,
+   20
+  ],
+  [
+   37,
+   20
+  ],
+  [
+   0,
+   21
+  ],
+  [
+   12,
+   21
+  ],
+  [
+   25,
+   21
+  ],
+  [
+   36,
+   21
+  ],
+  [
+   37,
+   21
+  ],
+  [
+   0,
+   22
+  ],
+  [
+   12,
+   22
+  ],
+  [
+   13,
+   22
+  ],
+  [
+   14,
+   22
+  ],
+  [
+   15,
+   22
+  ],
+  [
+   16,
+   22
+  ],
+  [
+   17,
+   22
+  ],
+  [
+   18,
+   22
+  ],
+  [
+   19,
+   22
+  ],
+  [
+   20,
+   22
+  ],
+  [
+   21,
+   22
+  ],
+  [
+   22,
+   22
+  ],
+  [
+   23,
+   22
+  ],
+  [
+   24,
+   22
+  ],
+  [
+   25,
+   22
+  ],
+  [
+   36,
+   22
+  ],
+  [
+   37,
+   22
+  ],
+  [
+   0,
+   23
+  ],
+  [
+   36,
+   23
+  ],
+  [
+   37,
+   23
+  ],
+  [
+   0,
+   24
+  ],
+  [
+   36,
+   24
+  ],
+  [
+   37,
+   24
+  ],
+  [
+   0,
+   25
+  ],
+  [
+   16,
+   25
+  ],
+  [
+   17,
+   25
+  ],
+  [
+   18,
+   25
+  ],
+  [
+   36,
+   25
+  ],
+  [
+   37,
+   25
+  ],
+  [
+   0,
+   26
+  ],
+  [
+   36,
+   26
+  ],
+  [
+   37,
+   26
+  ],
+  [
+   0,
+   27
+  ],
+  [
+   36,
+   27
+  ],
+  [
+   37,
+   27
+  ],
+  [
+   0,
+   28
+  ],
+  [
+   1,
+   28
+  ],
+  [
+   2,
+   28
+  ],
+  [
+   3,
+   28
+  ],
+  [
+   4,
+   28
+  ],
+  [
+   5,
+   28
+  ],
+  [
+   6,
+   28
+  ],
+  [
+   7,
+   28
+  ],
+  [
+   8,
+   28
+  ],
+  [
+   9,
+   28
+  ],
+  [
+   10,
+   28
+  ],
+  [
+   11,
+   28
+  ],
+  [
+   12,
+   28
+  ],
+  [
+   13,
+   28
+  ],
+  [
+   14,
+   28
+  ],
+  [
+   15,
+   28
+  ],
+  [
+   16,
+   28
+  ],
+  [
+   17,
+   28
+  ],
+  [
+   18,
+   28
+  ],
+  [
+   19,
+   28
+  ],
+  [
+   20,
+   28
+  ],
+  [
+   21,
+   28
+  ],
+  [
+   22,
+   28
+  ],
+  [
+   23,
+   28
+  ],
+  [
+   24,
+   28
+  ],
+  [
+   25,
+   28
+  ],
+  [
+   26,
+   28
+  ],
+  [
+   27,
+   28
+  ],
+  [
+   28,
+   28
+  ],
+  [
+   29,
+   28
+  ],
+  [
+   30,
+   28
+  ],
+  [
+   31,
+   28
+  ],
+  [
+   32,
+   28
+  ],
+  [
+   33,
+   28
+  ],
+  [
+   34,
+   28
+  ],
+  [
+   35,
+   28
+  ],
+  [
+   36,
+   28
+  ],
+  [
+   37,
+   28
+  ],
+  [
+   0,
+   29
+  ],
+  [
+   1,
+   29
+  ],
+  [
+   2,
+   29
+  ],
+  [
+   3,
+   29
+  ],
+  [
+   4,
+   29
+  ],
+  [
+   5,
+   29
+  ],
+  [
+   6,
+   29
+  ],
+  [
+   7,
+   29
+  ],
+  [
+   8,
+   29
+  ],
+  [
+   9,
+   29
+  ],
+  [
+   10,
+   29
+  ],
+  [
+   11,
+   29
+  ],
+  [
+   12,
+   29
+  ],
+  [
+   13,
+   29
+  ],
+  [
+   14,
+   29
+  ],
+  [
+   15,
+   29
+  ],
+  [
+   16,
+   29
+  ],
+  [
+   17,
+   29
+  ],
+  [
+   18,
+   29
+  ],
+  [
+   19,
+   29
+  ],
+  [
+   20,
+   29
+  ],
+  [
+   21,
+   29
+  ],
+  [
+   22,
+   29
+  ],
+  [
+   23,
+   29
+  ],
+  [
+   24,
+   29
+  ],
+  [
+   25,
+   29
+  ],
+  [
+   26,
+   29
+  ],
+  [
+   27,
+   29
+  ],
+  [
+   28,
+   29
+  ],
+  [
+   29,
+   29
+  ],
+  [
+   30,
+   29
+  ],
+  [
+   31,
+   29
+  ],
+  [
+   32,
+   29
+  ],
+  [
+   33,
+   29
+  ],
+  [
+   34,
+   29
+  ],
+  [
+   35,
+   29
+  ],
+  [
+   36,
+   29
+  ],
+  [
+   37,
+   29
+  ]
+ ],
+ "zones": []
+}

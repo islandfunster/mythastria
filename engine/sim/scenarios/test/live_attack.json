@@ -1,0 +1,171 @@
+{
+ "name": "Live play test (LIVE-PLAY-01): Hero 1 next to Goblin 1, Goblin 2 30 ft away in the open, Goblin 3 behind a wall",
+ "source": "Goblin Warrior: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (2026-10-20: was the 5.1 Goblin; GM: goblins and kobolds may be player characters, so creatures carry a vocation). Characters: the SRD pregens. Walls are synthetic.",
+ "rounds": 3,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Live play test room",
+ "open_doors": [],
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013"
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 30,
+   "x": 2,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 25,
+   "x": 2,
+   "y": 3,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Goblin Warrior 1",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 3,
+   "y": 2,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00012",
+   "name": "Goblin Warrior 2",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 8,
+   "y": 2,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  },
+  {
+   "id": "id-00013",
+   "name": "Goblin Warrior 3",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 1,
+   "x": 2,
+   "y": 8,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ],
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "type": "Humanoid (Goblinoid)",
+   "int": 10,
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9"
+  }
+ ],
+ "walls": [
+  {
+   "id": "w1",
+   "points": [
+    [
+     -1,
+     6.5
+    ],
+    [
+     6.5,
+     6.5
+    ]
+   ]
+  }
+ ]
+}

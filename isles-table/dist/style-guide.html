@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Style guide</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+/* STYLE-GUIDE-01 (GM 2026-10-28: "I'd like to look again at style guides"; "Draft style guide"): how Mythastria reads
+   and looks, written down from what the table already does, with what a contrast check found. Linked from docs.html. */
+main{max-width:980px;margin:0 auto;padding:1rem}
+main section.panel{margin:0 0 16px}
+main h3{font:600 16px var(--display-font);letter-spacing:1px;color:var(--brass);margin:18px 0 6px}
+main p,main li{line-height:1.6}main li{margin:3px 0}
+.lead{color:var(--muted)}
+.proposed{border-left:3px solid var(--brass);padding:4px 10px;margin:8px 0;background:color-mix(in srgb,var(--brass) 7%,transparent)}
+.proposed b{color:var(--brass)}
+.contrast{border-collapse:collapse;width:100%;font-size:13px;margin:6px 0}
+.contrast th,.contrast td{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top}
+.contrast th{color:var(--muted);font-weight:500}
+.contrast .fail{color:var(--no)}.contrast .pass{color:var(--ok)}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:5px;border:1px solid #0006}
+.scroll{overflow-x:auto}
+code{font-size:12px;color:var(--paper);background:var(--surface-low,#13120e);padding:1px 4px;border-radius:3px}
+.example{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin:6px 0}.example span:nth-child(odd){color:var(--ok)}.example span:nth-child(even){color:var(--no)}
+@media(max-width:640px){.example{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header class="site-header" data-page="docs"></header>
+<main>
+<section class="panel"><h2>Mythastria style guide</h2>
+ <p class="lead">How Mythastria reads and looks, for anyone adding a page, a rule, a map or a picture. It writes down what the
+  table already does (28 October 2026). Where a check found something to fix, or where the GM still has to decide, it says
+  so in a gold box marked <b>Proposed</b>. Three parts: <a href="#words">Words</a>, <a href="#screens">Screens</a>,
+  <a href="#art">Art</a>, then <a href="#check">a checklist</a> and <a href="#sources">the professional guides it draws on</a>.</p>
+</section>
+
+<section class="panel" id="words"><h2>1. Words</h2>
+ <p>Mythastria is written for the GM and the players at the table, in plain words. The rules words are SRD 5.2.1's.</p>
+ <h3>Rules words</h3>
+ <ul>
+  <li><b>Game terms are capitalised as the SRD 5.2.1 Rules Glossary has them:</b> Action, Bonus Action, Reaction,
+   Opportunity Attack, Difficult Terrain, Bloodied, Concentration, and the conditions (Prone, Frightened, Stunned...).</li>
+  <li><b>Abilities in full</b> where a player reads a sentence: "a Dexterity saving throw", "DC 15 Constitution save".
+   Short forms (Dex 14, Str) only in compact stat lines.</li>
+  <li><b>Numbers the way the SRD writes them:</b> 30 ft, 1d10 + 4, AC 17, DC 15, a level 3 spell slot, 2d10 Fire
+   damage.</li>
+  <li><b>Only SRD 5.2.1 and Mythastria's own words.</b> No other publisher's names, places, spells or terms in anything
+   Mythastria ships; what a player imports stays theirs (homebrew, local only).</li>
+ </ul>
+ <h3>Plain words</h3>
+ <ul>
+  <li><b>Say what happened and what to do</b>, never the program's insides (no "op", "snapshot", "revision", "ticket").</li>
+  <li><b>A refusal gives its reason</b>, and a greyed-out button says why in its hover text:</li>
+ </ul>
+ <div class="example"><span>Goblin 2 is 35 ft away: out of the Scimitar's reach (5 ft).</span><span>Invalid target.</span>
+  <span>Hero 4's Bonus Action is used this turn.</span><span>Action not available.</span></div>
+ <ul>
+  <li><b>Buttons are verbs that name the thing:</b> Cast Shield, End turn, Take over Hero 4, Give Hero 4 back, Hand to the GM,
+   Ask the GM, Answer for them. A question the fight asks ends with a question mark: "Cast Shield? (Reaction)".</li>
+  <li><b>A player's own screen is the player client</b>, and its turn controls are the player clients' buttons (the GM,
+   27 October).</li>
+  <li><b>Hints say what is possible, never which to choose.</b> Suggestions, when they come, are labelled as an opinion.</li>
+  <li><b>Narration never claims a hit, a miss or damage</b> that the dice did not decide.</li>
+  <li><b>The Documents page</b> gives each feature in three parts: what it does, how to use it, and its limits, with the
+   date it changed.</li>
+ </ul>
+ <div class="proposed"><b>Proposed:</b> say <b>GM</b> everywhere Mythastria writes for itself. Today the pages say "the GM"
+  121 times and "the GM" 41 times (the GM role swap, Restore the party, the Market, "not yet (the GM rules it)" on the
+  Spells page). Quoted SRD text keeps its own wording. The GM decides.</div>
+</section>
+
+<section class="panel" id="screens"><h2>2. Screens</h2>
+ <h3>The look</h3>
+ <ul>
+  <li><b>Gilded is the default skin</b> (the GM, 22 October: "a touch of elegance"): warm black
+   <span class="swatch" style="background:#100f0c"></span><code>#100f0c</code>, gold
+   <span class="swatch" style="background:#d9bb78"></span><code>#d9bb78</code> and parchment-white text
+   <span class="swatch" style="background:#ece2c9"></span><code>#ece2c9</code>; Cormorant Garamond for headings, Inter for
+   text; bevelled buttons and soft shadows. The other skins are Tabletop (the cartoon one), Deep Sea and Parchment (light).</li>
+  <li><b>Use the colour names, never a colour code</b>, in new pages: <code>--paper</code> text, <code>--muted</code> notes,
+   <code>--brass</code> gold, <code>--panel</code>, <code>--ink</code>, <code>--line</code>, <code>--ok</code> green,
+   <code>--no</code> red. Then every skin works without a change (<code>dist/skins.css</code>).</li>
+  <li><b>One look for every page:</b> the header, links, panels and buttons come from <code>site.css</code>,
+   <code>skins.css</code> and <code>site.mjs</code>.</li>
+ </ul>
+ <h3>Reading and using</h3>
+ <ul>
+  <li><b>Text contrast</b> at least 4.5:1 against its background (3:1 for large headings); the edges of boxes you type in,
+   and the focus ring, at least 3:1 (WCAG 2.2).</li>
+  <li><b>A visible focus ring</b> on everything you can reach with the keyboard: the 2 px gold ring in <code>site.css</code>.</li>
+  <li><b>Touch targets at least 44 px tall</b> (<code>table-ui.css</code> already does this for buttons and boxes).</li>
+  <li><b>Motion is short and quiet</b>, and stops for anyone whose device asks for reduced motion (already done in
+   <code>effects.css</code> and the pages).</li>
+  <li><b>Never a choice made for anyone.</b> Something that pauses the fight is one card near the top of the screen, one at a
+   time, and the GM can always answer for a player (the Reaction question). A choice that can't be taken back says so.</li>
+ </ul>
+ <h3>The contrast check (28 October)</h3>
+ <p>Every skin's text and every typing box's edge passes. Gilded, the default, has the most to spare.</p>
+ <div class="scroll"><table class="contrast">
+  <thead><tr><th>What</th><th>Gilded (default)</th><th>Tabletop</th><th>Deep Sea</th><th>Parchment</th><th>Needs</th></tr></thead>
+  <tbody>
+   <tr><td>Text in panels</td><td class="pass">13.8</td><td class="pass">9.6</td><td class="pass">11.4</td><td class="pass">10.3</td><td>4.5</td></tr>
+   <tr><td>Button text</td><td class="pass">9.6</td><td class="pass">5.9</td><td class="pass">8.6</td><td class="pass">7.6</td><td>4.5</td></tr>
+   <tr><td>Grey notes in panels</td><td class="pass">6.3</td><td class="pass">5.8</td><td class="pass">6.2</td><td class="pass">6.0</td><td>4.5</td></tr>
+   <tr><td>Grey notes on the page</td><td class="pass">6.9</td><td class="pass">7.2</td><td class="pass">7.1</td><td class="pass">5.0</td><td>4.5</td></tr>
+   <tr><td>Small gold text</td><td class="pass">9.6</td><td class="pass">6.3</td><td class="pass">7.5</td><td class="pass">6.0</td><td>4.5</td></tr>
+   <tr><td>Red text (refusals)</td><td class="pass">7.2</td><td class="pass">4.8</td><td class="pass">5.2</td><td class="pass">5.9</td><td>4.5</td></tr>
+   <tr><td>Green text</td><td class="pass">9.3</td><td class="pass">5.9</td><td class="pass">7.8</td><td class="pass">5.7</td><td>4.5</td></tr>
+   <tr><td>Focus ring</td><td class="pass">10.3</td><td class="pass">7.8</td><td class="pass">8.6</td><td class="pass">5.0</td><td>3</td></tr>
+   <tr><td>Edges of boxes you type in</td><td class="pass">3.5</td><td class="pass">3.7</td><td class="pass">3.8</td><td class="pass">3.1</td><td>3</td></tr>
+   <tr><td>Panel edges (decoration)</td><td>1.4</td><td>1.7</td><td>1.6</td><td>1.8</td><td>&ndash;</td></tr>
+  </tbody></table></div>
+ <p class="lead">Fixed the same day (<code>--field-edge</code> is the typing boxes' edge colour in every skin):</p>
+ <ol>
+  <li><b>Parchment's colours:</b> it borrowed the dark skins' green, red and amber, which couldn't be read on parchment
+   (1.4:1, 2.2:1, 1.5:1). It has its own darker ones now, and darker grey notes, gold, rust and sage.</li>
+  <li><b>Edges of boxes you type in</b> (and of choosers such as Hints and Limit): at least 3:1 in every skin. Gilded keeps
+   its recessed look (a dark top edge). Panel edges stay faint: they are decoration, not something you use.</li>
+  <li><b>The focus ring everywhere:</b> Gilded's typing boxes, the combat tracker's rows and the front page's layout buttons
+   now show the gold ring when reached by the keyboard.</li>
+  <li><b>No text under 11 px:</b> the old Training table page's 7-10 px labels are 11 px, as are the Documents page's tags,
+   which also take the skin's own green now.</li>
+ </ol>
+</section>
+
+<section class="panel" id="art"><h2>3. Art</h2>
+ <ul>
+  <li><b>Map, 3D world and creatures: "style 1"</b> (the GM, 19 October), the Retro tokens' cartoon drawing: thick ink
+   outlines and two or three flat tones, in muted colours so the bright tokens stand out.</li>
+  <li><b>Never recolour or restyle a token</b> ("leave the tokens bright coloured").</li>
+  <li><b>A tabletop miniature, not a photograph:</b> chunky blocks, clean edges, simple solid shapes (a CNC model of a map
+   should one day be possible).</li>
+  <li><b>Creatures are flat standees</b> on a round base (adjustable in Flavor). The newer SRD token art is a choice in
+   Flavor, never a creature's default.</li>
+  <li><b>Map walls are at least one 5-ft square</b>: no line walls, a door sits in a doorway square, no floor square on the
+   map's outer edge, and the stone beyond the outer walls fades away.</li>
+  <li><b>Effects:</b> an ink outline and a flat rim; comic hit stars (bigger for a Critical Hit), a swoosh with puffs for a
+   miss (<code>EFFECTS.md</code>).</li>
+  <li><b>Only Mythastria's own art and SRD content ship.</b> Art a GM imports stays on their PC.</li>
+ </ul>
+ <p class="lead">The palette of the 3D world is <code>dist/world-style.mjs</code>; the skins and their history are in
+  <code>SKINS.md</code>.</p>
+</section>
+
+<section class="panel" id="check"><h2>Checklist for something new</h2>
+ <ol>
+  <li>Rules words as the SRD 5.2.1 Rules Glossary has them; plain words for everything else.</li>
+  <li>Every refusal and greyed-out button says why.</li>
+  <li>Colours by name (<code>--paper</code>, <code>--muted</code>...), and it looks right in Gilded and Parchment.</li>
+  <li>Text at least 4.5:1, typing boxes and the focus ring at least 3:1; the gold focus ring shows.</li>
+  <li>Buttons at least 44 px tall; it works at a phone's width.</li>
+  <li>Nothing chosen for anyone; the GM can always answer for a player.</li>
+  <li>Art: style 1, tokens untouched, thick walls.</li>
+  <li>Its Documents entry says what, how and the limits, in the same change.</li>
+ </ol>
+</section>
+
+<section class="panel" id="sources"><h2>The professional guides behind it</h2>
+ <p>No single guide covers a game like this; these cover its parts.</p>
+ <ul>
+  <li><b>Rules text:</b> the SRD 5.2.1 itself (its Rules Glossary); Wizards of the Coast's D&amp;D style guide for GMs Guild
+   creators (2019, before the 2024 rules); Ray Vallese, <i>Writing With Style</i>; Wolfgang Baur et al., <i>The Complete
+   Kobold Guide to Game Design</i>; the <i>Chicago Manual of Style</i>, which most RPG publishers build on.</li>
+  <li><b>Screens:</b> <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener">WCAG 2.2</a> (contrast, focus,
+   keyboard); the <a href="https://learn.microsoft.com/en-us/gaming/accessibility/guidelines" target="_blank" rel="noopener">Xbox
+   Accessibility Guidelines</a> (113: focus that stays visible; 114: knowing what a button does before pressing it); the
+   <a href="https://gameaccessibilityguidelines.com/" target="_blank" rel="noopener">Game Accessibility Guidelines</a>.</li>
+  <li><b>Art:</b> studios keep their style guides private; Mythastria's are the GM's own choices above.</li>
+ </ul>
+</section>
+</main>
+</body></html>

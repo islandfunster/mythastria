@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Play Live</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="remix-panel.css"><link rel="stylesheet" href="director.css"><link rel="stylesheet" href="join.css"><link rel="stylesheet" href="flavor.css"><link rel="stylesheet" href="market.css"><link rel="stylesheet" href="rules-monitor.css"><link rel="stylesheet" href="effects.css"><link rel="stylesheet" href="sheet-view.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+main{display:grid;grid-template-columns:minmax(0,1fr) 23rem;gap:1.25rem;padding:.4rem 28px 1.5rem;max-width:calc(1720px + 56px);margin:0 auto}
+@media (min-width:1900px){main{grid-template-columns:minmax(0,1fr) 27rem}}   /* a widescreen: a roomier sheet */
+@media (max-width:860px){main{grid-template-columns:1fr}}
+/* GM 2026-10-27 ("I need turn and action on left side in landscape"): on the GM console in landscape the turn sheet and
+   the Result sit in a column left of the map (play-ui.mjs placeTurnSide moves them; elsewhere they stay on the right).
+   Under 1280px the side column goes under the map; "min-width:1px" keeps that rule under the Layout picker's Landscape */
+#turn-side{display:none}
+main.turn-left{grid-template-columns:23rem minmax(0,1fr) 23rem;grid-template-areas:"turn map side";max-width:calc(2200px + 56px)}
+main.turn-left>#turn-side{display:block;grid-area:turn}main.turn-left>.map-col{grid-area:map}main.turn-left>.side-col{grid-area:side}
+@media (min-width:1900px){main.turn-left{grid-template-columns:25rem minmax(0,1fr) 25rem}}
+@media (min-width:1px) and (max-width:1279px){main.turn-left{grid-template-columns:21rem minmax(0,1fr);grid-template-areas:"turn map" "turn side";grid-template-rows:auto 1fr}}
+#map,#tp-canvas{width:100%;height:70vh;background:#10110f;border:1px solid var(--line);border-radius:6px;touch-action:none;user-select:none}
+#status{padding:.7rem max(28px,calc((100% - 1720px) / 2));margin:0;color:var(--muted)}#status.error{color:var(--no)}
+.sheet-name{font-size:1.1rem;color:var(--brass)}.sheet-line{color:var(--muted);margin:.2rem 0}
+.card{display:block;width:100%;text-align:left;margin:.4rem 0;padding:.55rem .6rem;border:1px solid var(--brass);border-radius:6px;
+ background:#2a2419;cursor:grab;touch-action:none}
+.card.held{outline:2px solid var(--brass);background:#3a301e}.card .hint{display:block;color:var(--muted);font-size:.8rem}
+#ghost{position:fixed;pointer-events:none;z-index:60;padding:.3rem .55rem;border-radius:4px;background:var(--brass);color:#1b1710;font-weight:700;transform:translate(12px,12px)}
+#result{min-height:1.4em;white-space:pre-line}#result.refused{color:var(--no)}#result.done{color:var(--ok)}
+#log{max-height:16rem;overflow:auto;font-size:.85rem}#log div{padding:.15rem 0;border-bottom:1px solid #2a2a27}
+.log-referee{color:#e8b04a;font-style:italic}   /* REFEREE-01: the referee's notes */
+.log-dice{color:#d9cfb8}.log-turn{color:#9fc0e0}.log-error,.log-stop{color:var(--no)}
+.note{color:var(--muted);font-size:.8rem}
+#log .engine{display:none}#log.show-engine .engine{display:block;color:#7d776b}
+.board-hint{fill:var(--paper);stroke:var(--line);stroke-width:.04px;paint-order:stroke;font-family:var(--display-font,serif);font-weight:600}
+.sheet-photo{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.photo-row{display:flex;gap:4px;align-items:center}
+.photo{padding:0;width:40px;height:40px;border-radius:6px;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}
+.photo.on{outline:2px solid var(--brass)}.photo-x{padding:0 5px;min-width:0}.photo-add{cursor:pointer;padding:6px 9px;border:1px solid var(--line);border-radius:6px}
+.note-pin circle{fill:var(--brass);stroke:#0e0c0d;stroke-width:.03}.note-pin.shared circle{fill:#93c48c}.note-pin text{fill:#1d1608;font-weight:700}
+.note-label{fill:var(--paper)!important;paint-order:stroke;stroke:#0e0c0d;stroke-width:.05px;font-weight:600}#map.noting{cursor:copy}
+#map-editor{background:var(--panel);color:var(--paper);border:1px solid var(--line);border-radius:8px;width:min(1060px,calc(100vw - 32px));max-width:none}
+#map-editor input[type=number]{width:4.5em}.ed-wrap{max-height:65vh;overflow:auto}#ed-canvas{max-width:100%;cursor:crosshair;touch-action:none;display:block}
+#import-dialog,#note-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--line);border-radius:8px;max-width:min(520px,calc(100vw - 32px))}
+#note-text{width:100%;background:var(--surface-low,var(--panel));color:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px}
+#note-mode[aria-pressed="true"],#trap-mode[aria-pressed="true"]{background:var(--brass);color:#1d1608}
+/* GM 2026-10-24: traps (sim/traps.py). A secret one (GM only) is dashed; a found one amber; a made-safe one green */
+.trap rect{fill:#c0703a;fill-opacity:.16;stroke:#e0a060;stroke-width:.05}.trap text{fill:#f0c890;font-weight:700}
+.trap.secret rect{stroke-dasharray:.12 .08;fill-opacity:.08}.trap.safe rect{stroke:#7fbf7f;fill:#7fbf7f}.trap.safe text{fill:#bfe6bf}
+.trap.pit.open rect{fill:#000;fill-opacity:.7;stroke:#e0a060}.trap.lit rect{fill:#e05a20;fill-opacity:.45}
+.trap.stone rect{fill:#8a8278;fill-opacity:.85;stroke:#d8d0c0}.trap.rubble rect{fill:#6a5f50;fill-opacity:.5;stroke:none}
+.trap.statue rect{fill:#6f7480;fill-opacity:.6}#map.picking{cursor:crosshair}
+.hz rect{stroke-width:.04}.hz.slippery_ice rect{fill:#bfe3f2;fill-opacity:.28;stroke:#dff4ff;stroke-opacity:.6}
+.hz.thin_ice rect{fill:#d8eef7;fill-opacity:.2;stroke:#e8f8ff;stroke-dasharray:.1 .07}.hz.frigid_water rect{fill:#2a5f8a;fill-opacity:.42;stroke:#7fb4dc;stroke-opacity:.5}
+.hz.pending rect{fill:#e0c060;fill-opacity:.25;stroke:#e0c060;stroke-dasharray:.08 .06}#hazard-mode[aria-pressed="true"]{background:var(--brass);color:#1d1608}
+.hz-who{display:flex;flex-wrap:wrap;gap:4px 10px}.sheet-line.afflictions{color:var(--brass)}
+.trap-panel{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0;padding:6px 8px;border:1px solid var(--line);border-radius:6px}
+.log-secret{color:#c9b98a;font-style:italic}.log-secret::before{content:"GM only: ";font-style:normal;color:var(--brass)}
+.trap-panel #trap-card{flex-basis:100%}.trap-row{display:flex;gap:6px;align-items:center;flex-basis:100%}
+.paint-panel label{display:flex;gap:4px;align-items:center}.paint-panel input[type=range]{width:90px}#map.painting{cursor:crosshair}
+.fog-hidden{fill:#0b0d0e}.fog-dim{fill:#0b0d0e}
+/* VIEW-01: the players' window (play.html?view=player): the map only, no clicks */
+.player-view .toolbar,.player-view:not(.seated) aside,.player-view .gm-only,.player-view #fog-reset,.player-view #fog-reveal,.player-view #player-view,.player-view #note-mode,.player-view label:has(#fog-show),.player-view #chat-win,.player-view [id^=chat-]{display:none!important}
+/* GM 2026-10-25 (the player client: "all the player controls, attacks, spells, suggestions"): a seated player's screen has
+   its own character's sheet on its turn; the GM's panels stay off it (the service refuses them anyway) */
+.player-view.seated #scene-panel,.player-view.seated #ask-panel,.player-view.seated #undo-ask,.player-view.seated #sheet-photo,.player-view.seated label:has(#engine-lines){display:none!important}
+/* GM 2026-10-25 ("When a player joins as watch only ... they need to automatically get all the player's views"): a watcher
+   sees each character's turn read only, and the party */
+.watching #sheet-turn button,.watching #sheet-turn select,.watching #sheet-turn input,.watching #sheet-turn .card,.watching #sheet-turn .srow{pointer-events:none}
+.watching #end,.watching #undo,.watching #pv-undo,.watching #pv-hand{display:none!important}
+#party-body .pc{display:flex;justify-content:space-between;gap:.5rem;padding:.2rem 0;border-bottom:1px solid var(--line)}#party-body .pc.turn{font-weight:bold}#party-body .pc.down{opacity:.6}
+.player-view #map{background:#0b0d0e}   /* GM 2026-10-28: the players' nav (The table, The Stage) shows */
+.player-view main{grid-template-columns:1fr}.player-view #map{height:calc(100vh - 190px)}
+/* GM 2026-10-28 ("the combat tracker needs to be a small table on the left of the map. The Turn and actions need to be on
+   the right of the map. All other sections need to be collapsed"): the players' table in three columns; narrower, the
+   tracker and the map side by side over the sheet; on a phone one column (map, sheet, tracker) */
+.player-view main.player-3col{grid-template-columns:15rem minmax(0,1fr) 24rem;grid-template-areas:"track map side";max-width:none}
+.player-view main.player-3col>#turn-side{display:block;grid-area:track}.player-view main.player-3col>.map-col{grid-area:map}.player-view main.player-3col>.side-col{grid-area:side}
+@media (max-width:1180px){.player-view main.player-3col{grid-template-columns:13rem minmax(0,1fr);grid-template-areas:"track map" "side side"}}
+@media (max-width:760px){.player-view main.player-3col{grid-template-columns:1fr;grid-template-areas:"map" "side" "track"}}
+.player-3col .tracker-panel>.note{display:none}.player-3col .tracker{max-height:calc(100vh - 220px)}
+.player-3col .tracker-row{padding:.15rem .25rem;gap:.35rem;font-size:.85rem}.player-3col .tracker-pic{width:20px;height:20px}.player-3col .tracker-sub{font-size:.72rem}
+.foldable>h2{cursor:pointer;user-select:none}.foldable>h2::before{content:'\25BE  ';color:var(--brass)}.foldable.folded>h2::before{content:'\25B8  '}
+.foldable.folded>:not(h2){display:none}
+/* GM 2026-10-28 ("The map should also have a popup"): a player's map window: the map alone; the turn, the tracker, the
+   questions (Reactions, Stealth) and the chat stay on the player's main screen */
+.map-window .site-header,.map-window #turn-side,.map-window .side-col,.map-window #map-window,.map-window #pv-hand,.map-window #reaction-ask,
+.map-window #stealth-ask,.map-window #init-ask,.map-window #chat-fab,.map-window #chat-win{display:none!important}
+.player-view.map-window main.player-3col{grid-template-columns:1fr;grid-template-areas:"map"}.player-view.map-window #map{height:calc(100vh - 90px)}
+#map{background:var(--map-floor,#10110f)}#map rect[data-square]{stroke:var(--map-grid,#2c2d29)}#map line.wall{stroke:var(--map-wall,#d8d0c0)}   /* the skin's map colours (GM 2026-10-20) */
+/* COMBAT-TRACKER-01 (GM 2026-10-27): the fight in turn order */
+.tracker-title{margin:.1rem 0 .4rem;color:var(--brass)}.tracker{list-style:none;margin:0;padding:0;max-height:20rem;overflow:auto}
+.tracker-row{display:flex;align-items:center;gap:.5rem;padding:.25rem .3rem;border-bottom:1px solid var(--line);cursor:pointer;border-radius:4px}
+.tracker-row:hover,.tracker-row:focus{background:#2a2419;outline:none}.tracker-row:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}.tracker-row.acting{background:#3a301e;box-shadow:inset 3px 0 0 var(--brass)}
+.tracker-row.down{opacity:.55}.tracker-row.marked{outline:1px dashed var(--brass)}
+.tracker-row.legal-foe{box-shadow:inset 0 0 0 2px var(--ok)}.tracker-row.legal-ally{box-shadow:inset 0 0 0 2px var(--ally)}.tracker-row.refused{opacity:.45}
+.tracker-init{min-width:1.8em;text-align:right;color:var(--brass);font-weight:700}
+.tracker-pic{width:28px;height:28px;flex:none;border-radius:4px;overflow:hidden;background:#151614}.tracker-pic img{width:100%;height:100%;object-fit:cover}
+.tracker-body{display:flex;flex-direction:column;min-width:0}.tracker-name{color:var(--paper)}.tracker-row.foe .tracker-name{color:#e8a08a}
+.tracker-row.ally .tracker-name{color:var(--ally)}.tracker-sub{color:var(--muted);font-size:.78rem}
+/* GM 2026-10-27: dispositions on the tracker; SIGHT-01: who sees whom */
+.tracker-row.has-disposition{box-shadow:inset 4px 0 0 var(--disposition)}.tracker-row.acting.has-disposition{box-shadow:inset 4px 0 0 var(--disposition),inset 0 0 0 1px var(--brass)}
+.tracker-row.has-disposition .tracker-name{color:var(--disposition)}.player-view .tracker-row.has-disposition{outline:2px solid var(--disposition);outline-offset:-2px}.tracker-attitude{font-size:.75rem;margin-top:2px;width:max-content}.tracker-seen{font-style:italic}
+#sight-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--line);border-radius:8px;max-width:min(720px,calc(100vw - 32px))}
+.sight-wrap{max-height:60vh;overflow:auto}.sight-grid{border-collapse:collapse}.sight-grid th,.sight-grid td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:center}
+.sight-grid tbody th{text-align:left;font-weight:normal}.sight-grid td.picked{background:#3a301e}
+#tp-wrap{position:relative}#tp-canvas{display:block;outline:none}
+#tp-status{position:absolute;left:.6rem;top:.5rem;color:var(--muted);font-size:.8rem;pointer-events:none}
+/* 2026-10-20 (GM: hard to use in 3D): the turn's choices on the view itself, the targets, the pointer's label */
+#tp-bar{position:absolute;left:.5rem;right:.5rem;bottom:.5rem;display:flex;flex-direction:column;gap:.35rem;pointer-events:none}
+.tp-row{display:flex;flex-wrap:wrap;gap:.3rem;justify-content:center;pointer-events:none}
+.tp-btn{pointer-events:auto;font-size:.82rem;padding:.3rem .55rem;background:color-mix(in srgb,var(--panel,#262823) 88%,transparent);border:2px solid var(--line);border-radius:8px;color:var(--ink,#eee);box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.tp-btn kbd{font-size:.68rem;margin-right:.3rem;opacity:.7;border:1px solid currentColor;border-radius:3px;padding:0 .2rem}
+.tp-btn.held{border-color:var(--brass,#e0b04e);background:color-mix(in srgb,var(--brass,#e0b04e) 28%,var(--panel,#262823))}
+.tp-btn.not-ready{opacity:.5}.tp-btn.tp-end{border-color:var(--brass,#e0b04e)}
+.tp-target{border-color:#7fbf7f}.tp-target.ally{border-color:#e0b04e}
+.tp-label{pointer-events:none;align-self:center;font-size:.8rem;color:var(--ink,#eee);background:rgba(0,0,0,.45);padding:.15rem .45rem;border-radius:6px}
+.tp-tip{position:absolute;pointer-events:none;max-width:230px;font-size:.8rem;padding:.2rem .5rem;border-radius:6px;background:rgba(20,20,18,.88);color:#f3ead6;border:1px solid var(--line)}
+.tp-tip.legal{border-color:#e0c060}.tp-tip.refused{border-color:#d0584a;color:#f2c2b8}
+.viewbar{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;align-items:center;margin-bottom:.7rem}
+/* 2026-10-22: the groups (site.css .group-label, .tray-menu); the help line under the map; the result joined to the turn card */
+.viewbar label{display:inline-flex;align-items:center;gap:7px;color:var(--muted)}.map-hint{margin:.5rem 0 0}
+#sheet-panel:not([hidden]){margin-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}
+#sheet-panel:not([hidden])+.result-panel{border-top-left-radius:0;border-top-right-radius:0;border-top-style:dashed;background:var(--surface-low,var(--panel))}
+#sheet-panel h2{margin-bottom:4px}.sheet-name{font:600 1.5rem/1.1 var(--display-font,serif)}
+@media (max-width:700px){main{padding:.4rem 16px 1rem}#status{padding:.6rem 16px}.setup-bar .group-label{flex-basis:100%}.bar-end{margin-left:0}}
+#keys-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--line);border-radius:8px;max-width:min(520px,calc(100vw - 32px))}
+#keys-dialog table{width:100%;border-collapse:collapse}#keys-dialog td{padding:.3rem .4rem;border-bottom:1px solid #2a2a27}
+#keys-dialog kbd{border:1px solid var(--line);border-radius:3px;padding:0 .3rem;margin-right:.2rem;font:12px ui-monospace,monospace}
+#keys-dialog .waiting{color:var(--brass)}
+.act-row{display:flex;flex-wrap:wrap;gap:6px;margin:.35rem 0}.act-row:empty{display:none}.act-row .not-ready{opacity:.5}.act-row .held{outline:2px solid var(--brass)}
+/* GM 2026-10-28: the spells dropdown, the slot pips (spent ones hollow), the level to cast at */
+.spell-pick-row{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.3rem 0}#spell-pick{min-width:12rem;max-width:100%}
+.slot-pips .pip-level{margin-right:.8rem;white-space:nowrap}.slot-pips .pip{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;border:1.5px solid #c9a35a;margin-left:.18rem;vertical-align:-1px}
+.slot-pips .pip.on{background:#e0b04e}.slot-pips .pip-name{color:#9c8f78;font-size:.85em}
+.card.spell{border-left-width:4px}.card.not-ready{opacity:.6}#cast-go{margin:.3rem 0}.sheet-tabs{display:flex;gap:.3rem;margin:.4rem 0}.sheet-tab{background:transparent;border:1px solid #4a3a26;color:#9c8f78;border-radius:8px 8px 0 0;padding:.25rem .8rem}
+.sheet-tab.on{color:#f0d595;border-color:#c9a35a}.turn-bar{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;border:1px solid #c9a35a;border-radius:10px;padding:.4rem .5rem;margin:.3rem 0}
+.turn-bar #end{margin-left:auto}.light{display:inline-flex;align-items:center;gap:.3rem;border:1px solid #4a3a26;border-radius:999px;padding:.1rem .55rem;font-size:.85em;margin-right:.25rem}
+.light i{width:9px;height:9px;border-radius:50%;background:#f0d595;box-shadow:0 0 5px #d8b46a}.light.used{color:#9c8f78}.light.used i{background:#3a3024;box-shadow:none}
+.sheet-h{font:600 .8rem Georgia,serif;letter-spacing:.15em;text-transform:uppercase;color:#d8b46a;margin:.7rem 0 .25rem;border-bottom:1px solid #4a3a26}
+.srow{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;padding:.25rem 0;border-top:1px solid #ffffff0d}.srow .sname{flex:1 1 12rem}.srow .sname small{display:block;opacity:.7;font-size:.8em}
+.srow .roll{font-size:.85em;padding:.1rem .4rem;border-radius:5px;background:#0006}.roll.hit{color:#7fbf6a}.roll.miss{color:#c9695a}.roll.crit{color:#f2c14e}
+.srow.not-ready .sname{opacity:.65}.srow .why{flex-basis:100%;font-size:.8em;font-style:italic;opacity:.7}.tag{font-size:.75em;border:1px solid #4a3a26;border-radius:4px;padding:0 .3rem;margin-left:.3rem;opacity:.8}
+.pips{letter-spacing:.1em;color:#f0d595}.checks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.3rem}.ask-item{border-top:1px solid #ffffff12;padding:.3rem 0}
+.scene-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-top:1px solid #ffffff12;padding:.3rem 0}.scene-name{min-width:7.5rem;flex:1 1 auto}.scene-row>select{flex:1 1 calc(50% - 3px);min-width:0}
+.att-badge{font-size:.8rem;padding:.05rem .45rem;border-radius:9px;border:1px solid currentColor}.att-hostile .att-badge{color:#e88a7a}
+.att-indifferent .att-badge{color:#d8b25a}.att-friendly .att-badge{color:#7fb8e8}.scene-morale,.scene-change{color:var(--muted);font-size:.8rem}
+.scene-card{border:1px solid var(--brass);border-radius:6px;padding:.4rem .5rem;margin:.3rem 0;background:#2e2818}.scene-card button{margin-top:.3rem}
+.scene-outcome{color:var(--brass);font-weight:600}
+.pillar-mode{font-weight:700;letter-spacing:.06em;color:var(--brass);margin:.2rem 0}.pillar-mode.pillar-fight{color:#e06a5a}
+.pillar-who,.pillar-check,.pillar-surprise{display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin:.3rem 0}.pillar-check input{flex:1;min-width:8rem}
+body.in-scene #end,body.in-scene #undo,body.in-scene #pv-undo{display:none}.scene-ends{margin:.4rem 0 .2rem}#scene-body select{max-width:8.5rem}
+
+.party-chars{position:relative}.party-chars summary{cursor:pointer;padding:6px 10px;border:1px solid var(--line);border-radius:3px;font-size:11px;color:var(--paper)}
+.party-chars-box{position:absolute;z-index:30;top:110%;left:0;min-width:260px;max-height:50vh;overflow:auto;background:var(--panel);border:1px solid var(--brass);border-radius:5px;padding:8px 10px}
+.party-chars-box label{display:flex;gap:6px;align-items:center;margin:3px 0;color:var(--paper)}
+/* HINTS-01: the Hints switch, its mutes, the quiet line by End turn, the warning on a spell card */
+.hints-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;color:var(--muted);font-size:.85rem;margin:.25rem 0}.hints-row[hidden]{display:none}
+.hints-row select{font-size:.8rem;padding:2px 4px}.hints-mute{position:relative}.hints-mute summary{cursor:pointer;font-size:.8rem}
+.hints-mute-box{position:absolute;z-index:30;top:120%;left:0;min-width:210px;background:var(--panel);border:1px solid var(--brass);border-radius:5px;padding:6px 9px}
+.hints-mute-box label{display:flex;gap:6px;align-items:center;margin:2px 0;color:var(--paper);font-size:.82rem}
+.hints-line{color:var(--muted);font-size:.85rem;margin:.4rem 0 .2rem;line-height:1.45}.hints-line[hidden]{display:none}
+.hints-line button.hints-x{background:none;border:0;box-shadow:none;padding:0 .3rem;margin:0 0 0 .1rem;min-width:0;color:var(--muted);font-size:.9rem;line-height:1;cursor:pointer;opacity:.55}
+.hints-fact{color:var(--paper)}.hints-fact .hints-kind{color:var(--brass);margin-right:.35rem}
+.hints-line button.hints-x:hover,.hints-line button.hints-x:focus-visible{opacity:1;color:var(--paper)}.card .hint-warn{color:#e8b04a}
+/* GM 2026-10-24: a frozen fight: every combat button waits */
+.reaction-ask{position:fixed;z-index:60;top:84px;left:50%;transform:translateX(-50%);width:min(440px,calc(100vw - 32px));padding:.6rem .9rem;background:var(--panel,#262823);color:var(--paper,#eee);border:2px solid var(--brass,#e0b04e);border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.55)}
+.reaction-ask h2{margin:.1rem 0 .35rem;font-size:1.05rem;color:var(--brass,#e0b04e)}.reaction-ask p{margin:.25rem 0}.reaction-ask .reaction-buttons{margin-top:.55rem}
+.init-ask .stealth-row{display:flex;gap:.5rem;align-items:center;justify-content:space-between;margin:.3rem 0}   /* INITIATIVE-01 */
+.stealth-ask{top:auto;bottom:84px}.stealth-ask .stealth-row{display:flex;gap:.5rem;align-items:center;justify-content:space-between;margin:.3rem 0}   /* STEALTH-01 */
+/* GM 2026-11-01: the Panic Button, the step-by-step undo, the turn timer */
+button.panic{--face:#a12222;color:#fff;font-weight:700}button.panic.stopped{--face:#2f6b3a}
+.panic-bar{margin:.3rem 0;padding:.45rem .7rem;border:2px solid #d9534f;border-radius:4px;background:#3a1212;color:#ffd9d6;font-weight:700}
+.panic-cover{position:fixed;inset:0;z-index:9000;display:grid;place-items:center;padding:16px;background:rgba(12,8,6,.88);color:#f0d68a;font-size:clamp(1.4rem,5vw,2.4rem);font-weight:700;text-align:center}
+.panic-cover[hidden]{display:none}
+.turn-timer{margin-left:.5rem;padding:0 .4rem;border:1px solid #c9a24a;border-radius:4px;font-size:.8em;font-weight:600;font-variant-numeric:tabular-nums}.turn-timer.paused{opacity:.55}
+.frozen-banner{margin:.3rem 0;padding:.35rem .6rem;border:1px solid #c9a24a;border-radius:4px;background:#2a2112;color:#f0d68a;font-weight:600}
+#sheet-turn.frozen button:not(#freeze){opacity:.45;pointer-events:none}
+</style></head><body>
+<header class="site-header" data-page="play"></header>
+<!-- 2026-10-22 (GM: "Similar things need to be grouped"): 1 set up the fight, with the rarely changed settings under More;
+     4 the GM tools in one tray; 2 the view and 3 the players' screen over the map; 5 the turn card and its result. -->
+<div class="toolbar setup-bar" role="group" aria-label="Set up the fight">
+ <span class="group-label">Set up the fight</span>
+ <label>Map <select id="scenario"><option value="">Choose a map…</option></select></label>
+ <details id="party-chars" class="party-chars"><summary title="Your characters from the Characters page join the fight (CHARACTERS-01)">Saved characters</summary><div class="party-chars-box"><div id="party-chars-list"></div><p class="note">Each one fights at its own level, worked out by the simulator service. Build or import them on the <a href="characters.html">Characters</a> page.</p></div></details>
+ <input id="level" type="hidden" value="1">   <!-- the ticked saved characters' highest level (traps, Remix) -->
+ <details class="tray-menu" id="setup-more"><summary title="Seed, campaign, saved Remix Prep, a new map">More</summary><div class="tray at-left">
+  <label>Seed <input id="seed" type="number" value="1" style="width:4em"></label>
+  <label>Campaign <input id="remix-campaign" value="default" maxlength="48" size="10"></label>
+  <label><input type="checkbox" id="remix-enabled" checked> Saved Remix Prep</label>
+  <button id="import-open" class="quiet" title="A map from Dungeondraft or another tool (Universal VTT: .dd2vtt, .uvtt)">Import map</button>
+ </div></details>
+ <span class="bar-end">
+  <button id="setup-clear" class="quiet" title="Empty the choices above: no map, no party, saved characters unticked, level 1 (a fight in progress is not touched)">Clear</button>
+  <button id="remix-open" class="quiet" aria-haspopup="dialog" title="Add or change the creatures in this fight, with recommendations (the map itself never changes)">Remix Live…</button>
+  <button id="restore-party" class="quiet" hidden title="An adventure's map: the GM gives the party a Long Rest's benefits now (full Hit Points, Hit Point Dice, slots and uses; no time passes), then Start live fight">Restore the party</button>
+  <label title="GM 2026-10-26: an encounter starts as a social scene, an exploration scene or a fight; it can change as you play"><select id="scene-start" aria-label="Start the encounter as"><option value="fight">as a fight</option><option value="social">as a social scene</option><option value="exploration">as exploration</option></select></label>
+  <button id="panic" class="panic gm-only" title="Stop everything: the rules engine holds at its next step and nothing is lost, the Rules monitor and the turn timer stop, and the players' choices, rolls and chat wait until you press Resume">Panic</button>
+  <button id="gm-undo" class="quiet gm-only" hidden>Undo step</button>
+  <button id="gm-goon" class="quiet gm-only" hidden title="The fight is frozen: let it go on from here">Go on</button>
+  <button id="start">Start live fight</button>
+  <details class="tray-menu" id="gm-tools"><summary title="Notes, Flavor, Director, Players and the other GM tools">GM tools</summary><div class="tray">
+   <button id="note-mode" aria-pressed="false" title="Pin notes to squares (GM); mark one to show it to the players once they find it">Notes</button>
+   <button id="trap-mode" aria-pressed="false" title="Place SRD traps on this fight's map (hidden from the players until they find one or it goes off)">Traps</button>
+   <button id="paint-mode" aria-pressed="false" title="Paint on this map with a brush (any colour, see-through) and erase it; kept per map; the players see it only while you show it">Paint</button>
+   <button id="hazard-mode" aria-pressed="false" title="SRD 5.2.1 hazards: slippery ice, thin ice, frigid water, strong wind, heavy rain; fear, mental stress and contagions">Hazards</button>
+   <button id="flavor-open" aria-haspopup="dialog" title="Flavor: a creature's shown name, picture, role (pet, familiar, mount) and footnote, and attack or spell looks. The rules never change">Flavor…</button>
+ <button id="director-open" class="quiet" aria-haspopup="dialog" title="Hand the GM console to a guest director, with the controls you choose; take it back at any time">Director…</button>
+ <button id="seats-open" class="quiet" aria-haspopup="dialog" title="Let players join from their own screen: open the door, approve each one">Players…</button>
+ <button id="market-open" class="quiet" aria-haspopup="dialog" title="Shops at the adventure's places: open one for the players, set gold, approve their carts">Market…</button>
+ <button id="monitor-open" class="quiet" aria-haspopup="dialog" title="Rules monitor: LM Studio watches every action and flags rule breaks (GM only)">Rules monitor…</button>
+  </div></details></span>
+</div>
+<p id="director-line" hidden></p>
+<p id="status" role="status">Connecting to the table…</p>
+<section id="reaction-ask" class="reaction-ask" role="alertdialog" aria-live="assertive" aria-label="A Reaction is asked" hidden></section>
+<section id="stealth-ask" class="reaction-ask stealth-ask" role="dialog" aria-live="polite" aria-label="Stealth" hidden></section>
+<section id="init-ask" class="reaction-ask init-ask" role="alertdialog" aria-live="assertive" aria-label="Roll Initiative" hidden></section>
+<main>
+ <aside id="turn-side" aria-label="Your turn"></aside>
+ <div class="map-col">
+  <div class="viewbar">
+   <span class="bar-group" role="group" aria-label="View"><label><span class="group-label">View</span> <select id="view-mode"><option value="tactical">Tactical · top down</option><option value="third">Third person · follow my character</option></select></label>
+   <label title="Fog of war: what the party sees now, has seen, and has never seen"><input type="checkbox" id="fog-show" checked> Fog</label>
+   <button id="keys-open" title="Keyboard map">Keys</button>
+   <button id="map-back" hidden title="Back to the table: your turn, the tracker and the chat">Back to my turn</button>
+   <button id="map-window" class="quiet" hidden title="The map alone in its own window: a second screen, or a bigger map. Your turn stays here.">Pop out the map</button>
+   <button id="pv-undo" hidden title="Ask the GM to take back your last choice this turn (Ctrl+Z)">Undo</button>
+   <button id="pv-hand" hidden title="Let the GM play your character's turns until you take it back">Hand to the GM</button>
+   <span id="pv-hand-note" class="note" role="status" hidden></span>
+   <button id="my-flavor" hidden aria-haspopup="dialog" title="Flavor: how your character, pet or familiar looks. The GM approves each change; the rules never change">My Flavor…</button>
+   <span id="my-flavor-note" class="note" role="status" hidden></span>
+   <span id="pv-hints" class="hints-row" hidden></span></span>
+   <span class="bar-group gm-only" role="group" aria-label="The players' screen"><span class="group-label">Players' screen</span>
+   <button id="player-view" title="The live map in its own window (the players' screen): tokens drag and doors open there as here, with fog; commands stay on this console">Pop out the map</button>
+   <button id="fog-reveal" aria-pressed="false" title="Show the whole map in the players' window (Pop out the map); creatures still show only when the party sees them">Reveal map to players</button>
+   <button id="fog-reset" title="Forget the squares the party has explored">Reset fog</button></span>
+   <span class="bar-group gm-only" role="group" aria-label="Map light"><label title="The light the map has without torches or spells (SRD 5.2.1: Dim Light gives Disadvantage on Perception by sight; in Darkness a creature without Darkvision sees nothing). Changes the running fight, or the next one."><span class="group-label">Map light</span> <select id="map-light"><option value="">As the map says</option><option value="bright">Bright</option><option value="dim">Dim</option><option value="dark">Dark</option></select></label>
+   <span id="map-light-note" class="note"></span></span>
+   <span class="bar-group gm-only" role="group" aria-label="Reactions"><label title="Off: each player is asked for a Reaction (Opportunity Attacks, Shield, Counterspell...) and the fight waits for the answer. On, for fast games: the engine answers for every player, as it does for monsters and foes. Kept for the next fights."><input type="checkbox" id="reaction-auto"> Auto Reactions</label></span>
+   <span class="bar-group gm-only" role="group" aria-label="Influence"><label title="On: players have the Influence buttons (Deception, Intimidation, Performance, Persuasion, Animal Handling): each takes the Action and comes to you to rule. Off: no Influence buttons, here or on The Stage. Kept for the next fights."><input type="checkbox" id="social-on" checked> Influence buttons</label></span>
+   <span class="bar-group gm-only" role="group" aria-label="By the SRD"><label title="Off: this table's rulings, where you roll Perception against a Hide and Spirit Guardians deals Radiant. On, as the SRD writes them: Hide is a DC 15 check and its total is the DC to find the character; Spirit Guardians deals Necrotic for an evil caster. Rulings where the SRD says nothing stay. Kept for the next fights."><input type="checkbox" id="srd-on"> By the SRD</label></span>
+   <span class="bar-group gm-only" role="group" aria-label="Turn timer"><label title="On: a small clock on the Combat tracker shows how long this turn has run, on every screen; it waits while the fight is frozen. It never ends a turn. Kept for the next fights."><input type="checkbox" id="timer-on" checked> Turn timer</label></span>
+   <span class="bar-group gm-only" role="group" aria-label="Stealth"><button id="stealth-call" class="quiet" title="A group Dexterity (Stealth) check: a popup on each player's screen, each rolls for their own character; then you roll Perception (SRD 5.2.1 group check: at least half must beat it)">Group stealth</button></span></div>
+  <div id="trap-panel" class="gm-only trap-panel" hidden><b>Traps (SRD 5.2.1)</b> <select id="trap-kind" aria-label="Trap"></select>
+   <select id="trap-band" aria-label="Levels"></select> <span class="note">Click a square on the map.</span>
+   <div id="trap-card" class="note"></div><div id="trap-list"></div></div>
+  <!-- HAZARDS-01 (GM 2026-10-26): the GM's hazards in this fight (Mythastria sim/hazards.py, SRD 5.2.1) -->
+  <div id="hazard-panel" class="gm-only trap-panel" hidden><b>Hazards (SRD 5.2.1)</b> <span id="hz-weather" class="hz-who"></span>
+   <span class="trap-row"><select id="hz-kind" aria-label="Hazard on squares"><option value="slippery_ice">Slippery ice</option><option value="thin_ice">Thin ice</option><option value="frigid_water">Frigid water</option></select>
+   <span class="note" id="hz-pick">Click squares on the map, then</span> <button id="hz-place" disabled>Place</button> <button id="hz-clear" class="quiet">Clear the picks</button></span>
+   <div id="hz-card" class="note"></div><div id="hz-list"></div>
+   <details id="hz-more"><summary>Fear, mental stress and contagions</summary>
+    <div class="trap-row"><span class="note">Who:</span> <span id="hz-targets" class="hz-who"></span></div>
+    <div class="trap-row"><b>Fear</b> <label>DC <input id="hz-fear-dc" type="number" min="5" max="30" value="15" style="width:3.5em"></label>
+     <label>of <select id="hz-fear-source" aria-label="The source of the fear"></select></label> <input id="hz-why" type="text" maxlength="80" placeholder="what it is" size="12">
+     <button id="hz-fear" title="A Wisdom save; Frightened of the source on a failure, the save again at the end of each of its turns">Frighten</button></div>
+    <div class="trap-row"><b>Mental stress</b> <select id="hz-st-save"><option value="wis">Wisdom</option><option value="int">Intelligence</option><option value="cha">Charisma</option></select>
+     <label>DC <input id="hz-st-dc" type="number" min="5" max="30" value="15" style="width:3.5em"></label> <input id="hz-st-dice" type="text" value="2d10" size="5" aria-label="Psychic damage">
+     <label class="check"><input type="checkbox" id="hz-st-half"> half on a success</label>
+     <select id="hz-st-effect"><option value="none">no lasting effect</option><option value="short">short-term (1d10 minutes)</option><option value="long">long-term (1d10 x 10 hours)</option><option value="indefinite">indefinite</option></select>
+     <select id="hz-st-cond"><option>Frightened</option><option>Incapacitated</option><option>Stunned</option></select>
+     <select id="hz-st-ability"><option value="all">all checks</option><option value="str">Strength</option><option value="dex">Dexterity</option><option value="con">Constitution</option><option value="int">Intelligence</option><option value="wis">Wisdom</option><option value="cha">Charisma</option></select>
+     <button id="hz-stress">Roll the saves</button></div>
+    <div class="trap-row"><b>Contagion</b> <select id="hz-cont"><option value="cackle_fever">Cackle Fever</option><option value="sewer_plague">Sewer Plague</option><option value="sight_rot">Sight Rot</option></select>
+     <button id="hz-expose" title="A character: its Constitution save (Cackle Fever DC 10, Sewer Plague DC 11, Sight Rot DC 15)">Expose (save)</button>
+     <button id="hz-infect" class="quiet" title="A character: no save">Infect</button>
+     <button id="hz-carrier" class="quiet" title="A creature carries it: Sewer Plague with its wounds, Cackle Fever within 10 feet">Carries it</button></div>
+   </details></div>
+  <div id="paint-panel" class="gm-only trap-panel paint-panel" hidden><b>Paint</b>
+   <label title="Brush or eraser"><select id="paint-tool" aria-label="Paint tool"><option value="brush">Brush</option><option value="eraser">Eraser</option></select></label>
+   <label>Colour <input type="color" id="paint-colour" value="#d0342c"></label>
+   <label>Size <input type="range" id="paint-size" min="0.1" max="6" step="0.1" value="1" aria-label="Brush size in squares"> <span id="paint-size-out">1 sq</span></label>
+   <label>See-through <input type="range" id="paint-opacity" min="0.05" max="1" step="0.05" value="0.6" aria-label="Brush opacity"></label>
+   <button id="paint-undo" class="quiet" disabled>Undo</button>
+   <button id="paint-clear" class="quiet" title="Erase all the paint on this map">Clear</button>
+   <label title="The players' window and the player clients see the paint only while this is ticked"><input type="checkbox" id="paint-shown"> Show to players</label>
+   <span id="paint-note" class="note"></span></div>
+  <svg id="map" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Map: drop an attack on a token, click a square to move"></svg>
+  <div id="tp-wrap" hidden><canvas id="tp-canvas" tabindex="0" aria-label="Third-person view: drop an attack on a figure, click the floor to move, drag to orbit, wheel to zoom"></canvas><span id="tp-status">Third person</span><div id="tp-tip" class="tp-tip" hidden></div><div id="tp-bar" hidden></div></div>
+  <p class="note map-hint" id="view-help">Drag your character to move · right-, middle- or floor-drag to orbit · wheel to zoom · Q/E turn · C behind my character</p>
+  <p class="hints-line" id="pv-hints-line" role="status" hidden></p>
+  <p class="hints-line hints-fact" id="pv-hints-fact" role="status" hidden></p>
+  <p class="flavor-foot" id="flavor-foot" role="status"></p>
+ </div>
+ <aside class="side-col">
+  <section class="panel tracker-panel" id="tracker-panel" hidden><h2>Combat tracker<span class="turn-timer" id="turn-timer" role="timer" hidden></span></h2><div id="tracker-body"></div>
+   <p class="note">Turn order. Click a row to mark its token; with an attack or a spell held, click or drop it on a row to target that creature.</p></section>
+  <section class="panel" id="pillar-panel" hidden><h2>The scene</h2><div id="pillar-body"></div></section>
+  <section class="panel" id="scene-panel" hidden><h2>Attitudes and morale</h2><div id="scene-body"></div></section>
+  <section class="panel" id="ask-panel" hidden><h2>Asked of the GM</h2><div id="ask-list"></div></section>
+  <section class="panel" id="undo-ask" hidden><h2>Undo request</h2><div id="undo-ask-text"></div>
+   <p><button id="undo-approve">Approve</button> <button id="undo-refuse" class="quiet">Refuse</button></p>
+   <p class="note">Approve puts the character back as before that choice. Another choice first cancels the request.</p></section>
+  <section class="panel" id="party-panel" hidden><h2>The party</h2><div id="party-body"></div></section>
+  <section class="panel" id="sheet-panel" hidden>
+   <h2>Your turn · character sheet</h2>
+   <div class="sheet-name" id="sheet-name"></div>
+   <div class="hints-row" id="hints-row" hidden></div>
+   <div class="sheet-line" id="sheet-stats"></div>
+   <div class="sheet-line afflictions" id="sheet-afflictions"></div>
+   <div class="flavor-foot" id="sheet-flavor"></div>
+   <div class="sheet-line" id="sheet-action"></div>
+   <div class="sheet-line sheet-photo" id="sheet-photo"></div>
+   <div class="sheet-line" id="sheet-ceiling"></div>
+   <!-- GM 2026-10-24 ("the player's character sheet with the playable actions as buttons next to the action"): the turn
+        bar, then one section per kind of choice; each button is the rules engine's offer, greyed with its reason -->
+   <div class="sheet-tabs" role="tablist"><button id="tab-turn" class="sheet-tab on" role="tab">Turn</button><button id="tab-checks" class="sheet-tab" role="tab">Checks &amp; saves</button><button id="tab-full" class="sheet-tab" role="tab" title="The character's whole saved sheet, each section folded until you open it">Full sheet</button></div>
+   <div id="sheet-full" hidden></div>
+   <div id="sheet-turn">
+    <div class="turn-bar" id="turn-bar"><span id="turn-lights"></span>
+     <button id="end">End turn</button> <button id="undo" class="quiet" disabled title="Take back your last choice this turn (Ctrl+Z), when it set nothing else going">Undo</button>
+     <button id="freeze" class="quiet gm-only" hidden title="Freeze the fight: nothing moves and every combat button waits until you unfreeze it">Freeze</button>
+     <button id="gm-take" class="quiet gm-only" hidden title="Play this character yourself: its player's phone waits until you give it back">Take over</button></div>
+    <div class="note" id="gm-take-note" role="status" hidden></div>
+    <div class="panic-bar" id="panic-bar" role="alert" hidden>Everything is stopped. Nothing is lost: press Resume to go on from here.</div>
+    <div class="frozen-banner" id="frozen-banner" role="status" hidden>The GM has frozen the fight. It goes on when the GM unfreezes it.</div>
+    <div class="note" id="undo-why" role="status"></div>
+    <div class="hints-line" id="hints-line" role="status" hidden></div>
+    <div class="hints-line hints-fact" id="hints-fact" role="status" hidden></div>
+    <h3 class="sheet-h" data-ico="sword">Attacks</h3>
+    <div id="cards"></div>
+    <h3 class="sheet-h" id="spells-h" data-ico="grimoire">Spells</h3>
+    <div class="sheet-line slot-pips" id="slots"></div>
+    <div id="metamagic-row" hidden></div>
+    <div class="spell-pick-row"><select id="spell-pick" aria-label="Choose a spell"></select><label id="spell-level-box" hidden>Cast at <select id="spell-level" aria-label="The spell slot level to cast it with"></select></label></div>
+    <div id="spell-cards"></div>
+    <button id="cast-go" hidden>Cast</button>
+    <h3 class="sheet-h" id="features-h" data-ico="helm">Features</h3>
+    <div id="feature-buttons" class="act-row"></div>
+    <h3 class="sheet-h" data-ico="hand">Actions</h3>
+    <div id="action-buttons" class="act-row"></div>
+    <div id="door-buttons" class="act-row"></div>
+    <h3 class="sheet-h" id="mount-h" data-ico="horseshoe" hidden>Mount</h3>
+    <div class="sheet-line" id="mount-line"></div>
+    <div id="mount-buttons" class="act-row"></div>
+    <h3 class="sheet-h" data-ico="purse">Bag</h3>
+    <div class="sheet-line" id="bag-line"></div>
+    <div id="item-buttons" class="act-row"></div>
+    <h3 class="sheet-h" id="light-h" data-ico="lantern" hidden>Light</h3>
+    <div class="sheet-line" id="light-line"></div>
+    <div id="light-buttons" class="act-row"></div>
+   </div>
+   <div id="sheet-checks" hidden>
+    <p class="note">Each button rolls a d20 with the character's bonus in the table's dice tower (everyone sees it).</p>
+    <div id="checks-body"></div>
+   </div>
+   <p class="note">Move: drag your character to a square (or click the square). Attack: drag an attack onto a token (or click it, then the token). The simulator checks every choice against SRD 5.2.1 before rolling.</p>
+  </section>
+  <section class="panel result-panel" id="result-panel"><h2>Result</h2><div id="result" role="status"></div></section>
+  <section class="panel" id="log-panel"><h2>What happened</h2><div id="log"></div><label class="note"><input id="engine-lines" type="checkbox"> Show engine details</label></section>
+ </aside>
+</main>
+<div id="ghost" hidden></div>
+<dialog id="import-dialog" aria-labelledby="imp-title"><form method="dialog"><h2 id="imp-title">Import a map</h2><p class="note">A Universal VTT file (.dd2vtt from Dungeondraft, or .uvtt: its picture, grid, walls, doors and lights) or a picture alone (PNG, JPEG, WebP: you set its grid). Next you check the squares: walls are whole squares (the map rule). The map stays on this PC; its licence is yours to respect (most map packs allow personal use only, and an adventure for sale needs the artist's commercial licence).</p><p><label>File <input type="file" id="imp-file" accept=".dd2vtt,.uvtt,.json,.png,.jpg,.jpeg,.webp"></label></p><p><label>Name <input id="imp-name" maxlength="80" placeholder="The map's name"></label></p><p><label>Creatures <select id="imp-creature"></select></label> <label>how many <input id="imp-count" type="number" min="1" max="12" value="4"></label></p><p><label>A picture's light <select id="imp-ambient"><option value="dark">dark (torches needed)</option><option value="bright">bright</option></select></label></p><p class="note" id="imp-result" role="status"></p><p><button id="imp-go">Next: grid and squares</button> <button id="imp-cancel" class="quiet">Cancel</button></p></form></dialog>
+<dialog id="map-editor" aria-labelledby="ed-title"><form method="dialog"><h2 id="ed-title">Grid and squares</h2><p><button id="ed-cancel" class="quiet" title="Drop this map: nothing is imported (Esc does the same)">Cancel: import nothing</button></p><p class="note" id="ed-help"></p><div id="ed-grid-tools"><p><label><input type="radio" name="ed-mode" value="corners" checked> Grid lines on the picture: click two opposite corners of a block of</label> <input id="ed-across" type="number" min="1" max="200" value="4" aria-label="squares across"> x <input id="ed-down" type="number" min="1" max="200" value="4" aria-label="squares down"> squares</p><p><label><input type="radio" name="ed-mode" value="survey"> No grid marks (survey): click two points</label> <input id="ed-feet" type="number" min="5" step="5" value="30" aria-label="feet apart"> ft apart</p><p>Nudge (Shift: finer): <button data-nudge="-1,0,0" class="quiet">Smaller</button> <button data-nudge="1,0,0" class="quiet">Larger</button> <button data-nudge="0,-1,0" class="quiet" aria-label="Move the grid left">&larr;</button> <button data-nudge="0,1,0" class="quiet" aria-label="Move the grid right">&rarr;</button> <button data-nudge="0,0,-1" class="quiet" aria-label="Move the grid up">&uarr;</button> <button data-nudge="0,0,1" class="quiet" aria-label="Move the grid down">&darr;</button> <button id="ed-next">Next: the squares</button></p></div><div id="ed-square-tools" hidden><p><label><input type="radio" name="ed-brush" value="f"> Floor</label> <label><input type="radio" name="ed-brush" value="w" checked> Wall</label> <label><input type="radio" name="ed-brush" value="d"> Door</label> <label><input type="radio" name="ed-brush" value="party"> Party start</label> <label><input type="radio" name="ed-brush" value="foes"> Creatures start</label></p><p><button id="ed-undo" class="quiet">Undo</button> <button id="ed-round" class="quiet">Wall round the edge</button> <label id="ed-thresh-label">Draft darkness <input type="range" id="ed-thresh" min="0.05" max="0.6" step="0.01" value="0.25"></label> <button id="ed-redraft" class="quiet">Redraft from the picture</button> <button id="ed-back" class="quiet">Back to the grid</button> <button id="ed-import">Import</button></p></div><p class="note" id="ed-read"></p><div class="ed-wrap"><canvas id="ed-canvas"></canvas></div><p class="note" id="ed-result" role="status"></p></form></dialog>
+<dialog id="sight-dialog" aria-labelledby="sight-title"><form method="dialog"><h2 id="sight-title">Who sees whom</h2><p class="note">Each character sees the ticked creatures; each player's screen shows only what their character sees. Ticked from the engine's sight now (light, darkvision, blindness, walls: a creature that sheds light is seen in the dark). A box you change holds until the engine's own answer changes (a creature moves, a light goes out); then the engine decides again. A gold box differs from the engine.</p><div id="sight-grid" class="sight-wrap"></div><p><button id="sight-ok">Confirm</button> <button id="sight-cancel" class="quiet">Keep the engine's</button></p></form></dialog>
+<dialog id="note-dialog" aria-labelledby="note-title"><form method="dialog"><h2 id="note-title">Note</h2><p class="note" id="note-where"></p><textarea id="note-text" rows="6" cols="44" maxlength="2000" aria-label="Note text"></textarea><p><label><input type="checkbox" id="note-share"> Show to the players once they find this square</label></p><p><button id="note-save">Save</button> <button id="note-delete" class="quiet">Delete</button> <button id="note-cancel" class="quiet">Cancel</button></p></form></dialog>
+<dialog id="keys-dialog" aria-labelledby="keys-title"><h2 id="keys-title">KEYBOARD MAP</h2>
+ <p class="note">Change a key, then press the new one (Esc cancels). Keys are ignored while you type in a box.</p>
+ <table id="keys-table"></table>
+ <p><button id="keys-reset">Reset to defaults</button> <button id="keys-close">Close</button></p></dialog>
+<script type="module" src="play-ui.mjs"></script>
+<script>document.getElementById('engine-lines').addEventListener('change', e => document.getElementById('log').classList.toggle('show-engine', e.target.checked));
+// 2026-10-22: a tray (and Saved characters) closes on a click outside it, after one of its buttons, and on Esc
+document.addEventListener('click', e => { for (const d of document.querySelectorAll('details.tray-menu[open],details.party-chars[open]')) if (!d.contains(e.target) || e.target.closest('.tray>button')) d.open = false; });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') for (const d of document.querySelectorAll('details.tray-menu[open],details.party-chars[open]')) d.open = false; });</script>
+<script type="module" src="table-chat.mjs"></script>
+<script type="module">// JOIN-01: the GM's Players dialog (not in the players' window)
+import { mountMarket, mountMarketPlayer } from './market-ui.mjs';  // MARKET-01: the GM's market; the players see the open shop
+if (new URLSearchParams(location.search).get('view') !== 'player') {
+  const { mountSeats } = await import('./seats-ui.mjs');        // PLAYER-PACKAGE-01: the GM console only
+  mountSeats({ button: document.getElementById('seats-open'),
+    status: (text, isError) => { const s = document.getElementById('status'); s.textContent = text; s.className = isError ? 'error' : ''; } });
+  mountMarket({ button: document.getElementById('market-open'),
+    status: (text, isError) => { const s = document.getElementById('status'); s.textContent = text; s.className = isError ? 'error' : ''; } });
+  // GM 2026-10-26: a "→ Market" link from another page (the adventure's Downtime) opens ./play.html#market
+  const marketHash = () => { if (location.hash === '#market') { history.replaceState(null, '', location.pathname + location.search); document.getElementById('market-open').click(); } };
+  addEventListener('hashchange', marketHash); marketHash();
+  const { mountMonitor } = await import('./rules-monitor-ui.mjs');   // RULES-MONITOR-01: the GM console only
+  mountMonitor({ button: document.getElementById('monitor-open'),
+    status: (text, isError) => { const s = document.getElementById('status'); s.textContent = text; s.className = isError ? 'error' : ''; } });
+} else {
+  document.getElementById('seats-open').hidden = true;
+  document.getElementById('market-open').hidden = true;
+  document.getElementById('monitor-open').hidden = true;
+  mountMarketPlayer();
+}
+</script>
+<div class="panic-cover" id="panic-cover" role="alert" hidden>The GM has stopped the game.</div>
+</body></html>

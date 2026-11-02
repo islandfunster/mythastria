@@ -1,0 +1,42 @@
+__pycache__/
+logs/
+*.pyc
+mythastria_core/ai_settings.json
+mythastria_core/cache/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# simulator transcripts (v0.7.61)
+sim/runs/
+
+# stray backups made by hand (kept on disk, never committed)
+.git - Copy/
+* - Copy.gitignore
+
+# VIEW-01 (2026-10-20): the GM's map notes are campaign data kept on this PC, never committed
+sim/notes/
+# VIEW-01: maps the GM imports (Universal VTT) are their own campaign files
+sim/scenarios/imported/
+# REMIX-02 (2026-10-20): a GM's saved campaign Remix choices are their campaign data
+sim/remixes/
+# Remix Live (2026-10-21): the GM's saved creature lineups are their campaign data
+sim/lineups/
+# CHAT-FUN-01 (2026-10-21): pictures and sounds shared in the table chat stay on this PC
+sim/chat_media/
+# ADVENTURE-01 (2026-10-21): which adventures are loaded, remembered across restarts on this PC
+sim/adventures/
+# STANDIN-01 (2026-10-21): the stand-in DM key (its hash) and the log of what the stand-in did stay on this PC
+sim/standin/
+# FLAVOR-01 (2026-10-21): the table's Flavor (names, footnotes, paint) is campaign data on this PC
+sim/flavor/
+# ONE-SHOT-01 (2026-11-02): the GM's one-shots are their campaign data on this PC
+sim/one_shots/
+# MARKET-01 (2026-10-21): the market (shops, purses, carts, its log) is campaign data on this PC
+sim/market/
+
+# GM 2026-10-25 (publishing to mythastria-table): old release tarballs and snapshots stay on this PC, never in the shared repository
+releases/
+
+# GM 2026-10-25: each PC's own folders and public address for Start_Mythastria.bat stay on that PC
+local_settings.cmd

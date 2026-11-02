@@ -1,0 +1,93 @@
+/* 2026-10-20 (GM: "One look for all pages"): the main table's look, shared by Play live, Simulator fights and The Stage.
+   Same fonts, colours (skins.css overrides them per skin), buttons, header and panels as index.html / style.css.
+   Variable names follow style.css: --ink is the page, --paper the text. Display only. Colours come from the skin's variables (skins.css), so every skin works. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{color-scheme:dark;--ink:#151614;--panel:#20211d;--line:#3c3b30;--paper:#e6dcc2;--muted:#aba58e;--brass:#c5a56b;--rust:#ad6c54;--sage:#a6b79c;
+ --ok:#8fc79a;--no:#e07a6a;--ally:#e0b050;--well:#10110f;
+ --field-edge:#77725d}   /* STYLE-GUIDE-01: a typing box's edge, at least 3:1 (WCAG 2.2) */
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#65503124,transparent 55%),var(--ink);color:var(--paper);font:13px/1.45 Inter,system-ui,sans-serif}
+[hidden]{display:none!important}
+a{color:var(--brass)}
+button,input,select{font:inherit}
+button{border:1px solid var(--line);background:var(--button,#353124);color:var(--paper);padding:8px 12px;border-radius:3px;cursor:pointer}
+button:hover:not(:disabled){border-color:var(--brass);filter:brightness(1.12)}button:disabled{opacity:.35;cursor:default}
+input,select{background:var(--surface-low,var(--panel));color:var(--paper);border:1px solid var(--field-edge,var(--line));border-radius:3px;padding:7px 9px}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.quiet{background:transparent;border-color:var(--line)}
+
+/* the header, as the main table's */
+.site-header{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 34px;border-bottom:1px solid var(--line);background:var(--ink)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--paper);font:600 18px 'Cormorant Garamond',Georgia,serif;letter-spacing:2.5px}
+.brand small{display:block;font:8px Inter,sans-serif;letter-spacing:2px;color:var(--muted);margin-top:7px;text-transform:uppercase}
+.seal{width:44px;height:47px;display:grid;place-items:center;border:1px solid var(--brass);color:var(--brass);font-size:24px}
+.seal.logo-slot{border-radius:6px;overflow:hidden;letter-spacing:1px}.seal.logo-slot img{width:100%;height:100%;object-fit:contain}
+.seal.logo-slot:not(.empty){border:0}.seal.logo-slot.empty{border:1px dashed var(--brass);font-size:9px}.seal.logo-slot.empty::after{content:'LOGO'}
+.site-nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.site-nav a{display:inline-block;border:1px solid var(--line);border-radius:3px;padding:8px 12px;color:var(--paper);text-decoration:none;font-size:11px}
+.site-nav a:hover{border-color:var(--brass);background:var(--button,#353124)}
+.site-nav a[aria-current="page"]{background:var(--button,#353124);border-color:var(--brass);color:var(--brass)}
+html body .site-nav a[href="./adventure.html"]{font-weight:800;font-size:12px;border-width:2px;border-color:var(--brass)}   /* ADVENTURE-01: the front door stands out, */
+html body .site-nav a[href="./adventure.html"]:not([aria-current]){color:var(--brass)}                                      /* in every skin */
+
+/* the page's own controls, under the header */
+.toolbar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:12px 34px;border-bottom:1px solid var(--line);background:var(--panel)}
+.toolbar label{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:11px;letter-spacing:.5px}
+
+/* panels, as the main table's */
+.page-title{font:500 30px/1.1 'Cormorant Garamond',Georgia,serif;margin:0}
+section.panel,aside>section,main section{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:12px 14px;margin-bottom:12px}
+section.panel h2,aside>section>h2,main section>h2{margin:0 0 8px;font:600 11px Inter,sans-serif;letter-spacing:1.6px;color:var(--brass);text-transform:uppercase}
+.note,.notice{color:var(--muted);font-size:12px}
+
+@media(max-width:700px){.site-header{flex-wrap:wrap;padding:12px 16px}.brand small{display:none}.seal{width:32px;height:36px}.toolbar{padding:10px 16px}}
+
+/* 2026-10-22 (GM: "the user interface needs streamlining. Similar things need to be grouped. The design is too brutal.
+   It needs a touch of elegance"; chose the Gilded look with bevelled buttons, skins.css). Display only. */
+/* Bevelled buttons (GM): light from the top left; that edge a little darker than the face, the shadow edge much darker,
+   meeting on a straight diagonal at the corners. Pressed, the edges swap. A skin sets the face with --face. */
+button{--face:var(--button,#353124);--bevel-hi:color-mix(in srgb,var(--face) 80%,#000);--bevel-lo:color-mix(in srgb,var(--face) 38%,#000)}
+/* a group's name in a bar, and a tray that opens from one button (a <details>; play.html closes it on a click outside) */
+.group-label{font:600 13px var(--display-font,Georgia,serif);letter-spacing:2px;text-transform:uppercase;color:var(--brass);white-space:nowrap}
+.bar-group{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.bar-end{margin-left:auto;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.tray-menu{position:relative}
+.tray-menu>summary{--face:var(--button,#353124);display:inline-flex;align-items:center;gap:7px;list-style:none;cursor:pointer;padding:8px 12px;color:var(--paper);
+ background:var(--face);border:3px solid;border-color:color-mix(in srgb,var(--face) 80%,#000) color-mix(in srgb,var(--face) 38%,#000) color-mix(in srgb,var(--face) 38%,#000) color-mix(in srgb,var(--face) 80%,#000);border-radius:2px;user-select:none}
+.tray-menu>summary::-webkit-details-marker{display:none}
+.tray-menu>summary::after{content:'▾';font-size:.85em;opacity:.8}
+.tray-menu[open]>summary{border-color:color-mix(in srgb,var(--face) 38%,#000) color-mix(in srgb,var(--face) 80%,#000) color-mix(in srgb,var(--face) 80%,#000) color-mix(in srgb,var(--face) 38%,#000)}
+.tray-menu>summary:hover{filter:brightness(1.12)}
+.tray{position:absolute;z-index:40;top:calc(100% + 6px);right:0;width:max-content;min-width:min(250px,calc(100vw - 32px));max-width:calc(100vw - 32px);
+ display:grid;gap:6px;padding:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 44px #0009}
+.tray.at-left{left:0;right:auto}
+.tray>button{text-align:left;width:100%}
+.tray label{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.tray-menu:has(.seats-count)>summary::before,.tray-menu:has(.seats-look-dot)>summary::before{content:'';width:8px;height:8px;border-radius:50%;background:#e8b44c;box-shadow:0 0 6px #e8b44c}   /* a player is knocking */
+.tray-menu:has(#note-mode[aria-pressed="true"])>summary::after{content:'· Notes on ▾'}
+/* The Stage, in lights (GM): its page button ringed with small marquee bulbs that chase slowly */
+.site-nav a[href="./stage.html"]{position:relative;margin:0 6px}
+.site-nav a[href="./stage.html"]::before,.site-nav a[href="./stage.html"]::after{content:'';position:absolute;inset:-5px;padding:4px;border-radius:7px;pointer-events:none;
+ -webkit-mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);
+ background:radial-gradient(circle,#fff3c8 0 1.4px,#f0c25c 1.9px,transparent 2.5px) 0 0/10px 8px;filter:drop-shadow(0 0 2px #f0c25c)}
+.site-nav a[href="./stage.html"]::after{background-position:5px 4px;opacity:.22}
+/* GM 2026-10-24: the bulbs chase only when The Stage is the page you are on; elsewhere they stay lit, still */
+@media (prefers-reduced-motion:no-preference){.site-nav a[href="./stage.html"][aria-current="page"]::before{animation:stage-bulbs 1.4s steps(1) infinite}
+ .site-nav a[href="./stage.html"][aria-current="page"]::after{animation:stage-bulbs 1.4s steps(1) infinite reverse}}
+@keyframes stage-bulbs{0%{opacity:1}50%{opacity:.22}}
+@media(max-width:700px){.tray-menu[open]{flex-basis:100%}.tray,.tray.at-left{position:static;width:auto;min-width:0;margin-top:6px}}   /* a phone: the tray opens in line, full width */
+/* GM 2026-10-24: the layout preset (site.mjs applyLayout): the header's menu; Portrait on a wide screen is a centred column */
+.layout-label{display:inline-flex;align-items:center;margin-left:6px}
+#layout-pick{background:var(--button,#353124);color:var(--paper);border:1px solid var(--line);border-radius:3px;padding:7px 8px;font:11px Inter,sans-serif}
+:root[data-layout="portrait"]{background:#0b0a08}:root[data-layout="portrait"] body{max-width:900px;margin-inline:auto;box-shadow:0 0 0 1px var(--line)}
+
+/* GM 2026-10-25: the optional Social rules pack asterisk (scene-ui.mjs packStar) */
+.pack-star{color:var(--brass);text-decoration:none;font-weight:700;margin-left:3px;padding:0 3px}
+.pack-star:hover,.pack-star:focus-visible{text-decoration:underline}
+
+/* GM 2026-10-25: the map list as folders and subfolders (map-picker.mjs) */
+.map-picker{display:inline-flex;flex-wrap:wrap;gap:.35rem;align-items:center}.map-picker select{max-width:min(22rem,100%)}.map-picker{min-width:0;max-width:100%}label:has(>.map-picker){min-width:0;max-width:100%}
+
+/* DM-SWAP-01: the GM role handed over and back (dm-swap-ui.mjs) */
+#dm-swap{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.3rem 0;padding:.35rem .6rem;border:1px solid var(--brass,#c5a56b);border-radius:8px}#dm-swap:empty,#dm-swap[hidden]{display:none}
+.act-group{display:flex;flex-wrap:wrap;align-items:center;gap:4px;flex-basis:100%;margin:2px 0}.act-group-name{color:var(--brass);font:600 12.5px var(--display-font,Georgia,serif);letter-spacing:.6px;margin-right:4px;min-width:6.5em}   /* DESIGN-CHECK-01: actions of one kind in a row */

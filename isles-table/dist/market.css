@@ -1,0 +1,41 @@
+/* MARKET-01: the GM's Market dialog and the players' Market on Play live (market-ui.mjs) */
+.market-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--brass);border-radius:10px;width:min(980px,calc(100vw - 32px));max-height:88vh;overflow:auto;padding:1.1rem 1.2rem}
+.market-dialog::backdrop{background:rgba(9,8,12,.7)}
+.market-dialog h2{color:var(--brass);margin:0 0 .4rem}.market-dialog h3{margin:1rem 0 .35rem;color:var(--brass);font-size:15px}
+.market-dialog h4{margin:.8rem 0 .2rem;color:var(--muted);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.market-dialog ul{list-style:none;margin:0;padding:0}
+.market-dialog li{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;padding:.4rem 0;border-bottom:1px solid var(--line)}
+.market-dialog li[hidden]{display:none}
+.market-dialog .grow{flex:1;min-width:10em}
+.market-dialog button,.market-dialog input,.market-dialog select{min-height:36px}
+.market-tabs{display:flex;flex-wrap:wrap;gap:.3rem;margin:.5rem 0}.market-tabs .on{background:var(--brass);color:#1d1608;border-color:var(--brass)}
+.market-row,.market-actions{display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}
+.market-row label{display:inline-flex;gap:.35rem;align-items:center}
+.market-price{width:7em}.market-qty{width:4.5em}
+.market-error,.market-no{color:var(--no);font-weight:600}
+.market-open-line{padding:.5rem .7rem;border:1px solid var(--line);border-radius:6px;background:var(--ink)}
+.market-badge,.market-count{display:inline-block;min-width:1.3em;padding:0 .35rem;border-radius:999px;background:#b8402f;color:#fff;font-size:.8rem;text-align:center}
+.market-count{margin-left:.35rem}
+.market-cart,.market-purse,.market-editor,.market-answer{border:1px solid var(--line);border-radius:8px;padding:.3rem .8rem .6rem;margin:.6rem 0}
+.market-lines,.market-stock{width:100%;border-collapse:collapse}
+.market-lines td,.market-stock td,.market-stock th{padding:.3rem .35rem;border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}
+.market-stock th{color:var(--muted);font-weight:400;font-size:.85rem}
+.market-warn{color:var(--ally);font-size:.85rem}.market-sell{color:var(--sage)}
+.market-scroll{max-height:42vh;overflow:auto}
+.market-results{max-height:30vh;overflow:auto}
+.market-log li{display:block;font-size:.9rem}
+.market-gold{font-size:1.1rem;color:var(--brass)}.market-p{color:var(--brass);min-width:6em;text-align:right}
+.market-wait{color:var(--ally)}
+.market-foot{text-align:right;margin-top:.8rem}
+#market-open .market-count{background:#b8402f}
+/* the players' button: bottom left (the chat's is bottom right), only while a shop is open */
+#market-fab{position:fixed;left:16px;bottom:16px;z-index:50;font:600 15px/1 Georgia,serif;padding:.7rem 1rem;border-radius:999px;
+ background:#2a2419;color:#f1e6cc;border:1px solid #c9a35a;box-shadow:0 4px 14px rgba(0,0,0,.45);cursor:pointer}
+#market-fab[hidden]{display:none}
+.market-player{width:min(620px,calc(100vw - 24px))}
+.market-player li{min-height:44px}.market-player button{min-height:44px}
+.player-view #market-open{display:none!important}
+/* LOOT-01 (GM 2026-10-29): the party loot (Market, Party loot tab; the players' window) */
+.market-loot-text{width:100%;box-sizing:border-box;font:inherit;margin:.2rem 0 .4rem}
+.market-loot-tag{font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 .3rem}
+.market-loot-each{font-weight:600}

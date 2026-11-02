@@ -1,0 +1,322 @@
+{
+ "name": "Test lab: sky and falling (simulator only)",
+ "rounds": 6,
+ "level": 7,
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode. Simulator test map (SIM-LAB-01): not an adventure map. A creature walking into the chasm climbs down; a shove or a lost flight makes it fall 30 ft.",
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Test lab - sky",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     15.5
+    ],
+    [
+     -0.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     15.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [],
+ "locked_doors": [],
+ "lighting": {
+  "ambient": "bright",
+  "lights": []
+ },
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013",
+  "id-00014",
+  "id-00015"
+ ],
+ "zones": [
+  {
+   "id": "chasm",
+   "kind": "drop",
+   "rect": [
+    12,
+    0,
+    15,
+    15
+   ],
+   "height": 30
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 6,
+   "y": 5,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 5",
+   "side": "friend",
+   "pc": true,
+   "init": 14,
+   "x": 6,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 6",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 5,
+   "y": 7,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 12,
+   "x": 3,
+   "y": 7,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Bandit 1",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "x": 11,
+   "y": 4,
+   "init": 12,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00012",
+   "name": "Bandit 2",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "x": 11,
+   "y": 7,
+   "init": 11,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00013",
+   "name": "Bandit 3",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "x": 11,
+   "y": 10,
+   "init": 10,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ]
+  },
+  {
+   "id": "id-00014",
+   "name": "Gargoyle 1",
+   "side": "foe",
+   "hp": 67,
+   "ac": 15,
+   "speed": "30 ft., Fly 60 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Elemental",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +4",
+   "x": 13,
+   "y": 5,
+   "init": 9,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The gargoyle makes two Claw attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Claw",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d4+2",
+     "dmgtype": "slashing"
+    }
+   ]
+  },
+  {
+   "id": "id-00015",
+   "name": "Gargoyle 2",
+   "side": "foe",
+   "hp": 67,
+   "ac": 15,
+   "speed": "30 ft., Fly 60 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Elemental",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +4",
+   "x": 14,
+   "y": 9,
+   "init": 7,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The gargoyle makes two Claw attacks."
+    },
+    {
+     "id": "id-00002",
+     "name": "Claw",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d4 + 2) Slashing damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "2d4+2",
+     "dmgtype": "slashing"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Spells</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+/* REFEREE-01 (GM 2026-10-22): every SRD 5.2.1 spell, what the engine plays of it, and the GM's own wording */
+main{display:grid;grid-template-columns:minmax(0,26rem) minmax(0,1fr);gap:1rem;padding:1rem}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+#status{padding:.4rem 1rem;color:var(--muted)}#status.error{color:var(--no)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.35rem 0}
+#list{max-height:72vh;overflow:auto;margin:0;padding:0;list-style:none}
+#list li button{width:100%;text-align:left;display:flex;justify-content:space-between;gap:8px;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:7px 6px}
+#list li button[aria-current="true"]{background:var(--button,#353124);color:var(--brass)}
+.tag{font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);white-space:nowrap}
+.tag.live{border-color:#7fbf7f;color:#a8d8a8}.tag.sim{border-color:#7fa7cf;color:#a9c6e4}.tag.dm{color:var(--muted)}.tag.mine{border-color:var(--brass);color:var(--brass)}
+dl{display:grid;grid-template-columns:9rem 1fr;gap:4px 12px;margin:.5rem 0}dt{color:var(--muted)}dd{margin:0}
+.srd{white-space:pre-wrap;background:var(--well);border:1px solid var(--line);border-radius:4px;padding:10px;max-height:22rem;overflow:auto}
+textarea{width:100%;min-height:9rem;background:var(--surface-low,var(--panel));color:var(--paper);border:1px solid var(--line);border-radius:3px;padding:8px;font:inherit}
+.counts{color:var(--muted);font-size:12px}
+</style></head>
+<body>
+<header class="site-header" data-page="spells"></header>
+<div id="status" role="status">Loading the spells…</div>
+<main>
+ <section class="panel"><h2>Spells</h2>
+  <div class="row"><input id="find" placeholder="Find a spell" aria-label="Find a spell" style="flex:1">
+   <select id="level" aria-label="Level"><option value="">All levels</option><option value="0">Cantrips</option></select>
+   <select id="show" aria-label="Which"><option value="">All</option><option value="played in Play live">Played in Play live</option><option value="simulator only">Simulator only</option><option value="not yet (the GM rules it)">The GM rules it</option><option value="mine">Reworded for my table</option></select></div>
+  <p class="counts" id="counts"></p>
+  <ul id="list"></ul>
+ </section>
+ <section class="panel" id="detail"><h2 id="d-name">Choose a spell</h2>
+  <p class="note">The engine and its referee take a spell's rules from the SRD 5.2.1 text. Where a spell reads unclearly, reword it
+   for your table: your wording is used here and by the referee, the SRD text stays beside it, and your rulings stay on this PC.</p>
+  <div id="d-body" hidden>
+   <dl id="d-rules"></dl>
+   <h2>For my table</h2>
+   <textarea id="d-text" aria-label="Your wording"></textarea>
+   <div class="row"><input id="d-note" placeholder="Why (a note for yourself)" style="flex:1" maxlength="500"></div>
+   <div class="row"><button id="d-save">Save my wording</button><button id="d-clear" class="quiet">Back to the SRD text</button></div>
+   <h2>SRD 5.2.1 text</h2>
+   <div class="srd" id="d-srd"></div>
+  </div>
+ </section>
+</main>
+<script type="module" src="spells-page.mjs"></script>
+</body></html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Combat tracker tests</title>
+<style>body{font:14px/1.4 monospace;background:#151614;color:#e8e2d4;padding:1rem}.ok{color:#7fbf7f}.fail{color:#e07a6a}</style></head>
+<body><h1>Combat tracker tests (browser runner)</h1><pre id="out">running…</pre>
+<script type="module">
+// Serve the isles-table folder (not only dist) to run this page: py -3 -m http.server 8770 --bind 127.0.0.1
+import { run } from '../tracker_tests.mjs';
+const out = document.getElementById('out');
+try {
+  const results = run(), failed = results.filter(r => !r[1]).length;
+  out.innerHTML = results.map(([n, ok, why]) => `<span class="${ok ? 'ok' : 'fail'}">${ok ? 'ok  ' : 'FAIL'} ${n}${ok ? '' : '\n     ' + why}</span>`).join('\n') +
+    `\n\n${results.length - failed}/${results.length} tests passed`;
+  document.title = failed ? 'FAILED' : 'PASSED';
+} catch (e) { out.textContent = 'ERROR ' + e; document.title = 'ERROR'; }
+</script></body></html>

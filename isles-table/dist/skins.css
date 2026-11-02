@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+/* Skin contract: semantic CSS variables, SVG map colours and typography.
+   A skin has no access to the engine state or action logic. */
+:root{--map-floor:#34392e;--map-tile:#3b4032;--map-wall:#9f967d;--map-grid:#968b6940;--friend:#adbf9b;--foe:#ce9274;--map-ink:#e6dcc2;--display-font:'Cormorant Garamond',Georgia,serif;--body-font:Inter,system-ui,sans-serif;--surface-low:#191c17;--button:#353124}
+body[data-skin="deepsea"]{--field-edge:#678489;--ink:#111b20;--panel:#19282d;--line:#344950;--paper:#d4e2df;--muted:#91aaa9;--brass:#a9bbaa;--rust:#af7c72;--sage:#85b7aa;--map-floor:#233b40;--map-tile:#294349;--map-wall:#91aaab;--map-grid:#8ab8bc38;--friend:#8aceba;--foe:#db9e8e;--map-ink:#d5e6df;--surface-low:#142228;--button:#263d42}
+body[data-skin="parchment"]{color-scheme:light;--ink:#d7c9a8;--panel:#e7dcc2;--line:#b6a27b;--paper:#302b21;--muted:#5a4e38;--brass:#654a22;--rust:#843f2b;--sage:#4a5736;--ok:#335c2f;--no:#8a3524;--ally:#644b0c;--field-edge:#7c6c4a;--map-floor:#c5bd9f;--map-tile:#d0c7a8;--map-wall:#625b43;--map-grid:#7e735248;--friend:#536b3d;--foe:#984c36;--map-ink:#302b21;--surface-low:#d9cdb0;--button:#d1bc8c;--display-font:Georgia,'Times New Roman',serif}
+body{font-family:var(--body-font);background:radial-gradient(ellipse at 50% 0,#8e71481b,transparent 55%),var(--ink)}header{background:var(--ink)}h1,.panel-heading h2,.character-name,.action-heading h3,.actor-name,.dialog-top h2{font-family:var(--display-font)}button{background:var(--button)}button.quiet{background:transparent}select,input{background:var(--surface-low)}.board{background:var(--surface-low)}.board-toolbar{background:var(--panel)}.token-card{background:var(--surface-low)}.chronicle .log-line:last-child{color:var(--paper)}body[data-skin="parchment"] .notice{background:#e8dfc66b}body[data-skin="parchment"] #outcome{background:#e7dcc2f5}body[data-skin="parchment"] .seal{box-shadow:none}body[data-skin="parchment"] .end-turn{background:#806030;color:#fff2ce}nav #skin{max-width:160px;font-size:10px}body[data-skin="parchment"] .avatar,body[data-skin="parchment"] .character-top img,body[data-skin="parchment"] .token-card img{filter:drop-shadow(0 2px 3px #66552b44)}
+@media(max-width:850px){nav #skin{max-width:110px}}@media(max-width:700px){header{flex-wrap:wrap}nav{flex:1;justify-content:flex-end;flex-wrap:wrap}.brand{margin-right:auto}nav #skin{font-size:8px;max-width:115px}body[data-skin="parchment"] .dialog-top h2{font-size:25px}}
+
+/* Tabletop (GM 2026-10-20, art style 1, the default): the Retro tokens' cartoon drawing in softer colours, matching the
+   3D world (world-style.mjs): ink outlines, chunky rounded panels with a hard offset shadow like a cardboard game
+   piece, flat two-tone headings, buttons that press down, a rounded display font. Presentation only. */
+body[data-skin="tabletop"]{color-scheme:dark;--field-edge:#869388;--ink:#222a2c;--panel:#323a35;--line:#0e0c0d;--paper:#f2e8d0;--muted:#bdb69f;--brass:#eab54e;--rust:#df7b5c;--sage:#93c48c;--button:#4a5b52;--surface-low:#283031;--display-font:'Fredoka','Cormorant Garamond',sans-serif;--map-floor:#786e5e;--map-tile:#82786a;--map-wall:#1e2224;--map-grid:#1c181a66;--friend:#93c48c;--foe:#df7b5c;--map-ink:#f2e8d0;--ok:#93c48c;--no:#ef8a6e;--ally:#eab54e;--toon:3px 4px 0 #0e0c0d;--band:#3d4740}
+body[data-skin="tabletop"] header,body[data-skin="tabletop"] .site-header{background:#1b2123;border-bottom:3px solid var(--line)}
+body[data-skin="tabletop"] .brand{font-family:var(--display-font);font-weight:600;letter-spacing:1.5px}
+body[data-skin="tabletop"] .seal{border:2px solid var(--line);background:#2b3330;box-shadow:2px 3px 0 var(--line)}
+body[data-skin="tabletop"] .seal.logo-slot.empty{border:2px dashed var(--brass)}
+body[data-skin="tabletop"] .panel,body[data-skin="tabletop"] section.panel,body[data-skin="tabletop"] main section,body[data-skin="tabletop"] aside>section,body[data-skin="tabletop"] .board,body[data-skin="tabletop"] dialog,body[data-skin="tabletop"] .tool-menu,body[data-skin="tabletop"] .token-card,body[data-skin="tabletop"] .char-card,body[data-skin="tabletop"] #map,body[data-skin="tabletop"] #tp-canvas{border:2.5px solid var(--line);border-radius:12px;box-shadow:var(--toon)}
+body[data-skin="tabletop"] dialog{background:var(--panel)}
+body[data-skin="tabletop"] .panel-heading,body[data-skin="tabletop"] .board-toolbar,body[data-skin="tabletop"] .toolbar{background:var(--band);border-bottom:2.5px solid var(--line)}
+body[data-skin="tabletop"] section.panel>h2,body[data-skin="tabletop"] main section>h2,body[data-skin="tabletop"] aside>section>h2{font:600 14px var(--display-font);letter-spacing:.8px;color:var(--brass)}
+body[data-skin="tabletop"] .site-nav a,body[data-skin="tabletop"] a.sim-link{display:inline-block;text-decoration:none;padding:8px 12px}
+body[data-skin="tabletop"] button,body[data-skin="tabletop"] .site-nav a,body[data-skin="tabletop"] a.sim-link{border:2px solid var(--line);border-radius:9px;box-shadow:0 3px 0 var(--line);background:var(--button);color:var(--paper);font-weight:600;transition:transform .05s,box-shadow .05s}
+body[data-skin="tabletop"] button:active:not(:disabled),body[data-skin="tabletop"] .site-nav a:active,body[data-skin="tabletop"] a.sim-link:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line)}
+body[data-skin="tabletop"] button.quiet{background:#2b3330;box-shadow:0 2px 0 var(--line)}
+body[data-skin="tabletop"] .end-turn,body[data-skin="tabletop"] #start,body[data-skin="tabletop"] #cast-go,body[data-skin="tabletop"] .primary-tool[aria-pressed="true"],body[data-skin="tabletop"] .site-nav a[aria-current="page"]{background:var(--brass);color:#1d1608;border-color:var(--line)}
+body[data-skin="tabletop"] input,body[data-skin="tabletop"] select{border:2px solid var(--field-edge);border-radius:8px;background:var(--surface-low)}
+body[data-skin="tabletop"] .card{border-width:2.5px;border-radius:10px;box-shadow:0 3px 0 var(--line);background:#3a3428}
+body[data-skin="tabletop"] .card.held{outline:3px solid var(--brass);outline-offset:1px}
+body[data-skin="tabletop"] input[type="number"]{min-width:4.8em;padding:5px 6px}
+body[data-skin="tabletop"] #map g.token>rect:first-of-type,body[data-skin="gilded"] #map g.token>rect:first-of-type{fill:#262c2e;fill-opacity:1}
+body[data-skin="tabletop"] #map g.token>text,body[data-skin="gilded"] #map g.token>text{paint-order:stroke;stroke:#0e0c0d;stroke-width:.06px;font-weight:600}
+body[data-skin="tabletop"] #map g.token>text:first-of-type,body[data-skin="gilded"] #map g.token>text:first-of-type{stroke-width:.03px}
+
+/* Gilded (GM 2026-10-22: "The design is too brutal. It needs a touch of elegance"; chose the mythastria.com look, with
+   bevelled buttons): warm black, thin gold lines, Cormorant Garamond for names and headings, soft shadows, room to
+   breathe. The default skin. The map keeps the Tabletop colours (above), and the tokens are never recoloured. */
+body[data-skin="gilded"]{color-scheme:dark;--field-edge:#776d56;--ink:#100f0c;--panel:#1a1813;--line:#3a3426;--paper:#ece2c9;--muted:#a39a82;--brass:#d9bb78;--gold-hi:#edce85;--quiet:#29251c;--pressed:#4a3d22;--row-hover:#2c271c;--rust:#cf8a6c;--sage:#a9bb98;
+ --button:#3b3427;--surface-low:#13120e;--band:#15130f;--ok:#9cc79a;--no:#e3907a;--ally:#e0b858;--well:#0d0c0a;--soft:0 12px 32px #0000005c;
+ --display-font:'Cormorant Garamond',Georgia,serif;--body-font:Inter,system-ui,sans-serif;
+ --map-floor:#786e5e;--map-tile:#82786a;--map-wall:#1e2224;--map-grid:#1c181a66;--friend:#93c48c;--foe:#df7b5c;--map-ink:#f2e8d0;
+ font-size:13.5px;min-height:100vh;background:radial-gradient(ellipse at 50% -10%,#edce8512,transparent 60%) no-repeat,var(--ink)}
+body[data-skin="gilded"] header,body[data-skin="gilded"] .site-header{background:#0b0a08;border-bottom:1px solid var(--line)}
+body[data-skin="gilded"] .site-header{padding:12px 28px}
+body[data-skin="gilded"] .brand{font:600 20px var(--display-font);letter-spacing:3.5px;color:var(--paper)}
+body[data-skin="gilded"] .brand small{color:var(--brass);letter-spacing:2.5px}
+body[data-skin="gilded"] .seal.logo-slot{width:42px;height:42px;border-radius:8px}
+body[data-skin="gilded"] .site-nav{gap:4px}
+body[data-skin="gilded"] .site-nav a{border:0;border-bottom:2px solid transparent;border-radius:0;padding:8px 11px;background:none;color:var(--muted);font-size:12.5px;letter-spacing:.2px}
+body[data-skin="gilded"] .site-nav a:hover{background:none;color:var(--paper);border-bottom-color:var(--line)}
+body[data-skin="gilded"] .site-nav a[aria-current="page"]{background:none;color:var(--gold-hi);border-bottom-color:var(--brass)}
+html body[data-skin="gilded"] .site-nav a[href="./adventure.html"]{font-weight:600;font-size:12.5px;border-width:0 0 2px;color:var(--brass)}
+html body[data-skin="gilded"] .site-nav a[href="./adventure.html"]:not([aria-current]){border-bottom-color:transparent}
+body[data-skin="gilded"] .site-nav a[href="./stage.html"]{color:var(--gold-hi)}
+body[data-skin="gilded"] .toolbar{background:var(--band);border-bottom:1px solid var(--line);padding:11px 28px;gap:10px 16px}
+body[data-skin="gilded"] .toolbar label{font-size:12px;letter-spacing:.3px}
+body[data-skin="gilded"] .page-title{color:var(--gold-hi);font-weight:600;letter-spacing:.5px}
+body[data-skin="gilded"] section.panel,body[data-skin="gilded"] main section,body[data-skin="gilded"] aside>section{border:1px solid var(--line);border-radius:10px;box-shadow:var(--soft);padding:14px 16px}
+body[data-skin="gilded"] section.panel>h2,body[data-skin="gilded"] main section>h2,body[data-skin="gilded"] aside>section>h2{font:600 15px var(--display-font);letter-spacing:2.2px;color:var(--brass)}
+body[data-skin="gilded"] dialog{box-shadow:0 24px 64px #000b;border-radius:12px}
+body[data-skin="gilded"] dialog::backdrop{background:#07060599;backdrop-filter:blur(2px)}
+body[data-skin="gilded"] dialog h2{font-family:var(--display-font);font-weight:600;letter-spacing:.5px}
+body[data-skin="gilded"] input,body[data-skin="gilded"] select,body[data-skin="gilded"] textarea{background:var(--surface-low);border:1px solid var(--field-edge);border-radius:6px}
+body[data-skin="gilded"] input:focus,body[data-skin="gilded"] select:focus,body[data-skin="gilded"] textarea:focus{border-color:var(--brass);outline:none}
+body[data-skin="gilded"] input:focus-visible,body[data-skin="gilded"] select:focus-visible,body[data-skin="gilded"] textarea:focus-visible{outline:2px solid var(--brass);outline-offset:2px}   /* STYLE-GUIDE-01: the keyboard's focus ring */
+body[data-skin="gilded"] input[type="checkbox"],body[data-skin="gilded"] input[type="radio"]{accent-color:var(--brass)}
+/* bevelled buttons: the lit edges a little darker than the face, the shadow edges much darker (site.css sets the colours) */
+body[data-skin="gilded"] button{background:var(--face);border:3px solid;border-color:var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);border-radius:2px;color:var(--paper);padding:6px 12px}
+body[data-skin="gilded"] button.quiet{--face:var(--quiet);background:var(--face)}
+body[data-skin="gilded"] button:hover:not(:disabled){border-color:var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);filter:brightness(1.16)}
+body[data-skin="gilded"] button:active:not(:disabled),body[data-skin="gilded"] button[aria-pressed="true"]{border-color:var(--bevel-lo) var(--bevel-hi) var(--bevel-hi) var(--bevel-lo)}
+body[data-skin="gilded"] button[aria-pressed="true"]{--face:var(--pressed);color:var(--gold-hi)}
+body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save){--face:var(--brass);color:#1b160b;font-weight:600}
+body[data-skin="gilded"] .tray-menu>summary{--face:var(--button);color:var(--paper)}
+body[data-skin="gilded"] .tray>button,body[data-skin="gilded"] .tray>button:hover:not(:disabled){--face:transparent;border-color:transparent;padding:8px 10px}
+body[data-skin="gilded"] .tray>button:hover:not(:disabled){--face:#3b3427;filter:none}
+body[data-skin="gilded"] .tray>button[aria-pressed="true"]{--face:var(--pressed)}
+body[data-skin="gilded"] .card{border:1px solid color-mix(in srgb,var(--brass) 55%,var(--line));border-radius:8px;background:color-mix(in srgb,var(--brass) 8%,var(--panel));padding:.6rem .7rem}
+body[data-skin="gilded"] .card.held{outline:2px solid var(--gold-hi);outline-offset:1px;background:color-mix(in srgb,var(--brass) 18%,var(--panel))}
+body[data-skin="gilded"] #map,body[data-skin="gilded"] #tp-canvas{border:1px solid var(--line);border-radius:10px;box-shadow:var(--soft)}
+body[data-skin="gilded"] .party-chars summary{--face:var(--button);background:var(--face);border:3px solid;border-color:color-mix(in srgb,var(--face) 80%,#000) color-mix(in srgb,var(--face) 38%,#000) color-mix(in srgb,var(--face) 38%,#000) color-mix(in srgb,var(--face) 80%,#000);border-radius:3px;font-size:12px;padding:7px 12px}
+body[data-skin="gilded"] .party-chars-box{border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 44px #0009;padding:10px 12px}
+/* GM 2026-10-22 ("kinda weird when stretched on a widescreen"): the bars' contents stay within 1720px, centred */
+body[data-skin="gilded"] .site-header,body[data-skin="gilded"] .toolbar{padding-left:max(28px,calc((100% - 1720px) / 2));padding-right:max(28px,calc((100% - 1720px) / 2))}
+@media(max-width:700px){body[data-skin="gilded"] .site-header{padding:10px 16px}body[data-skin="gilded"] .toolbar{padding:10px 16px}
+ body[data-skin="gilded"] .site-nav{flex:1 1 100%;flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;width:100%;padding:6px 6px 4px;scrollbar-width:none}
+ body[data-skin="gilded"] .site-nav a{white-space:nowrap}}
+
+/* DESIGN-CHECK-01 (GM 2026-10-26: "Aesthetics. Let's start adding shading, style, consistency with menus and tabs"):
+   one look per kind of control in the Gilded skin, from design-check.html's findings. Display only.
+   Menus and fields: the buttons' 2px corners, recessed (shaded inside) so they read as places to choose or type. */
+html body[data-skin="gilded"] :is(select,input:not([type=checkbox]):not([type=radio]):not([type=range]),textarea),
+html body[data-skin="gilded"] #remix-app :is(select,input:not([type=checkbox]):not([type=radio]):not([type=range]),textarea){
+ border-radius:2px;border:1px solid var(--field-edge);border-top-color:#000a;background-color:var(--surface-low);box-shadow:inset 0 2px 4px #0009,0 1px 0 #ffffff0d}   /* STYLE-GUIDE-01: three edges at 3:1, the top kept dark (recessed) */
+html body[data-skin="gilded"] select,html body[data-skin="gilded"] #remix-app select{padding-right:26px;appearance:none;cursor:pointer;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23d9bb78'/%3E%3C/svg%3E")!important;background-repeat:no-repeat;background-position:right 9px center}
+html body[data-skin="gilded"] select:hover:not(:disabled){border-color:var(--brass)}
+/* Tabs: one row of raised tabs on a line; the open tab is gilded and sits on the line (Characters, the Play live sheet) */
+body[data-skin="gilded"] [role=tablist],body[data-skin="gilded"] .sheet-tabs{display:flex;flex-wrap:wrap;gap:3px;border-bottom:1px solid var(--brass);margin-bottom:10px}
+html body[data-skin="gilded"] :is([role=tab],.sheet-tab){--face:var(--quiet);background:var(--face);border:1px solid var(--line);border-bottom:0;
+ border-radius:7px 7px 0 0;padding:7px 14px;margin-bottom:-1px;color:var(--muted);box-shadow:inset 0 1px 0 #ffffff14;font-family:var(--display-font);
+ font-size:14px;letter-spacing:.6px}
+html body[data-skin="gilded"] :is([role=tab],.sheet-tab):hover:not(:disabled){color:var(--paper);filter:none;border-color:var(--line)}
+html body[data-skin="gilded"] :is([role=tab][aria-selected="true"],.sheet-tab.on){--face:#3a3222;background:linear-gradient(#4a3f29,var(--face));color:var(--gold-hi);
+ border-color:var(--brass);box-shadow:inset 0 1px 0 #ffe9b026,0 -2px 6px #0006}
+/* Open-and-close headings (<details>): the panels' heading look, with a turning marker */
+body[data-skin="gilded"] main details>summary:not(.tray-menu>summary){cursor:pointer;list-style:none;font:600 14px var(--display-font);letter-spacing:1px;color:var(--brass);padding:4px 0}
+body[data-skin="gilded"] main details>summary:not(.tray-menu>summary)::-webkit-details-marker{display:none}
+body[data-skin="gilded"] main details>summary:not(.tray-menu>summary)::before{content:'\25B8';display:inline-block;margin-right:7px;transition:transform .15s}
+body[data-skin="gilded"] main details[open]>summary:not(.tray-menu>summary)::before{transform:rotate(90deg)}
+body[data-skin="gilded"] main details>summary:not(.tray-menu>summary):hover{color:var(--gold-hi)}
+/* Headings inside pages: the display font throughout (Documents used the body font for its feature titles) */
+body[data-skin="gilded"] main h3{font-family:var(--display-font);letter-spacing:.3px}
+/* DESIGN-CHECK-01, pass 2 (GM 2026-10-26: "bring the buttons and cards into one Gilded look"; "fix anything you feel
+   would look good and be intuitive"): three button tiers only. Main: the brass face (Start live fight, End turn, Cast).
+   Normal: the bevelled face. Quiet: a darker face, same bevel. One text size (smaller only for .small); transparent only
+   for the entries of a tray menu. Cards share the panels' shading, with corners close to the buttons'. */
+html body[data-skin="gilded"] button:not(.tray>button):not([role=tab]):not(.sheet-tab):not(.card){font-size:13.5px;font-weight:400;line-height:1.3;
+ box-shadow:0 1px 2px #0007}
+html body[data-skin="gilded"] button.small:not(.tray>button){font-size:12px;padding:4px 9px}
+html body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save,.day-rest-btn){
+ font-weight:600;letter-spacing:.2px;box-shadow:0 1px 3px #000a,inset 0 1px 0 #fff3}
+html body[data-skin="gilded"] .day-rest-btn{--face:var(--brass);color:#1b160b;padding:7px 16px}
+html body[data-skin="gilded"] button.quiet:not(.tray>button):not([role=tab]){--face:var(--quiet);background:var(--face)}
+html body[data-skin="gilded"] button:active:not(:disabled):not(.tray>button){border-color:var(--bevel-lo) var(--bevel-hi) var(--bevel-hi) var(--bevel-lo);box-shadow:none}
+html body[data-skin="gilded"] #remix-app .pregen-chip{font-size:13.5px;box-shadow:0 1px 2px #0007}
+html body[data-skin="gilded"] #remix-app .pregen-chip[aria-pressed=true]{--face:var(--pressed);box-shadow:inset 0 0 0 1px var(--brass),0 1px 2px #0007}
+/* Cards (the sheet's attacks and spells): raised like the panels, a gold edge on the left for spells, gilded when held */
+html body[data-skin="gilded"] .card{border:1px solid var(--line);border-top-color:#5a4e36;border-radius:4px;background:linear-gradient(#27231a,#1d1a14);
+ box-shadow:0 2px 5px #0008,inset 0 1px 0 #ffffff0f;color:var(--paper);padding:.6rem .75rem;transition:border-color .1s,filter .1s}
+html body[data-skin="gilded"] .card:hover:not(.not-ready){border-color:var(--brass);filter:brightness(1.1)}
+html body[data-skin="gilded"] .card.spell{border-left:4px solid var(--brass)}
+html body[data-skin="gilded"] .card.held{outline:2px solid var(--gold-hi);outline-offset:1px;background:linear-gradient(#3d3322,#2a2418)}
+html body[data-skin="gilded"] .card.not-ready{opacity:.55;box-shadow:none}
+/* The sheet's attack rows: the same raised look as the cards */
+html body[data-skin="gilded"] .srow{border:1px solid var(--line);border-radius:4px;background:linear-gradient(#24201a,#1b1813);box-shadow:0 1px 3px #0007;padding:.45rem .6rem;margin:.35rem 0}
+/* The Spells page's list: rows that light up under the pointer, so it reads as a list to pick from */
+html body[data-skin="gilded"] #list button{box-shadow:none;border-radius:0}
+html body[data-skin="gilded"] #list button:hover,html body[data-skin="gilded"] #list button[aria-current]{background:var(--row-hover);color:var(--gold-hi)}
+html body[data-skin="gilded"] #layout-pick{background-repeat:no-repeat;background-position:right 7px center;padding:5px 22px 5px 8px;font-size:11.5px}   /* its own background shorthand would tile the arrow */
+
+/* DESIGN-CHECK-01, pass 3 (GM 2026-10-27: "another pass with the style tool ... streamlined ... a little more flair").
+   Streamlined: the Chat and Market buttons in the skin's display font and gold (they were Georgia, their own colours);
+   the Live simulator bar on Simulator fights shaded like the panels. Flair, all quiet and gold, display only: a gilded
+   page title with a small diamond rule under it; a fading gold hairline under each panel heading and a lit top edge on
+   the panels; a gold glint along the header's lower edge; a diamond under the open page in the menu bar; a soft sheen
+   that crosses the main (brass) buttons under the pointer; gold-on-dark scrollbars. Nothing moves for a viewer who
+   asks the system for reduced motion. */
+html body[data-skin="gilded"] :is(#chat-fab,#market-fab){font:600 16px/1 var(--display-font);letter-spacing:.6px;color:var(--gold-hi);
+ background:linear-gradient(#3a3020,#211c13);border:1px solid var(--brass);box-shadow:0 6px 18px #000b,inset 0 1px 0 #ffe9b033}
+html body[data-skin="gilded"] :is(#chat-fab,#market-fab):hover{filter:brightness(1.15);box-shadow:0 6px 18px #000b,0 0 14px #edce8540,inset 0 1px 0 #ffe9b033}
+html body[data-skin="gilded"] #chat-fab[aria-expanded="true"]{background:linear-gradient(#f0d48e,var(--brass));color:#1b160b}
+html body[data-skin="gilded"] section.live{border:1px solid var(--line);border-radius:10px;box-shadow:var(--soft),inset 0 1px 0 #edce851f;
+ background:var(--panel);padding:12px 16px}
+html body[data-skin="gilded"] section.live>strong{font:600 15px var(--display-font);letter-spacing:2.2px;color:var(--brass)}
+/* the page title: gilded letters, a diamond rule beneath */
+html body[data-skin="gilded"] .page-title{background:linear-gradient(180deg,#fff3cc 12%,var(--gold-hi) 48%,#cfa75e 88%) 0 0/100% 1.2em no-repeat;-webkit-background-clip:text;
+ background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 1px 1px #0009)}
+html body[data-skin="gilded"] .page-title::after{content:'';display:block;width:150px;height:9px;margin-top:5px;opacity:.75;
+ background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='9'%3E%3Cpath d='M0 4.5h66M84 4.5h66' stroke='%23d9bb78' stroke-width='1'/%3E%3Cpath d='M75 0l4.5 4.5L75 9l-4.5-4.5z' fill='%23edce85'/%3E%3Ccircle cx='62' cy='4.5' r='1.3' fill='%23d9bb78'/%3E%3Ccircle cx='88' cy='4.5' r='1.3' fill='%23d9bb78'/%3E%3C/svg%3E") no-repeat}
+/* panels: a lit top edge; their headings end in a fading gold hairline */
+html body[data-skin="gilded"] :is(section.panel,main section,aside>section){box-shadow:var(--soft),inset 0 1px 0 #edce851a}
+html body[data-skin="gilded"] :is(section.panel,main section,aside>section)>h2::after{content:'';display:block;height:1px;margin-top:7px;
+ background:linear-gradient(90deg,var(--brass),#d9bb7800 75%);opacity:.6}
+/* the header: a gold glint along its lower edge; the open page marked with a small diamond */
+html body[data-skin="gilded"] .site-header{position:relative}
+html body[data-skin="gilded"] .site-header::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:1px;pointer-events:none;
+ background:linear-gradient(90deg,#d9bb7800,var(--brass) 30%,var(--gold-hi) 50%,var(--brass) 70%,#d9bb7800);opacity:.55}
+html body[data-skin="gilded"] .site-nav a[aria-current="page"]{position:relative}
+html body[data-skin="gilded"] .site-nav a[aria-current="page"]::after{content:'';position:absolute;left:50%;bottom:-4px;width:6px;height:6px;
+ background:var(--gold-hi);transform:translateX(-50%) rotate(45deg);box-shadow:0 0 6px #edce8599}
+/* the main (brass) buttons: a sheen crosses them under the pointer */
+html body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save,.day-rest-btn){
+ position:relative;overflow:hidden}
+html body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save,.day-rest-btn)::after{
+ content:'';position:absolute;top:0;bottom:0;left:-60%;width:45%;pointer-events:none;transform:skewX(-20deg);
+ background:linear-gradient(90deg,#fff0,#fff6 50%,#fff0);transition:left .55s ease}
+html body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save,.day-rest-btn):hover:not(:disabled)::after{left:120%}
+@media (prefers-reduced-motion:reduce){html body[data-skin="gilded"] :is(#start,#end,#cast-go,.end-turn,.primary,#adv-start,#join-go,#undo-approve,#imp-go,#ed-import,#note-save,.day-rest-btn)::after{display:none}}
+/* gold-on-dark scrollbars */
+html body[data-skin="gilded"],html body[data-skin="gilded"] *{scrollbar-color:#5a4e36 transparent;scrollbar-width:thin}

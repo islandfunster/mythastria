@@ -1,0 +1,745 @@
+{
+ "name": "Goblin den in the dark (2024 rules): a Champion Fighter with a torch against three goblins",
+ "source": "Goblin Warrior and Goblin Boss: System Reference Document 5.2.1 by Wizards of the Coast LLC, CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/). Hero 1 is a test character built from SRD 5.2.1 rules (Fighter, Champion, Human). Map, walls and lights are synthetic.",
+ "rounds": 4,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Goblin den (synthetic)",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "w0",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "w1",
+   "points": [
+    [
+     6.5,
+     0.5
+    ],
+    [
+     6.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w2",
+   "points": [
+    [
+     6.5,
+     4.5
+    ],
+    [
+     6.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "w3",
+   "points": [
+    [
+     7.5,
+     0.5
+    ],
+    [
+     7.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w4",
+   "points": [
+    [
+     7.5,
+     4.5
+    ],
+    [
+     7.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "w5",
+   "points": [
+    [
+     12.5,
+     1.5
+    ],
+    [
+     12.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w6",
+   "points": [
+    [
+     13.5,
+     1.5
+    ],
+    [
+     13.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w7",
+   "points": [
+    [
+     17.5,
+     0.5
+    ],
+    [
+     17.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "w8",
+   "points": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     6.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "w9",
+   "points": [
+    [
+     7.5,
+     0.5
+    ],
+    [
+     17.5,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "w10",
+   "points": [
+    [
+     12.5,
+     1.5
+    ],
+    [
+     13.5,
+     1.5
+    ]
+   ]
+  },
+  {
+   "id": "w11",
+   "points": [
+    [
+     6.5,
+     3.5
+    ],
+    [
+     7.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w12",
+   "points": [
+    [
+     12.5,
+     3.5
+    ],
+    [
+     13.5,
+     3.5
+    ]
+   ]
+  },
+  {
+   "id": "w13",
+   "points": [
+    [
+     6.5,
+     4.5
+    ],
+    [
+     7.5,
+     4.5
+    ]
+   ]
+  },
+  {
+   "id": "w14",
+   "points": [
+    [
+     0.5,
+     7.5
+    ],
+    [
+     6.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "w15",
+   "points": [
+    [
+     7.5,
+     7.5
+    ],
+    [
+     17.5,
+     7.5
+    ]
+   ]
+  },
+  {
+   "id": "D1",
+   "door": true,
+   "points": [
+    [
+     6.5,
+     3.5
+    ],
+    [
+     6.5,
+     4.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [
+  "D1"
+ ],
+ "lighting": {
+  "ambient": "dark",
+  "lights": [
+   {
+    "carrier": "id-00001",
+    "bright_ft": 20,
+    "dim_ft": 40,
+    "label": "Hero 1's Torch (SRD 5.2.1: Bright Light 20 ft, Dim Light 20 ft more)"
+   },
+   {
+    "x": 16,
+    "y": 1,
+    "bright_ft": 10,
+    "dim_ft": 20,
+    "label": "cooking fire (GM-set: Bright 10 ft, Dim 10 ft more)"
+   }
+  ]
+ },
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 2,
+   "y": 4,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Goblin Warrior 1",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 14,
+   "x": 10,
+   "y": 2,
+   "speed": "30 ft.",
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ]
+  },
+  {
+   "id": "id-00003",
+   "name": "Goblin Warrior 2",
+   "side": "foe",
+   "hp": 10,
+   "ac": 15,
+   "init": 12,
+   "x": 15,
+   "y": 6,
+   "speed": "30 ft.",
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00002",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ]
+  },
+  {
+   "id": "id-00004",
+   "name": "Goblin Boss",
+   "side": "foe",
+   "hp": 21,
+   "ac": 17,
+   "init": 10,
+   "x": 16,
+   "y": 3,
+   "speed": "30 ft.",
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 9",
+   "skills": "Stealth +6",
+   "wis_mod": -1,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The goblin makes two attacks, using Scimitar or Shortbow in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Scimitar",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "slashing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage, or 5 (1d6 + 2) Slashing damage plus 2 (1d4) Slashing damage if the attack roll had Advantage."
+    },
+    {
+     "id": "id-00003",
+     "name": "Shortbow",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d6+2",
+     "dmgtype": "piercing",
+     "desc": "Ranged Attack Roll: +4, range 80/320 ft. Hit: 5 (1d6 + 2) Piercing damage, or 5 (1d6 + 2) Piercing damage plus 2 (1d4) Piercing damage if the attack roll had Advantage."
+    }
+   ]
+  }
+ ],
+ "wall_cells": [
+  [
+   0,
+   0
+  ],
+  [
+   1,
+   0
+  ],
+  [
+   2,
+   0
+  ],
+  [
+   3,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   5,
+   0
+  ],
+  [
+   6,
+   0
+  ],
+  [
+   7,
+   0
+  ],
+  [
+   8,
+   0
+  ],
+  [
+   9,
+   0
+  ],
+  [
+   10,
+   0
+  ],
+  [
+   11,
+   0
+  ],
+  [
+   12,
+   0
+  ],
+  [
+   13,
+   0
+  ],
+  [
+   14,
+   0
+  ],
+  [
+   15,
+   0
+  ],
+  [
+   16,
+   0
+  ],
+  [
+   17,
+   0
+  ],
+  [
+   18,
+   0
+  ],
+  [
+   19,
+   0
+  ],
+  [
+   0,
+   1
+  ],
+  [
+   7,
+   1
+  ],
+  [
+   18,
+   1
+  ],
+  [
+   19,
+   1
+  ],
+  [
+   0,
+   2
+  ],
+  [
+   7,
+   2
+  ],
+  [
+   13,
+   2
+  ],
+  [
+   18,
+   2
+  ],
+  [
+   19,
+   2
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   7,
+   3
+  ],
+  [
+   13,
+   3
+  ],
+  [
+   18,
+   3
+  ],
+  [
+   19,
+   3
+  ],
+  [
+   0,
+   4
+  ],
+  [
+   18,
+   4
+  ],
+  [
+   19,
+   4
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   7,
+   5
+  ],
+  [
+   18,
+   5
+  ],
+  [
+   19,
+   5
+  ],
+  [
+   0,
+   6
+  ],
+  [
+   7,
+   6
+  ],
+  [
+   18,
+   6
+  ],
+  [
+   19,
+   6
+  ],
+  [
+   0,
+   7
+  ],
+  [
+   7,
+   7
+  ],
+  [
+   18,
+   7
+  ],
+  [
+   19,
+   7
+  ],
+  [
+   0,
+   8
+  ],
+  [
+   1,
+   8
+  ],
+  [
+   2,
+   8
+  ],
+  [
+   3,
+   8
+  ],
+  [
+   4,
+   8
+  ],
+  [
+   5,
+   8
+  ],
+  [
+   6,
+   8
+  ],
+  [
+   7,
+   8
+  ],
+  [
+   8,
+   8
+  ],
+  [
+   9,
+   8
+  ],
+  [
+   10,
+   8
+  ],
+  [
+   11,
+   8
+  ],
+  [
+   12,
+   8
+  ],
+  [
+   13,
+   8
+  ],
+  [
+   14,
+   8
+  ],
+  [
+   15,
+   8
+  ],
+  [
+   16,
+   8
+  ],
+  [
+   17,
+   8
+  ],
+  [
+   18,
+   8
+  ],
+  [
+   19,
+   8
+  ],
+  [
+   0,
+   9
+  ],
+  [
+   1,
+   9
+  ],
+  [
+   2,
+   9
+  ],
+  [
+   3,
+   9
+  ],
+  [
+   4,
+   9
+  ],
+  [
+   5,
+   9
+  ],
+  [
+   6,
+   9
+  ],
+  [
+   7,
+   9
+  ],
+  [
+   8,
+   9
+  ],
+  [
+   9,
+   9
+  ],
+  [
+   10,
+   9
+  ],
+  [
+   11,
+   9
+  ],
+  [
+   12,
+   9
+  ],
+  [
+   13,
+   9
+  ],
+  [
+   14,
+   9
+  ],
+  [
+   15,
+   9
+  ],
+  [
+   16,
+   9
+  ],
+  [
+   17,
+   9
+  ],
+  [
+   18,
+   9
+  ],
+  [
+   19,
+   9
+  ]
+ ],
+ "props": [],
+ "ceilings": [],
+ "zones": []
+}

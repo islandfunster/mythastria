@@ -1,0 +1,55 @@
+{
+ "format": "table-chat-cases/1",
+ "about": "TABLE-CHAT-01 + CHAT-FUN-01: language-neutral cases for the table chat (reference: sim/table_chat.py). Each case starts empty; 'post' is a line typed by 'seat'; 'sees' lists the texts that seat sees, oldest first. 'dice' are scripted faces in roll order. 'expect' may name the entry's kind and site (null for none).",
+ "cases": [
+  {"name": "a message and a roll are for everyone",
+   "dice": [14],
+   "steps": [
+    {"seat": "Hero 2", "post": "Is the door locked?", "expect": {"answer": null}},
+    {"seat": "GM", "post": "/r 1d20+2 lock", "expect": {"answer": null}},
+    {"sees": "Hero 3", "expect_texts": ["Is the door locked?", "GM rolls 1d20+2 (lock): 1d20 [14] + 2 = 16"]}
+   ]},
+  {"name": "CHAT-FUN-01: picture and music links are shared with everyone; the words after the link are the caption",
+   "steps": [
+    {"seat": "Hero 2", "post": "https://media.example.org/dance.GIF the goblins after the fight", "expect": {"kind": "picture", "site": null}},
+    {"seat": "Hero 3", "post": "https://www.youtube.com/watch?v=abc123", "expect": {"kind": "music", "site": "YouTube"}},
+    {"seat": "Hero 3", "post": "https://youtu.be/abc123 tavern song", "expect": {"kind": "music", "site": "YouTube"}},
+    {"seat": "GM", "post": "https://open.spotify.com/track/xyz", "expect": {"kind": "music", "site": "Spotify"}},
+    {"seat": "GM", "post": "https://someband.bandcamp.com/album/sea", "expect": {"kind": "music", "site": "Bandcamp"}},
+    {"seat": "GM", "post": "https://soundcloud.com/a/b", "expect": {"kind": "music", "site": "SoundCloud"}},
+    {"seat": "GM", "post": "http://example.org/storm.mp3?x=1 storm", "expect": {"kind": "music", "site": "Audio file"}},
+    {"seat": "Hero 2", "post": "https://example.org/page.html", "expect": {"kind": "say"}},
+    {"seat": "Hero 2", "post": "look https://example.org/cat.gif", "expect": {"kind": "say"}},
+    {"seat": "Hero 2", "post": "javascript:alert(1).gif", "expect": {"kind": "say"}},
+    {"seat": "Hero 2", "post": "https://notyoutube.com/x", "expect": {"kind": "say"}},
+    {"sees": "Hero 5", "expect_texts": ["the goblins after the fight", "https://www.youtube.com/watch?v=abc123", "tavern song",
+      "https://open.spotify.com/track/xyz", "https://someband.bandcamp.com/album/sea", "https://soundcloud.com/a/b", "storm",
+      "https://example.org/page.html", "look https://example.org/cat.gif", "javascript:alert(1).gif", "https://notyoutube.com/x"]}
+   ]},
+  {"name": "CHAT-FUN-01: private messages are gone",
+   "steps": [
+    {"seat": "Hero 2", "post": "/w Hero 3 meet me at the boat", "expect": {"error": "Chat: private messages are not part of the chat any more; use your own messaging app."}},
+    {"seat": "Hero 3", "post": "/whisper \"Old Hero 4\" not now", "expect": {"error": "Chat: private messages are not part of the chat any more; use your own messaging app."}},
+    {"seat": "Hero 3", "post": "/msg GM hi", "expect": {"error": "Chat: private messages are not part of the chat any more; use your own messaging app."}},
+    {"sees": "GM", "expect_texts": []}
+   ]},
+  {"name": "a private roll: the GM sees the result, the roller only that it was rolled",
+   "dice": [20, 3],
+   "steps": [
+    {"seat": "Hero 2", "post": "/gmr 1d20+5 Insight"},
+    {"seat": "GM", "post": "/gmroll 1d6 wandering monster"},
+    {"sees": "GM", "expect_texts": ["Hero 2 rolls 1d20+5 (Insight): 1d20 [20] + 5 = 25 · natural 20", "GM rolls 1d6 (wandering monster): 1d6 [3] = 3"]},
+    {"sees": "Hero 2", "expect_texts": ["Hero 2 rolls 1d20+5 (Insight) privately for the GM."]},
+    {"sees": "Hero 3", "expect_texts": []}
+   ]},
+  {"name": "help is private; mistakes are refused with the reason",
+   "steps": [
+    {"seat": "Hero 3", "post": "/help", "expect": {"answer": "Chat: type to talk to everyone. Paste a link to a picture (.gif .png .jpg .webp) or to music (YouTube, Spotify, Bandcamp, SoundCloud, an audio file) to share it; words after the link are its caption. /r 1d20+5 Stealth: a roll everyone sees. /gmr 1d20+5 Stealth: a private roll only the GM sees."}},
+    {"seat": "Hero 3", "post": "/r", "expect": {"error": "Chat: /r and then the dice, e.g. /r 1d20+5 Stealth"}},
+    {"seat": "Hero 3", "post": "/r 2d6+fire", "expect": {"error": "Dice: cannot read '2d6+fire'. Use terms like 2d6, d20, 4d6kh3, +3 or -1."}},
+    {"seat": "Hero 3", "post": "/dance", "expect": {"error": "Chat: unknown command /dance. Type /help."}},
+    {"seat": "Hero 3", "post": "   ", "expect": {"error": "Chat: nothing to send."}},
+    {"sees": "GM", "expect_texts": []}
+   ]}
+ ]
+}

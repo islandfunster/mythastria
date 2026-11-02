@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Join the table</title><link rel="icon" type="image/png" href="icon.png"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css">
+<link rel="stylesheet" href="join.css"></head>
+<!-- JOIN-01 (GM 2026-10-21: "let's work on the handshaking protocol to connect players with the main DM engine"; chose
+     "over the internet" and "GM approves each"): the players' door's first page. A player says who they are and which
+     character they play; the GM approves on Play live (Players...). Mythastria docs/development/JOIN_PROTOCOL.md. -->
+<body data-skin="gilded"><!-- 2026-10-22: the Gilded look and the gold M sun, as on the GM's pages (no page links at the door) -->
+<header class="site-header"><span class="brand"><span class="seal logo-slot"><img src="logo.png" alt="" onerror="this.parentElement.classList.add('empty');this.remove()"></span><span>MYTHASTRIA<small>Join the table</small></span></span></header>
+<main id="join">
+ <h1 class="page-title">Join the table</h1>
+ <p id="join-status" role="status" aria-live="polite">Knocking on the door…</p>
+ <form id="join-ask" hidden>
+  <label>Your name <input id="join-name" maxlength="40" autocomplete="nickname" required></label>
+  <label id="join-invite-row">Invite code <input id="join-invite" maxlength="12" autocomplete="off" autocapitalize="characters"></label>
+  <label>Character you play <input id="join-character" maxlength="40" list="join-characters" placeholder="Leave empty to watch"></label>
+  <datalist id="join-characters"></datalist>
+  <div id="join-notice" class="notice-box"></div>
+  <button id="join-go" type="submit">Ask to join</button>
+  <p class="note">The invite code comes in the GM's invite link. The GM sees your name and character and lets you in.</p>
+ </form>
+ <section id="join-wait" hidden>
+  <p class="join-big">Waiting for the GM to let you in…</p>
+  <button id="join-cancel" type="button" class="quiet">Stop asking</button>
+ </section>
+ <section id="join-seated" hidden>
+  <p class="join-big" id="join-who"></p>
+  <p><span id="join-dot" class="join-dot"></span> <span id="join-link"></span></p>
+  <p><a id="join-open" class="join-button" href="play.html?view=player">Open the table</a>
+   <button id="join-leave" type="button" class="quiet">Leave the table</button></p>
+  <p class="note">Keep this page or the table open. If the connection drops, it reconnects by itself: no need to ask again.</p>
+  <p class="note">Hints are off. You can turn on reminders from your sheet.</p>
+ </section>
+ <form id="join-again" hidden>
+  <p class="join-big">The table's notice has changed. Read it and accept it to keep your seat.</p>
+  <div id="join-again-notice" class="notice-box"></div>
+  <button type="submit">Accept and keep my seat</button>
+ </form>
+</main><script type="module" src="join.mjs"></script></body></html>

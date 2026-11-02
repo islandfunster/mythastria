@@ -1,0 +1,82 @@
+/* ADVENTURE-01 (GM 2026-10-21): the Adventure page. Colours from the skin's variables (site.css, skins.css). */
+#adventure-app{padding:18px 34px 40px;max-width:1280px;margin:0 auto}
+.intro{margin-bottom:12px}.intro p{margin:6px 0 0}
+#adv-status{margin:0 0 12px;min-height:1.4em}#adv-status.error{color:var(--no)}
+.adv-fight{background:var(--panel);border:1px solid var(--ally);border-radius:5px;padding:10px 14px;margin:0 0 12px}
+.adv-layout{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:16px;align-items:start}
+.adv-party{display:grid;gap:6px;margin-bottom:10px}.check{display:flex;align-items:center;gap:6px}
+.adv-level{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.adv-sub{margin:14px 0 6px;font:600 11px Inter,sans-serif;letter-spacing:1.2px;color:var(--brass);text-transform:uppercase}
+.adv-links{display:grid;gap:8px;margin-bottom:8px}
+.adv-links a{display:block;border:1px solid var(--line);border-radius:3px;padding:9px 12px;text-decoration:none;color:var(--paper)}
+.adv-links a:hover{border-color:var(--brass);background:var(--button,#353124)}
+.adv-end{width:100%;margin-top:6px}
+.adv-pregens{margin-bottom:8px;color:var(--muted)}#adv-clear{margin-top:10px}   /* GM 2026-10-22: test characters hidden unless ticked; Clear */
+section:has(#adv-show-pregens:not(:checked)) #adv-party{display:none}
+.adv-packs{display:grid;gap:8px;margin-bottom:16px}
+.adv-pack{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:4px;padding:12px 14px;cursor:pointer;font-size:16px}
+.adv-pack:has(input:checked){border-color:var(--brass)}
+.adv-big{font:700 22px/1.1 'Cormorant Garamond',Georgia,serif;letter-spacing:1px;padding:14px 28px;border:2px solid var(--brass);color:var(--brass)}
+#adv-name{font:600 24px 'Cormorant Garamond',Georgia,serif;letter-spacing:1px;text-transform:none;color:var(--paper)}
+.adv-places{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.adv-isle{font:600 11px Inter,sans-serif;letter-spacing:1.6px;color:var(--brass);text-transform:uppercase;margin-top:8px}
+.adv-place{border:1px solid var(--line);border-radius:5px;padding:10px 12px;background:var(--well,#10110f)}
+.adv-place-head{display:flex;align-items:center;gap:10px}
+.adv-place-head h3{flex:1;margin:0;font:600 18px 'Cormorant Garamond',Georgia,serif}
+.adv-n{display:inline-grid;place-items:center;min-width:26px;height:26px;border:1px solid var(--line);border-radius:50%;color:var(--muted);font-size:11px}
+.adv-go{border:1px solid var(--brass);border-radius:3px;padding:7px 14px;text-decoration:none;font-weight:600;white-space:nowrap}
+.adv-go:hover{background:var(--button,#353124)}
+.adv-enc{margin:8px 0 0 36px}.adv-enc h4{margin:0 0 2px;font-size:13px}.adv-enc p{margin:0 0 4px}.adv-enc ul{margin:0;padding-left:18px;color:var(--muted)}
+@media(max-width:800px){#adventure-app{padding:14px 16px 30px}.adv-layout{grid-template-columns:minmax(0,1fr)}.adv-enc{margin-left:0}}
+/* GM 2026-10-24: the party's day (adventure-day.mjs) */
+.adv-day{border:1px solid var(--line);border-radius:5px;padding:12px 14px;margin-bottom:16px;background:var(--well,#10110f)}
+.adv-day.busy{opacity:.7}.day-clock{margin:0 0 10px;color:var(--brass);font-weight:600}
+.day-row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;margin:6px 0}
+.day-offer{display:grid;gap:4px;max-width:420px}.day-rest-btn{font-weight:700;padding:9px 16px;border:1px solid var(--brass)}
+.day-why{margin:0;color:var(--muted);font-size:13px}.day-link{margin-left:4px;padding:2px 8px}
+.day-under{border:1px solid var(--ally);border-radius:4px;padding:8px 12px;margin-bottom:10px}.day-under p{margin:0 0 6px}
+.day-chars{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:10px 0}
+.day-char{border:1px solid var(--line);border-radius:4px;padding:8px 10px;display:grid;gap:4px;align-content:start}
+.day-char.day-dead{opacity:.6}.day-status{color:var(--no);font-weight:600}.day-dying .day-status,.day-stable .day-status{color:var(--brass)}
+.day-head{display:flex;gap:4px;align-items:baseline}
+.day-hp{display:grid;gap:3px}.day-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}.day-bar span{display:block;height:100%;background:var(--ally)}
+.day-line{margin:0;font-size:13px}.day-label{color:var(--muted)}.day-ex{font-size:13px;color:var(--muted)}
+.day-dice{display:flex;flex-wrap:wrap;gap:6px}.day-die{padding:4px 10px}.day-pending{margin:0;font-size:13px;color:var(--ally)}
+.day-choice{font-size:13px}.day-choice input[type=number]{width:3.5em}
+.day-pass{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}.day-pass input[type=number]{width:5em}
+.day-log{margin:6px 0;padding-left:18px;max-height:260px;overflow:auto;font-size:13px}.day-when{color:var(--muted)}
+@media(max-width:800px){.day-chars{grid-template-columns:1fr}}
+/* GM 2026-10-24: End the adventure asks first */
+.end-dialog{max-width:34rem;background:#17120b;color:#f3e6c4;border:1px solid #c9a24a;border-radius:8px;box-shadow:0 0 0 1px #3a2c14,0 10px 30px #000a}
+.end-dialog::backdrop{background:#0008}.end-dialog .end-choices{display:flex;flex-wrap:wrap;gap:.5rem}
+/* GM 2026-10-24: the adventure's story (lore) */
+.adv-story p{line-height:1.55}.story-title strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.25rem;color:var(--brass)}
+.story-question{font-style:italic;color:var(--brass)}.story-fold{border-top:1px solid var(--line);padding:.6rem 0}.story-fold>summary{cursor:pointer;color:var(--brass)}
+.story-chapter{margin:.6rem 0 .9rem}.story-chapter h3{margin:.2rem 0 .3rem;font-size:1rem}.story-chapter dl{display:grid;grid-template-columns:max-content 1fr;gap:.25rem .8rem;margin:0}
+.story-chapter dt{color:var(--muted)}.story-chapter dd{margin:0}.story-cast{list-style:none;padding:0}.story-cast li{margin:.5rem 0}.story-cast p{margin:.2rem 0 0}
+.story-secret>summary{color:#e07a6a}@media(max-width:700px){.story-chapter dl{grid-template-columns:1fr}}
+/* GM 2026-10-26: Downtime (crafting, brewing, scribing) beside the party's day */
+.dt-projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin:10px 0}
+.dt-project{border:1px solid var(--line);border-radius:4px;padding:8px 10px;display:grid;gap:5px;align-content:start}
+.dt-project.dt-searching{border-color:var(--brass)}.dt-project.dt-done .day-bar span{background:var(--brass)}.dt-project.dt-abandoned{opacity:.6}
+.dt-project button{justify-self:start;padding:3px 10px}.dt-log{font-size:13px}.dt-log ol{margin:4px 0;padding-left:18px}
+.dt-past{grid-column:1/-1}.dt-past>.dt-project{margin-top:8px}.dt-done-line{color:var(--ally)}
+.dt-new{border-top:1px solid var(--line);margin-top:8px;padding-top:6px}.dt-new>summary{cursor:pointer;color:var(--brass);font-weight:600}
+.dt-form{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:8px 0;min-width:0}
+.dt-field{font-size:14px;display:inline-flex;gap:6px;align-items:center;max-width:100%;min-width:0}.dt-field select{min-width:0;max-width:min(360px,100%)}
+.dt-helpers{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.dt-plan{display:grid;gap:6px}.dt-summary{color:var(--brass)}.dt-needs{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-size:13px}
+.dt-met{color:var(--muted)}.dt-met .dt-mark{color:var(--ally)}.dt-unmet .dt-mark{color:var(--no)}
+#dt-start{justify-self:start}
+@media(max-width:800px){.dt-projects{grid-template-columns:1fr}.dt-field{flex-wrap:wrap}.dt-field select{flex:1 1 12em}}
+/* HAZARDS-01: the environment, contagions, lasting stress (Gilded skin colours) */
+.day-env{border:1px solid var(--line);border-radius:4px;padding:6px 10px;margin:8px 0}.day-env summary{cursor:pointer;color:var(--brass);font-weight:600}
+.day-env-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 12px;margin:6px 0;font-size:13px}
+.day-effects{margin:0;font-size:13px;color:var(--brass)}.day-contagion{margin:0;font-size:13px}.day-contagion strong{color:var(--no)}
+.day-small{padding:2px 8px;font-size:12px}.day-more{font-size:13px}.day-more summary{cursor:pointer;color:var(--muted)}
+.day-more .day-row{margin:4px 0}
+/* RESTS-02: death saves on the day */
+.day-dying-box{border:1px solid var(--brass);border-radius:4px;padding:4px 8px;display:grid;gap:2px}.day-death{margin:0;font-size:13px}.day-death strong{color:var(--no)}.day-dying-box .day-row{margin:2px 0;align-items:center}
+/* ENCOUNTER-CHECK-01 (GM 2026-10-28): the GM's winnable check, per place */
+.adv-check{margin:6px 0 10px}.adv-check-row{margin:4px 0 0 36px}.adv-check-row strong{color:var(--brass,#e0b04e)}
+.check-winnable strong{color:#7fbf6a}.check-risky strong{color:#e0b04e}.check-deadly strong{color:#e06a5a}.check-not-rated strong{color:var(--muted)}

@@ -1,0 +1,163 @@
+{
+ "format": "mythastria-rules-pack/1",
+ "id": "social",
+ "name": "Social interaction rules",
+ "optional": true,
+ "page": "rules-social.html",
+ "source": "sim/rules_packs/social_interaction_rules.md",
+ "credit": "Social Interaction Rules Supplement: islandfunster, with AI assistance. Part of Mythastria (MIT). Includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd, licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/legalcode.",
+ "note": "GM 2026-10-25: \"Leave the social rules as optional, but I really was looking for creature dispositions when encountered. A social creature is loosely defined as INT 4+\"; \"Those determinations can signify if a creature is neutral or hostile according to intelligence and faction\". The SRD's own default (Indifferent) stays the rule unless the GM switches this pack on for a campaign.",
+ "social_int": 4,
+ "types": {
+  "aberration": {
+   "attitude": "Hostile",
+   "skill": "Deception",
+   "helps": "Offering lost lore or forbidden historical knowledge.",
+   "hurts": "Invoking the names of modern gods or planar entities."
+  },
+  "beast": {
+   "attitude": "Indifferent",
+   "skill": "Animal Handling",
+   "helps": "Offering fresh food; moving slowly with weapons sheathed.",
+   "hurts": "Cornering the beast or making sudden, deafening noises."
+  },
+  "celestial": {
+   "attitude": "Friendly",
+   "skill": "Persuasion",
+   "helps": "Honesty, acts of self-sacrifice, or defending innocents.",
+   "hurts": "Attempting to lie (Deception) or threatening violence."
+  },
+  "construct": {
+   "attitude": "Hostile",
+   "skill": null,
+   "immune": true,
+   "helps": "Providing specific maintenance commands or repair keys.",
+   "hurts": "Damaging its guarded property or structures."
+  },
+  "dragon": {
+   "attitude": "Indifferent",
+   "skill": "Intimidation or Persuasion",
+   "helps": "Flattery, tribute offerings, or acknowledging their hierarchy.",
+   "hurts": "Touching their hoard or showing blatant disrespect."
+  },
+  "elemental": {
+   "attitude": "Indifferent",
+   "skill": "Persuasion",
+   "helps": "Presenting pure elemental fuel (e.g., source of fire or rare minerals).",
+   "hurts": "Using spells that control, bind, or banish elementals."
+  },
+  "fey": {
+   "attitude": "Indifferent",
+   "skill": "Deception or Persuasion",
+   "helps": "Engaging in playful riddles, gift-giving, or clever wit.",
+   "hurts": "Breaking a sworn promise, contract, or formal oath."
+  },
+  "fiend": {
+   "attitude": "Hostile",
+   "skill": "Deception",
+   "helps": "Offering written contracts, collateral, or souls.",
+   "hurts": "Appealing to their morality, mercy, or altruism."
+  },
+  "giant": {
+   "attitude": "Hostile",
+   "skill": "Intimidation",
+   "helps": "Demonstrating significant physical strength or tactical military logic.",
+   "hurts": "Insulting their lineage, craft, or social standing."
+  },
+  "humanoid": {
+   "attitude": "Indifferent",
+   "skill": "Persuasion or Deception",
+   "helps": "Aligning with their faction's goals or trading currency/goods.",
+   "hurts": "Threatening their family, home territory, or leadership."
+  },
+  "monstrosity": {
+   "attitude": "Hostile",
+   "skill": "Animal Handling",
+   "helps": "Throwing specialized food/minerals or giving them wide berths.",
+   "hurts": "Blocking their clear path to prey or active hunting grounds."
+  },
+  "ooze": {
+   "attitude": "Hostile",
+   "skill": null,
+   "immune": true,
+   "helps": "Luring it away with massive amounts of organic waste/acidic matter.",
+   "hurts": "Damaging it with elements it naturally absorbs."
+  },
+  "plant": {
+   "attitude": "Hostile",
+   "skill": null,
+   "immune": true,
+   "helps": "Presenting specialized fertilizers or altering light/water sources.",
+   "hurts": "Introducing open fire, defoliants, or clear-cutting tools."
+  },
+  "undead": {
+   "attitude": "Hostile",
+   "skill": "Intimidation (intelligent only)",
+   "helps": "Displaying symbols of dark authority or necromantic control.",
+   "hurts": "Brandishing holy symbols, radiant magic, or life energy."
+  }
+ },
+ "instinct": {
+  "predator": "Hostile",
+  "other": "Indifferent",
+  "text": "A creature of Intelligence 3 or lower is not a social creature: it goes by instinct. A predator (it bites, claws, stings, constricts or engulfs) is Hostile; any other is Indifferent. Mindless Constructs, Oozes, Plants and Undead keep their type's attitude (Hostile). It can't be talked into anything; a Beast or Monstrosity can be coaxed with Wisdom (Animal Handling)."
+ },
+ "factions": {
+  "broken-ring": {
+   "name": "The Broken Ring",
+   "attitude": "Hostile",
+   "members": [
+    "Bandit",
+    "Bandit Captain",
+    "Tough"
+   ],
+   "text": "A ruthless syndicate of highwaymen, deserters, and opportunists. Hostile: they assume any armed group entering their territory is either a rival crew or a bounty hunting squad.",
+   "note": "The supplement's Thugs are the SRD 5.2.1 Tough; its Acolytes the Priest Acolyte; its Cult Fanatics the Cultist Fanatic."
+  },
+  "obsidian-scribes": {
+   "name": "The Obsidian Scribes",
+   "attitude": "Indifferent",
+   "members": [
+    "Mage",
+    "Priest Acolyte"
+   ],
+   "text": "A secretive cabal of historians and mages. Indifferent: they view adventurers as loud, clumsy variables who disrupt delicate research sites."
+  },
+  "pale-flame": {
+   "name": "The Keepers of the Pale Flame",
+   "attitude": "Hostile",
+   "members": [
+    "Cultist",
+    "Cultist Fanatic"
+   ],
+   "text": "A doomsday sect. Hostile: outsiders are viewed as fuel for their sacrificial pyres or direct threats to their grand prophecy."
+  }
+ },
+ "type_fallback": {
+  "Giant Rat": {
+   "type": "beast",
+   "int": 2
+  },
+  "Goblin Boss": {
+   "type": "fey",
+   "int": 10
+  },
+  "Goblin Warrior": {
+   "type": "fey",
+   "int": 10
+  },
+  "Kobold Warrior": {
+   "type": "dragon",
+   "int": 8
+  },
+  "Swarm": {
+   "type": "beast"
+  }
+ },
+ "mindless_types": [
+  "construct",
+  "ooze",
+  "plant",
+  "undead"
+ ]
+}

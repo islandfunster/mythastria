@@ -1,0 +1,305 @@
+{
+ "name": "Test lab: sunlight (simulator only)",
+ "rounds": 6,
+ "level": 5,
+ "source": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode. Simulator test map (SIM-LAB-01): not an adventure map.",
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Test lab - sunlight",
+ "perception_dc": 15,
+ "walls": [
+  {
+   "id": "0",
+   "points": [
+    [
+     -0.5,
+     -0.5
+    ],
+    [
+     23.5,
+     -0.5
+    ]
+   ]
+  },
+  {
+   "id": "1",
+   "points": [
+    [
+     23.5,
+     -0.5
+    ],
+    [
+     23.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     23.5,
+     15.5
+    ],
+    [
+     -0.5,
+     15.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     -0.5,
+     15.5
+    ],
+    [
+     -0.5,
+     -0.5
+    ]
+   ]
+  }
+ ],
+ "open_doors": [],
+ "locked_doors": [],
+ "lighting": {
+  "ambient": "sunlight",
+  "lights": []
+ },
+ "aware": [
+  "id-00011",
+  "id-00012",
+  "id-00013",
+  "id-00014",
+  "id-00015"
+ ],
+ "zones": [
+  {
+   "id": "colonnade",
+   "kind": "shade",
+   "rect": [
+    18,
+    0,
+    23,
+    15
+   ]
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 1",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 3,
+   "y": 7,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 3",
+   "side": "friend",
+   "pc": true,
+   "init": 14,
+   "x": 3,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 2",
+   "side": "friend",
+   "pc": true,
+   "init": 13,
+   "x": 2,
+   "y": 8,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00004",
+   "name": "Hero 4",
+   "side": "friend",
+   "pc": true,
+   "init": 12,
+   "x": 1,
+   "y": 9,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00011",
+   "name": "Wight 1",
+   "side": "foe",
+   "hp": 82,
+   "ac": 14,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 13",
+   "int": 10,
+   "skills": "Perception +3, Stealth +4",
+   "x": 12,
+   "y": 4,
+   "init": 12,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The wight makes two attacks, using Necrotic Sword or Necrotic Bow in any combination. It can replace one attack with a use of Life Drain."
+    },
+    {
+     "id": "id-00002",
+     "name": "Necrotic Sword",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 6 (1d8 + 2) Slashing damage plus 4 (1d8) Necrotic damage.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d8+2",
+     "dmgtype": "slashing",
+     "dmg2": "1d8",
+     "dmgtype2": "necrotic"
+    },
+    {
+     "id": "id-00003",
+     "name": "Necrotic Bow",
+     "desc": "Ranged Attack Roll: +4, range 150/600 ft. Hit: 6 (1d8 + 2) Piercing damage plus 4 (1d8) Necrotic damage.",
+     "atk": 4,
+     "atktype": "ranged",
+     "reach": 150,
+     "dmg": "1d8+2",
+     "dmgtype": "piercing",
+     "dmg2": "1d8",
+     "dmgtype2": "necrotic"
+    },
+    {
+     "id": "id-00004",
+     "name": "Life Drain",
+     "desc": "Constitution Saving Throw: DC 13, one creature within 5 feet. Failure: 6 (1d8 + 2) Necrotic damage, and the target's Hit Point maximum decreases by an amount equal to the damage taken.\\nA Humanoid slain by this attack rises 24 hours later as a Zombie under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time."
+    }
+   ]
+  },
+  {
+   "id": "id-00012",
+   "name": "Shadow 1",
+   "side": "foe",
+   "hp": 27,
+   "ac": 12,
+   "speed": "40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +6",
+   "x": 20,
+   "y": 3,
+   "init": 11,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Draining Swipe",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "necrotic"
+    }
+   ]
+  },
+  {
+   "id": "id-00013",
+   "name": "Shadow 2",
+   "side": "foe",
+   "hp": 27,
+   "ac": 12,
+   "speed": "40 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 10",
+   "int": 6,
+   "skills": "Stealth +6",
+   "x": 21,
+   "y": 8,
+   "init": 9,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Draining Swipe",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+2",
+     "dmgtype": "necrotic"
+    }
+   ]
+  },
+  {
+   "id": "id-00014",
+   "name": "Zombie 1",
+   "side": "foe",
+   "hp": 15,
+   "ac": 8,
+   "speed": "20 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 8",
+   "int": 3,
+   "skills": "",
+   "x": 10,
+   "y": 9,
+   "init": 6,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Slam",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Bludgeoning damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d8+1",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  },
+  {
+   "id": "id-00015",
+   "name": "Zombie 2",
+   "side": "foe",
+   "hp": 15,
+   "ac": 8,
+   "speed": "20 ft.",
+   "space": 5,
+   "size": "medium",
+   "type": "Undead",
+   "senses": "Darkvision 60 ft.; Passive Perception 8",
+   "int": 3,
+   "skills": "",
+   "x": 13,
+   "y": 11,
+   "init": 5,
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Slam",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 5 (1d8 + 1) Bludgeoning damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d8+1",
+     "dmgtype": "bludgeoning"
+    }
+   ]
+  }
+ ]
+}

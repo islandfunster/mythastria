@@ -1,0 +1,68 @@
+{
+ "format": "stage-cases/1",
+ "about": "STAGE-01 slice 1: language-neutral test cases for the Stage rules (reference: sim/stage.py). A port (Rust, JavaScript, Java, Ruby) passes when, starting from an empty state, it gives the same ok / public / private answers to each command and the same query results. 'director' is decided by the session's host, never by the command. Times are seconds.",
+ "cases": [
+  {"name": "join and leave keep identity and history",
+   "steps": [
+    {"cmd": {"id": "1", "user": "ann", "op": "join", "name": "Ann"}, "now": 0, "expect": {"ok": true, "public": "Stage: Ann joins the Stage.", "private": null}},
+    {"cmd": {"id": "2", "user": "ann", "op": "join"}, "now": 1, "expect": {"ok": true, "public": null, "private": "Stage: you are already in."}},
+    {"cmd": {"id": "3", "user": "ann", "op": "applaud", "to": "bob", "reason": "great line"}, "now": 2, "expect": {"ok": true, "public": "Applause: Ann applauds bob: great line"}},
+    {"cmd": {"id": "4", "user": "ann", "op": "leave"}, "now": 3, "expect": {"ok": true, "public": "Stage: Ann leaves the Stage (a regular player, as valid)."}},
+    {"query": "status", "now": 4, "expect": "Stage: in: nobody; out: Ann. Stage: no one holds the spotlight."}
+   ]},
+  {"name": "the spotlight timer pauses and resumes",
+   "steps": [
+    {"cmd": {"id": "1", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 100, "director": true, "expect": {"ok": true, "public": "ON AIR · ann · Spotlight - please listen · 0:00"}},
+    {"query": "on_air", "now": 130, "expect": "ON AIR · ann · Spotlight - please listen · 0:30"},
+    {"cmd": {"id": "2", "user": "gm", "op": "pause"}, "now": 160, "director": true, "expect": {"ok": true, "public": "ON AIR · ann · Spotlight - please listen · 1:00 (paused)"}},
+    {"query": "elapsed", "now": 500, "expect": 60},
+    {"cmd": {"id": "3", "user": "gm", "op": "resume"}, "now": 500, "director": true, "expect": {"ok": true}},
+    {"query": "elapsed", "now": 530, "expect": 90},
+    {"query": "time_report", "now": 530, "expect": "Stage spotlight time this session (a cue, not a score):\n  ann 1:30"}
+   ]},
+  {"name": "only the holder lights Dialogue and the timer keeps running",
+   "steps": [
+    {"cmd": {"id": "1", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 0, "director": true, "expect": {"ok": true}},
+    {"cmd": {"id": "2", "user": "bob", "op": "discuss", "on": true, "revision": 1}, "now": 10, "expect": {"ok": false, "private": "Stage: only the player holding the spotlight lights or ends Dialogue."}},
+    {"cmd": {"id": "3", "user": "gm", "op": "discuss", "on": true, "revision": 1}, "now": 10, "director": true, "expect": {"ok": false}},
+    {"cmd": {"id": "4", "user": "ann", "op": "discuss", "on": true, "revision": 1}, "now": 20, "expect": {"ok": true, "public": "Dialogue · ann's spotlight · join in character · 0:20"}},
+    {"query": "elapsed", "now": 40, "expect": 40},
+    {"cmd": {"id": "5", "user": "ann", "op": "discuss", "on": false, "revision": 2}, "now": 40, "expect": {"ok": true, "public": "ON AIR · ann · Spotlight - please listen · 0:40"}}
+   ]},
+  {"name": "a handover ends Dialogue and refuses stale toggles",
+   "steps": [
+    {"cmd": {"id": "1", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 0, "director": true, "expect": {"ok": true}},
+    {"cmd": {"id": "2", "user": "ann", "op": "discuss", "on": true, "revision": 1}, "now": 5, "expect": {"ok": true}},
+    {"cmd": {"id": "3", "user": "gm", "op": "spotlight", "to": "bob"}, "now": 60, "director": true, "expect": {"ok": true, "public": "ON AIR · bob · Spotlight - please listen · 0:00"}},
+    {"query": "elapsed", "now": 70, "expect": 10},
+    {"cmd": {"id": "4", "user": "ann", "op": "discuss", "on": false, "revision": 2}, "now": 71, "expect": {"ok": false}},
+    {"cmd": {"id": "5", "user": "bob", "op": "discuss", "on": true, "revision": 2}, "now": 72, "expect": {"ok": false, "private": "Stage: the spotlight has changed since; nothing done."}},
+    {"query": "time_report", "now": 72, "expect": "Stage spotlight time this session (a cue, not a score):\n  ann 1:00\n  bob 0:12"}
+   ]},
+  {"name": "a retried command does nothing twice",
+   "steps": [
+    {"cmd": {"id": "same", "user": "ann", "op": "applaud", "to": "bob", "reason": "nice"}, "now": 0, "expect": {"ok": true, "public": "Applause: ann applauds bob: nice"}},
+    {"cmd": {"id": "same", "user": "ann", "op": "applaud", "to": "bob", "reason": "nice"}, "now": 1, "expect": {"ok": true, "public": null, "private": null}},
+    {"cmd": {"id": "spot", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 0, "director": true, "expect": {"ok": true}},
+    {"cmd": {"id": "spot", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 50, "director": true, "expect": {"ok": true, "public": null}},
+    {"query": "elapsed", "now": 60, "expect": 60}
+   ]},
+  {"name": "applause and accolades",
+   "steps": [
+    {"cmd": {"id": "1", "user": "ann", "op": "applaud", "to": "bob"}, "now": 0, "expect": {"ok": true, "public": "Applause: ann applauds bob."}},
+    {"cmd": {"id": "2", "user": "ann", "op": "applaud", "to": "bob", "reason": "  the toast to the drowned  "}, "now": 1, "expect": {"ok": true, "public": "Applause: ann applauds bob: the toast to the drowned"}},
+    {"cmd": {"id": "3", "user": "ann", "op": "applaud", "to": "ann"}, "now": 2, "expect": {"ok": false, "private": "Stage: applause goes to someone else."}},
+    {"cmd": {"id": "4", "user": "ann", "op": "applaud", "to": ""}, "now": 2, "expect": {"ok": false, "private": "Stage: applaud whom?"}}
+   ]},
+  {"name": "only the Director controls the spotlight; a new session keeps Stage choices",
+   "steps": [
+    {"cmd": {"id": "1", "user": "bob", "op": "spotlight", "to": "bob"}, "now": 0, "expect": {"ok": false, "private": "Stage: only the Director (the GM) does that."}},
+    {"cmd": {"id": "2", "user": "bob", "op": "newsession"}, "now": 0, "expect": {"ok": false}},
+    {"cmd": {"id": "3", "user": "ann", "op": "join", "name": "Ann"}, "now": 0, "expect": {"ok": true}},
+    {"cmd": {"id": "4", "user": "gm", "op": "spotlight", "to": "ann"}, "now": 0, "director": true, "expect": {"ok": true}},
+    {"cmd": {"id": "5", "user": "gm", "op": "newsession"}, "now": 100, "director": true, "expect": {"ok": true, "public": "Stage: a new session begins. Everyone keeps their Stage choice."}},
+    {"query": "status", "now": 100, "expect": "Stage: in: Ann; out: nobody. Stage: no one holds the spotlight."},
+    {"query": "time_report", "now": 100, "expect": "Stage spotlight time this session (a cue, not a score):\n  nobody has held the spotlight yet"}
+   ]}
+ ]
+}

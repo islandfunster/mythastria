@@ -1,0 +1,1075 @@
+{
+ "format": "mythastria-features/1",
+ "note": "DOCS-01 (GM 2026-10-22: \"Let's maintain a list of features to be included in a documents page in the game.\"). The Documents page (docs.html) shows this list. Every new or changed feature updates its entry here, in the same commit. status: built (ready to use), partly (works, with limits said in 'limits'), planned (not built yet).",
+ "updated": "2026-11-02",
+ "groups": [
+  {
+   "group": "Getting started",
+   "features": [
+    {
+     "id": "srd-edition",
+     "name": "SRD 5.2.1 edition",
+     "status": "partly",
+     "what": "This version holds SRD 5.2.1 play only: no book code, no book data and no built-in test characters. Spell text is read from the official SRD PDF, and the creature library is checked against it. Every party is your saved characters; the maps keep plain Hero start marks that saved characters stand beside.",
+     "how": "Build or import a character on Characters, tick it under Saved characters, then start the fight.",
+     "limits": "Remix proof fights are refused, because they played the test characters. See NOTES.md."
+    },
+    {
+     "id": "start",
+     "name": "Starting Mythastria",
+     "status": "built",
+     "page": null,
+     "what": "Mythastria runs on your PC. Start_Mythastria.bat starts it and opens Play live; leave its window open while you play. It needs only Python: since 26 October 2026 every fight, creature turn and rule is Mythastria's own Python code (the old Fantasy Grounds code and the lupa package it needed are gone).",
+     "how": "Double-click Start_Mythastria.bat (in the Mythastria folder). Pages open at http://127.0.0.1:8772/. After an update, close its window and start it again, then press Ctrl+F5 on open pages."
+    },
+    {
+     "id": "adventure",
+     "name": "Play an adventure",
+     "status": "built",
+     "page": "./adventure.html",
+     "since": "2026-10-21",
+     "what": "The front door: load an adventure pack and play it with your saved characters. An adventure with a lore file shows The story (premise, central question, the chapters with their function, core problem, revelation, route-key and moral question, the cast, and the GM-only secrets folded away) and lists its places in chapter order. Mythastria comes with no adventure: each one is a pack of its own, such as Seven Isles, a free adventure.",
+     "how": "Open Play an adventure, pick the adventure, then the party. The story panel shows each chapter, and a pack may add its crossing between places. Fight here plays that place's fight: no fight running, it starts at once; another map running, Play live asks before ending it; the map stays locked to the chosen encounter, and its Remix too. Remix beside it opens Remix and Remix Prep on that encounter only (with an adventure loaded, Remix Prep lists only its maps)."
+    },
+    {
+     "id": "documents",
+     "name": "Documents (this page)",
+     "status": "built",
+     "page": "./docs.html",
+     "since": "2026-10-22",
+     "what": "Every feature of Mythastria: what it does, how to use it, and whether it is built, partly built or planned.",
+     "how": "Search, or filter by status."
+    }
+   ]
+  },
+  {
+   "group": "Play live: fights",
+   "features": [
+    {
+     "id": "live",
+     "name": "Live fights",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-19",
+     "what": "Players choose their characters' actions in a fight the simulator runs; every choice is checked against SRD 5.2.1 before anything is rolled. Movement by SRD 5.2.1: a square past the movement left but within a Dash asks to Dash (a Rogue's Cunning Action uses the Bonus Action) and moves there in one step, the Dash range drawn dashed on the map; Drop prone (free; ranged attacks from beyond 5 ft have Disadvantage), crawling at double cost, Stand up for half the Speed. The GM can take over any character (Take over beside End turn; no permission needed) and give it back; a seated player can hand their character to the GM and take it back (Hand to the GM), but not one the GM took. While the GM holds it, the player's phone shows why and has no buttons.",
+     "how": "Play live: pick a map, tick the party, press Start live fight. Drag your character to move; drag an attack onto a token."
+    },
+    {
+     "id": "actions",
+     "name": "Actions",
+     "status": "built",
+     "page": "./play.html",
+     "what": "Attack, spells, Dash, Disengage, Dodge, Help, Hide, Search, Ready, Grapple, Shove, Second Wind, Rage, Lay on Hands, a Rogue's Bonus Actions, a Sorcerer's Innate Sorcery, Font of Magic and Metamagic, and doors. Movement (GM 2026-10-24): picking a square past the movement left but within a Dash asks first, then Dashes (the Action, or a Rogue's Bonus Action) and moves in one step; the map shows the Dash range fainter and dashed. Drop prone costs nothing (ranged attacks from beyond 5 ft have Disadvantage against you, attacks within 5 ft Advantage); while Prone, moving is crawling (double cost); Stand up costs half the Speed. The characters you play now get the turn-start and turn-end rules too (Slowed, Exhaustion, swimming, burning, repeat saves). A dead creature is an object: you walk through it and may stop on its square, it gives no cover, and its token lies under the living so it never takes your click. A healing or helping spell (Healing Word, Cure Wounds, Shield of Faith) dropped on an ally just goes; only an attack or a harmful spell asks first.",
+     "how": "The character sheet panel lists them on your turn; they are also on the 3D view's action bar (keys 1-0)."
+    },
+    {
+     "id": "sheet",
+     "name": "The character sheet in Play live",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-24",
+     "what": "On your turn, a compact sheet: the turn bar (Action, Bonus Action, Reaction, movement), each attack with To hit and its roll beside it (and a hit or miss mark on the map), spells with their slots, features with their uses, actions, the bag, and a Checks & saves tab (every save, ability and skill rolled in the dice tower). Every other spell and feature on your sheet is there too as Ask the GM: the action, slot or use is spent and the GM rules what happens. Since 27 October, on your Play live console in landscape, the sheet (the turn bar and every action) and the Result sit in a column left of the map, the combat tracker and the log on the right; under 1280 px wide the right column goes under the map. In portrait, on a narrow screen and in the players' window they stay on the right as before. Since 28 October the AC on the sheet, the party list and the combat tracker is the AC attacks are rolled against right now, with what changed it in brackets: \"AC 19 (Shield +5)\", \"AC 17 (Barkskin: AC 17)\", \"(Shield of Faith +2)\"; Haste and Slow change the number itself.",
+     "how": "Play live: the sheet panel on your turn; the GM rules requests in the Asked of the GM panel."
+    },
+    {
+     "id": "combat-tracker",
+     "name": "Combat tracker",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "The fight in turn order beside the map, on your Play live and on every player's screen: each combatant's initiative, who acts now (it follows the creatures' turns too) and the round, Hit Points, AC, conditions, Concentration and death saves. A player sees the party and only the creatures the party sees now, a creature's health in words (unhurt, hurt, Bloodied, down), in the tracker and on the map (a token's hover text, and its bar in steps: full, half, a quarter, empty); you see exact Hit Points and AC. The order is the rules engine's own (initiative, then the initiative bonus, then the name). A player's screen never receives a creature's Hit Points or AC: the players' door sends only the health word, an attack on a creature reaches players without its \"vs AC 15\" (the roll and hit or miss stay), and a log line such as \"Hero 4 deals 11 damage to Goblin 1 (0/10 HP left)\" reaches players as \"(down)\". Each creature's disposition is its colour on the tracker and its token: Friendly green, Indifferent (neutral) yellow, Hostile red, the engine's own attitude, and you change it on its row. On a player's screen each creature they see has an outline in that colour, on its token and its tracker row. Who sees whom: when a fight starts you get a grid of each standing character by each creature, ticked from the engine's sight (light, darkvision, blindness, walls; a creature that sheds light is seen in the dark); you change any box and confirm. Each player's screen then shows only what their own character sees. A box you changed holds until the engine's own answer for it changes (a creature moves, a light goes out); then the engine decides again. The tracker shows who sees each creature, and Who sees whom… opens the grid again.",
+     "how": "Play live, the Combat tracker panel at the top right. Click a row to mark its token on the map (click again to clear). With an attack or a spell held, click a row, or drag the card onto a row, to target that creature: the rules engine checks it as on the map, and a row lights green, amber or red like the tokens. An area spell clicked on a row is aimed at that creature's square. A creature's row: the disposition list (you only). Who sees whom: it opens by itself when a fight starts, and from the button under the tracker.",
+     "limits": "In a social or exploration scene there is no initiative, so the panel is hidden. Your sight picks change what each player's screen shows; the rules (attacks, spells) keep the engine's own sight. A player whose character is down, and a watcher, see what the whole party sees."
+    },
+    {
+     "id": "general-spells",
+     "name": "Casting spells from their rules (cantrips to level 3)",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-24",
+     "what": "35 more SRD 5.2.1 spells are real Cast buttons instead of Ask the GM: every cantrip and spell of levels 1-3 whose damage, healing, save, attack, area and conditions the rules engine reads from the spell's own text (Magic Missile, Shatter, Lightning Bolt, Hypnotic Pattern, Blindness/Deafness, Mass Healing Word, Eldritch Blast...). Each cast is checked first (your turn, the Action or Bonus Action, a slot of the right level, one slot a turn, range and sight, a costly component in the bag) and the rules referee checks what it did. A higher slot adds dice, darts or creatures as the spell says. Where a spell does more than the engine plays (Fear's fleeing, Dissonant Whispers' Reaction), the engine plays its part and the GM gets a request for the rest. Since 27 October the Sorcerer's Metamagic works on these spells too (Quickened, Distant, Twinned, Careful, Heightened, Empowered, Transmuted, Extended, Subtle), and the Market's scribe sells the Diamond (50 GP) Chromatic Orb needs.",
+     "how": "Play live, on your turn: click the spell card, then aim it (a creature, a square for a Sphere or Cube, a direction for a Cone or Line); a spell with a choice (Chromatic Orb's damage type, Command's word) or a higher slot asks first. Hover a card to see what the GM rules. Hex or Hunter's Mark held and its creature down: the same card reads \"Move ... to a new creature (Bonus Action, no spell slot)\" and keeps your Concentration (Hex on a later turn than the one its creature dropped, by SRD 5.2.1; Hunter's Mark on any turn).",
+     "limits": "Levels 4-9: see \"Casting spells of levels 4 to 9 from their rules\". Played now under \"Haste, Slow, summons, lasting areas and charms\": Haste, Slow, summons, lasting zones, Charm spells, Metamagic on those spells. Seeking Spell works on the attack cantrips only, not on these spells' attacks. Since 27 October each SRD spell is marked from its own text as targeting a creature, a creature or an object, or only an object (Knock, Mending, Magic Weapon...); the spell card's hover text and Ask the GM say which, and a refusal says what the spell targets (\"Guiding Bolt targets a creature other than you.\"). Spells at doors (GM 2026-10-27): with Fire Bolt, Eldritch Blast or Starry Wisp held (a card, or the sheet's attack cantrip), or Knock, the map marks each door green where the spell can go and red with the reason where it can't (\"Guiding Bolt targets a creature, not a door.\", out of range, a wall in the way); click a green one. A door is an SRD 5.2.1 object: wood, Medium and resilient unless the map says otherwise (AC 15, 18 Hit Points; stone AC 17, iron 19), immune to Poison and Psychic. The spell attack rolls against its AC; at 0 Hit Points it is gone and the doorway stays open for good. Fire Bolt, Fireball, Meteor Swarm and Burning Hands' Cone set a wooden door alight: 1d4 Fire at the start of each round until it breaks or someone beside it puts the fire out (an action). Knock unlocks a locked door you can see within 60 ft (a loud knock); a Poisoned Needle in its lock stays armed. Shatter damages each door in its Sphere. Disintegrate turns a door to dust. Arcane Lock (touch, a closed door, 25 GP of gold dust it uses up) locks it by magic: the caster's party opens and closes it freely, no Thieves' Tools open it, Knock suppresses it for 10 minutes. Stone Shape seals a stone door shut (Knock unsticks it) or shapes it into an open passage. Heat Metal makes a metal door red-hot (no one touches it, so no damage). Dispel Magic ends the spells on a door or prop: an Arcane Lock or a Heat Metal of level 3 or lower (or up to the slot used) at once, a higher one on a spellcasting ability check (DC 10 + its level). These door cards are for doors and props; Ask the GM keeps the same spells for everything else (Heat Metal on a foe's armor, Dispel Magic on a creature). A Sorcerer's Metamagic works at a door too: Quickened, Distant (the map lights the farther doors; a touch spell from 30 ft), Subtle, Extended on Heat Metal, and on the attack cantrips Transmuted (cold Fire Bolt doesn't burn) and Seeking (a miss rolled again). The referee checks each of these. The map's furniture, containers and statues are objects too (crates, barrels, sacks, tables, benches, racks, boats, statues, columns, sarcophagi, altars, anvils, cauldrons, braziers, lanterns, crystals, bones; not plants or rocks): with a spell held each shows a green or red ring; wood AC 15, stone 17, iron 19, most 18 Hit Points (boats, sarcophagi, obelisks 27; lanterns, bones 10). At 0 Hit Points a prop is rubble on its square (what a crate or sarcophagus held is the GM's to say); a wooden or cloth one burns like a door. Knock, Arcane Lock and Stone Shape on a prop are the GM's. Knock, Heat Metal and Disintegrate need a door or prop you can see (the table's sight: walls, light, darkvision; not while Blinded); an attack cantrip at one you can't see has Disadvantage. Creatures the game plays never cast at objects (GM). Not played at doors or props yet: Mending, Levitate and the other object spells (Ask the GM). The scribe sells Gold Dust (25 GP) for Arcane Lock."
+    },
+    {
+     "id": "spell-batch-1",
+     "name": "Bane, Aid, Barkskin, Mirror Image, Misty Step, Fly and Revivify",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "Seven combat spells that were Ask the GM are Cast buttons, played by SRD 5.2.1 and checked by the rules referee. Bane: up to three creatures you can see within 30 ft make a Charisma save; each that fails subtracts 1d4 from its attack rolls and saving throws (Concentration, 1 minute; one more creature per slot level above 1). Aid: up to three creatures within 30 ft gain 5 Hit Points, maximum and current (5 more per slot level above 2), for the fight; a character at 0 Hit Points is back up; when Aid ends the maximum drops back. Barkskin: a Bonus Action, a willing creature you touch has AC 17 if its AC is lower. Mirror Image: three duplicates; each time an attack roll hits you, a d6 for each duplicate left, and on any 3 or higher a duplicate is hit instead and destroyed (not against an attacker that is Blinded or has Blindsight or Truesight; 1 minute). Misty Step: a Bonus Action, click an unoccupied square you can see within 30 ft and teleport there, with no Opportunity Attack. Fly: a willing creature you touch gains a Fly Speed of 60 ft (a character's movement on its turn) and hovers over drops; it falls if the spell ends while it is aloft (Concentration; one more creature per slot level above 3). Revivify: touch a character that died within the last minute (10 rounds) and it comes back with 1 Hit Point; it uses up a diamond worth 300 GP or more from the bag (the scribe and the temple sell one). Each shows on the creature as a condition (Baned, Aided, Barkskin, Mirror Image, Flying), so the Combat Tracker sees it. Not yet: creatures the game plays don't cast these; Fly costs the same over Difficult Terrain as walking (the SRD exempts no flier); Revivify takes a player's character, not a fallen creature.",
+     "how": "On a character's turn in Play live, click the spell's card on the sheet: pick the creatures and press Cast (Bane, Aid, Fly), drag it onto a creature (Barkskin, Revivify), click the card (Mirror Image), or click the square to teleport to (Misty Step)."
+    },
+    {
+     "id": "spell-batch-2",
+     "name": "Shield and Counterspell, asked live",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "Shield and Counterspell are Reactions the fight asks about while it happens, instead of Ask the GM. Magic Initiate's Shield is offered once a Long Rest with no slot. A Stabilize button (Wisdom (Medicine), DC 10) appears while someone is dying. A Wizard chooses Scholar Expertise at level 2. When a creature's attack roll hits a character played at the table who has Shield on the sheet, a free Reaction and a spell slot, or a creature's Magic Missile targets that character, the fight stops and asks \"Cast Shield?\". Yes: +5 AC against that attack and until the start of the character's next turn (the card says whether +5 turns this hit into a miss), no Magic Missile damage, a slot and the Reaction spent. No: the hit stands. When a creature the character can see within 60 ft casts a spell with a Verbal, Somatic or Material component, the fight asks \"Cast Counterspell?\" the same way. Yes: a level 3 or higher slot and the Reaction are spent and the caster makes a Constitution save against the character's spell save DC; on a failure the spell has no effect and the creature's action is wasted (a creature's daily use counts as spent: it is not a spell slot, and the SRD only keeps a slot). With several characters who could Counterspell, the nearest is asked first, then the next if the first says no or the caster saves. The question goes to that player's own screen (the player client). The GM's console always shows it too with Answer for them buttons, so a slow or absent player, or a character nobody is seated as, never holds up the fight; the first answer counts. A character the GM holds (Take over, or Hand to the GM) is answered on the GM's console only. Everyone else sees that the fight waits for that character's answer. Not asked: a Critical Hit (+5 AC can't stop it), a character whose Reaction is already used (an Opportunity Attack, Hellish Rebuke, Slow) or with no slot this turn (one spell with a slot per turn).",
+     "how": "Play live: the question appears near the top of the screen. On a player's screen: Cast Shield / Don't cast (or Cast Counterspell). On the GM's console: Answer for them: cast, or Answer for them: no.",
+     "limits": "Only characters played at the table are asked; the characters the simulator plays still use Shield on their own, and creatures still don't cast Counterspell (the GM rules a creature's Counterspell). Hellish Rebuke and Uncanny Dodge are asked too: see \"Hellish Rebuke and Uncanny Dodge, asked live\". The local-model playtester answers no to these questions for now."
+    },
+    {
+     "id": "spells-7-9-fight",
+     "name": "Level 7-9 spells for a fight",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "Nine more SRD 5.2.1 spells of levels 7, 8 and 9 that were Ask the GM are Cast buttons in Play live, checked before anything is spent and watched by the rules referee. Arcane Sword (7): a spectral sword appears next to the creature you pick (within 90 ft) and makes a melee spell attack, 4d12 + your spellcasting modifier Force; on your later turns a Bonus Action moves it up to 30 ft and attacks again (it needs a miniature sword worth 250 GP in the bag). Conjure Celestial (7): a pillar of light, 10-ft radius: your side in it is healed 4d12 + your modifier, your foes make a Dexterity save against 6d12 Radiant (half on a success); it shines again on a creature that enters it or ends its turn there, and you can move it up to 30 ft after you move (+1d12 a slot level above 7). Dominate Monster (8): a creature within 60 ft makes a Wisdom save (with Advantage while you are fighting it) or is Charmed; you then order it, at no cost, to attack a creature or to stand down; with no order it attacks no one on your side; whenever it takes damage it saves again and goes free on a success. Holy Aura (8): you and your side within 30 ft of you have Advantage on saving throws, and attacks against them have Disadvantage; a Fiend or Undead that hits one in melee makes a Constitution save or is Blinded until the end of its next turn (it needs a reliquary worth 1,000 GP). Incendiary Cloud (8): a 20-ft-radius cloud of embers, Heavily Obscured: Dexterity save, 10d8 Fire (half on a success) when it appears and for a creature that enters it or ends its turn there; it drifts 10 ft away from you at the start of each of your turns. Earthquake (8): a 100-ft-radius tremor, Difficult Terrain: each creature on the ground in it makes a Dexterity save when it is cast and at the end of each of your turns, or falls Prone and loses its Concentration (you too, if you stand in it). Mind Blank (8): a willing creature you touch has Immunity to Psychic damage and to the Charmed condition for the fight. Time Stop (9): you take 1d4 + 1 more turns in a row (the button Time Stop: take your next turn); it ends as soon as something you do affects another creature, and ending your turn gives up the turns left. Storm of Vengeance (9): a storm cloud of 300-ft radius: everyone under it (your side too) makes a Constitution save or takes 2d6 Thunder and is Deafened; then at the start of each of your turns: acid rain (4d6 Acid each), six lightning bolts on six of your foes (Dexterity save, 10d6, half on a success), hail (2d6 Bludgeoning each), then freezing rain (1d6 Cold each) with the area Difficult Terrain and Heavily Obscured.",
+     "how": "On a character's turn in Play live, click the spell's card on the sheet: drag it onto a creature (Arcane Sword, Dominate Monster, Mind Blank), click the card (Holy Aura, Time Stop), or click the square for the area (Conjure Celestial, Incendiary Cloud, Earthquake, Storm of Vengeance). Later turns bring the spell's own buttons: Arcane Sword: move it and attack; Dominate Monster: attack, or stand down; Conjure Celestial: move the light; Time Stop: take your next turn.",
+     "limits": "Still Ask the GM, and why: Regenerate, Symbol, Resurrection, Tsunami, Antipathy/Sympathy, Foresight, Imprisonment and True Resurrection take a minute or more to cast (before or after a fight); Etherealness, Plane Shift, Teleport, Maze and Project Image take a creature off the map or to another place, which the engine doesn't do yet; Reverse Gravity needs heights the map doesn't have; Forcecage, Prismatic Wall and Antimagic Field need walls and cages that block movement and magic; Animal Shapes, Shapechange and True Polymorph need a new stat block; Glibness, Magnificent Mansion, Mirage Arcane, Sequester, Simulacrum, Clone, Demiplane, Control Weather, Telepathy, Astral Projection, Gate and Wish are outside a fight's turns (Wish copying another spell too, for now). Not yet: creatures the game plays don't cast these nine; Storm of Vengeance's wind and its ban on ranged weapon attacks, and Earthquake's fissures and falling buildings, are the GM's; Dominate Monster's orders are attack or stand down (anything else the GM rules)."
+    },
+    {
+     "id": "spells-4-6-fight",
+     "name": "Fight spells of levels 4 to 6",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: 18 more SRD 5.2.1 spells of levels 4-6 that change a fight are Cast buttons instead of Ask the GM, each checked first (your turn, the Action, a slot, range and sight, a costly component in the bag) and watched by the rules referee. Protections: Stoneskin (a willing creature you touch resists Bludgeoning, Piercing and Slashing damage; Concentration; uses up 100 GP of diamond dust), Fire Shield (warm: you resist Cold; chill: you resist Fire; a creature within 5 ft that hits you in melee takes 2d8 Fire or Cold; 10 minutes), Death Ward (the first time the creature would drop to 0 Hit Points it stays at 1, and the spell ends), Freedom of Movement (a spell can't give it Paralyzed or Restrained or cut its Speed, and spells' Difficult Terrain costs it nothing extra; one more creature a slot level above 4), Aura of Life (30 ft round you: you and your allies resist Necrotic damage, and an ally at 0 Hit Points who starts a turn in it gets 1 back), Greater Restoration (ends Charmed, Petrified, one Exhaustion level or a cut to the Hit Point maximum; uses up 100 GP of diamond dust), Dispel Evil and Good (Celestials, Elementals, Fey, Fiends and Undead have Disadvantage attacking you; its Break Enchantment action frees a creature they Charmed or Frightened and ends the spell), True Seeing (Truesight 120 ft for an hour; uses up 25 GP of mushroom powder). Moving: Dimension Door (click any free square within 500 ft; a willing ally within 5 ft can come along). Charms: Charm Monster (any creature, Charmed for an hour until you or your allies hurt it), Dominate Beast and Dominate Person (Charmed while you concentrate, a new save each time it takes damage; your commands come to the GM as a request, and meanwhile it won't attack you), Irresistible Dance (on a failed save it dances in place: Speed 0, Disadvantage on its attacks and Dexterity saves, attacks against it have Advantage; it can spend its action to try the save again, and a creature the game plays does just that; on a success it only dances in place until the end of its next turn), Mass Suggestion (up to twelve creatures; the two suggestions the engine plays, Stop fighting and leave or Stop fighting, or one the GM rules). Areas on the map: Black Tentacles (a 20-ft square of Difficult Terrain; Strength save or 3d6 Bludgeoning and Restrained when it appears, and for a creature that enters it or ends its turn there, once a turn; a Break free action), Guardian of Faith (a guardian on a square: an enemy that comes within 10 ft of it or starts its turn there makes a Dexterity save, 20 Radiant, half on a success; it vanishes after dealing 60), Blade Barrier (a 100-ft wall of blades: Dexterity save, 6d10 Force, half on a success, when it appears and for a creature that enters it or ends its turn there), Wall of Thorns (a 60-ft wall that blocks sight: 7d8 Piercing when it appears, 7d8 Slashing to a creature that enters it or ends its turn there, Dexterity save for half).",
+     "how": "Play live, on your turn: click the card and aim it as for other spells: drag it onto a creature (touch spells: stand next to it), pick the creatures and press Cast (Freedom of Movement with a higher slot, Mass Suggestion), click the card (Fire Shield, Aura of Life, Dispel Evil and Good), click a square (Dimension Door, Black Tentacles, Guardian of Faith), or point at the middle square of a wall (Blade Barrier, Wall of Thorns: it runs along the grid, across your view). Fire Shield, Greater Restoration and Mass Suggestion ask their choice first. Break free of the tentacles, Collect yourself (a dancer) and Break Enchantment are buttons with the other actions.",
+     "limits": "Played in part: Blade Barrier and Wall of Thorns are straight walls along the grid (a ring or a diagonal wall is the GM's); Blade Barrier's Three-Quarters Cover is the GM's, and Wall of Thorns costs 2 feet a foot like any Difficult Terrain (the spell says 4). Dimension Door can't yet take a companion from the page (the engine can). Fire Shield's light, Freedom of Movement's Swim Speed and slipping manacles or a grapple, Aura of Life's protected Hit Point maximum, Death Ward against instant death, Greater Restoration's curses and ability scores, Dispel Evil and Good's Dismissal, and a Dominated creature's orders stay the GM's. Creatures the game plays don't cast these yet. Still Ask the GM, and why: Polymorph (a new stat block), Compulsion (forced movement each turn), Resilient Sphere and Globe of Invulnerability (what passes a barrier), Antilife Shell, Wall of Force, Wall of Stone and Wall of Ice (solid walls the map can't add yet), the summons (Giant Insect, Conjure Woodland Beings, Conjure Minor Elementals, Faithful Hound, Conjure Elemental, Animate Objects, Arcane Hand, Summon Dragon, Conjure Fey, Create Undead), Raise Dead and Heroes' Feast (an hour's or ten minutes' casting, outside a fight's turns), Telekinesis, Geas, Planar Binding, Mislead, Seeming, Magic Jar, Wind Walk, and the utility spells (Divination, Commune, Legend Lore, Scrying, Teleportation Circle, Fabricate, Creation...)."
+    },
+    {
+     "id": "reactions-live",
+     "name": "Hellish Rebuke, Uncanny Dodge and Cutting Words, asked live",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "Two more Reactions the engine used to take by itself for a character played at the table now ask, the same way as Shield and Counterspell (the question on that player's screen, Answer for them on the GM's console). Hellish Rebuke: when a creature you can see within 60 ft damages you, \"Cast Hellish Rebuke?\"; yes: it makes a Dexterity save against your spell save DC, 2d10 Fire on a failure, half on a success. The Infernal Legacy's free use (once per Long Rest) is used first and the card says so; after that it takes your lowest spell slot, 1d10 more for each slot level above 1. Uncanny Dodge (Rogue 5): when an attacker you can see hits you, \"Use Uncanny Dodge?\"; yes: that attack's damage is halved. Cutting Words (Bard 3, College of Lore; since 28 October): when a foe you can see within 60 ft hits with an attack roll and your Bardic Inspiration die could make it miss, \"Use Cutting Words?\"; the card says which roll is needed (\"3 or more makes it miss\"); yes: one use of Bardic Inspiration, the die rolled and taken off the attack roll. It is asked before Shield, so a miss from it saves the slot. Not asked when no roll of the die could make it miss, or on a Critical Hit. The character who is hit has one Reaction, so it gets at most one of its own questions per hit: Shield first, then Uncanny Dodge, and Hellish Rebuke once the damage is dealt (a Bard's Cutting Words is the Bard's own Reaction).",
+     "how": "Play live: the question appears near the top of the screen when it happens. A player answers Cast / Use or Don't; the GM's console has Answer for them.",
+     "limits": "Still automatic: readied actions. Opportunity Attacks are asked too, and Auto Reactions answers everything for fast games: see \"Opportunity Attacks asked, and Auto Reactions\". Combat Inspiration's Defense also stays automatic (the College of Valor is not in SRD 5.2.1). Hellish Rebuke can't be cast with a higher slot than the lowest one free. Cutting Words against a damage roll or an ability check is still the GM's to rule. The Monk's Deflect Attacks and Slow Fall are asked the same way (see The Monk)."
+    },
+    {
+     "id": "oa-auto",
+     "name": "Opportunity Attacks asked, and Auto Reactions",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: when a creature leaves the reach of a character played at the table, the fight pauses and asks that player \"Make Opportunity Attack?\" (the card names the weapon, its bonus and damage); yes: one melee attack with the Reaction; no: the Reaction is kept. It comes the same way as Shield and the other Reactions: on the player's own screen, with Answer for them on the GM's console. For fast live games the GM can tick Auto Reactions (above the map, beside Map light): the engine then answers every player Reaction itself, as it always does for monsters and foes: every Opportunity Attack is taken, Shield when it turns a hit into a miss, Uncanny Dodge, Hellish Rebuke's free use; Counterspell and Cutting Words are not used. The switch stays on for the next fights until you untick it or Mythastria restarts. Monsters and foes never wait for anyone.",
+     "how": "Play live, GM console: Auto Reactions above the map (ticked: the engine answers; unticked: each player is asked). A player answers the question on their own screen.",
+     "limits": "A creature using Disengage (the goblins' Nimble Escape) provokes no Opportunity Attack, so nothing is asked. The local-model playtester takes every Opportunity Attack and declines the other Reactions."
+    },
+    {
+     "id": "spells-4-9",
+     "name": "Casting spells of levels 4 to 9 from their rules",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "33 SRD 5.2.1 spells of levels 4-9 are Cast buttons, played from their own words and checked by the rules referee: Banishment, Blight, Confusion, Greater Invisibility, Ice Storm, Phantasmal Killer, Vitriolic Sphere, Wall of Fire; Cone of Cold, Contagion, Flame Strike, Hold Monster, Mass Cure Wounds; Chain Lightning, Circle of Death, Disintegrate, Eyebite, Flesh to Stone, Freezing Sphere, Harm, Heal, Sunbeam; Divine Word, Finger of Death, Prismatic Spray; Befuddlement, Power Word Stun, Sunburst; Mass Heal, Meteor Swarm, Power Word Heal, Power Word Kill, Weird. Damage in two parts at once (Flame Strike's Fire and Radiant, each resisted on its own), bolts that leap from the first target (Chain Lightning, within 30 ft), the power words by the target's Hit Points, Prismatic Spray's rays, Heal's 70 Hit Points and the conditions it ends, Mass Heal's 700 divided in the order you pick, Harm's lower Hit Point maximum, Disintegrate's dust, Confusion's Sphere growing with the slot. A higher slot (levels 6-9) is spent and comes back with a Long Rest like any other; a Warlock's Mystic Arcanum (levels 11, 13, 15, 17: one Warlock spell of level 6, 7, 8 and 9) is cast once without a slot and comes back with a Long Rest. Every other level 4-9 spell stays Ask the GM, and its request says why (a summon, a charm, a lasting zone or wall, a planar spell, a new shape, teleporting, a ward or buff, a long casting time, a utility spell). Since 27 October: Delayed Blast Fireball (a bead that grows 1d6 each time your turn ends and explodes when the spell ends; Set off the bead ends it), Fire Storm (click up to ten 10-ft Cubes, each touching another, then Cast), Wall of Fire as a Ring 20 ft across, and Metamagic on these spells.",
+     "how": "Play live, on your turn: click the card and aim as for lower spells. Wall of Fire: point at the middle square; the 60-ft wall runs across your view of it. Meteor Swarm: click up to four squares, then Cast. Chain Lightning: pick the first creature, then up to three more within 30 ft of it (one more a slot level above 6). Character builder: a Warlock of level 11 or more picks the Mystic Arcanum spells; the card says whether it is ready or spent.",
+     "limits": "Played in part, the GM rules the rest from a request: Banishment's demiplane (the creature stays on the map, Incapacitated), Wall of Fire's lasting heat, Sunbeam's later Lines, Phantasmal Killer's and Weird's later damage, Flesh to Stone's and Prismatic Spray's three-save count, Contagion's 7 days, Eyebite's later targets, Divine Word's banishing, Finger of Death's Zombie, Befuddlement's monthly save, a character's lower maximum from Harm. Circle of Death needs its 500 GP Black Pearl in the bag (the Market's scribe sells one). Not played: a creature touching Delayed Blast Fireball's bead (the GM rules it), and the summons, charms, lasting zones, walls and clouds of the remaining spell effects (goal 4)."
+    },
+    {
+     "id": "spell-effects",
+     "name": "Haste, Slow, summons, lasting areas and charms",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "SRD 5.2.1 spell effects that were Ask the GM, now played in a live fight, each checked before anything is spent and watched by the rules referee. Haste (level 3, a willing creature within 30 ft, Concentration): Speed doubled, +2 AC, Advantage on Dexterity saves, and one more action on each of its turns for one attack, Dash, Disengage, Hide or Utilize; when it ends, the creature is Incapacitated with Speed 0 until the end of its next turn. Slow (level 3, up to six creatures in a 40-foot Cube within 120 ft, Wisdom save, Concentration): Speed halved, -2 AC and Dexterity saves, no Reactions, an action or a Bonus Action but not both, one attack, a spell with a Somatic component fails 25 percent of the time; the save again at the end of each of its turns. Summons: Find Steed (level 2: an Otherworldly Steed, Celestial, Fey or Fiend, with its own stat block from the spell, takes its turn right after yours and is a controlled mount when you ride it); Find Familiar (cast as a Ritual before the fight: a Magic action calls it from its pocket dimension and another dismisses it; it rolls its own Initiative, keeps beside you and Dodges, or goes to a foe you name and takes the Help action; it can't attack); Animate Dead (1 minute: your Action on each of 10 turns with Concentration, then a dead Small or Medium Humanoid rises as a Zombie; a Bonus Action commands your undead to attack a creature or to guard; without a command they Dodge and stay put). Lasting areas on the map: Entangle, Grease, Web, Spike Growth, Moonbeam, Silence, Sleet Storm, Cloudkill and Conjure Animals' pack, drawn on the map, with their Difficult Terrain, their saves when a creature enters, starts or ends its turn there or the area moves onto it (once per turn where the spell says so), their damage, Restrained, Prone, Deafened and lost Concentration; Break free (Strength (Athletics)) from webs and plants; webs that burn; a Moonbeam moved with a Magic action, the pack moved when you move, Cloudkill drifting away from its caster; no spell with a Verbal component inside Silence. Charms: Charm Person and Animal Friendship (one more creature for each slot level above 1), Suggestion (the engine plays \"Stop fighting and leave\" and \"Stop fighting\"; another suggestion goes to the GM; a fleeing creature whose charm an Opportunity Attack ends stops where it stands instead of leaving the map), Calm Emotions (a Humanoid foe becomes Indifferent until it is hurt or sees an ally hurt, and Hostile again when the spell ends; the fight is not over while one of these spells is all that keeps a foe out of it), and Command's Approach, Drop and Flee. Creatures the game plays never attack their charmer, a Charmed character can't either, and Charm Person, Animal Friendship and Suggestion end when the caster's side damages the creature. Metamagic works on these spells: Quickened, Distant, Extended (and their duration doubled), Subtle (also inside Silence and against Slow's failure), Heightened on Slow, the areas and the charms, Twinned on Charm Person and Animal Friendship, and Careful, Empowered and Transmuted on the first damage of Moonbeam and Cloudkill. Since 27 October the creatures the game plays use them too: a hasted creature takes Haste's extra action after its own (one attack at a foe in reach, else a Dash toward one, and its own Action after the Dash when it still has it); creatures keep off the areas that would hurt or hold them and pay their Difficult Terrain (and the ice's); and a creature casts the areas in its Spellcasting: Entangle (Druid, Dryad, Unicorn), Moonbeam (Druid), Insect Plague (Mummy Lord; now an area for characters too: 20-ft Sphere, Lightly Obscured, Difficult Terrain, 4d10 Piercing) and Spirit Guardians (Priest), aimed at the most foes and none of its own side. Your ruling (27 October): a caster ends any of its own lasting spells that need no Concentration at any time with no action (End <spell> under Actions), unless it is Incapacitated or concentrating on another spell: the conditions it holds, Grease, the Light spell, Continual Flame, Daylight.",
+     "how": "Play live, on your turn: the cards are with your other spells (click, then aim: a creature, several creatures or a square); a choice (the steed's kind, the familiar's form, the suggestion) and a higher slot are asked first. Haste's extra action: once your Action is spent, the Attack, Dash, Disengage and Hide buttons say Haste's action, and the turn bar shows whether it is left. The familiar, your undead, Break free and moving a Moonbeam or the pack are buttons under Actions (some then ask for a creature or a square).",
+     "limits": "No SRD creature casts Haste, Slow, the summons or the charms here; a creature doesn't move its Moonbeam on later turns. A summoned creature that disappears stays on the map as a fallen token; the steed's Fell Glare, Fey Step, Healing Touch and Life Bond are the GM's; Summon Beast is not in SRD 5.2.1 (Conjure Animals there is a pack, an area). Creatures keep off an area that would harm or hold them unless they already stand in it, so a foe deep inside one is reached only from its edge; they don't keep off a character's Spirit Guardians. The GM's: Silence's Immunity to Thunder, whether a Web is anchored, Spike Growth's camouflage, Moonbeam on shape-shifters. The GM's: Calm Emotions' other option (no Charmed or Frightened on your side) and any other suggestion; ending a fight held by a long Suggestion (Truce or End on the scene panel). Calm Emotions lasts until its Concentration ends (its 1-minute limit is not counted yet)."
+    },
+    {
+     "id": "sorcerer",
+     "name": "The Sorcerer: Innate Sorcery, Font of Magic, Metamagic",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-23",
+     "what": "Everything a Sorcerer chooses in a fight, by the SRD 5.2.1 rules: Innate Sorcery (spell save DC +1 and Advantage on spell attacks for 1 minute; Sorcery Incarnate at level 7), Font of Magic (spell slots into Sorcery Points and back), and all ten Metamagic options on spells and attack cantrips: Careful, Distant, Empowered, Extended, Heightened, Quickened, Seeking, Subtle, Transmuted, Twinned. The Draconic Sorcerer's Elemental Affinity adds its Charisma to one damage roll. The computer-played Sorcerer uses them too (test hero Hero 10, levels 1-9). At level 9: Cone of Cold and Hold Monster on the spell cards.",
+     "how": "Play live, on a Sorcerer's turn: the Sorcery line under the spell slots shows the points; Font of Magic has a button per slot level; choose a Metamagic option, then cast the spell or drag the attack cantrip (each card says whether it fits). Twinned Hold Person: click the card, then pick two creatures. Character builder: Metamagic at levels 2, 10 and 17, Elemental Affinity's damage type at level 6."
+    },
+    {
+     "id": "monk",
+     "name": "The Monk: Martial Arts, Focus Points, Stunning Strike, Deflect Attacks",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "Everything a Monk does in a fight, by the SRD 5.2.1 rules, at the table and for the computer-played party. Martial Arts: Dexterity and the Martial Arts die for Unarmed Strikes and Monk weapons, and an Unarmed Strike as a Bonus Action. Focus Points (one per Monk level from level 2, all back on a Short or Long Rest): Flurry of Blows (two Unarmed Strikes as a Bonus Action), Patient Defense (Disengage; with a point, Disengage and Dodge) and Step of the Wind (Dash; with a point, Disengage and Dash). Open Hand Technique (level 3): each Flurry of Blows hit can Addle (no Opportunity Attacks), Push (Strength save or 15 ft away) or Topple (Dexterity save or Prone). Stunning Strike (level 5): once a turn, on a hit with a Monk weapon or an Unarmed Strike, 1 Focus Point: a Constitution save or Stunned until the start of your next turn; on a success its Speed is halved and the next attack roll against it has Advantage. Unarmored Movement, Extra Attack and Evasion (level 7) too. Reactions, asked on the player's screen the way Shield is: Deflect Attacks (level 3: when an attack hits you with Bludgeoning, Piercing or Slashing damage, 1d10 + Dexterity modifier + Monk level off it; if that takes it to 0, a second question: 1 Focus Point redirects the force at a creature next to you, or within 60 ft for a ranged attack, Dexterity save or two Martial Arts dice + your Dexterity modifier), Slow Fall (level 4: five times your Monk level off falling damage) and Deflect Energy (level 13: Deflect Attacks against any damage type). From level 14 (since 28 October): Disciplined Survivor (proficient in every saving throw; a failed save can be rolled again for 1 Focus Point, asked on the player's screen), Perfect Focus (15: back up to 4 Focus Points when a fight starts with 3 or fewer), Superior Defense (18: 3 Focus Points at the start of your turn, Resistance to all damage but Force for 1 minute or until you are Incapacitated) and Body and Mind (20: Dexterity and Wisdom +4, up to 25). The computer-played Monk stuns, uses Flurry of Blows with Topple, Patient Defense when it is badly hurt, Superior Defense below half its Hit Points, and rerolls a failed save whenever the new roll could succeed (test hero Ren, levels 1-20).",
+     "how": "Play live, on a Monk's turn: the Focus line under Class features shows the points and the Martial Arts die; Martial Arts and Flurry of Blows buttons, then click a creature next to you (each Open Hand choice is its own Flurry button); Patient Defense and Step of the Wind have a free button and a Focus Point one. Tick Stunning Strike on an attack line before you attack: the point is spent only if it hits. Deflect Attacks and Slow Fall ask you when they happen; the GM's console can answer for you. Superior Defense is a button with the class features, there only before you move or act that turn; the Focus line shows how many rounds it has left.",
+     "limits": "The GM rules: Uncanny Metabolism, Wholeness of Body, Empowered Strikes' Force damage, Acrobatic Movement, Heightened Focus (Flurry of Blows stays two strikes), Self-Restoration, Fleet Step, Quivering Palm (Open Hand 17) and the Epic Boon (Ren's Boon of Irresistible Offense), and Martial Arts while wearing armor or a Shield. A Flurry's second strike goes to the same creature, or to another one next to you when the first drops. Deflect Attacks is asked once the damage is rolled. The redirect needs the attacker (or another creature) within 5 ft when the hit lands: after an Opportunity Attack you have already stepped away. Perfect Focus counts at the start of each fight of the adventure day (Uncanny Metabolism, which it replaces, is the GM's)."
+    },
+    {
+     "id": "epic-boons",
+     "name": "Epic Boons (level 19 feats) in a fight",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "The seven SRD 5.2.1 Epic Boons play in a fight now, at the table and for the computer-played party, instead of going to Ask the GM. Each boon's +1 to a score (up to 30) comes from the character builder as before. Boon of Combat Prowess: when the hero misses with an attack roll it can hit instead, once until the start of its next turn. Boon of Dimensional Travel: right after the Attack action or a spell cast as an action, a teleport of up to 30 feet to a free square it can see, with no Opportunity Attack. Boon of Fate: once a fight, 2d4 added to or taken off a d20 roll of the hero or a creature within 60 feet: an ally's miss or failed save, a foe's hit on the party or a foe's saved save. Boon of Irresistible Offense: its Bludgeoning, Piercing and Slashing damage ignores Resistance, and a 20 on the d20 of its attack adds damage equal to the score the boon raised (Hero 5 and Ren: 21 at level 19, 25 at level 20). Boon of Spell Recall: each spell cast with a level 1-4 slot rolls a d4; on the slot's level the slot is not spent. Boon of the Night Spirit: in Dim Light or Darkness, Resistance to all damage but Psychic and Radiant; and a Bonus Action there to become Invisible until right after its next action, Bonus Action or Reaction (all attacks of that Attack action keep it). Boon of Truesight: Truesight 60 feet, so the hero sees Invisible creatures and through magical Darkness. The test heroes carry them: Hero 1 (Combat Prowess), Hero 3 (Night Spirit), Hero 5 and Ren (Irresistible Offense), Hero 4, Vex, Hero 9 and Hero 10 (Spell Recall), Hero 6 and Hero 2 (Fate).",
+     "how": "Play live with a level 19 or 20 party. Peerless Aim and Improve Fate are questions on the player's screen when they could help (not the Reaction; the GM can answer for them, and Auto mode lets the engine choose). Merge with Shadows (Bonus Action) and Blink Steps (click a square, no action) are buttons with the class features; Blink Steps lights up after the Attack action or a spell cast as an action. The rest is automatic and shows in the log: Overwhelming Strike, Overcome Defenses, Free Casting, Shadowy Form. The computer-played heroes use them too: Peerless Aim on any miss, Improve Fate when it needs 5 or less, Merge with Shadows at the end of a turn in the dark, Blink Steps away from a foe for a hero who fights from range.",
+     "limits": "Improve Fate on ability checks, and Truesight's seeing through illusions, true forms and into the Ethereal Plane, are the GM's. Merge with Shadows ends on a Reaction the engine knows of (Opportunity Attacks, Shield, Uncanny Dodge and the Reactions asked live). No test hero has Dimensional Travel or Truesight; a character made in the builder can take them."
+    },
+    {
+     "id": "view3d",
+     "name": "3D view",
+     "status": "built",
+     "page": "./play.html",
+     "what": "A third-person miniature-diorama view that follows your character, with an action bar, a target list, labels under the pointer and the reachable squares.",
+     "how": "View: Third person. Right- or middle-drag to orbit, wheel to zoom, Keys to change the keys."
+    },
+    {
+     "id": "undo",
+     "name": "Undo (the GM approves)",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-21",
+     "what": "A player can ask to undo the turn's last choice; nothing changes until the GM approves.",
+     "how": "Undo or Ctrl+Z; the GM sees Approve or Refuse."
+    },
+    {
+     "id": "popout",
+     "name": "Pop out the map",
+     "status": "built",
+     "page": "./play.html",
+     "what": "The live map in its own window, fully working (drag tokens there); the commands stay on the main console. While the GM plays a character (Take over, or its player's Hand to the GM), the window shows that player's screen: the map with that character's turn and sheet (read only) and What happened; it goes back to the map alone when the GM gives the character back.",
+     "how": "Pop out the map, then move that window to the players' screen."
+    },
+    {
+     "id": "fog",
+     "name": "Fog of war and the player view",
+     "status": "built",
+     "page": "./play.html",
+     "what": "Fog from what the party can actually see (walls, doors, light, darkvision); a players' window shows only that.",
+     "how": "Tick Fog; Reveal map to players when you want them to see it all."
+    },
+    {
+     "id": "layers",
+     "name": "Spell clouds, Invisibility and riding on the map",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-24",
+     "what": "Fog Cloud, Darkness and Stinking Cloud cast in a live fight cover their area on the map and in 3D, and the rules use them: nobody sees into, out of or through them (Blindsight does; in magical Darkness also Truesight and Devil's Sight), attacks there have Advantage or Disadvantage, the party's fog and each player's map follow. They end when the caster's Concentration ends or their time runs out. An Invisible creature is left off the map of each player whose character can't see it; you see it as a faded, dashed outline; a player sees their own invisible character faded. The Invisibility spell (level 2, by touch, one more creature for each slot level above 2, Concentration up to 1 hour) makes each creature it touches Invisible: attacks against it have Disadvantage and its own attacks Advantage, unless the other creature can see it (Truesight, Blindsight within range), and a spell that needs a creature you can see can't take it. It ends on a creature as soon as that creature makes an attack roll, deals damage or casts a spell, and on everyone when the caster's Concentration ends; searching never finds it, since it is not hiding. Creatures the game plays don't go for an invisible enemy they can neither see nor hear fighting; with no one else to attack they stay on guard. A character can mount a willing creature within 5 ft that is at least one size larger, and dismount, for half its Speed; the rider is drawn on top of its mount, and each is its own creature and its own click.",
+     "how": "Cast the spell from the sheet's Spells and click a square. Invisibility: its card (Touch) takes the creatures within 5 ft, yourself too (one: drop it on the creature; more with a higher slot: click them, then Cast); with more than one slot level left it asks which slot. On the sheet's Mount line: Mount (name), Dismount, and a controlled mount's Dash, Disengage or Dodge; each button greys out with the reason when it can't be used. On your screen the Mount line also has controlled / independent for that creature.",
+     "limits": "The other lasting areas (Web, Spike Growth, Moonbeam, Sleet Storm, Cloudkill...) are under \"Haste, Slow, summons, lasting areas and charms\"; creatures cast the ones in their Spellcasting (Entangle, Moonbeam, Insect Plague). A Search doesn't yet find the square of an invisible creature; a creature the game plays loses its Invisibility on an attack roll or damage, not yet on its other spells; being Invisible when a fight starts gives no Advantage on Initiative yet. A creature poisoned by Stinking Cloud loses its whole turn (its move too). A Large mount's other squares are not checked against walls while it is ridden. Squads and the layer switches (steps 4 and 5) are planned."
+    },
+    {
+     "id": "notes",
+     "name": "Notes pinned to the map",
+     "status": "built",
+     "page": "./play.html",
+     "what": "GM notes on squares; a note can be shown to the players once they find its square.",
+     "how": "GM tools, Notes, then click a square."
+    },
+    {
+     "id": "encounter-check",
+     "name": "Check the encounters: are they winnable?",
+     "status": "built",
+     "page": "./adventure.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: \"before running a game, the GM can make sure the encounters are winnable\" (for the GM only; players never see it) and \"We need characters only for the adventures\". On Play an adventure, Check the encounters fights each place's encounter 5 times in the simulator with the saved characters ticked in The party, each at its own level and fresh (full Hit Points, slots and uses), with the campaign's saved Remix when it was prepared for this party. Each place then says Winnable (won every fight, nobody died), Risky (won at least half, but lost some, or someone died, or a character dropped per fight or more), Deadly (won fewer than half) or Not rated (the simulator could not settle it), with the wins, characters dropped and killed per fight and the rounds. It runs in a separate process, one encounter at a time, so the live table is never touched.",
+     "how": "Play an adventure: tick the party's saved characters in The party, then Check the encounters (above the places). Remix on a place changes an encounter that is too hard or too easy; check again after.",
+     "limits": "An estimate from a few simulated fights: both sides are played by the simulator's tactics, not by your players, and talk, traps, hazards and the day's wear are left out."
+    },
+    {
+     "id": "remix-live",
+     "name": "Remix Live: add creatures, lineups",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-21",
+     "what": "Change the fight on the fly: add any of the 339 SRD creatures (1-12), save a fight's creatures as a lineup and load it onto any map. Since 28 October its budget counts the saved characters you tick for the fight (each at its own level, the SRD 5.2.1 budgets added up), and the Remix page's Play this encounter opens Play live with no test characters: tick your saved characters there.",
+     "how": "Remix Live... on Play live."
+    },
+    {
+     "id": "director",
+     "name": "Guest director",
+     "status": "built",
+     "page": "./play.html",
+     "what": "Hand the GM console to a guest director.",
+     "how": "GM tools, Director..."
+    }
+   ]
+  },
+  {
+   "group": "Rules and the referee",
+   "features": [
+    {
+     "id": "referee",
+     "name": "The rules referee",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-22",
+     "what": "After every spell cast, by a player in Play live or by the simulator's own party, and after every creature's breath weapon or other saving-throw action, the referee checks slots, Concentration, casting time, range, who it may touch (Spheres, Cones, Cubes, Lines, Emanations), that everyone inside saves, the DC, damage, healing (no more than the spell's dice, your modifier and Disciple of Life) and conditions, and that each condition ends when the spell or stat block says. Since 26 October it also checks a lasting area's later saves, whoever cast it: Spirit Guardians when its Emanation reaches a creature or one ends its turn in it, Stinking Cloud at the start of a turn in it, and the other SRD 5.2.1 areas (Moonbeam, Web, Cloudkill...) as their own words say: asked at the right time, only while the spell lasts, once a turn when it says so, the right ability and the caster's DC, half or no damage on a success, only its conditions; a creature that ended or started its turn inside, or came inside, and never saved is called out. And the save of an attack's rider, read from the stat block (the Ghoul's Claw: the target rolls a DC 10 Constitution save, an elf or Undead is spared, Paralyzed only on a failure, until the end of its next turn). The referee found that in Play live a cleric walking with Spirit Guardians up never gave the foes it reached their save: they now save. It writes a Referee: note in the log for anything that does not add up. It never changes a result: you decide. Since 27 October also the creatures' lasting areas (Entangle, Moonbeam, Insect Plague, Spirit Guardians), and a stat block's own casting time (the Priest's Bless as a Bonus Action, as its Spellcasting says).",
+     "how": "Nothing to do: notes appear in What happened, in gold. In the simulator's own test fights a note counts as a problem, so a rule break is caught before it reaches your table.",
+     "limits": "A lasting area's missed saves are judged from where each creature stood when a turn began and ended, so one that only passes through isn't called out. Rider saves are checked where the engine plays them (the Ghoul's and Ghast's Claw); the other SRD riders (Cockatrice, the lycanthropes' curses, the Pit Fiend's poison...) and characters' riders (Topple, Stunning Strike) are still yours to rule. Creatures' spells are checked like the party's; the spells the GM rules (\"The GM rules ...\") are not."
+    },
+    {
+     "id": "design-check",
+     "name": "Design check and one Gilded look for buttons, cards, menus, tabs and fields",
+     "status": "built",
+     "page": "./design-check.html",
+     "since": "2026-10-26",
+     "what": "Design check (GM page) opens every page at PC, tablet or phone width and lists how each kind of control is drawn (buttons, menus, tabs, panels, headings, fields): how many looks each kind has, where, and which ones lack shading or use colours outside the skin. First pass from it in the Gilded skin: every dropdown and field has the buttons' corners and a recessed, shaded look, and dropdowns a gold arrow; tabs (Characters, the Play live sheet) are raised tabs on a gold line with the open one gilded; open-and-close headings use the panels' gold heading look with a turning marker; page headings use the display font. Second pass: buttons share one size and bevel in three kinds (main actions such as Start live fight or a rest are gilded and bold; ordinary ones raised; quiet ones darker and pressed when held); cards and spell cards have a shaded face, a gold edge for spells and an outline for the one held; look-alike actions on the Play live sheet sit in named rows (Shove: Prone · Push; Influence: Deception · Intimidation …; A square (traps)); the Attitudes and morale rows put the name and badge on one line and the two menus side by side below; the Stage's time report uses the page font; and Play an adventure, Play live and the Social rules pack fit a phone without sideways scrolling, while the Region map puts the map first and its controls below it on a tablet or phone.",
+     "how": "Open /design-check.html on the GM's PC, choose a width, press Check every page.",
+     "limits": "Pass 3 (27 October): the skin's quiet, pressed and row-hover colours have names the check knows; the Chat and Market buttons use the display font and gold; the front page's layout buttons are bevelled; flair: gilded page titles with a diamond rule, a gold hairline under panel headings, a gold glint along the header, a diamond under the open page, a sheen across the main buttons under the pointer (not with reduced motion), gold scrollbars. The spell list rows, the menu bar links and tray-menu entries stay flat on purpose."
+    },
+    {
+     "id": "icons",
+     "name": "Icons from the old symbols",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "Small gold icons drawn for Mythastria from written descriptions in the old sources (heraldic blazon and the medieval texts), never from another artist's picture: a sword for Attacks, an open book with a star for Spells, a helm for Features, an open hand for Actions, a horseshoe for Mount, a purse for the Bag, a lantern for Light, a snuffed candle on End turn, a key on the door buttons, three gold coins on the Market button. They take the colour of the text beside them, in every skin.",
+     "how": "They sit on Play live's sheet headings and those buttons by themselves; tools/make_icons_css.py rebuilds dist/icons.css from the descriptions.",
+     "limits": "Only where one icon names a whole area (GM: not where it would look busy): the rows of actions, the spell cards and the menu bar keep their words alone. More icons were drawn as a sample (Dash, Dodge, Help, Hide, Search, Characters) and are not placed."
+    },
+    {
+     "id": "watchers-see-the-party",
+     "name": "Watchers see every player's turn",
+     "status": "built",
+     "page": "./join.html",
+     "since": "2026-10-25",
+     "what": "Someone who joins to watch (no character) now sees what the players see: the map and fog, a party panel with every player character's Hit Points, AC and conditions (whose turn it is marked), and each character's sheet on its turn, read only (\"Watching: Hero 2's turn\"). A watcher can't make choices but can ask to be the GM.",
+     "how": "Join with the invite link and leave Character empty.",
+     "limits": "Watchers see no hints."
+    },
+    {
+     "id": "dm-restore-party",
+     "name": "Restore the party (full health and rest)",
+     "status": "built",
+     "page": "./adventure.html",
+     "since": "2026-10-25",
+     "what": "The GM can give the party a Long Rest's benefits at once before a map: full Hit Points and Hit Point Dice, spell slots and uses back, Temporary Hit Points end, Exhaustion one level less. No time passes and no rest rule is checked; it's logged in the party's day. Not while a fight runs.",
+     "how": "Play an adventure: Restore the party in the party's day, then Fight here. Play live: Restore the party beside Start live fight on an adventure's map.",
+     "limits": "Fight here starts the fight at once, so restore on Play an adventure first."
+    },
+    {
+     "id": "table-party",
+     "name": "The party follows the GM role",
+     "status": "built",
+     "page": "./adventure.html",
+     "since": "2026-10-25",
+     "what": "The party chosen on Play an adventure (test heroes, saved characters and the level) is kept by Mythastria itself, with copies of the saved characters' sheets, instead of only in one browser. Whoever holds the GM role, the owner or a guest GM after the swap, sees the same party on Play an adventure and Play live and can start its fights; a character that browser never saved shows as \"kept by the table\". The fight, its log, the chat, the loaded adventure and the region maps were already kept by Mythastria.",
+     "how": "Choose the party on Play an adventure as before; the first visit hands the party this browser remembered to the table.",
+     "limits": "Sheets are copied when the party is saved: edit a character on the Characters page, then tick it again on Play an adventure to send the new sheet."
+    },
+    {
+     "id": "dm-swap",
+     "name": "Hand the GM role to a player, and take it back",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-25",
+     "what": "A seated player can press Ask to be the GM. The GM sees the request on Play live and approves it, choosing one of his own player characters to play meanwhile (one no player holds) or Just watch, or refuses it. The player's screen then becomes the full GM console; the GM's own screen becomes a player screen for the chosen character with a Take back the GM button, and every GM page and tool on his PC stays locked until he takes it back. The new GM can also give the role back. A guest GM (this handover or the stand-in key) runs only the adventure module that is loaded: its maps only, no loading or unloading modules.",
+     "how": "Player: Ask to be the GM (top of the player screen). GM: Approve or Refuse on Play live; Take back the GM on the player screen.",
+     "limits": "GM 2026-10-28: switched off. The player client has no Ask to be the GM, the players' door refuses it and is never a GM console (no stand-in key either). A handover to another GM is to come only between full engine installs (the Player Client Plan, section 11)."
+    },
+    {
+     "id": "map-folders",
+     "name": "Maps in folders and subfolders",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-25",
+     "what": "The Map list on Play live and Simulator fights is a folder picker: Adventures > an adventure > Level 1-8 (a map's party-level versions under their level; a place's floors as a folder of their own), Test > Live play, Labs, Walls and doors, Fights, and Region battles. The files moved too: the test and example maps into the simulator's test folder, each adventure map's level versions into its pack (scenarios/levels/L2-L8). Old map names still start the same fight. Remix Prep lists only the adventure's own encounters, not the level versions.",
+     "how": "Pick a folder, then a subfolder, then the map; each menu shows folders (marked with a triangle) and maps.",
+     "limits": "The flooded cistern example stays where it is (Other) until its own work is finished. New level versions made with tools/level_tests.py still need an entry in the module's adventure.json."
+    },
+    {
+     "id": "player-sheet-seated",
+     "name": "A seated player's own sheet",
+     "status": "built",
+     "page": "./join.html",
+     "since": "2026-10-25",
+     "what": "A player seated through the invite link sees their character's sheet on their turn under the map: attacks, spells, actions (Ready a spell included), mount, bag, checks and saves, hints, End turn and Undo. The GM's panels (attitudes and morale, Ask the GM answers, undo approvals, Freeze, Take over, the saved-photo picker, engine details) are not on it, and the bridge's start-up lines no longer show in anyone's log unless the GM ticks Show engine details.",
+     "how": "Join with the GM's invite link; once approved, Open the table.",
+     "limits": "The pop-out map on the GM's PC is the map only, except while the GM plays a character: then it shows that player's sheet, read only. On a phone the sheet is below the map (scroll down)."
+    },
+    {
+     "id": "player-package",
+     "name": "The player client: HTML only, no GM tools, hostable",
+     "status": "partly",
+     "page": "./join.html",
+     "since": "2026-10-28",
+     "what": "Through the players' door a player's browser gets only the player client: the join page, the players' view of Play live, The Stage and the social rules, with the scripts and stylesheets they load. The GM's own code (Remix, the director, the map picker, the Players dialog, the GM swap, the rules monitor, and every GM page's scripts) is never sent: the door answers Not found. The live game data was already cut for each seat (only what that character sees; no hidden creatures, unknown traps, creature Hit Points or AC, or GM notes). GM 2026-10-28: the player client is a hosted HTML site. The same pages can be published free (Cloudflare Pages) and talk to your PC for the game: every call, and every picture your PC holds (maps, tokens, chat pictures, the table notice), goes to your players' door, which answers the hosted site's address and refuses any other site.",
+     "how": "Nothing to do while players use your own address. To build the hosted site: py isles-table/player-client/build_player_client.py --site <folder> --server https://<your players' door>; publish that folder as it is, then start Mythastria with --players-site https://<the site's address> (the invite link then opens the hosted site). After changing which scripts the player pages load, run build_player_client.py: it rewrites the door's list (player-client/files.json) and refuses a player page that loads a GM module without a dynamic import.",
+     "limits": "The engine is never distributed (GM 2026-10-28). Not yet published: the Cloudflare Pages project and the --players-site setting in Start_Mythastria.bat need your Cloudflare sign-in. Tested on this PC with a local copy. GM 2026-10-28: there is no stand-in key; the players' door is never a GM console."
+    },
+    {
+     "id": "player-table-layout",
+     "name": "The players' table: tracker, map, turn; the map in its own window",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: \"the combat tracker needs to be a small table on the left of the map. The Turn and actions need to be on the right of the map. All other sections need to be collapsed\" and \"The map should also have a popup\". On each player client (and your pop-out) a compact combat tracker sits left of the map and the turn sheet with its actions right of it; The scene, Result, What happened and the other sections are folded (click a title to open it; the browser remembers). Pop out the map opens the player's map alone in a window of its own, for a second screen or a bigger map; the turn, the tracker, the Reaction and Stealth questions and the chat stay on the main screen. The links at the top lead to The table and The Stage.",
+     "how": "Player: the table opens this way; Pop out the map beside Keys. In the map window, Back to my turn closes it (or, where it opened in place of the table, as a phone does, brings the table back).",
+     "limits": "Narrower than 1180 px the tracker and the map sit side by side over the sheet; on a phone it is one column: the map, the sheet, then the tracker."
+    },
+    {
+     "id": "map-zoom",
+     "name": "Zoom in and out on every map",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: \"every map needs a zoom out and in\". Every map has + , − and Fit buttons on its corner: Play live's tactical map (your console, the players' window and each player client), its 3D view, the Simulator fights map and the Region map. On the tactical maps the mouse wheel zooms at the pointer, a right- or middle-drag moves the view, and on a phone two fingers pinch to zoom and slide to move. The zoom stays while the fight goes on.",
+     "how": "The buttons on the map's top right corner; Fit shows the whole map again. The keys = and − (Keys... to change them) zoom the map you are looking at.",
+     "limits": "A pinch cancels a drag the first finger began, so a character never moves by accident. The Region map keeps its own wheel zoom and drag, without the pinch."
+    },
+    {
+     "id": "stealth",
+     "name": "Stealth: declared, and the GM's group stealth check",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: \"movement needs a stealth option. The individual can declare stealth and has a button. The DM rolls perception. If the group calls for a group stealth check, everyone gets a popup from the DM for a group stealth roll and each rolls stealth for their character on the popup itself.\" A player's Hide opens a Stealth popup on their own screen: Roll Stealth rolls Dexterity (Stealth) once (in a fight it is the Hide action: the Action, or the Bonus Action with Cunning Action; outside a fight it costs nothing; no movement cost). The total stays while the character moves, and the GM rolls Wisdom (Perception) for every creature that might notice: one that reaches the total spots the character, otherwise the character is hidden (Invisible, the total the DC to find it). The GM's Group stealth puts a popup on each player's screen; each rolls for their own character there, then the GM rolls Perception: SRD 5.2.1 group check, the group is hidden when at least half beat the best roll among the creatures that might notice. The dice are rolled by Mythastria on your PC; the creatures' rolls are in your log only.",
+     "how": "Player: Hide on the sheet, then Roll Stealth in the popup. GM: Roll Perception on the Stealth card (bottom of the screen); Group stealth (the bar above the map) calls the group check, Roll for them answers for a slow player or a character nobody plays, Roll Perception settles it, Cancel ends it.",
+     "limits": "Each creature that might notice rolls once and the best roll counts, so a large group of watchers is hard to slip past. A character the computer plays still hides by SRD 5.2.1's DC 15. Armor that gives Disadvantage on Stealth is not applied yet."
+    },
+    {
+     "id": "initiative-popup",
+     "name": "Initiative: each player rolls from a popup",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "GM 2026-10-28: \"the gm will send all the players a popup for all their initiatives the same way as saving throws and all the rolls are checked by the rules engine\". When the GM starts a fight (Start the fight on the scene card), Mythastria rolls the creatures' Initiative at once and puts an Initiative popup on each player's screen: Roll Initiative rolls d20 + the character's Dexterity modifier (Disadvantage when the GM ticked it as surprised; Advantage with Remarkable Athlete). The dice are rolled by Mythastria on your PC, never on a player's device. Round 1 starts when every character has rolled; until then other choices wait. Each roll goes in the log, then the whole Initiative order, and the combat tracker shows it.",
+     "how": "Player: Roll Initiative in the popup when the fight starts. GM: the Initiative card at the top of the screen shows who has rolled; Roll for them answers for a slow player, a character nobody plays or one you are playing; Roll for everyone left rolls the rest.",
+     "limits": "A fight started without scenes (the Simulator page, the older Play live start) does not ask the players: Mythastria sets every Initiative itself, as before."
+    },
+    {
+     "id": "gm-pages-need-key",
+     "name": "Players see only the players' screens",
+     "status": "built",
+     "page": "./join.html",
+     "since": "2026-10-25",
+     "what": "The players' door never opens the GM pages (GM 2026-10-28: no stand-in key). A player gets the join page, the table (the players' view of the live fight, their own character's turn), The Stage (GM 2026-10-28) and the Social rules page; Play an adventure, Remix Prep, Characters, the Region map, Spells, Documents and the fight recordings all send them back to Join. Player pages carry no links to GM pages, and the empty table says the GM starts the fight. Every GM request from a seat was already refused; with the key the door is the GM's console as before.",
+     "how": "Players use the invite link (join.html). The GM pages are only on the GM's own PC.",
+     "limits": "The GM controls on the players' view are hidden, not removed from the page; the service refuses them. The map pictures stay readable (the view draws the fog over them)."
+    },
+    {
+     "id": "turn-economy-concentration",
+     "name": "Bonus Actions, Light weapons, readied spells and Concentration in live play",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-25",
+     "what": "A turn is one action, one Bonus Action (before or after the action) and movement; checked in live play. A Cleric holding Spiritual Weapon now gets its Bonus Action strike on later turns (the force moves up to 20 ft and attacks a creature within 5 ft of it). Casting a Concentration spell while holding another asks first (\"Casting Hold Person ends your Concentration on Bless. Cast it anyway?\"), hints on or off; moving Hex or Hunter's Mark doesn't ask. A concentrating character hit in a fight makes the Constitution save (DC 10 or half the damage) and the log shows it. Shake awake and Let others ride me now get through the service too. The Light property: after an Attack action attack with a Light weapon, one extra attack with a second Light weapon as a Bonus Action, no ability modifier to its damage (Two-Weapon Fighting adds it; Nick makes it part of the Attack action). Ready a spell: a spell with a casting time of an action, cast at one creature, is cast now (the action and its slot spent) and held with Concentration until the start of your next turn; the first enemy to come within its range gets it, with your Reaction; broken Concentration loses it. A general spell's chosen option and upcast slot now reach the engine (they were dropped before).",
+     "how": "Play live: Spiritual Weapon: strike (Bonus Action) is on the sheet's actions while the spell lasts; click it, then a lit creature. The Concentration question comes up when you start the spell or ready one. The second Light weapon is its own attack line (\"Bonus Action, after a Light attack\"). Ready: <spell> buttons sit beside Ready: <weapon>.",
+     "limits": "One spell with a spell slot per turn (SRD 5.2.1) still refuses a slotted Bonus Action spell after a slotted action spell, and the reverse. The Light extra attack needs the character built on the Characters page (the test parties carry two weapons only). A readied spell is one cast at one creature; area spells can't be readied yet, and the computer-played party doesn't use either."
+    },
+    {
+     "id": "rulings-2026-10-25",
+     "name": "The GM's rulings of 25 October (rules decided on the rulings sheet)",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-25",
+     "what": "Shocking Grasp stops only Opportunity Attacks (SRD 5.2.1). A player keeps concentrating when every creature saved. Dexterity saves against spells add cover from the spell's origin, Evasion (Rogue and Monk 7) and Dodge's Advantage. Chromatic Orb needs its diamond, as the SRD says. Traps: Whether Passive Perception finds a trap is the GM's; Thieves' Tools without proficiency go to Ask the GM; Rope, a Grappling Hook or a friend at the edge gets a character out of a pit; fire lights spilled oil. Attitudes: nothing is guessed (the SRD's Indifferent unless prepped); a successful Influence makes the creature stand down (Indifferent) or help (Friendly), asked on the GM's panel; a failed one changes nothing by itself; a creature that flees Dashes for the map's edge, Opportunity Attacks allowed, and leaves the map. Shake awake (an action) for Sleep, Hypnotic Pattern, Spider's Sting and Essence of Ether. A character's new Hit Point maximum applies at once, and the GM decides any change to its current Hit Points. A player's character carries a rider only when its player turns on Let others ride me. A monster Poisoned by Stinking Cloud still moves out of it. Blindsight sees through silt.",
+     "how": "Play live: Each Influence button takes the Action and comes to the GM to rule, with its skill; the Influence buttons switch on Play live turns them off. Shake awake and Let others ride me are on the sheet when they apply. The full list with each ruling: Mythastria docs/development/RULINGS_2026-10-25.md.",
+     "limits": "P5 (provoking a group) was left as it was. Monsters don't yet pick targets with the new cover in mind."
+    },
+    {
+     "id": "spells",
+     "name": "Spells page and your table's wording",
+     "status": "built",
+     "page": "./spells.html",
+     "since": "2026-10-22",
+     "what": "All 339 SRD 5.2.1 spells, in the words of the official PDF, with the rules the engine reads from them and how much it plays (Play live, simulator only, or you rule it). Reword an unclear spell for your table: the referee then uses your wording, and the SRD text stays beside it.",
+     "how": "Spells: find a spell, edit For my table, Save my wording (or Back to the SRD text). Your wording stays on your PC. If Mythastria was stopped or restarted since the page opened, the page says so: press F5."
+    },
+    {
+     "id": "rules-monitor",
+     "name": "Rules monitor",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-28",
+     "what": "A second pair of eyes beside the referee: LM Studio, running on your PC, reads every action of a live fight (each player's move, attack, spell or class action, and each creature's whole turn) a few seconds behind play, and says whether it followed the SRD 5.2.1 rules and what should have happened if not. It never changes a result, never holds up a turn, and the players never see it. A rule break counts only when LM Studio quotes SRD words that back it; otherwise it is shown as Doubtful, marked as a likely false alarm.",
+     "how": "Start LM Studio's server with google/gemma-4-12b-qat loaded. Play live, GM tools, Rules monitor..., Turn on. Flags come up as a count on the button and a line under the map. Each one has the log, LM Studio's comment and suggested fix, and Copy for Claude: paste it into a Claude session to have the engine fixed.",
+     "limits": "Tried on 28 October with Gemma 4 12B, about 2 seconds a check: in three short test fights it still raised false alarms (features and feats whose text it was not sent); it caught a Fireball with no saves and a sword swung from 30 ft, but missed a damage total too high for the dice. It is sent only the spell cast and a creature's stat block, not class features or feats. When it falls behind, it skips the oldest waiting actions (counted). Results last until Mythastria restarts."
+    },
+    {
+     "id": "social-pack",
+     "name": "Social rules pack: creature dispositions (optional)",
+     "status": "built",
+     "page": "./rules-social.html",
+     "since": "2026-10-25",
+     "what": "An optional rules pack, off by default (the SRD's own rule stays: every monster starts Indifferent). Switched on for a campaign, each creature starts an encounter with a disposition: its faction's first (the Broken Ring's bandits and the Keepers of the Pale Flame's cultists are Hostile, the Obsidian Scribes Indifferent; a map can name a creature's faction), else a social creature (Intelligence 4 or higher) takes its creature type's disposition from the pack's table, and one of Intelligence 3 or lower goes by instinct (predators Hostile, others Indifferent; mindless Constructs, Oozes, Plants and Undead Hostile). A creature that isn't social can't be talked into anything: only Animal Handling on a Beast or Monstrosity. Anything the adventure or your prep writes still wins. The pack's page lists the rules and every SRD creature's disposition.",
+     "how": "Remix Prep, Attitudes and morale: tick Social rules pack (it applies to every fight of the campaign, Remix on or off). On Play live's attitude panel and in Remix Prep, the * beside a creature's attitude opens the pack's page at the item that sets its disposition.",
+     "limits": "The supplement's language rules, preferred skills and helps/hurts triggers are shown for the GM to apply at the table; the engine plays the dispositions and who can be urged. Creature languages are not in the creature data yet."
+    },
+    {
+     "id": "srd",
+     "name": "SRD 5.2.1 rules",
+     "status": "built",
+     "page": null,
+     "what": "The engine follows the 2024 rules from the SRD 5.2.1 (CC-BY-4.0); anything else is homebrew and stays on your PC.",
+     "how": "The credit and licences: SRD_ATTRIBUTION.md, linked from the start page."
+    },
+    {
+     "id": "test-heroes",
+     "name": "Test heroes to the full SRD",
+     "status": "partly",
+     "page": "./replay.html",
+     "since": "2026-10-23",
+     "what": "The heroes the simulator's test fights and the measured threat use: the seven SRD pregens at levels 1-20 with every SRD level benefit, plus a Bard, a Sorcerer and a Monk (Ren, levels 1-20 since 28 October: Disciplined Survivor, Perfect Focus, Superior Defense and Body and Mind played). Levels 10-20 come from the character builder (no errors, nothing left to choose): Ability Score Improvements, Epic Boons at 19, capstones at 20 (Hero 5's Primal Champion, Hero 1's Three Extra Attacks), spells up to level 9, Mystic Arcanum. Played: Tactical Master (Push, Sap or Slow on Hero 1's attack), Studied Attacks, Heroic Rally, Supreme Sneak's Stealth Attack, Improved Cunning Strike, Relentless Rage, Improved Brutal Strike, Abjure Foes, Aura of Courage, Radiant Strikes, Aura Expansion, Empowered Evocation, Supreme Healing, Slippery Mind. Since 27 October also Elusive, Indomitable Might, Persistent Rage, Remarkable Athlete (Initiative and Athletics) and Blessed Strikes on Play live's cantrips with Improved Blessed Strikes' Temporary Hit Points. Fiendish Resilience: the player picks the damage type in the rest dialog as a Short or Long Rest ends; the Warlock has Resistance to it in the next fights. Since 28 October the Sorcerer Hero 10 goes to level 20 too (Draconic Sorcery; Metamagic at 10 and 17, spells up to level 9, Boon of Spell Recall at 19): Dragon Wings (14) is a button with her class features, a Bonus Action that gives her a Fly Speed of 60 ft for the fight, once per Long Rest or for 3 Sorcery Points, and she can dismiss them at any time; Arcane Apotheosis (20) makes one Metamagic option free on each of her turns while Innate Sorcery is active, the costliest one she picks (her Sorcery line on the sheet says when it is free). Since 28 October the Bard, Hero 9, goes to level 20 too (College of Lore, from the character builder; at level 5 she is the Hero 9 you know): Ability Score Improvements, the Boon of Spell Recall at 19, Magical Discoveries (Fireball, Counterspell) and Magical Secrets (Cone of Cold, Chain Lightning, Meteor Swarm, Heal, Mass Heal), spells up to level 9. Played: Superior Inspiration (18: when a fight starts she has at least two Bardic Inspiration uses) and Words of Creation (20: Power Word Heal and Power Word Kill always prepared, and each can take a second creature within 10 feet of the first). Since 28 October the casters' high-level features play in a fight too. Hero 4 (Evoker): Overchannel (14) is a question when she casts a Wizard damage spell with a level 1-5 slot (Fireball, Cone of Cold, Magic Missile, Scorching Ray, Shatter, Web, Wall of Fire): say yes and its damage dice roll their highest that turn; the first use after a Long Rest is free, each later one costs her 2d12 Necrotic per slot level (1d12 more each time again), which nothing resists. Spell Mastery (18) casts Magic Missile and Scorching Ray at their lowest level with no slot, as often as she likes; Signature Spells (20) casts Fireball and Counterspell once each with no slot until a Short or Long Rest. Spell Mastery's spells must take an action to cast (SRD 5.2.1), so Hero 4's are now Magic Missile and Scorching Ray instead of Shield and Misty Step (she keeps those two prepared). Vex (Fiend): Hurl Through Hell (14) on a hit with an attack roll, once per turn: a Charisma save or 8d10 Psychic (none for a Fiend) and the creature is gone until the end of his next turn (nobody can target it and it loses its turns), then it comes back to its space; once per Long Rest, or a Pact Magic slot gives the use back. Eldritch Master (20): Magical Cunning, a button on his card on the adventure page (a 1-minute rite, once per Long Rest), gives back all his Pact Magic slots instead of half. Hero 2: Divine Intervention (10) is a question on the Cast card of each Cleric spell of level 1-5 the table casts (Bless, Guiding Bolt, Healing Word, Cure Wounds, Shield of Faith, Spiritual Weapon, Spirit Guardians, Command, Aid, Dispel Magic, Revivify, Banishment, Flame Strike, Mass Healing Word, Mass Cure Wounds): a Magic action, no slot, no Material components (Revivify's diamond too), once per Long Rest. Any other Cleric spell of level 5 or lower: Ask the GM's Divine Intervention, which now takes her Magic action and the same use. Greater Divine Intervention (20): Wish through Ask the GM; after it, no Divine Intervention until 2d4 Long Rests are done (the adventure day counts them). The computer-played heroes use them too: Hero 4's free Overchannel on a Fireball or Cone of Cold, her Signature Fireball and her Spell Mastery Magic Missile and Scorching Ray with no slot; Vex hurls a foe with more than 20 Hit Points while his free use is left; Hero 2 casts Mass Cure Wounds by Divine Intervention when no level 5 slot is left and allies are down. Since 28 October the Fighter, Thief, Berserker and Devotion Paladin features that went to the GM are played too (Hero 1, Hero 3, Hero 5, Hero 6, or any character the builder makes with them): Tactical Mind (a failed Hide, Study or Influence check gets +1d10 for a Second Wind use, kept if the check still fails), Tactical Shift (Second Wind also gives half the Speed of movement that provokes no Opportunity Attacks), Heroic Warrior (Heroic Inspiration at the start of each turn; it rerolls a missed attack roll, a failed save or a failed check), Devious Strikes (Daze, Knock Out or Obscure on a Sneak Attack), Thief's Reflexes (a second turn in the first round, at Initiative minus 10), Stroke of Luck (a failed attack roll, save or check becomes a 20, once per Short or Long Rest), Retaliation (a melee attack back, the Reaction, when a creature within 5 feet damages the Berserker), Intimidating Presence (a Bonus Action: a Wisdom save or Frightened for 1 minute, saving again each turn; once per Long Rest or for a use of Rage), Restoring Touch (Lay On Hands ends Blinded, Charmed, Deafened, Frightened, Paralyzed or Stunned, 5 points of the pool each), Smite of Protection (after a Divine Smite, the Paladin and her allies in her aura have Half Cover until her next turn) and Holy Nimbus (a Bonus Action: an enemy starting its turn in her aura takes Radiant damage, she has Advantage on saves Fiends and Undead force, and the aura is sunlight; once per Long Rest or for a level 5 slot). The computer-played heroes use them too. Since 28 October (GM: \"I don't want any of the test characters. I only want to use characters saved in the saved characters tab\"): the pages no longer offer them; they stay inside Mythastria for its own checks and the measured threat Remix reads.",
+     "how": "Not offered on the pages since 28 October; Mythastria's own checks still use them.",
+     "limits": "Asked of the GM (Ask the GM in Play live): Use Magic Device (no charged items or Spell Scrolls in a fight). Spells of levels 4-9 the table can't cast yet go to the GM too; Mystic Arcanum spells need no slot there. Slow and Abjure Foes do not yet change how far creatures move. Hero 10's Dragon Companion (18) is asked of the GM (Summon Dragon is a summoned creature, still the GM's); a computer-played Hero 10 does not call up her wings. Hero 9's Countercharm, Peerless Skill, Jack of All Trades, Counterspell, Hold Person, Hold Monster, Dispel Magic, Foresight and her other utility spells are asked of the GM; Cutting Words is asked live as before. Overchannel needs a spell slot, so it is not offered on a Spell Mastery or Signature Spells cast with no slot; spells that keep hurting on later turns (Web, Wall of Fire) are at their highest only on the turn cast. A creature hurled through Hell keeps its token on the map while it is gone. Divine Intervention for a spell the table doesn't cast, and Wish, are ruled by the GM; Magical Cunning in the middle of a fight is asked of the GM too (its button is on the adventure page, between fights). Play live's Divine Smite is still an Ask the GM spell: casting it there turns on Smite of Protection. A Stroke of Luck 20 on an attack roll counts as a Critical Hit. A Dazed creature either acts where it stands or only moves (no Bonus Action). The computer-played Hero 1 does not step away with Tactical Shift. Holy Nimbus's sunlight counts for Sunlight Sensitivity; it does not light the map for seeing."
+    }
+   ]
+  },
+  {
+   "group": "Creatures",
+   "features": [
+    {
+     "id": "bestiary",
+     "name": "All 339 SRD creatures",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-22",
+     "what": "Every SRD creature fights in the simulator and in Play live: attacks, Multiattack, saving-throw actions (breath weapons, sprays) with Recharge and uses per day, attack riders, and since 27 October its spells, legendary actions and special traits (see Monster spellcasting).",
+     "how": "Pick them in Remix Live, Import map or a region battle.",
+     "limits": "Lair actions are not played; a save action is used from where the creature stands; spells and traits the engine cannot hold (summons, teleports, Charmed, Wall of Fire) are listed for you to rule at the start of the fight."
+    },
+    {
+     "id": "threat",
+     "name": "Measured threat",
+     "status": "partly",
+     "page": "./remix.html",
+     "what": "Creatures rated by simulated fights, not only by CR, so Remix can swap like for like. The batch has run (27 October): 257 SRD creatures, levels 1-8, in an open arena and a corridor sized to the creature, 5 fights each against the four test heroes. Of the rated: 637 play as their XP says, 800 harder, 573 easier (docs/development/THREAT_REPORT.md).",
+     "how": "Used by Remix.",
+     "limits": "Measured before creatures cast their spells and used legendary actions and traits: spellcasters and legendary creatures are rated too low until they are measured again. Creatures that only swim wait for a water arena; creatures too strong for a level 8 party aren't rated yet.",
+     "since": "2026-10-27"
+    }
+   ]
+  },
+  {
+   "group": "Characters and players",
+   "features": [
+    {
+     "id": "build-shelves",
+     "name": "Min-max and fun builds",
+     "status": "built",
+     "page": "./characters.html",
+     "since": "2026-10-23",
+     "what": "Two shelves in the character builder: Min-max, for optimized character sheets people share with you, and Fun builds, for characters picked for synergy and fun rather than peak power.",
+     "how": "Characters page, Min-max or Fun builds tab: Add from a file, or on any open sheet choose Put on the shelf (with a note: who made it, why it is strong or fun). On the shelf: Open sheet, Copy to my characters (checked by the rules), Edit note, Remove, Export this shelf. Kept in this browser; other people's builds are never part of Mythastria."
+    },
+    {
+     "id": "characters",
+     "name": "Characters",
+     "status": "built",
+     "page": "./characters.html",
+     "since": "2026-10-21",
+     "what": "Import sheets from Foundry/The Forge, D&D Beyond (JSON and PDF), Fantasy Grounds, Roll20 and Iain McEwen's Google Sheets sheet; build SRD 5.2.1 characters (levels 1-20, multiclass); print a fillable PDF sheet that imports back. Since 28 October (GM: \"I don't want any of the test characters. I only want to use characters saved in the saved characters tab\"): every characters tab has Delete: each saved character's card and its open sheet (it leaves the party Mythastria keeps for the table too), and each sheet on the Min-max and Fun builds shelves. Test in Play live brings your other saved characters along, not test characters. Since 28 October (GM: \"there needs to be a full character sheet with collapsed menues\"): Play live's character panel has a Full sheet tab beside Turn and Checks & saves: the acting character's whole saved sheet, with its fight numbers on top and every section folded until opened (Abilities and saving throws, Attacks, Skills, Spellcasting, Features and traits, Gear and more, Notes); the browser remembers which are open. An imported sheet shows the fight's own attacks, spell attack and spell slots. Since 28 October (GM: \"The spells available can be a pull down menu. The spell will then display and spell slot pips will show what slots are left. If the spell can be upcast, there will be a dropdown menu for the level to cast.\"): on the Turn tab the spells are one dropdown (by level, \"not now\" when it can't be cast), the chosen spell's card shows under it (drag a one-target spell onto a creature as before), the slots show as pips per level (filled: left, hollow: spent) and a Cast at dropdown chooses the slot level when the spell can use a higher one. Since 28 October (GM: \"casting bless didn't do anything\"): a spell for up to N creatures (Bless, Bane, Magic Missile) drags onto a creature too; each drop or click adds one, it is cast when all are picked, and Cast sends it with fewer. Since 28 October (GM: \"every spell with a range or area should show that shape before selecting targets\"; \"lit up is better\"): choosing a spell in the dropdown, or holding or casting it, lights up its reach on the map around the caster in the spell's colour, labelled (Bless: range 30 ft; Burning Hands: 15-ft Cone; Fireball: range 150 ft, 20-ft-radius Sphere); the area follows the pointer once the card is clicked; Esc or any other choice clears it. Since 28 October (GM: \"also many spells like bless can be upcast\"): Cast at also covers Bless (one more creature for each level above 1), Cure Wounds (+2d8), Healing Word (+2d4), Guiding Bolt, Burning Hands and Fireball (+1d6), Cone of Cold, Spiritual Weapon and Spirit Guardians (+1d8); the chosen slot is the one spent. Not yet: Hold Person and Hold Monster's extra creatures.",
+     "how": "Characters: Import, or Build; then Test in Play live. On Play live: the Full sheet tab on the character's panel; click a section's title to open it."
+    },
+    {
+     "id": "starting-kits",
+     "name": "Starting equipment: kit or gold",
+     "status": "built",
+     "page": "./characters.html",
+     "since": "2026-10-26",
+     "what": "A level 1 character takes its class's SRD 5.2.1 Starting Equipment (kit A, or A or B for the Fighter) or the class's gold, and its background's equipment or 50 GP. A kit puts its armour, shield, weapons and focus on the sheet, lists its pack and other gear (Javelin ×8, Dungeoneer's Pack...), and brings its own coins; anything else picked is bought from the gold, and the builder shows what is left and why.",
+     "how": "Characters: Build a character, step 5 Equipment: choose the class kit or gold, then the background kit or gold.",
+     "limits": "Level 1 only (higher levels start with the GM's equipment). Packs are listed by name, not unpacked."
+    },
+    {
+     "id": "photos",
+     "name": "Photos on tokens",
+     "status": "built",
+     "page": "./play.html",
+     "what": "A character's photo becomes its token, in 2D and 3D.",
+     "how": "Attach a saved sheet with a photo to a party token."
+    },
+    {
+     "id": "join",
+     "name": "Players join from their own screen",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-21",
+     "what": "Players join from their own phones or computers, anywhere, at your table's own address (a tunnel to your PC; nothing to set up on your router): they ask with your invite code, you let them in. The door limits visitors, blocks repeated wrong codes, logs who comes in, and refuses every GM control. Every screen shows each spell's effect as it is cast, whoever casts it, and your Play live screen follows a player's turn on their phone as it happens. Before joining, a player accepts a notice covering privacy, age, terms of use and the table rules.",
+     "how": "Leave the PC on with Mythastria running. Play live, GM tools, Players... (the invite link)",
+     "limits": "Restarting Mythastria closes the door: open it again and players ask again. (On their own screen, the player client, a seated player plays their whole turn: see \"A seated player's own sheet\".)"
+    }
+   ]
+  },
+  {
+   "group": "Maps",
+   "features": [
+    {
+     "id": "maprule",
+     "name": "Thick walls",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-20",
+     "what": "Walls are at least a full 5-ft square, drawn as stone blocks, with stone fading past the map's edge.",
+     "how": "Every map follows it; imported maps too."
+    },
+    {
+     "id": "import",
+     "name": "Import a map",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-20",
+     "what": "Bring in a Universal VTT map (.dd2vtt, .uvtt) or a plain picture: align the grid to printed squares or survey it, paint floor, wall and door squares.",
+     "how": "Play live, More, Import map. The map's licence is yours to respect."
+    },
+    {
+     "id": "battlemaps",
+     "name": "Terrain battle maps",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-20",
+     "what": "A standard outdoor battle map for any terrain: trees and boulders that block, pools and the sea, the ground's colour; it matches its region hex (a road, a river with a ford, the sea's side) and your layout (open, normal, dense; small, normal, large).",
+     "how": "Region map: an encounter pops it up, or Battle here...; it opens in Play live."
+    },
+    {
+     "id": "dungeongen",
+     "name": "Indoor maps and dungeons from your preferences",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-27",
+     "what": "The sites on a made region (dungeons, caves, ruins, lairs) drawn as indoor battle maps from your design preferences: kind, size (4-15 rooms), 1-3 levels, layout (linear, branching, looping), walls (cut stone, natural cave, mixed), doors (few, some, many) and a theme in your own words. The local model in LM Studio designs the rooms (purpose, size, shape, features, a short description each) and how they join (doors, locked doors, archways, stairs); Mythastria lays them out and checks every level: walls a whole square thick with stone fading past the edge, doors in walls, passages a square or wider, every room reachable. Each room's description is a GM note on the map; braziers, hearths and lanterns light their rooms; pools are water. If the model gives nothing usable, it says so and nothing is made: no scripted map.",
+     "how": "Region map: click a site (a red place), Draw this site as indoor maps..., choose, Draw it (a minute or two; LM Studio must be running with google/gemma-4-12b-qat). Level 1 opens in Play live and the place leads to it; every level is in Play live's map list under Region sites, then the project and the region. Another map number gives another design. What Mythastria had to change in the model's design (a room with no way in gets a passage) is said in the status line."
+    }
+   ]
+  },
+  {
+   "group": "The region and travel",
+   "features": [
+    {
+     "id": "region",
+     "name": "Region map",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-20",
+     "what": "A 2D hex map of the region: 1-mile hexes dotted, 6-mile dashed, 24-mile solid, over a picture; terrain, numbered places you name yourself (click a place on the map), fog the party clears, and a players' view. Reset... puts the map back to its original design (as it was made, imported or first opened): places, terrain and the grid; the party is taken off the map, the fog closes and its travels are cleared.",
+     "how": "Region map: Load picture and align the grid, or Make a region.... Every control sits on the map's frame and the page fits the window with no scrolling: Maps and Region along the top, Hex grid and Terrain and fog on the left, Party, Places and the journey log on the right. Map tools (Add a place, Place the party, Travel to..., painting) say in the bar under the map what to click; Esc puts a tool down. Clear... starts an empty region map and offers to save a copy first (Import brings it back). Reset... (beside Clear...) asks first, then puts the original design back; place the party again to begin."
+    },
+    {
+     "id": "regiongen",
+     "name": "Make a region from your preferences",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-22",
+     "what": "Mythastria draws a region for you: size, climate, coast or islands, how rugged, wooded and wet; settlements joined by roads, rivers, and sites for adventures, all numbered for you to name. The same choices and number give the same region.",
+     "how": "Region map, Make a region..., then Make it. Painting a hex afterwards repaints the picture."
+    },
+    {
+     "id": "atlas",
+     "name": "Maps: projects and connected maps",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-22",
+     "what": "Every map is kept in Mythastria on your PC, filed in a project or in Spare maps. A place can lead to another map or to a tactical map; Back returns. A whole project exports as one file and imports again with its links.",
+     "how": "Region map, Maps panel: Project (New project..., Rename..., Delete project... moves its maps to Spare maps), its maps (Open, Delete...), File this map in, Export project / Import project. Click a place, choose Leads to, then Places: Open map. On an empty map a place leads to, Make a region, Import or Load picture fill that map, keeping its link."
+    },
+    {
+     "id": "portals",
+     "name": "Portals",
+     "status": "built",
+     "page": "./region.html",
+     "since": "2026-10-22",
+     "what": "A spot on a map that jumps to another map in Maps: click it to go there; when the party travels onto it, Step through takes the party along at the same day and hour. Two-way portals have a portal back where they come out.",
+     "how": "Click a hex (Add a place) or a place, choose Kind: A portal, pick where it jumps to; for two-way, click where it comes out on that map (Esc leaves it one-way)."
+    },
+    {
+     "id": "travel",
+     "name": "Travel, fast travel and encounters",
+     "status": "built",
+     "page": "./region.html",
+     "what": "Travel by SRD 5.2.1 pace (4, 3 or 2 mph), no faster than the terrain's maximum pace (Travel Terrain: plains and roads Fast; forest, hills, coast and desert Normal; mountains and swamp Slow), in 8-hour days (or push on: Extended Travel), an encounter check every 4 hours with its distance by terrain; fast travel through places you have been, with no encounters. Each pace's effect and the weather's saves: see Environment, contagions, fear and travel.",
+     "how": "Place the party, Travel to..., then Travel or Fast travel. Pace and Weather and the march (the region's cold, heat, wind, rain, high altitude; Push on past 8 hours) are beside them."
+    }
+   ]
+  },
+  {
+   "group": "Adventures and Remix",
+   "features": [
+    {
+     "id": "remix",
+     "name": "Remix Prep",
+     "status": "partly",
+     "page": "./remix.html",
+     "since": "2026-10-20",
+     "what": "Make a played adventure fresh for a replay: swap encounters for creatures of the same measured difficulty, proved in the background, saved as a layer that never changes the original. Mounts (Camel, the horses, Mule, Pony, Mastiff, Elephant) are never offered as foes: they are domestic animals (your rule, 2026-10-23). The page is laid out symmetrically: on a desktop, paired cards of equal size in two columns (Adventures and Saved remixes; Prepare a remix and The proof's party), with the proposal and the SRD traps across both; on a phone, one column in working order. Since 28 October (GM: \"I don't want any of the test characters. I only want to use characters saved in the saved characters tab\"): the proof (paired fights with test characters) is removed; a remix is saved as an estimate, and Check the encounters on Play an adventure tells you whether it is winnable for your saved characters.",
+     "how": "Remix Prep: pick the adventure and an encounter, Propose, review, tick both boxes and Save for next fight. Then Check the encounters on Play an adventure.",
+     "limits": "A full proof can be slow on some PCs; more maps need their encounter descriptions."
+    },
+    {
+     "id": "layout-presets",
+     "name": "Portrait and Landscape layouts",
+     "status": "done",
+     "page": "./index.html",
+     "since": "2026-10-24",
+     "what": "A layout preset kept on this device for every page: Auto follows the screen's width; Portrait uses each page's one-column arrangement whatever the width (a screen or tablet standing upright; on a wide screen it is a centred column); Landscape keeps the wide, side-by-side arrangement even on a narrow screen. On Play live, Landscape also puts the turn sheet left of the map (Auto does when the screen is landscape and 1000 px wide or more; Portrait never).",
+     "how": "On the splash screen, press Auto, Portrait or Landscape under Play an adventure; or change it later with the layout menu at the end of any page's header.",
+     "limits": "It switches the pages' own width rules (600 px and wider); a page with no narrow arrangement looks the same in both."
+    },
+    {
+     "id": "replay",
+     "name": "Simulator fights",
+     "status": "built",
+     "page": "./replay.html",
+     "what": "Watch the simulator play a fight turn by turn. Since 28 October (GM: \"I don't want any of the test characters. I only want to use characters saved in the saved characters tab\"): the party is the saved characters you tick, each at its own level; no test characters or test item kits. Since 28 October (GM: \"remove test characters from simulator fights. Allow characters to be loaded\"): no sample recordings fought by the test heroes; the page starts empty, and Load characters… opens the Characters page's Import (D&D Beyond PDF or JSON, Fantasy Grounds, Foundry, Roll20, a sheet) in another tab, the new character showing in Saved characters here once saved.",
+     "how": "Simulator fights: Load characters… (or tick them in Saved characters), pick a map, press New fight, then Next turn. Open a recording plays one you saved."
+    }
+   ]
+  },
+  {
+   "group": "At the table",
+   "features": [
+    {
+     "id": "chat-model",
+     "name": "A model in the chat window",
+     "status": "built",
+     "what": "The GM can load a local model from the chat window and ask it things. What you load is also the model the Rules monitor uses.",
+     "how": "Chat, then the Model section: choose LM Studio or Ollama, choose a model, press Load, then type a question and press Ask.",
+     "limits": "GM only: players never see the section or the talk. Models on this PC only. The model can't see or change a fight, and the talk is gone when Mythastria restarts."
+    },
+    {
+     "id": "chat",
+     "name": "Chat and dice",
+     "status": "built",
+     "page": "./play.html",
+     "what": "Table chat on every page (share pictures, music links and sounds); a dice pool with mixed dice and a bonus (2d6 + 1d8 + 3); the dice tower, where a private roll lands blank for others.",
+     "how": "The Chat button on every page."
+    },
+    {
+     "id": "market",
+     "name": "Market",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-21",
+     "what": "A market only the GM opens, with SRD 5.2.1 goods; players see a Market button while it is open.",
+     "how": "Play live, GM tools, Market..."
+    },
+    {
+     "id": "party-loot",
+     "name": "Party loot",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-29",
+     "what": "The party's loot inventory: everything the party found, coins and items. Mythastria adds up the coins (PP, GP, EP, SP, CP, by the SRD 5.2.1 coin values) and divides them among the characters who share; one button pays each share into their purses. Items go into one character's bag. The players see the list and their share, read only.",
+     "how": "Play live, GM tools, Market..., Party loot: type what the party found (one find per line: 1,200 gp, 35 sp, 40 silver pieces, Rope, Hempen (50 feet)), Add to the party loot. Tick who shares, then Pay ... into each purse. An item: choose a character, Give. Players: the Party loot button on their screen.",
+     "limits": "A find counts as coins only when it is nothing but coins: 'a ruby worth 50 gp' is an item, never split (sell it in a shop, then share the gold). Shares are paid in one sum per purse; what doesn't divide evenly stays in the party loot. Purses are Mythastria's own: the Characters page sheet is not changed."
+    },
+    {
+     "id": "give-back",
+     "name": "Give back",
+     "status": "built",
+     "page": "./donate.html",
+     "since": "2026-11-02",
+     "what": "The GM's appeal to everyone who plays: we have leisure time, so please give your time or money to local volunteer efforts.",
+     "how": "Give back, at the end of the page row, for the GM and for players.",
+     "limits": "It links to no charity, and Mythastria takes no money."
+    },
+    {
+     "id": "one-shot",
+     "name": "One-shot builder",
+     "status": "partly",
+     "page": "./oneshot.html",
+     "since": "2026-11-02",
+     "what": "Build a one-shot: a story, its locations, a map for each, and what waits there: creatures, people with attitudes, SRD traps and narrative puzzles. With a model loaded in Chat, Generate writes any story field.",
+     "how": "One-shot on the page row. Add locations, choose maps, click a square to place things, then Save and play. It appears on Play an adventure.",
+     "limits": "Maps come from Region map's site designer or an import, so a new map needs its own step. Remix Prep needs a written encounter description, which one-shots don't have yet; Remix Live works. Puzzles have no dice: the GM rules on the answer."
+    },
+    {
+     "id": "on-the-fly",
+     "name": "On the fly",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "Change the fight being played without starting it again: bring in creatures or people, each with its own Initiative and attitude, read words to the table's log, set a creature's AC for this fight (a spell cast between scenes), carry out a ruling (Heal, Stabilize, Temporary HP), or call a check in a fight. A group stealth check can be ruled by a written DC instead of Perception.",
+     "how": "Play live, Remix, On the fly, while a fight runs. Traps stay on the trap tool in GM tools. Undo step takes any of it back.",
+     "limits": "Moving to another map still starts a new fight."
+    },
+    {
+     "id": "by-the-srd",
+     "name": "By the SRD",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "One switch for the GM. Off, the table's own rulings apply: the GM rolls Perception against a Hide, and Spirit Guardians deals Radiant. On, both play as the SRD writes them: Hide is a DC 15 Dexterity (Stealth) check whose total is the DC to find the character, and Spirit Guardians deals Necrotic for an evil caster.",
+     "how": "Play live: By the SRD, beside Turn timer. Off to start; kept for the next fights until the service restarts. Undo step counts a flip as a step. For Spirit Guardians, set Alignment in the character builder.",
+     "limits": "Rulings where the SRD says nothing stay either way, and the group stealth check is the same either way, since the SRD leaves its DC to the GM. A sheet with no alignment isn't evil. Imported sheets don't bring an alignment yet."
+    },
+    {
+     "id": "refused-by-the-table",
+     "name": "Refused by the table",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "A log for spotting cheaters. The rules engine rolls the dice and checks every choice, so a tampered screen can only ask for what it may not have. The table lists those refusals by player: not allowed (what the table's own screen never sends, like acting for another character or calling a GM control) and against the rules (which can be an honest mistake). A player gets Worth a look after anything not allowed, or 8 rule refusals in 10 minutes. Late clicks and other timing aren't listed.",
+     "how": "Play live, GM tools, Players...: Refused by the table. A dot on GM tools and a ! on Players... say someone is worth a look. Open a player to see each refusal and why; Clear this list when you've looked.",
+     "limits": "A reason to look, not proof. In memory only, shown to the GM only, gone at a restart; the table's notice says so. It sees what reaches the door, so it can't see a player looking at their own screen's data, or a screen that only sends allowed choices."
+    },
+    {
+     "id": "every-attack-card",
+     "name": "Every attack has a card",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "A character gets a card for every attack on their sheet, up to twenty: weapons and attack cantrips alike. Before, only the two best showed and a third cantrip fell to Ask the GM.",
+     "how": "Play live and the player's screen: Attacks, on the character sheet.",
+     "limits": "Twenty cards at most, beyond the Light weapon's extra attack and a Monk's Unarmed Strike. A computer-played character still chooses from its first two, and turns to the others only when the party has seen the foe ignore that damage."
+    },
+    {
+     "id": "cantrips-by-the-srd",
+     "name": "Cantrips by the SRD",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-02",
+     "what": "A cantrip cast from its card does what the SRD says. Sorcerous Burst: each 8 on a d8 rolls another d8, up to your spellcasting modifier. Ray of Frost slows, Shocking Grasp stops Opportunity Attacks, Starry Wisp outlines, and Chill Touch's healing rider goes to the GM. A cantrip takes the Magic action, so Extra Attack gives no second cast. Eldritch Blast makes a roll for each beam, at any target. Sneak Attack stays with weapons.",
+     "how": "Cast it from its card as before.",
+     "limits": "Burst's extra d8s are always rolled: the SRD says you can, and they only add damage."
+    },
+    {
+     "id": "panic-button",
+     "name": "Panic Button",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-01",
+     "what": "One red button that stops everything at once. The rules engine holds at its next step and nothing is lost; the Rules monitor and the turn timer stop; the players' choices, rolls, chat and requests are refused, and their table screen says The GM has stopped the game. The GM's own chat and Undo step still work.",
+     "how": "Play live: Panic, on the bar beside Start live fight. It becomes Resume, which goes on from exactly there. A fight you had frozen before stays frozen.",
+     "limits": "A pause, not a shutdown: the service keeps running and the players stay seated. The cover is on the table screen; on The Stage the buttons are refused instead. No new fight starts until Resume."
+    },
+    {
+     "id": "gm-undo",
+     "name": "Undo step",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-01",
+     "what": "The GM can go back through a fight one step at a time, right to its start, with no limit. A step is one choice by a player or the GM, a Reaction answered, or one creature's turn. The fight then waits, frozen, and the same choices give the same dice.",
+     "how": "Play live: Undo step (n); hover it to see what it takes back. Press it as often as you like, then Go on.",
+     "limits": "This fight only: a new fight starts a new count. The rules engine rebuilds the fight and plays it again up to that step, so a long fight takes a little longer, and the adventure day and the bags go back to the fight's start and are spent again: anything the market did during the fight goes back too. After the fight's end it asks first, as a rest taken since goes back as well. Chat and free dice rolls are not taken back. There is no redo; a GM choice made in the instant creatures were acting can land a moment later on replay, and if a step can't be played again the undo stops there and says so."
+    },
+    {
+     "id": "turn-timer",
+     "name": "Turn timer",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-01",
+     "what": "A small clock on the Combat tracker shows how long this turn has run, on every screen. It waits while the fight is frozen or stopped.",
+     "how": "Play live: the Turn timer switch beside Influence buttons, on or off at will. Kept for the next fights until the service restarts.",
+     "limits": "It only shows the time: it never ends a turn. It counts the turns of characters played at the table, not the creatures'."
+    },
+    {
+     "id": "chat-newest-on-top",
+     "name": "Chat: newest on top",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-01",
+     "what": "The chat window keeps the message box at the top with the newest post right under it, so nothing needs scrolling down to read it. The talk with a loaded model runs the same way.",
+     "how": "Chat, on any page that has it."
+    },
+    {
+     "id": "stage-masks",
+     "name": "The Stage's symbol",
+     "status": "built",
+     "page": "./stage.html",
+     "since": "2026-11-01",
+     "what": "The old comedy and tragedy masks, a small gold line drawing above The Stage's buttons.",
+     "how": "The Stage: under the logo."
+    },
+    {
+     "id": "player-flavor",
+     "name": "A player's own Flavor",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-11-01",
+     "what": "A seated player can change how their own character and the creatures it summoned look (a familiar, a steed, raised undead): name, role, footnote, picture, standee, a rider, and paint. Looks only, never stats. The GM approves each change. Until then it shows on that player's screen alone, marked as pending; once approved, everyone at the table sees it, on every map; refused, the previous look comes back with no note.",
+     "how": "Player: My Flavor... beside Hand to the GM, then Ask the GM. GM: Asked of the GM on Play live, Approve or Refuse.",
+     "limits": "Creatures only, not attacks or spells. A creature is known as the player's once it is on the map, so a familiar has to be called first."
+    },
+    {
+     "id": "flavor",
+     "name": "Flavor",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-21",
+     "what": "Change how a creature, attack or spell looks and reads (pets, familiars, mounts, new artwork, a footnote) without changing its rules. A creature's standee in the 3D view can stand on a round base and at its true height (otherwise drawn 40% taller), and a Large or bigger creature can carry a rider (a picture on its back, on the map and in 3D; the creature still fights with its own stat block). The artwork list also offers the 20 newer token pictures (marked \"newer art\"): Troll, Camel, Polar Bear, Cloaker and others that have no Retro token.",
+     "how": "Play live, GM tools, Flavor... Pick the creature; under Creature artwork, choose a picture and tick On a round base or True height (3D view); for a Large or bigger creature, choose a Rider. Players see the same standee."
+    },
+    {
+     "id": "map-paint",
+     "name": "Paint on the map",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "The GM paints on the map with a see-through brush in any colour and size, and erases it, undoes it or clears it. The paint is kept per map, sits over the map and under the tokens and the fog, and the players' window and the player clients see it only while the GM shows it. Shown paint blocks the players' vision: on their screens a creature standing on a square at least half covered by paint at See-through 0.5 or more is not shown (map, 3D view, turn order), and the paint covers traps, hazards and notes; the party's own characters still show, and the GM's screen shows everything. The rules never read it: a character can still target what it sees by the rules. The 3D view hides those creatures but does not draw the paint itself.",
+     "how": "Play live, GM tools, Paint. Choose Brush or Eraser, the colour, size and see-through, then drag on the map; tick Show to players to reveal it, untick to hide it. Press Paint again to go back to play."
+    },
+    {
+     "id": "stage",
+     "name": "The Stage",
+     "status": "built",
+     "page": "./stage.html",
+     "what": "The role-play stage with the GM as Director: the spotlight, the Dialogue light and applause. GM 2026-10-28 (\"the client side also needs The Stage\"): on the player client too: a seated player opens it from The Stage link at the top of their screen and plays their own seat (join or leave the Stage, applaud, Dialogue when they hold the spotlight); the seat picker and the Director controls stay on the GM's PC.",
+     "how": "The Stage page; players: The Stage at the top of the player client."
+    }
+   ]
+  },
+  {
+   "group": "Look",
+   "features": [
+    {
+     "id": "look",
+     "name": "Skins and the miniature look",
+     "status": "built",
+     "page": null,
+     "what": "The Gilded skin for the pages (others to choose from), cartoon spell and hit effects, and the miniature-diorama 3D look; tokens keep their own colours.",
+     "how": "Gilded is the default; a chosen skin is used on every page."
+    },
+    {
+     "id": "style-guide",
+     "name": "Mythastria style guide",
+     "status": "built",
+     "page": "./style-guide.html",
+     "since": "2026-10-28",
+     "what": "How Mythastria reads and looks, written down from what the table already does: words (SRD 5.2.1's rules terms, plain words, refusals that say why, buttons that name what they do), screens (the Gilded look, colours by name so every skin works, contrast, the focus ring, 44 px buttons, nothing chosen for anyone) and art (style 1 cartoon, tokens never recoloured, flat standees, thick walls). It ends with a checklist for anything new and the professional guides it draws on (WCAG 2.2, the Xbox and Game Accessibility Guidelines, the RPG writing guides).",
+     "how": "Documents, More: Mythastria style guide.",
+     "limits": "A contrast check on 28 October found fixes, all made the same day: Parchment's green, red, amber and grey text is readable now, the edges of boxes you type in are clear in every skin, the gold focus ring shows everywhere the keyboard reaches, and no text is smaller than 11 px (the old Training table page, the Documents tags). Saying GM instead of GM everywhere is proposed for you to decide."
+    }
+   ]
+  },
+  {
+   "group": "Planned",
+   "features": [
+    {
+     "id": "monsterspells",
+     "name": "Monster spellcasting, legendary actions, special traits",
+     "status": "built",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "The rest of the SRD creatures' stat blocks played by the engine and checked by the referee: Spellcasting (a Mage's Fireball and Shield, a dragon's Command and Scorching Ray: attacks, saves in Spheres, Cones, Lines and Emanations, healing, Magic Missile, Bless, uses per day, Concentration with its save after damage); legendary actions right after other creatures' turns and Legendary Resistance; traits such as Pack Tactics, Magic Resistance, Regeneration (stopped by fire or acid), Undead Fortitude, Flyby, Sunlight Sensitivity, Death Burst and Stench-like auras. Since 27 October also their lasting areas (Entangle, Moonbeam, Insect Plague, Spirit Guardians) and Haste's extra action; a creature whose Spellcasting gives no save DC (the Priest) uses 8 + its Proficiency Bonus + its spellcasting modifier.",
+     "how": "Nothing to do: the creatures use them on their turns in Play live, Remix and the simulator, and the log says what they cast. At the start of a fight the log lists what is yours to rule (\"The GM rules ...\").",
+     "limits": "Lair actions are not played. Spells with no effect in a fight, summons, teleports, Charmed and Wall of Fire cast by creatures stay with you."
+    },
+    {
+     "id": "homebrew",
+     "name": "Homebrew tool",
+     "status": "planned",
+     "what": "Make your own creatures, spells, items and rules variants in the 2024 rules' building blocks; kept on your PC, never shared or used to train the engine."
+    },
+    {
+     "id": "packs",
+     "name": "Content packs",
+     "status": "planned",
+     "what": "Import rules and art from third-party partners, at the user's own responsibility, converted into the engine's building blocks."
+    },
+    {
+     "id": "water",
+     "name": "Rising water",
+     "status": "planned",
+     "what": "Traps and events that flood rooms and caverns in stages."
+    },
+    {
+     "id": "lights",
+     "name": "Light sources in play",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-27",
+     "what": "Torches, Hooded and Bullseye Lanterns, Lamps and Candles from a character's bag, and the Light, Continual Flame and Daylight spells, work in a live fight by SRD 5.2.1. A Torch gives Bright Light 20 ft and Dim Light 20 ft more and burns 1 hour; it is also a weapon (1 Fire damage). A Hooded Lantern gives 30/30 and its hood lowered Dim Light in 5 ft; a Bullseye Lantern a 60-ft Cone of Bright Light and Dim Light 60 ft more; a Lamp 15/30; a Candle 5/5. Lamps and Lanterns burn a flask of Oil for 6 hours. The light follows whoever holds it, and every sight rule uses it: what each character sees, the party's fog and each player's map, attacks against a creature you can't see, Darkvision (Dim counts as Bright, Darkness as Dim within range), and the creatures the game plays, which go for the enemies they can see. Dim Light gives Disadvantage on Perception by sight (passive -5, and on a Search); in Darkness a creature can't find anyone by sight. Magical Darkness lets no ordinary light in and dispels Light and Continual Flame where they overlap; Daylight is sunlight and dispels a Darkness it overlaps. A character who drops to 0 Hit Points drops their light where they fall. Lights still burning when the fight ends keep burning on the adventure day's clock: a Torch burns out, a Lantern runs out of Oil. Since 27 October a creature the game plays holds the torch or lantern its scenario gives it: the light follows it and falls where it drops at 0 Hit Points. Continual Flame's Ruby Dust (50 GP) is sold by the Market's scribe. Your rulings (27 October): dousing any light or covering a magical light is the free object interaction (only a spell's own text limits it: Continual Flame is covered, not quenched; Daylight can't be); lighting from another flame takes an action, aiming a Bullseye Lantern is free, filling a Lamp or Lantern is the Utilize action and one from the bag is empty until filled.",
+     "how": "Play live, your turn, the sheet's Light row: Light a Torch (a Bonus Action with a Tinderbox in the bag, otherwise an action from a flame within 5 ft), Douse it, Drop it (no action: it lights the square it lies on), Hand it to an ally within 5 ft or Pick it up (the free object interaction), Lower or Raise the hood (a Bonus Action), Aim the Bullseye Lantern (click a square), Take out a Lantern and Fill it with Oil (the Utilize action). Light spells on the sheet's spell list are cast from the same row, on something you hold or on a square. Holding a lit Torch adds a Torch attack card. GM: Map light (Bright, Dim, Dark) in the view bar sets the map's own light for the running fight or the next one. On the map you see every light's rings (Bright solid, Dim dashed) and the dark veil; each player's window shows only the lights their party can see.",
+     "limits": "Not yet: a free-hand count (holding a torch and a shield and a weapon is not checked), lights in the 3D view, lighting or dousing a light between fights on the adventure page (the service can do it; no buttons yet), monsters lighting, dousing or handing over lights, covering a light with a cloak."
+    },
+    {
+     "id": "visuals",
+     "name": "Realistic 3D and lighting",
+     "status": "planned",
+     "what": "A realistic renderer and real-time lighting beside the miniature look, which stays the default."
+    },
+    {
+     "id": "sysreq",
+     "name": "System requirements",
+     "status": "planned",
+     "what": "Recommended minimum PC requirements, published with the full release."
+    },
+    {
+     "id": "hints",
+     "name": "Turn hints for players",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-22",
+     "what": "Opt-in: hints are off until a player turns them on for their own screen. Reminders work now, straight from the rules engine and only when they are true: one quiet line by End turn (your Action is still unused, Bonus Action free with what it could be, feet of movement left, a levelled spell already cast this turn, Second Wind, Rage or Lay On Hands still usable) and a gold warning on a Concentration spell's card (\"Casting Shield of Faith ends your Bless.\"). They name what is possible, never which to take. Only the player whose turn it is sees them; never the chat, the log or the other players. Since 28 October the GM has the last word (step H3): in Players... each seat shows its hint level, with a limit (Player chooses / Off) and a cap for the whole table (Players choose / Off for everyone). Either one lowers hints at once; neither ever turns them on: only the player does, within both. Off for everyone also turns off the hints on your own Play live screen. Since 29 October, facts while you point (your answers: no chance to hit, only Advantage or Disadvantage and why): hold an attack over a creature for \"Disadvantage: an enemy within 5 ft.\" or \"Advantage and Disadvantage cancel (...): a plain roll.\", worked out by the attack's own checks without rolling, never the creature's Armor Class; a Rogue also sees \"Sneak Attack applies: an ally is beside it.\" and, by End turn, \"Sneak Attack not used this turn.\"; point at a square to move to for \"In reach of: Goblin Warrior 1 (5 ft).\" and \"Goblin Warrior 3 may make an Opportunity Attack on this path (Disengage prevents it).\" (the route the move really takes; hostile creatures only, none after Disengage); aim an area spell for \"Inside: Goblin Warrior 1, Goblin Warrior 2 (foes); Hero 2 (ally).\" (the cast's own area, and who Sculpt Spells spares). A creature the player doesn't see is never named. The sheet (and the join page) says once that hints are off and where to turn them on.",
+     "how": "On a phone: the Hints switch above the map (Off / Reminders); the choice stays with the seat and in that browser. On your Play live screen: the Hints switch under each character's name on the sheet, Off for each character until you turn it on (hotseat). Tap the small x after a reminder to mute that kind; Mute... (Muted) brings it back. GM: Players..., \"Turn hints at this table\" and each seat's limit; a player's switch then shows the levels above the limit greyed out (\"the GM has turned hints off\"). The facts show on the line under the reminders while you hold an attack over a token, point at a square, or aim a spell; each kind mutes like a reminder.",
+     "limits": "Off for everyone until each player turns it on (your rule). The cap and the limits are kept until Mythastria restarts (as the seats are). No \"End anyway?\" check: only the reminder line (your answer, 29 October). Suggestions (\"What would you do?\") not now (your answer). Opportunity Attacks are named only on the squares a move reaches without a Dash; area spells aimed at several points (Meteor Swarm, Fire Storm) and the spells with their own zones or summons say nothing yet."
+    },
+    {
+     "id": "playtester",
+     "name": "Local-model playtester",
+     "status": "partly",
+     "since": "2026-10-27",
+     "what": "A local model on your PC (LM Studio) takes a test seat at the players' door like a player and plays one character through whole fights, in batches, overnight too. It sees only what that seat sees, chooses one of the options the seat's screen offers (attacks, spells, actions, items, doors, moves, End turn) and the rules engine checks every choice as it does for a person; the rest of the party plays by the simulator. After each fight it writes a plain report: what the character tried and what happened, anything the screen offered that the table then refused (and why), what the model said was unclear, replies it could not use, wins, losses and unfinished fights, timings and model calls. When the model gives nothing usable three times, the fight stops there and the report says so: the playtester never plays a move in its place. Reports stay on your PC. Fun, pacing and phones still need people.",
+     "how": "Run_Playtester.bat (LM Studio open, its server on, google/gemma-4-12b-qat loaded): Hero 2, then Hero 3, on four maps at level 2, no new fight after 8.5 hours. Or py tools\\playtester.py --maps test/live_keep.json,test/goblin_den_2024.json --party Hero 2,Hero 3,Hero 1,Hero 5 --play Hero 2 --level 2. It starts its own test service on ports 8826 and 8827 and never touches your table. The report: sim\\runs\\playtester\\<time>\\REPORT.md, rewritten after every fight; every choice, with the screen the model read, in decisions.jsonl beside it.",
+     "limits": "Fights only (no social or exploration scene), pregens only (no saved characters yet), one model seat at a time. Not offered to the model yet (the report counts them): Ask the GM (nobody rules in a test), Search or Study a square, traps and locks, mounts, Font of Magic, Metamagic, Undo. Moves are next to or toward a creature it sees, or away from the foes, not any square. Area spells are aimed at a creature's square. Foes' Hit Points are given in words (unhurt, hurt, Bloodied). The model is a first reader, not a rules expert: weigh its 'unclear' notes, and keep testing with people."
+    },
+    {
+     "id": "pillars",
+     "name": "Adventures as social, exploration and combat; attitude and morale",
+     "status": "built",
+     "since": "2026-10-24",
+     "page": "./adventure.html",
+     "what": "An encounter is a scene of the three pillars: social, exploration, combat. On Play an adventure each place starts as Talk (a social scene on The Stage), Explore (the map) or Fight here; Play live has the same choice beside Start live fight. In a social or exploration scene there are no turns and no initiative: each character acts when its player chooses (the scene's focus moves to it), with a fresh Action and movement after each choice, so the party moves freely, Searches, Studies, opens doors and uses gear; fog of war, light, hazards and traps keep working. On The Stage the creatures present show their attitude (SRD: Friendly, Indifferent, Hostile); players use the Influence buttons (each takes the Action and comes to the GM to rule; the GM can turn them off) and any other ability check, and the GM rules each; every attitude change is logged with its reason. The scene changes as you play: when a Hostile creature meets the party (exploration) or talk breaks down (social), or a player tries an attack or a harmful spell, the engine offers the GM the fight and suggests who is surprised; Initiative is rolled then (d20 + Dexterity; a surprised combatant has Disadvantage, SRD 5.2.1). A fight de-escalates with the tools already built: Call a truce (back to talk), The party retreats (back to exploring), a surrender or flight (back to talk), the party's win (back to exploring); End the scene ends the encounter. Attitudes and morale: each creature's attitude comes from your prep for its group, the adventure's text, the encounter's or level's default, the map as written, or its nature; Indifferent and Friendly creatures stay out of a fight until provoked (an attack, a harmful spell, a Grapple, a Shove or damage turns it and its group Hostile); the GM rules what Influence does. Morale is prepped beside it (fights to the end, or flees, surrenders or bargains below half or a quarter of its Hit Points, when its leader is out, or outnumbered); the engine suggests, you decide.",
+     "how": "Play an adventure: press Talk, Explore or Fight here on a place (or choose \"as a social scene\" or \"as exploration\" beside Start live fight on Play live). The scene panel on Play live (and The Scene on The Stage) shows the scene, who acts (press a character to step forward), an ability check for that character, and for the GM the engine's cards (tick who is surprised, then Start the fight, or Not yet), Talk (The Stage), Explore (the map) and Start a fight…. On The Stage the GM seat has the attitude controls; any seat can choose who urges whom, how and what, then Ask the GM. In a fight, end it from Attitudes and morale: Call a truce, The party retreats or End the scene. Remix Prep, Attitudes and morale: choose the map and party level, set each group's attitude and morale (when it breaks; its leader) and the defaults for each level or this encounter; Save; in Play live keep Saved Remix Prep ticked. Players see the attitudes of the creatures their characters see, never your prep, the morale suggestions or the scene's cards.",
+     "limits": "The GM always starts the fight: the engine suggests it, never starts one by itself. In a scene an attack, a Grapple, a Shove or a spell that is not purely helpful (or a utility such as Light, Detect Magic, Knock) is refused and offered to the GM as the fight's start; Dash, Disengage, Dodge, Ready and Undo are for fights. A move in a scene goes up to the character's Speed each time (move again for more). Creatures' blocks here carry no Dexterity, so their Initiative is d20 + 0 (the log says so); a fight started without a scene (Simulator fights, old links) keeps the map's fixed order. A fight still stops after its rounds (10 in Play live) and the scene goes on. Remix Prep keys a group by creature kind on one map; An adventure's own attitudes are proposed in the plan, not written into the adventure. The pregens carry no Charisma score, so their Influence counts Charisma 10."
+    },
+    {
+     "id": "prerequisites",
+     "name": "Prerequisites checked, with links",
+     "status": "built",
+     "since": "2026-10-23",
+     "page": "./play.html",
+     "what": "Every tool, consumable and process is offered only when its SRD prerequisites are met (proficiency, the item in the bag, gold, time, a prepared spell, the action); otherwise it says why and links to the place that fixes it (Characters, Market, Downtime). One check does it for every part of the game: the item in the bag, the Action or Bonus Action free, a skill or tool proficiency (on the sheet in any spelling, or from the class: a Druid's Herbalism Kit, a Rogue's Thieves' Tools), the gold in the purse, a spell on the sheet, days of work (Downtime). Every SRD 5.2.1 tool in a character's bag (the 17 Artisan's Tools, the kits, gaming sets and instruments) offers its Utilize uses in Play live: the tool's ability check against the use's DC, with the Proficiency Bonus only when proficient with the tool and Advantage when the skill used with it is proficient too (SRD 5.2.1 Tool Proficiency); the GM rules what a success tells. Plan: docs/development/SRD_GAPS_PLAN.md (rules engine).",
+     "how": "Play live, on your turn: the Bag row shows each use; one that can't be made now is greyed with its reason, and → Market or → Characters opens the place that fixes it. The sheet's Checks & saves tab lists the tools you are proficient with (●) or carry, each rolled in the dice tower. A → Market link on another page opens Play live with the Market. Play an adventure: Downtime lists every need of a project the same way, met or not, with its link.",
+     "limits": "Which skill pairs with a tool for Advantage is the GM's call; only Thieves' Tools have one here (Sleight of Hand, as the SRD's Lock says). A Bard's or Monk's chosen tools count when they are on the saved sheet."
+    },
+    {
+     "id": "fight-items",
+     "name": "Poisons, kits and gear in a fight",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-23",
+     "what": "From the character's Market bag in Play live: Basic Poison and the SRD's injury and inhaled poisons (Serpent Venom, Wyvern Poison, Malice ...), Potions of Healing for yourself or an ally beside you, a Healer's Kit (the Utilize action), Antitoxin. Thrown gear, each one attack of the Attack action against a Dexterity save (DC 8 + Dexterity modifier + Proficiency Bonus): Acid (2d6 Acid), Alchemist's Fire (1d4 Fire, then Burning: 1d4 Fire at the start of each of its turns until the fire is put out), Holy Water (2d8 Radiant to a Fiend or Undead), Oil (covered for a minute: Fire damage before it dries adds 5 Fire), a Net (Restrained until it escapes: an action and DC 10 Strength (Athletics), by it or a creature beside it; Huge or larger shrug it off). A burning character rolls on the ground (an action, then Prone), or anyone beside it douses it with a Waterskin. Thieves' Tools disarm the traps the party has found and pick locked doors (see Traps), and every other tool offers its Utilize checks. The Study and Influence actions. Each is offered only when you have it and can use it now; otherwise it says why, with a link to the Market. The computer-played heroes drink their potions and use Basic Poison too. Since 27 October a burning creature the game plays takes its 1d4 Fire at the start of its turn too, and rolls the fire out (Prone; that is its turn) at half its Hit Points or fewer, as the computer-played heroes do.",
+     "how": "Play live, on your turn: the Bag line and the item buttons under Other actions (Throw Oil at ..., Douse the fire on ...); Put out the fire (roll on the ground) with the actions while you burn; Disarm with Thieves' Tools beside a found trap, Pick the lock beside a locked door; Study and Influence with the other actions (then click a creature).",
+     "limits": "Oil on a creature catches from the fire Play live deals (fire weapons and cantrips such as Fire Bolt, Alchemist's Fire, fire spells, Burning), not yet from a creature's own fire attack. A Net can't be cut or attacked yet (AC 10, 5 HP); thrown gear hits creatures, not objects. The computer-played heroes don't throw gear. A Waterskin douses once per fight (it is empty after)."
+    },
+    {
+     "id": "traps",
+     "name": "Traps",
+     "status": "partly",
+     "page": "./play.html",
+     "since": "2026-10-24",
+     "what": "The eight SRD 5.2.1 traps (Collapsing Roof, Falling Net, Fire-Casting Statue, Hidden Pit, Poisoned Darts, Poisoned Needle, Rolling Stone, Spiked Pit), Nuisance or Deadly, scaled to the party's level band. The GM places them in Play live (GM tools, Traps) or an adventure pack lists them on its map; the players see one only once they find it or it goes off. A creature moving onto one sets it off (saves, damage, falls, the Net, the flame cone, the rolling stone), checked by the referee. Search or Study a square finds them (Hidden Pit: DC 15 Intelligence (Investigation)); each is made safe its own way (an Iron Spike, cutting a trip wire, plugging the holes, defacing the glyph, Thieves' Tools), only when you have the tool and can use it now, otherwise with the reason and a link to the Market. Caltrops, Ball Bearings, Oil on the ground and a Hunting Trap from your bag. Remix Prep lists the traps for the party's level. The creatures know their own lair's traps: they step round the lids and plates and over the trip wires, or wait behind a hidden one so the party walks onto it; intruders don't know them. A wary creature (a Scout, one marked wary, or one a trap hurt) Searches or Studies the floor ahead of it and finds traps by the same DCs; what it finds its side knows, never the players. Out of a pit: a Climb Speed climbs; any other way up goes to Ask the GM, who can let the character climb out; creatures climb out the same way.",
+     "how": "Play live: GM tools, Traps: choose a trap and its levels, click a square (the statue and the stone: a second click). On your turn: Search a square or Study a square under Actions, then click the square; a found trap's buttons (Wedge an Iron Spike, Cut the trip wire ...) appear with the actions; area gear under Bag. Remix Prep: SRD traps for this level. Who knows a trap: GM tools, Traps, tick The whole lair or the creatures under the trap (an adventure pack: known_by on the trap, or knows_traps on a creature); the log shows the GM what they know and find (GM only). In a pit: Climb out of the pit; an ally beside the pit: Help ... climb out.",
+     "limits": "In the simulator a creature's Search, or its climb out of a pit, takes its whole turn; a creature waits behind a hidden trap two turns at most; creatures of every side share what they find; the map is flat, so melee across a pit's depth is refused only in Play live; the Net and the Rolling Stone can't be attacked; Detect Magic, Knock and Arcane Lock are not offered (Ask the GM); Passive Perception finds no trap by itself: the GM decides; a computer-played creature still rolls a DC 15 climbing check."
+    },
+    {
+     "id": "rests",
+     "name": "Short and Long Rests, the adventure day",
+     "status": "built",
+     "page": "./adventure.html",
+     "since": "2026-10-24",
+     "what": "The party's day on the adventure home page: the clock, each character's Hit Points, Hit Point Dice, spell slots, uses (Second Wind, Rage, Channel Divinity, Lay On Hands, Sorcery Points ...) and Exhaustion, kept from one fight to the next on the adventure's maps. Short Rest (1 hour): spend Hit Point Dice one at a time; Pact Magic slots, one Second Wind, Rage or Channel Divinity, Action Surge, Arcane Recovery and Sorcerous Restoration come back by the SRD. Long Rest (8 hours, 16 hours apart): everything back, one Exhaustion level less. A rest is offered only when it can be taken; otherwise it says why, with a link. The rest goes on hour by hour, each hour's hazards in order (the exposure saves while resting unsheltered). An Elf (Trance) finishes a Long Rest in 4 hours and keeps watch while the others rest on. Interruptions are each character's own, and the day sees them: damage (hazard damage, mental stress), a spell other than a cantrip cast on the day, an hour or more of walking or toil, Initiative for the fight they are in; the Short Rest is lost for that character, the Long Rest takes it 1 more hour. A character at 0 Hit Points after a fight, a hazard or travel keeps making death saves (one at a time on the page, or as time passes) until stable, healed or dead; a DC 10 Wisdom (Medicine) check, a Healer's Kit or Spare the Dying stabilizes it, and a stable one regains 1 Hit Point after 1d4 hours. Potions and healing spells heal on the day. Tireless (Ranger 10) and Natural Recovery (Druid 6) on a Short Rest.",
+     "how": "Play an adventure: start the adventure and choose the party; The party's day shows Short Rest and Long Rest. During a Short Rest press Spend a d8 (or d10 ...) for each Hit Point Die, then Finish. A fight from Fight here starts from the day and writes it back; End the fight stops a fight that is going nowhere. During a Long Rest: Rest 1 hour (or Finish); each card shows when that character's rest ends, or that it is done and keeps watch. On a card: Cast a spell…, Hazard damage…, and while resting Walked or toiled…. A dying card: Roll a death save; for each conscious ally Medicine, Healer's Kit (from the bag) or Spare the Dying; Give a potion or Heal (GM).",
+     "limits": "Spells cast on the day are entered by hand (name, slot level, healing dice); their other effects are the GM's. Hazard damage is the GM's dice (a fall, burning ...): the SRD's hourly exposure gives Exhaustion, not damage, so it does not interrupt a rest. Travel on the region map is refused while a rest is under way (stop it first). The 16 hours between Long Rests count from the party's last end, not an Elf's earlier one. Spare the Dying is offered only when the sheet lists it (the pregens don't)."
+    },
+    {
+     "id": "end-adventure",
+     "name": "End the adventure: keep playing, freeze the fight, or stop it and unload",
+     "status": "done",
+     "page": "./adventure.html",
+     "since": "2026-10-24",
+     "what": "End the adventure asks first. With a fight running the GM chooses: Keep playing; Freeze the fight (nothing moves: the creatures wait at their next step and every combat button on Play live is greyed until the GM unfreezes it); or Stop the fight and unload (the characters keep what they have left and the adventure's maps leave Play live). Without a fight it asks once more before unloading. Saved remixes and notes stay.",
+     "how": "Play an adventure: Tonight, End the adventure (unload it), then choose. On Play live the GM's Freeze / Unfreeze button sits beside End turn; a frozen fight shows a gold banner on every screen.",
+     "limits": "A creature already in the middle of a step finishes that step before it waits."
+    },
+    {
+     "id": "downtime",
+     "name": "Crafting, brewing and scribing",
+     "status": "partly",
+     "page": "./adventure.html",
+     "since": "2026-10-26",
+     "what": "Downtime by the SRD 5.2.1, between adventures, beside the party's day. Craft a nonmagical item: the tool its Craft line names, carried and with proficiency; raw materials worth half its price; its price in GP / 10 days. Brew a Potion of Healing: the Herbalism Kit, 25 GP, 1 day. Scribe a Spell Scroll of a spell on the sheet: Arcana or Calligrapher's Supplies; the Spell Scroll Costs table; a costly Material component at hand; the scroll keeps the scribe's spell save DC and attack. Craft a magic item: Arcana and the Magic Item Tools table's tool; the rarity's days and gold (halved for a consumable), plus the weapon or armor it is made from; raw materials found 75 percent of the time in a city and 25 in another settlement (rolled for all to see), else look again 7 days later. One assistant with the same proficiency divides the time (the GM may allow more). Every prerequisite is checked first; a missing one says why, with a link to Characters or the Market. The gold comes from the Market purse and the finished item goes into the bag. Each character makes one thing at a time.",
+     "how": "Play an adventure: start the adventure and choose the party; under Downtime choose who, what and the item or spell, tick what the GM rules (materials available, the item's spells prepared, more assistants), then Start the project when every check is green. Downtime days pass: each day is 8 hours of work on every project and a Long Rest; a finished item is in the character's Market bag.",
+     "limits": "The GM rules whether a nonmagical item's raw materials are available and checks the spells a magic item casts (the list doesn't name them); the GM assigns a tool to an item the SRD lists none for (a Shield, Holy Water, the packs). Spell Scrolls from the bag can't be read in Play live yet. Days pass on the loaded adventure's clock. Not built: other downtime (training, research, selling at a profit)."
+    },
+    {
+     "id": "hazards",
+     "name": "Environment, contagions, fear and travel",
+     "status": "partly",
+     "page": "./adventure.html",
+     "since": "2026-10-26",
+     "what": "The SRD 5.2.1 hazards, played by Mythastria. On the adventure day, as time passes, rests and travel: Extreme Cold, Extreme Heat (its DC climbs each hour; Medium or Heavy armor has Disadvantage; drinkable water spares you) and swimming in deep water ask a Constitution save at the end of each hour of exposure; food and water are checked at each day's end (Dehydration, Malnutrition). Exhaustion is kept from fight to fight and a Long Rest removes one level (not one a contagion, thirst or hunger still holds). Cackle Fever, Sewer Plague and Sight Rot: the GM exposes a character (its save) or infects one; 1d4 days before the effects begin; Sewer Plague's save each dawn, half Hit Points from Hit Point Dice and no Long Rest recovery; Cackle Fever's held level, its three Long Rest saves and its laughter in fights; Sight Rot's blindness, the ointment and Heal or Lesser Restoration. Mental stress (a Wisdom, Intelligence or Charisma save, Psychic damage, a short-term, long-term or indefinite effect) on the day or in a fight; fear (Frightened of its source, a Wisdom save at the end of each turn) in a fight. In Play live: slippery ice (Difficult Terrain, DC 10 Dexterity save or Prone), thin ice (breaks under too much weight into frigid water), frigid water (minutes equal to the Constitution score, then a save each minute or Exhaustion), strong wind (ranged weapon attacks at Disadvantage, fliers land or fall, fog disperses, flames go out), a sandstorm and heavy rain or snow (Perception at Disadvantage); a creature can carry a contagion. On the region map: each terrain's maximum pace, each pace's effect, Extended Travel past 8 hours, High Altitude, Slower Travelers and the encounter's distance; the adventure day's clock runs with the journey. The sheet in Play live and the party's day show Exhaustion's effects, each contagion and lasting stress.",
+     "how": "Play an adventure, The party's day: Environment, hazards and travel pace (the weather, shelter, drinkable water; Mental stress...); on each character, Exhaustion and Food, water and contagions (Expose, Infect; Heal or Lesser Restoration, Ointment..., End). Play live: GM tools, Hazards: tick the weather, click squares and Place the ice or water; Fear, mental stress and contagions for the creatures ticked (Carries it: a creature spreads one). Region map: Pace, and Weather and the march (Push on past 8 hours).",
+     "limits": "Your readings (confirmed 27 October): dawn is 06:00; a contagion is fought (dawn and Long Rest saves) once its effects begin; Thin Ice weighs creatures by the GM's estimates by size (the SRD gives no weights). Not yet: Heavy Precipitation's Lightly Obscured for sight (only Perception's Disadvantage), the SRD's sample fear and stress tables (the GM sets the DC), Calm Emotions, Greater Restoration as a spell (the GM lowers Exhaustion), mounts' double pace for an hour, Sight Rot spread by touch (the GM exposes). The region map keeps its own travel clock; its journeys' hours are added to the adventure day. Fast travel's nights follow the day's shelter setting."
+    }
+   ]
+  }
+ ]
+}

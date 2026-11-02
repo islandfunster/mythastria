@@ -1,0 +1,115 @@
+{
+ "name": "One move out of two bandits' reach (two opportunity attacks)",
+ "source": "Bandit: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (2026-10-21: was the SRD 5.1 Bandit). Hero 8 and Hero 7 are test characters.",
+ "rounds": 1,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Alley",
+ "combatants": [
+  {
+   "id": "id-00002",
+   "name": "Hero 8",
+   "side": "friend",
+   "pc": true,
+   "init": 20,
+   "x": 2,
+   "y": 1,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00001",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 5,
+   "x": 10,
+   "y": 5,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ],
+   "wis_mod": 0,
+   "id": "id-00005",
+   "name": "Bandit 1",
+   "side": "foe",
+   "x": 1,
+   "y": 1,
+   "init": 12,
+   "srd_name": "Bandit"
+  },
+  {
+   "hp": 11,
+   "ac": 12,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 10,
+   "skills": "",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Slashing damage.",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00002",
+     "name": "Light Crossbow",
+     "desc": "Ranged Attack Roll: +3, range 80/320 ft. Hit: 5 (1d8 + 1) Piercing damage.",
+     "atk": 3,
+     "atktype": "ranged",
+     "reach": 80,
+     "dmg": "1d8+1",
+     "dmgtype": "piercing"
+    }
+   ],
+   "wis_mod": 0,
+   "id": "id-00006",
+   "name": "Bandit 2",
+   "side": "foe",
+   "x": 3,
+   "y": 2,
+   "init": 11,
+   "srd_name": "Bandit"
+  }
+ ]
+}

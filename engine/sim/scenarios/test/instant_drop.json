@@ -1,0 +1,80 @@
+{
+ "name": "Instant dice: the Bandit Captain fells its first target mid-Multiattack",
+ "source": "Bandit Captain: System Reference Document 5.2.1 by Wizards of the Coast, CC-BY-4.0 (2026-10-21: was the SRD 5.1 Captain). TEST SETTING: its attack bonus is raised to +25 so every attack hits. Test characters otherwise.",
+ "rounds": 1,
+ "instant": true,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Road",
+ "combatants": [
+  {
+   "hp": 52,
+   "ac": 15,
+   "speed": "30 ft.",
+   "space": 5,
+   "size": "medium or small",
+   "type": "Humanoid",
+   "senses": "Passive Perception 10",
+   "int": 14,
+   "skills": "Athletics +4, Deception +4",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Multiattack",
+     "desc": "The bandit makes two attacks, using Scimitar and Pistol in any combination."
+    },
+    {
+     "id": "id-00002",
+     "name": "Scimitar",
+     "desc": "Melee Attack Roll: +5, reach 5 ft. Hit: 6 (1d6 + 3) Slashing damage.",
+     "atk": 25,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+3",
+     "dmgtype": "slashing"
+    },
+    {
+     "id": "id-00003",
+     "name": "Pistol",
+     "desc": "Ranged Attack Roll: +5, range 30/90 ft. Hit: 8 (1d10 + 3) Piercing damage.",
+     "atk": 25,
+     "atktype": "ranged",
+     "reach": 30,
+     "dmg": "1d10+3",
+     "dmgtype": "piercing"
+    }
+   ],
+   "wis_mod": 0,
+   "id": "id-00003",
+   "name": "Bandit Captain",
+   "side": "foe",
+   "x": 0,
+   "y": 0,
+   "init": 20,
+   "srd_name": "Bandit Captain"
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 8",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 1,
+   "y": 0,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00001",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 0,
+   "y": 1,
+   "hp": 1,
+   "ac": 10
+  }
+ ]
+}

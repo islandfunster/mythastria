@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — One-shot builder</title>
+<link rel="icon" type="image/png" href="icon.png"><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+/* ONE-SHOT-01 (GM 2026-11-02: "Let's build a one-shot adventure builder"): the story, its locations and their maps, and what
+   waits there: creatures, people, traps and narrative puzzles. Save and play writes an ordinary adventure pack. GM only. */
+main{display:grid;grid-template-columns:minmax(0,17rem) minmax(0,1fr);gap:1rem;padding:1rem;max-width:1200px;margin:0 auto;align-items:start}
+@media (max-width:900px){main{grid-template-columns:minmax(0,1fr)}}
+#status{padding:.4rem 1rem;color:var(--muted);min-height:1.4em}#status.error{color:var(--no)}
+main section.panel{margin:0 0 1rem}
+label.field{display:block;margin:.5rem 0}
+label.field>span{display:flex;justify-content:space-between;gap:8px;align-items:center;color:var(--muted);font-size:13px;margin-bottom:3px}
+input[type=text],input[type=search],textarea,select{width:100%;box-sizing:border-box}
+input[type=number]{width:4.5rem}
+textarea{min-height:5rem;background:var(--surface-low,var(--panel));color:var(--paper);border:1px solid var(--line);border-radius:3px;padding:8px;font:inherit}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.35rem 0}
+.row select,.row input[type=text]{flex:1 1 9rem;width:auto;min-width:0}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 1rem}
+@media (max-width:640px){.two{grid-template-columns:minmax(0,1fr)}}
+.saved{list-style:none;margin:0;padding:0}.saved li{display:flex;gap:6px;align-items:center;margin:.3rem 0}
+.saved button:first-child{flex:1;text-align:left;min-width:0}
+.place{border-top:1px solid var(--line);padding-top:.75rem;margin-top:.75rem}
+.place h3{margin:.25rem 0}
+.thing{border-left:3px solid var(--line);padding:2px 0 2px 10px;margin:.5rem 0}
+.mini{display:block;width:100%;max-width:420px;background:var(--well);border:1px solid var(--line);border-radius:4px;cursor:crosshair;touch-action:manipulation}
+.mini .rock{fill:var(--muted);opacity:.45}.mini .line{stroke:var(--paper);stroke-width:.12}
+.mini .pc{fill:var(--ok)}.mini .foe{fill:var(--no)}.mini .put{fill:var(--brass)}.mini .trap{fill:none;stroke:var(--brass);stroke-width:.14}
+.note{color:var(--muted);font-size:13px}
+.actions{position:sticky;bottom:0;background:var(--panel);padding:.5rem 0;border-top:1px solid var(--line)}
+</style></head>
+<body>
+<header class="site-header" data-page="oneshot"></header>
+<p id="status" role="status" aria-live="polite">Opening…</p>
+<main>
+<aside><section class="panel"><h2>One-shots</h2>
+ <button id="new" type="button">New one-shot</button>
+ <ul id="saved" class="saved"></ul>
+ <p class="note">These stay on this PC. Save and play puts one on Play an adventure, where Remix works on it like any other adventure.</p>
+</section></aside>
+<div id="editor"></div>
+</main>
+<script type="module" src="oneshot-ui.mjs"></script>
+</body></html>

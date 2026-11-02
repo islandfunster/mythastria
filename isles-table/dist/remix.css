@@ -1,0 +1,51 @@
+/* GM 2026-10-24 ("redesign remix so it's both mobile and desktop appealing and symmetrical"): paired cards of equal
+   height in two equal columns; the proposal and the traps span both; one column on a phone. */
+#remix-app{max-width:1180px;margin:0 auto;padding:1.5rem 1.25rem 2.5rem}
+.remix-intro{text-align:center;margin:0 auto 1rem;max-width:44rem}.remix-intro p{margin:.45rem 0}
+.remix-tag{color:var(--brass);font-size:1.05rem;letter-spacing:.04em}
+#remix-status{text-align:center;min-height:1.5rem;margin:0 0 1rem;color:var(--brass)}#remix-status.error{color:#eb9a8b}
+.remix-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;align-items:stretch;
+  grid-template-areas:"packs saved" "prepare party" "proposal proposal" "traps traps" "prep prep"}
+.remix-grid>section{margin:0;display:flex;flex-direction:column;min-width:0}
+.r-packs{grid-area:packs}.r-saved{grid-area:saved}.r-prepare{grid-area:prepare}.r-party{grid-area:party}
+.r-proposal{grid-area:proposal}.r-traps{grid-area:traps}.r-prep{grid-area:prep}
+.remix-grid>section>h2{text-align:center}
+#proposal-form{display:flex;flex-direction:column;flex:1}
+.r-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 .9rem}.r-wide{grid-column:1/-1}
+.r-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem;margin-top:auto;padding-top:.6rem}
+#remix-app .r-actions button{min-width:11rem;margin:0}
+#remix-app label{display:block;margin:.6rem 0;color:var(--paper)}
+#remix-app input:not([type=checkbox]),#remix-app select,#remix-app textarea{display:block;box-sizing:border-box;width:100%;margin-top:.35rem;background:var(--well);color:var(--paper);border:1px solid var(--line);border-radius:4px;padding:.55rem .6rem;font:inherit}
+#remix-app button{min-height:44px;margin:.3rem .3rem .3rem 0}
+#remix-app .check{display:flex;align-items:flex-start;gap:.55rem;font-size:.85rem;line-height:1.5}.check input{margin-top:.3rem}
+.pregen-pick{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin:.4rem 0 .3rem}
+.pregen-item{flex:0 1 calc(25% - .375rem);box-sizing:border-box;min-width:0;display:flex;flex-direction:column;gap:.3rem;padding:.4rem;border:1px solid var(--line);border-radius:8px;background:color-mix(in srgb,var(--panel) 70%,#000)}
+.pregen-item:has([aria-pressed=true]){border-color:var(--brass)}
+#remix-app .pregen-chip{width:100%;min-height:38px;margin:0;font-size:.9rem;opacity:.7}
+#remix-app .pregen-chip[aria-pressed=true]{opacity:1;color:var(--brass);box-shadow:inset 0 0 0 1px var(--brass)}
+#remix-app .pregen-item select{margin:0;padding:.3rem .35rem;font-size:.8rem}#remix-app .pregen-item select:disabled{opacity:.4}
+.r-halves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;align-items:start}
+.r-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem 1.2rem}
+#summary{text-align:center;color:var(--muted)}
+details{border-top:1px solid var(--line);padding:.8rem 0}summary{cursor:pointer;color:var(--brass);min-height:30px}
+.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:.6rem .45rem;border-bottom:1px solid var(--line)}th{color:var(--brass)}
+ul{padding-left:1.3rem;line-height:1.5}li{margin:.5rem 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem}
+.saved-item,.pack-item{border-bottom:1px solid var(--line);padding:.55rem 0}.pack-item:last-child,.saved-item:last-child{border-bottom:0}
+.proof-row{display:flex;align-items:center;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-top:.6rem}
+#remix-app [hidden]{display:none!important}
+@media(max-width:760px){
+  #remix-app{padding:1rem 1rem 2rem}
+  .remix-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"packs" "prepare" "party" "proposal" "traps" "prep" "saved"}
+  .r-halves,.r-checks{grid-template-columns:minmax(0,1fr)}
+  .pregen-item{flex-basis:calc(50% - .25rem)}
+  #remix-app .r-actions button{flex:1 1 0;min-width:0}
+}
+@media(max-width:330px){.r-fields{grid-template-columns:minmax(0,1fr)}}
+/* GM 2026-10-24: Attitudes and morale (remix-prep-ui.mjs) */
+.prep-levels{display:flex;flex-wrap:wrap;gap:.4rem .8rem}.prep-levels label{display:inline-flex;gap:.3rem;align-items:center}
+.prep-when{display:flex;flex-wrap:wrap;gap:.2rem .6rem;font-size:.82rem;margin-top:.25rem}.prep-when label{display:inline-flex;gap:.2rem;align-items:center}
+#prep-status.error{color:var(--rust)}
+#remix-app .prep-levels label,#remix-app .prep-when label{display:inline-flex;margin:.2rem 0}#remix-app #prep-panel table select{width:auto;display:inline-block;margin-top:0;padding:.35rem}
+#remix-app .prep-levels select{width:auto;display:inline-block;margin:0;padding:.35rem}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}

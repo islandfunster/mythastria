@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "label": "SRD 5.2.1",
+    "srd_version": "5.2.1",
+    "checked_at": "2026-11-02",
+    "replace_on": "A later official SRD release that settles these records."
+  },
+  "corrections": [
+    {
+      "id": "srd-flaming-sphere-school",
+      "layer": "srd_tables",
+      "match": {
+        "source_ids": [
+          "srd521-player"
+        ],
+        "record_type": "spell",
+        "normalized_names": [
+          "flaming sphere"
+        ]
+      },
+      "set_fields": {
+        "school": "Evocation"
+      },
+      "facts": {
+        "school": "Evocation"
+      },
+      "note": "The SRD's own spell tables give Evocation, though its spell entry says Conjuration.",
+      "source": "https://www.dndbeyond.com/srd"
+    }
+  ]
+}

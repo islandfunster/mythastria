@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Remix Prep</title><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css">
+<script type="module" src="site.mjs"></script><link rel="stylesheet" href="remix.css"></head>
+<body><header class="site-header" data-page="remix"></header>
+<main id="remix-app">
+<!-- GM 2026-10-24 ("redesign remix so it's both mobile and desktop appealing and symmetrical"): paired cards in two equal
+     columns on a desktop (Adventures | Saved remixes, Prepare | The proof's party), the proposal and the traps across both;
+     one column on a phone, in working order. -->
+<div class="remix-intro"><h1 class="page-title">Remix Prep</h1><p class="remix-tag">Old adventures. New trouble.</p>
+<p class="note">Change the encounter, keep its story. Your original adventure stays untouched. Changes apply between fights.</p></div>
+<p id="remix-status" role="status" aria-live="polite">Connecting to Mythastria…</p>
+<div class="remix-grid">
+<section class="r-packs"><h2>Adventures</h2><div id="packs"></div><p class="note">Adventure packs load separately from the engine. Unload after a fight; saved campaign choices remain.</p></section>
+<section class="r-saved"><h2>Saved campaign remixes</h2><div id="saved"></div><div class="r-actions"><button id="refresh" class="quiet">Refresh</button></div></section>
+<section class="r-prepare"><h2>Prepare a remix</h2><form id="proposal-form">
+<div class="r-fields">
+<label>Campaign <input id="campaign" value="default" maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_-]{0,47}" required></label>
+<label>Encounter <select id="encounter" required></select></label>
+<label>Party level <input id="level" type="number" min="1" max="8" value="3" required></label>
+<label>Seed <input id="seed" type="number" min="0" max="2147483647" value="1" required></label>
+<label>Difficulty <select id="difficulty"><option value="same">Keep measured difficulty</option><option value="easier">One step easier</option><option value="harder">One step harder</option><option value="low">Low</option><option value="moderate">Moderate</option><option value="high">High</option></select></label>
+<label>Tone cap <select id="tone"><option>family</option><option>spooky</option><option selected>dark</option><option>mature</option></select></label>
+</div>
+<label class="check"><input type="checkbox" id="freshness" checked> Prefer creatures the party has not met here</label>
+<div class="r-actions"><button id="propose" type="submit">Propose</button><button id="again" type="button" class="quiet">Try another seed</button></div>
+</form></section>
+<section id="proposal-panel" class="r-proposal" hidden><h2>Your proposal</h2><p id="summary"></p>
+<div class="r-halves"><div>
+<div class="table-scroll"><table><thead><tr><th>Original</th><th>Replacement</th><th>Count</th><th>Evidence</th></tr></thead><tbody id="groups"></tbody></table></div>
+<label>Read aloud <textarea id="read-aloud" rows="4" maxlength="2000"></textarea></label>
+</div><div>
+<details open><summary>Story that must survive</summary><ul id="locked"></ul></details>
+<details><summary>Non-combat route drafts</summary><div id="routes"></div></details>
+<details><summary>GM review and limitations</summary><ul id="warnings"></ul></details>
+</div></div>
+<p class="note">Is it winnable for your party? After saving, Check the encounters on <a href="adventure.html">Play an adventure</a> fights it with your saved characters.</p>
+<div class="r-checks"><label class="check"><input type="checkbox" id="reviewed"> I reviewed creature abilities, route drafts and the preserved story.</label>
+<label class="check"><input type="checkbox" id="allow-estimate"> Save it as an estimate (XP and measured threat).</label></div>
+<div class="r-actions"><button id="apply">Save for next fight</button></div></section>
+<section class="r-traps"><h2>SRD traps for this level</h2><div id="trap-suggest"><p class="note">Choose the party level above.</p></div></section>
+<section id="prep-panel" class="r-prep"><h2>Attitudes and morale</h2>
+<p id="prep-optional" class="note"></p>
+<p class="note">Not every creature is hostile. Set each group's attitude (SRD: Friendly, Indifferent, Hostile) and its morale. Creatures follow, most specific first: this table, the adventure's text, this encounter's default, the level's default, the map as written, their nature. Indifferent and Friendly creatures stay out of a fight until provoked. Morale is only suggested to you during play; you decide.</p>
+<div class="pair"><label>Map <select id="prep-map"></select></label><label>Party level <input id="prep-level" type="number" min="1" max="20" value="3"></label></div>
+<details><summary>Default attitude for each level (this campaign)</summary><div id="prep-levels" class="prep-levels"></div></details>
+<label>This encounter's default <span id="prep-encounter"></span></label>
+<div class="table-scroll"><table><thead><tr><th>Creatures</th><th>Attitude</th><th>Starts</th><th>Morale: breaks when</th><th>In words</th></tr></thead><tbody id="prep-groups"></tbody></table></div>
+<p><button id="prep-save" type="button">Save attitudes and morale</button> <button id="prep-reload" type="button" class="quiet">Reload</button></p>
+<p id="prep-status" role="status" aria-live="polite"></p></section>
+</div></main><script type="module" src="remix-ui.mjs"></script><script type="module" src="remix-prep-ui.mjs"></script></body></html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Character importers</title>
+<style>body{font:14px/1.4 monospace;background:#151614;color:#e8e2d4;padding:1rem}.fail{color:#e07a6a}</style></head>
+<body><h1>Character importers (CHARACTERS-01)</h1><pre id="out">running…</pre>
+<script type="module">
+// Serve the isles-table folder (not only dist): py -3 -m http.server 8771 --bind 127.0.0.1 --directory isles-table
+import { run, runAsync, runSheetsAsync, runDDBPdfAsync } from '../character_formats_tests.mjs';
+const results = [...run(), ...await runAsync(), ...await runSheetsAsync(), ...await runDDBPdfAsync()], out = document.getElementById('out');
+out.innerHTML = results.map(([n, ok, e]) => ok ? `OK   ${n}` : `<span class="fail">FAIL ${n}: ${String(e).replace(/</g, '&lt;')}</span>`).join('\n');
+document.title = results.every(r => r[1]) ? 'PASSED' : 'FAILED';
+</script></body></html>

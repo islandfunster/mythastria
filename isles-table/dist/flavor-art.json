@@ -1,0 +1,226 @@
+{
+ "format": "mythastria-flavor-art/1",
+ "about": "Extra creature artwork offered in Flavor's Creature artwork list (GM 2026-10-23: the newer token art as choices). Never a creature's default picture: Play live takes default art from creatures.json only. Art: (c) 2026 islandfunster, MIT (tokens/newer/LICENSE); creature identities from SRD 5.2.1 (CC-BY-4.0).",
+ "art": [
+  {
+   "id": "newer_ancient_silver_dragon",
+   "name": "Ancient Silver Dragon (newer art)",
+   "path": "tokens/newer/ancient_silver_dragon.png",
+   "squares": 4.0,
+   "pixels": 1024,
+   "footprint": "4x4",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "150a7d86ade24b0a76c360181f69e6317a67303b68430d405458e095fe40c035",
+   "approved": true
+  },
+  {
+   "id": "newer_barbed_devil",
+   "name": "Barbed Devil (newer art)",
+   "path": "tokens/newer/barbed_devil.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "f8bda9ac352e09f994a11d976ae38599b60386e07a98f0fd97f0b0248b19b60e",
+   "approved": true
+  },
+  {
+   "id": "newer_blink_dog",
+   "name": "Blink Dog (newer art)",
+   "path": "tokens/newer/blink_dog.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "d2f63b7a6970b3040a7230321aad4996d60a01a789ae8e8baa078c80aa45b9e8",
+   "approved": true
+  },
+  {
+   "id": "newer_camel",
+   "name": "Camel (newer art)",
+   "path": "tokens/newer/camel.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "15cdcebc6c28288f9ee5c3f121a2dafa1a8e26149926b0b0dd07e2cb046b51b5",
+   "approved": true
+  },
+  {
+   "id": "newer_cloaker",
+   "name": "Cloaker (newer art)",
+   "path": "tokens/newer/cloaker.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "2ca77b0c2d9729b9fb64e270c312ed35eae623dc8283cf0ef2866a88bca92364",
+   "approved": true
+  },
+  {
+   "id": "newer_darkmantle",
+   "name": "Darkmantle (newer art)",
+   "path": "tokens/newer/darkmantle.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "853daa1850838009b811b43df368b2be76b9f08f4e1dab5c5def858bccb17006",
+   "approved": true
+  },
+  {
+   "id": "newer_dretch",
+   "name": "Dretch (newer art)",
+   "path": "tokens/newer/dretch.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "3909fef307ae447b07ea9d543f88b4c54767aab1fd4fba64bfb77b09200af173",
+   "approved": true
+  },
+  {
+   "id": "newer_drider",
+   "name": "Drider (newer art)",
+   "path": "tokens/newer/drider.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "4ce526755a58a77806ad132f813f5721b939eff0bbde54fe256d49f038aaf426",
+   "approved": true
+  },
+  {
+   "id": "newer_ghast",
+   "name": "Ghast (newer art)",
+   "path": "tokens/newer/ghast.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "c541474c756861fac50e376fb812df12f742cb2ea5ee28916292f676a46def6a",
+   "approved": true
+  },
+  {
+   "id": "newer_giant_venomous_snake",
+   "name": "Giant Venomous Snake (newer art)",
+   "path": "tokens/newer/giant_venomous_snake.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "ba11c2282f4983f50bbf6642bef69522b6fa9b4642627913eac5ae72f9c718ab",
+   "approved": true
+  },
+  {
+   "id": "newer_gibbering_mouther",
+   "name": "Gibbering Mouther (newer art)",
+   "path": "tokens/newer/gibbering_mouther.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "055becae616bf33a7cd217e0f67aad23b3a651b7befaa4365a9787dd3ab5d742",
+   "approved": true
+  },
+  {
+   "id": "newer_green_dragon_wyrmling",
+   "name": "Green Dragon Wyrmling (newer art)",
+   "path": "tokens/newer/green_dragon_wyrmling.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "3441e7250b02d46d510844365ed6ef22d3a80d384177c2676f1a3854408991d8",
+   "approved": true
+  },
+  {
+   "id": "newer_lizard",
+   "name": "Lizard (newer art)",
+   "path": "tokens/newer/lizard.png",
+   "squares": 0.71,
+   "pixels": 182,
+   "footprint": "0.71x0.71",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "0788973c5e250be4112271e6be69f288b55d32bc6044056c1be7ad60c400ec2a",
+   "approved": true
+  },
+  {
+   "id": "newer_mummy_lord",
+   "name": "Mummy Lord (newer art)",
+   "path": "tokens/newer/mummy_lord.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "a782c842856a6e6e3c3b2e73bf6273fca9ecf84ec5c4ed075b03cfc46850ae1a",
+   "approved": true
+  },
+  {
+   "id": "newer_ochre_jelly",
+   "name": "Ochre Jelly (newer art)",
+   "path": "tokens/newer/ochre_jelly.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "73d73d84753301ac1aeee9529fca5357f680a6052653b69332af8500c022864e",
+   "approved": true
+  },
+  {
+   "id": "newer_polar_bear",
+   "name": "Polar Bear (newer art)",
+   "path": "tokens/newer/polar_bear.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "3d30591b4b96ddae694bb5a2ebbea0938fc026d624c8b7fadc2ae72a5c01ce2b",
+   "approved": true
+  },
+  {
+   "id": "newer_sphinx_of_wonder",
+   "name": "Sphinx of Wonder (newer art)",
+   "path": "tokens/newer/sphinx_of_wonder.png",
+   "squares": 0.71,
+   "pixels": 182,
+   "footprint": "0.71x0.71",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "c48f4438415b1ffba97e5d6d76928cdbb8dc0a7e186fa337912b6bd269ed5796",
+   "approved": true
+  },
+  {
+   "id": "newer_swarm_of_venomous_snakes",
+   "name": "Swarm of Venomous Snakes (newer art)",
+   "path": "tokens/newer/swarm_of_venomous_snakes.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "8830f292fc2da8ed127072aea9893a61f12ef83715224978b30d20dfaaeb7f41",
+   "approved": true
+  },
+  {
+   "id": "newer_troll",
+   "name": "Troll (newer art)",
+   "path": "tokens/newer/troll.png",
+   "squares": 2.0,
+   "pixels": 512,
+   "footprint": "2x2",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "01230ec0f6bd89a88b986c4ff3616b46f434b2ba2b6f8c15b801d51a67890091",
+   "approved": true
+  },
+  {
+   "id": "newer_warrior_infantry",
+   "name": "Warrior Infantry (newer art)",
+   "path": "tokens/newer/warrior_infantry.png",
+   "squares": 1.0,
+   "pixels": 256,
+   "footprint": "1x1",
+   "pack": "Bestiary_B001_B002",
+   "sha256": "8ec5cf94bcb5e005c73a382ce1a4f142976e73f32169ffdd146c22b69b10d7c6",
+   "approved": true
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Design check</title>
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css"><script type="module" src="site.mjs"></script>
+<style>
+main{padding:16px 34px;max-width:1300px}
+.kind{margin:18px 0}.kind h2{font:600 18px var(--display-font);color:var(--brass);margin:0 0 6px}
+.verdict{color:var(--muted);margin:0 0 8px}
+table{border-collapse:collapse;width:100%;font-size:12px}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:500}
+.swatch{display:inline-block;min-width:110px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.flag{color:var(--no)}.ok{color:var(--ok)}
+#frames{position:absolute;left:-9999px;top:0}#frames iframe{width:1280px;height:900px;border:0}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0}
+</style></head>
+<body>
+<header class="site-header" data-page="docs"></header>
+<main>
+ <h1 class="page-title">Design check</h1>
+ <p class="note">Opens every page, reads how each kind of control is drawn, and groups the looks. One look per kind is the goal; colours outside the skin and controls without shading are flagged. Nothing is changed.</p>
+ <div class="row"><label>Width <select id="width"><option value="1280">PC (1280)</option><option value="820">Tablet (820)</option><option value="390">Phone (390)</option></select></label>
+  <button id="run">Check every page</button> <span id="status" class="note"></span></div>
+ <div id="report"></div>
+</main>
+<div id="frames" aria-hidden="true"></div>
+<script type="module">
+import { PAGES, inventory, merge } from './design-check.mjs';
+const $ = id => document.getElementById(id);
+const NAMES = { button: 'Buttons', menu: 'Menus', tab: 'Tabs', panel: 'Panels and cards', heading: 'Headings', field: 'Fields' };
+const load = (page, width) => new Promise(ok => {
+  const f = document.createElement('iframe'); f.style.width = width + 'px'; f.src = `./${page}.html`;
+  f.onload = () => setTimeout(() => ok(f), 2500);                  // the page draws itself from the service first
+  $('frames').append(f);
+});
+function swatch(l, text) {
+  const s = document.createElement('span'); s.className = 'swatch'; s.textContent = text || 'Sample';
+  Object.assign(s.style, { fontFamily: l.font, fontSize: l.size + 'px', fontWeight: l.weight, color: l.color,
+    background: l.background === 'image/gradient' ? 'linear-gradient(#5a4a2a,#2a2216)' : l.background, borderStyle: l.border.split(' ')[1],
+    borderWidth: l.border.split(' ')[0], borderColor: `${l.borderColors[0]} ${l.borderColors[1]} ${l.borderColors[1]} ${l.borderColors[0]}`,
+    borderRadius: l.radius, padding: l.padding, boxShadow: l.shadow ? '0 2px 4px #0008' : 'none', textTransform: l.caps ? 'uppercase' : 'none' });
+  return s;
+}
+function draw(all) {
+  const box = $('report'); box.replaceChildren();
+  for (const [kind, title] of Object.entries(NAMES)) {
+    const groups = Object.values(all[kind] ?? {}).sort((a, b) => b.count - a.count);
+    const sec = document.createElement('section'); sec.className = 'kind';
+    const unshaded = groups.filter(g => g.unshaded).length, off = groups.filter(g => g.offPalette.length).length;
+    sec.innerHTML = `<h2>${title}: ${groups.length} look${groups.length === 1 ? '' : 's'}</h2>`;
+    const v = document.createElement('p'); v.className = 'verdict';
+    v.textContent = `${groups.reduce((n, g) => n + g.count, 0)} on screen. ` + (groups.length > 3 ? 'Many looks: worth bringing together. ' : '') +
+      (unshaded ? `${unshaded} without shading. ` : '') + (off ? `${off} with colours outside the skin.` : '');
+    sec.append(v);
+    const t = document.createElement('table');
+    t.innerHTML = '<tr><th>Look</th><th>How many</th><th>Font</th><th>Corners · border · shading</th><th>Pages</th><th>Flags</th></tr>';
+    for (const g of groups) {
+      const tr = t.insertRow();
+      tr.insertCell().append(swatch(g.look, g.sample));
+      tr.insertCell().textContent = g.count;
+      tr.insertCell().textContent = `${g.look.font} ${g.look.size}px ${g.look.weight}`;
+      tr.insertCell().textContent = `${g.look.radius} · ${g.look.border} · ${g.look.shadow ? 'shadow' : g.unshaded ? 'flat' : 'bevel'}`;
+      tr.insertCell().textContent = [...g.pages].join(', ');
+      const flags = tr.insertCell();
+      flags.className = g.unshaded || g.offPalette.length ? 'flag' : 'ok';
+      flags.textContent = [g.unshaded ? 'no shading' : '', g.offPalette.length ? 'colour outside the skin: ' + g.offPalette.join(', ') : ''].filter(Boolean).join('; ') || 'fine';
+    }
+    sec.append(t); box.append(sec);
+  }
+}
+$('run').addEventListener('click', async () => {
+  $('run').disabled = true; $('frames').replaceChildren();
+  const width = Number($('width').value), all = {};
+  for (const [i, page] of PAGES.entries()) {
+    $('status').textContent = `Reading ${page} (${i + 1}/${PAGES.length})…`;
+    const f = await load(page, width);
+    try { merge(all, inventory(f.contentDocument, page)); } catch (e) { console.warn(page, e); }
+  }
+  $('status').textContent = `Read ${PAGES.length} pages at ${width}px.`;
+  $('run').disabled = false;
+  draw(all);
+  window.designCheck = all;                                           // for a closer look in the console
+});
+</script>
+</body></html>

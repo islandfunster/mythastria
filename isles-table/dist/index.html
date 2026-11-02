@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- 2026-10-20 (GM: "make Python live play the default"): Mythastria opens on Play live, where the Python simulator
+     is the rules authority. The old Rust training table is training.html (deprecated).
+     2026-10-21 (GM's logos): the sun over the stage and open book shows first, then Play live opens (or click it).
+     2026-10-21 (GM: "remove the old training table button from the splash page"): no link to it here.
+     ADVENTURE-01 (GM 2026-10-21: "It needs a big bold something to take you to playing the multiplayer dnd game
+     together"): a big Play an adventure button. Play live still opens after 3 seconds, unless the mouse moves or a key
+     is pressed first: then the page stays so the button can be clicked. -->
+<title>Mythastria</title><link rel="icon" type="image/png" href="icon.png">
+<noscript><meta http-equiv="refresh" content="3; url=play.html"></noscript>
+<style>
+:root{color-scheme:dark;--ink:#0b0a08;--panel:#1a160e;--line:#6b5a33;--paper:#e8dcc0;--muted:#a99d80;--brass:#e0c060;--gold-hi:#f3d77a;--face:#2a2214;--pressed:#3a2e18}
+/* DESIGN-CHECK-01 pass 3 (GM 2026-10-27): the colours named (the skin's names), the layout buttons bevelled like every page's buttons */
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 20%,#edce8514,transparent 60%),var(--ink);color:var(--paper);font:16px Inter,system-ui,sans-serif;text-align:center}
+a{color:var(--brass)}.logo{display:block;max-width:min(90vw,960px);margin:0 auto}.logo img{width:auto;max-width:100%;max-height:62vh;height:auto;display:block;margin:0 auto}
+p{margin:1rem 16px}
+.adventure{position:relative;overflow:hidden;display:inline-block;margin:.5rem 16px 0;padding:18px 44px;border:3px solid var(--brass);border-radius:8px;background:linear-gradient(#33291a,var(--face));color:var(--gold-hi);box-shadow:0 10px 30px #000a,inset 0 1px 0 #ffe9b030;
+ font:700 clamp(26px,4vw,40px)/1.1 'Cormorant Garamond',Georgia,serif;letter-spacing:2px;text-decoration:none;text-transform:uppercase}
+.adventure:hover,.adventure:focus-visible{background:linear-gradient(#41341f,var(--pressed));outline:none;box-shadow:0 0 24px #e0c06055}
+.adventure::after{content:'';position:absolute;top:0;bottom:0;left:-60%;width:40%;transform:skewX(-20deg);pointer-events:none;
+ background:linear-gradient(90deg,#fff0,#fff5 50%,#fff0);transition:left .7s ease}
+.adventure:hover::after,.adventure:focus-visible::after{left:120%}
+@media (prefers-reduced-motion:reduce){.adventure::after{display:none}}
+.adventure small{display:block;margin-top:6px;font:500 13px Inter,system-ui,sans-serif;letter-spacing:1px;text-transform:none;color:var(--paper)}
+/* GM 2026-10-24: the layout preset, chosen right here (the same setting as every page's header menu) */
+.layout{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:1.4rem 16px 0}
+.layout span{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.layout button{min-width:116px;padding:9px 16px;border:3px solid;border-color:color-mix(in srgb,var(--panel) 80%,#fff2) color-mix(in srgb,var(--panel) 40%,#000) color-mix(in srgb,var(--panel) 40%,#000) color-mix(in srgb,var(--panel) 80%,#fff2);
+ border-radius:2px;background:var(--panel);color:var(--paper);font:600 14px Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 1px 2px #0007}
+.layout button[aria-pressed="true"]{background:var(--pressed);color:var(--gold-hi);box-shadow:inset 0 0 0 1px var(--brass),0 1px 2px #0007}
+.layout button:hover,.layout button:focus-visible{filter:brightness(1.18);outline:none}.layout button:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+</style></head>
+<body><main><a class="logo" href="play.html" title="Open Play live"><img src="mythastria-logo.webp" alt="Mythastria" width="960" height="640"></a>
+<a class="adventure" href="adventure.html">Play an adventure<small>Choose the adventure, the party and its level, and play together</small></a>
+<div class="layout" role="group" aria-label="Page layout on this device"><span>Layout</span>
+<button type="button" data-layout="auto" title="Follow the screen">Auto</button><button type="button" data-layout="portrait" title="One column on every page (a screen standing upright)">Portrait</button><button type="button" data-layout="landscape" title="Panels side by side on every page">Landscape</button></div>
+<p id="opening">Opening <a href="play.html">Play live</a>…</p></main>
+<script>
+const timer = setTimeout(() => { location.href = 'play.html'; }, 3000);
+const stay = () => { clearTimeout(timer); document.getElementById('opening').innerHTML = 'Or open <a href="play.html">Play live</a> for a single fight.';
+  for (const t of ['pointermove', 'keydown', 'touchstart']) removeEventListener(t, stay); };
+for (const t of ['pointermove', 'keydown', 'touchstart']) addEventListener(t, stay);
+// GM 2026-10-24: Portrait or Landscape for every page (site.mjs reads the same key; Auto follows the screen)
+const KEY = 'mythastria-layout', read = () => { try { return localStorage.getItem(KEY) || 'auto'; } catch { return 'auto'; } };
+const mark = () => { for (const b of document.querySelectorAll('[data-layout]')) b.setAttribute('aria-pressed', String(b.dataset.layout === read())); };
+for (const b of document.querySelectorAll('[data-layout]')) b.addEventListener('click', () => { stay(); try { localStorage.setItem(KEY, b.dataset.layout); } catch { /* fine */ } mark(); });
+mark();
+</script></body></html>

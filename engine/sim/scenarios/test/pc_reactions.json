@@ -1,0 +1,71 @@
+{
+ "name": "SIM-INTERRUPT-01: a bandit walks out of two players' reach to attack a third (players' opportunity attacks)",
+ "source": "Bandit: System Reference Document 5.2.1 by Wizards of the Coast LLC, CC-BY-4.0 (AC 12, 11 HP, Scimitar +3, 1d6 + 1). Hero 8, Hero 7 and Hero 6 are test characters.",
+ "rounds": 1,
+ "gm_mode": "suggest",
+ "fake_target": "Hero 6",
+ "reaction_policy": {
+  "*": "accept"
+ },
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Alley",
+ "combatants": [
+  {
+   "id": "id-00005",
+   "name": "Bandit",
+   "side": "foe",
+   "hp": 11,
+   "ac": 12,
+   "init": 20,
+   "x": 2,
+   "y": 2,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Scimitar",
+     "atk": 3,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d6+1",
+     "dmgtype": "slashing"
+    }
+   ]
+  },
+  {
+   "id": "id-00001",
+   "name": "Hero 8",
+   "side": "friend",
+   "pc": true,
+   "init": 15,
+   "x": 2,
+   "y": 1,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 1,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00003",
+   "name": "Hero 6",
+   "side": "friend",
+   "pc": true,
+   "init": 5,
+   "x": 8,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  }
+ ]
+}

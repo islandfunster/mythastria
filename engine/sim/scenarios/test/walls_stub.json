@@ -1,0 +1,118 @@
+{
+ "name": "Goblin in a one-square corridor whose end a wall stub cuts: it must not stop inside the wall",
+ "source": "Kobold Warrior: the simulator's SRD-based block (sim/creatures/srd_library.json; 2026-10-20: was the 5.1 Goblin; melee only, for this movement test). Hero 7 is a test character. Walls are synthetic.",
+ "rounds": 1,
+ "grid": 50,
+ "units": 5,
+ "diag": 1,
+ "map_name": "Corridor with a wall stub",
+ "walls": [
+  {
+   "id": "1",
+   "points": [
+    [
+     -200,
+     1.5
+    ],
+    [
+     2.5,
+     1.5
+    ]
+   ]
+  },
+  {
+   "id": "2",
+   "points": [
+    [
+     -200,
+     2.5
+    ],
+    [
+     2.5,
+     2.5
+    ]
+   ]
+  },
+  {
+   "id": "3",
+   "points": [
+    [
+     2.1,
+     1.5
+    ],
+    [
+     2.1,
+     1.95
+    ]
+   ]
+  },
+  {
+   "id": "4",
+   "points": [
+    [
+     2.5,
+     1.5
+    ],
+    [
+     2.5,
+     -200
+    ]
+   ]
+  },
+  {
+   "id": "5",
+   "points": [
+    [
+     2.5,
+     2.5
+    ],
+    [
+     2.5,
+     200
+    ]
+   ]
+  }
+ ],
+ "combatants": [
+  {
+   "id": "id-00001",
+   "name": "Hero 7",
+   "side": "friend",
+   "pc": true,
+   "init": 10,
+   "x": 3,
+   "y": 2,
+   "hp": 1,
+   "ac": 10
+  },
+  {
+   "id": "id-00002",
+   "name": "Kobold Warrior",
+   "side": "foe",
+   "hp": 7,
+   "ac": 14,
+   "init": 20,
+   "x": 0,
+   "y": 2,
+   "speed": "30 ft.",
+   "actions": [
+    {
+     "id": "id-00001",
+     "name": "Dagger",
+     "atk": 4,
+     "atktype": "melee",
+     "reach": 5,
+     "dmg": "1d4+2",
+     "dmgtype": "piercing",
+     "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Piercing damage. Or Ranged Attack Roll: +4, range 20/60 ft. Hit: 4 (1d4 + 2) Piercing damage."
+    }
+   ],
+   "space": 3.75,
+   "senses": "Darkvision 60 ft.; Passive Perception 8",
+   "wis_mod": -2
+  }
+ ],
+ "aware": [
+  "id-00002"
+ ]
+}

@@ -1,0 +1,17 @@
+#flavor-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--brass);border-radius:10px;width:min(520px,calc(100vw - 40px));max-height:85vh;overflow:auto;padding:1.3rem}
+#flavor-dialog::backdrop{background:rgba(9,8,12,.7)}
+#flavor-dialog h2{color:var(--brass);margin-top:0}#flavor-dialog label{display:flex;flex-direction:column;gap:.3rem;margin:.8rem 0}
+#flavor-dialog label[hidden],#flavor-dialog img[hidden]{display:none}#flavor-dialog input:not([type=checkbox]),#flavor-dialog textarea,#flavor-dialog select{box-sizing:border-box;font:inherit;width:100%;max-width:100%;min-height:44px;background:var(--surface-low,var(--panel));color:var(--paper);border:1px solid var(--line);border-radius:5px;padding:.45rem}
+#flavor-dialog label.flavor-tick{flex-direction:row;align-items:center;gap:.5rem}#flavor-dialog .flavor-tick input{width:1.2rem;height:1.2rem;min-height:0}
+.flavor-art{display:block;width:96px;height:96px;object-fit:contain;margin:.2rem 0 .6rem;border:1px solid var(--line);border-radius:8px;background:#10110f}
+.flavor-rules{padding:.6rem;border-left:2px solid var(--brass);font-size:.85rem;color:var(--muted)}.flavor-actions{display:flex;gap:.5rem;flex-wrap:wrap}.flavor-actions button,#flavor-open{min-height:44px}
+.flavor-foot{font-style:italic;color:var(--paper);opacity:.85;border-left:2px solid var(--brass);padding:.15rem .5rem;margin:.35rem 0;white-space:pre-line}.flavor-foot:empty{display:none}
+.player-view #flavor-open{display:none!important}
+.flavor-paint{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0 .8rem}.flavor-paint[hidden],.flavor-paint button[hidden]{display:none}#flavor-dialog .flavor-paint label{margin:0}
+#paint-dialog{background:var(--panel);color:var(--paper);border:1px solid var(--brass);border-radius:10px;width:min(360px,calc(100vw - 40px));padding:1.1rem}
+#paint-dialog::backdrop{background:rgba(9,8,12,.6)}#paint-dialog h2{color:var(--brass);margin-top:0;font-size:1.1rem}
+.paint-stack{position:relative;width:256px;height:256px;max-width:100%;aspect-ratio:1;margin:.5rem auto;border:1px solid var(--line);border-radius:8px;background:#10110f;overflow:hidden}
+.paint-stack canvas{position:absolute;inset:0;width:100%;height:100%}.paint-over{cursor:crosshair;touch-action:none}
+.paint-tools{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:.5rem 0}.paint-tools label{display:flex;align-items:center;gap:.3rem}
+.ask-look{display:block;max-width:5rem;max-height:5rem;margin:.3rem 0;border-radius:6px}.ask-look-note{font-style:italic;color:var(--muted);margin:.2rem 0}
+#flavor-dialog select{background-repeat:no-repeat;background-position:right .45rem center;padding-right:1.4rem}

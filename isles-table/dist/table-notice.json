@@ -1,0 +1,36 @@
+{
+  "_about": "JOIN-01 notice (GM 2026-10-22: 'Before connecting for a game, there needs to be legalese regarding private information ... i.e. age requirement'; asked, chose players from anywhere, 18+ only, contact the GM at the table, chat pictures deleted after 14 days; 2026-10-28: no stand-in key, so no stand-in log; 2026-11-02: terms of use added, 'Yes, add it'). Shown on join.html; the service reads 'version' and asks again when it changes. Change 'version' whenever the text changes in substance.",
+  "version": "2026-11-02.2",
+  "title": "Before you join: privacy, age, terms and table rules",
+  "sections": [
+    {"h": "Who runs this table", "p": ["This Mythastria table is run by its GM on the GM's own computer, and the GM is responsible for it. Nobody else runs it or receives what happens at it."]},
+    {"h": "You must be 18 or older", "p": ["This table is for adults only. Do not join if you are under 18."]},
+    {"h": "What is kept, and for how long", "p": [
+      "Use a nickname: no real name, e-mail address or account is needed.",
+      "Your display name and the character you play: in the GM's computer's memory while you are seated; gone when you leave, the GM removes you, or the table restarts.",
+      "Chat messages and dice rolls: in memory, the latest 300 lines; gone when the table restarts. Your choices in a fight: in memory for that fight.",
+      "Choices the table refused, with your display name and the reason: in memory, shown to the GM only, to spot cheating; gone when the table restarts or the GM clears them.",
+      "Pictures and sounds shared in the chat: on the GM's computer for 14 days, then deleted automatically.",
+      "That you accepted this notice, with its version and the time: with your seat, as long as your seat lasts.",
+      "In your own browser: your seat key and display name, until you leave or clear your browser's data."
+    ]},
+    {"h": "The internet connection", "p": ["Over the internet, your connection passes through Cloudflare, which handles your IP address and connection details under its own privacy policy (https://www.cloudflare.com/privacypolicy/). Mythastria itself keeps no record of IP addresses: to stop abuse it counts requests per connection for a few minutes, in memory only, and shows the GM a short list of who knocked (the name you typed, or an anonymous tag), gone when the table restarts."]},
+    {"h": "Why, and who sees it", "p": ["Only to run the game: to seat you as your character, show you the table and let the GM see who is playing. The GM and the players at the table see your display name, your character and your chat. It is never sold, never used for advertising and never shared with anyone else."]},
+    {"h": "Your choices", "p": ["You can leave at any time with Leave the table, which ends your seat. To see or delete what is kept about you, ask the GM at the table: the GM can remove your seat and delete shared pictures and sounds at once."]},
+    {"h": "Table rules", "p": [
+      "Be respectful. No harassment, hate, threats, or content that targets a real person.",
+      "Share only text, pictures and sounds that are yours to share, or that you have permission to share.",
+      "Do not post anyone's personal information, including your own.",
+      "The GM sets the table's tone and may remove anyone."
+    ]},
+    {"h": "Terms of use", "p": [
+      "This table is free and provided as is, with no guarantee. It can stop or change at any time, and characters, chat and shared files can be lost.",
+      "As far as the law allows, the GM is not responsible for what players post at this table, or for any loss from using it. Nothing here takes away rights the law gives you that cannot be given up.",
+      "What you share stays yours. By sharing it, you let this table store it and show it to the people at the table, for as long as this notice says it is kept."
+    ]},
+    {"h": "Game rules", "p": ["This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.", "Mythastria adapts this material and changes some of its rules with its own rulings, for example how stealth is rolled, and leaves others to the GM. Those changes are Mythastria's own. Mythastria is not affiliated with or endorsed by Wizards of the Coast."]}
+  ],
+  "adult": "I am 18 or older.",
+  "accept": "I have read and accept this notice, its terms of use and the table rules.",
+  "footer": "This notice is a sensible starting text written for the GM, not legal advice. Laws differ between countries; a local lawyer should review it before this table is opened to the public."
+}

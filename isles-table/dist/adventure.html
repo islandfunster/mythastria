@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mythastria — Play an adventure</title><link rel="stylesheet" href="site.css"><link rel="stylesheet" href="skins.css"><link rel="stylesheet" href="icons.css">
+<script type="module" src="site.mjs"></script><link rel="stylesheet" href="adventure.css"></head>
+<!-- ADVENTURE-01 (GM 2026-10-21: "what happened to adventures? It needs a big bold something to take you to playing the
+     multiplayer dnd game together"): the front door. Pick an installed adventure, the party and its level; Start loads it
+     on the simulator service (the same load as Remix Prep). Then this is the night's home: the places and their fights in
+     order, each fight opening Play live on its map, the Region map, The Stage, and ending the adventure. -->
+<body><header class="site-header" data-page="adventure"></header>
+<main id="adventure-app"><div class="intro"><h1 class="page-title">Play an adventure</h1>
+<p class="note">Play together at this table: choose the adventure, the party and its level, then press Start. This page is the night's home after that.</p></div>
+<p id="adv-status" role="status" aria-live="polite">Connecting to Mythastria…</p>
+<p id="adv-fight" class="adv-fight" hidden><span id="adv-fight-text"></span> <a id="adv-fight-link" href="./play.html" target="mythastria-battle">Back to the fight</a></p>
+<div class="adv-layout"><aside>
+<section><h2>The party</h2>
+<h3 class="adv-sub">Saved characters</h3><div id="adv-chars" class="adv-party"></div>
+<button id="adv-clear" class="quiet" title="Untick everyone">Clear</button>
+<p class="note">Up to 7. Your characters from the Characters page's Saved characters tab, each at its own level.</p></section>
+<section id="adv-links" hidden><h2>Tonight</h2><nav class="adv-links">
+<a href="./region.html" target="mythastria-region">Region map (travel)</a>
+<a href="./stage.html" target="mythastria-stage">The Stage (role-play)</a>
+<a href="./play.html" target="mythastria-battle">Play live (any map)</a></nav>
+<p class="note">Dice and chat: the Chat button on every page.</p>
+<button id="adv-end" class="quiet adv-end">End the adventure (unload it)</button></section>
+<!-- GM 2026-10-24: End the adventure asks first; a running fight can go on, be frozen, or be stopped so the maps unload -->
+<dialog id="end-dialog" class="end-dialog" aria-labelledby="end-title"><form method="dialog"><h2 id="end-title">End the adventure?</h2>
+<p id="end-text"></p>
+<p class="end-choices"><button value="keep" class="quiet">Keep playing</button>
+<button value="freeze" id="end-freeze" class="quiet" title="Nothing moves and every combat button waits until you unfreeze it on Play live">Freeze the fight</button>
+<button value="stop" id="end-stop">Stop the fight and unload</button></p></form></dialog>
+</aside><div>
+<section id="adv-choose" hidden><h2>Choose an adventure</h2><div id="adv-packs" class="adv-packs"></div>
+<button id="adv-start" class="adv-big">Start the adventure</button></section>
+<section id="adv-day" class="adv-day" hidden><h2>The party's day</h2>
+<!-- GM 2026-10-24: Short and Long Rests and the party's state carried from fight to fight (Mythastria sim/rests.py) -->
+<p id="day-clock" class="day-clock"></p><div id="day-rest"></div>
+<!-- HAZARDS-01 (GM 2026-10-26): the environment the hours pass in, and travel pace (Mythastria sim/hazards.py, SRD 5.2.1) -->
+<details id="day-env" class="day-env"><summary>Environment, hazards and travel pace</summary><div id="day-env-body"></div></details>
+<div id="day-chars" class="day-chars"></div>
+<div id="day-pass" class="day-pass"><label>Time passes <input id="day-hours" type="number" min="0.25" max="240" step="0.25" value="1"> hours</label>
+<input id="day-why" type="text" maxlength="120" placeholder="why (travel, exploring...)"><button class="quiet">Pass time</button></div>
+<details class="day-log-box"><summary>The day's log</summary><ol id="day-log" class="day-log"></ol></details>
+<p class="note">A fight on this adventure's maps starts from this state and writes it back when it ends; rolling Initiative interrupts a rest. <button id="day-restore" title="The GM gives the party a Long Rest's benefits now: full Hit Points, Hit Point Dice, slots and uses; no time passes and no rest rule is checked">Restore the party (full health and rest)</button> <button id="day-reset" class="quiet">New day (everyone full)</button></p></section>
+<!-- GM 2026-10-26 (goal 13): crafting, brewing and scribing between adventures (Mythastria sim/downtime.py), SRD 5.2.1 -->
+<section id="adv-downtime" class="adv-day adv-downtime" hidden><h2>Downtime: crafting, brewing, scribing</h2>
+<p class="note">Between adventures each character can make one thing at a time: craft an item, brew a Potion of Healing, scribe a Spell Scroll or craft a magic item (SRD 5.2.1). Gold comes from the Market purse; the finished item goes into the bag.</p>
+<div id="dt-projects" class="dt-projects"></div>
+<details class="dt-new" open><summary>Start a project</summary><div id="dt-form" class="dt-form"></div><div id="dt-plan" class="dt-plan"></div></details>
+<div id="dt-work" class="day-pass"><label>Downtime days <input id="dt-days" type="number" min="1" max="100" step="1" value="1"></label><button id="dt-work-btn">Days pass</button><span class="note">each day: 8 hours of work on every project, then a Long Rest</span></div>
+<div id="dt-work-why"></div></section>
+<dialog id="stress-dialog" class="end-dialog" aria-labelledby="stress-title"><form method="dialog"><h2 id="stress-title">Mental stress</h2>
+<p class="note">SRD 5.2.1 Fear and Mental Stress: a save at your DC; Psychic damage on a failure (half on a success if you say so); a lasting effect on a failure.</p>
+<div id="stress-who" class="day-row"></div>
+<p class="day-row"><label>Save <select id="stress-save"><option value="wis">Wisdom</option><option value="int">Intelligence</option><option value="cha">Charisma</option></select></label>
+<label>DC <input id="stress-dc" type="number" min="5" max="30" value="15"></label>
+<label>Psychic damage <input id="stress-dice" type="text" maxlength="10" placeholder="2d10" value="2d10" size="6"></label>
+<label class="check"><input id="stress-half" type="checkbox"> half on a success</label></p>
+<p class="day-row"><label>Lasting effect <select id="stress-effect"><option value="none">none</option><option value="short">short-term (1d10 minutes)</option><option value="long">long-term (1d10 x 10 hours)</option><option value="indefinite">indefinite (until Greater Restoration)</option></select></label>
+<label>Condition <select id="stress-condition"><option>Frightened</option><option>Incapacitated</option><option>Stunned</option></select></label>
+<label>Checks <select id="stress-ability"><option value="all">all ability checks</option><option value="str">Strength</option><option value="dex">Dexterity</option><option value="con">Constitution</option><option value="int">Intelligence</option><option value="wis">Wisdom</option><option value="cha">Charisma</option></select></label></p>
+<p><label>What causes it <input id="stress-why" type="text" maxlength="120" placeholder="the whispering idol"></label></p>
+<p class="end-choices"><button value="cancel" class="quiet">Cancel</button><button value="go">Roll the saves</button></p></form></dialog>
+<!-- GM 2026-10-24 ("use it and build on it"): the adventure's story from the pack's lore (GM only; the players' door has no
+     route to it); the secrets stay folded until the GM opens them -->
+<section id="adv-story" class="adv-story" hidden><h2>The story</h2><div id="adv-story-body"></div></section>
+<section id="adv-home" hidden><h2 id="adv-name"></h2><p id="adv-order" class="note"></p>
+<p class="adv-check"><button id="adv-check" title="For the GM only: each encounter fought a few times by the simulator with the saved characters ticked in The party, to see whether it is winnable">Check the encounters</button> <span id="adv-check-status" class="note"></span></p><ol id="adv-places" class="adv-places"></ol></section>
+</div></div></main><script type="module" src="adventure-ui.mjs"></script><script type="module" src="table-chat.mjs"></script></body></html>
