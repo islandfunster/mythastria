@@ -25,6 +25,10 @@ There's nothing else to install.
 2. On **Play live**, tick it under **Saved characters**.
 3. Press **Start live fight**.
 
+## Adventures
+
+Mythastria comes with no adventure. [Seven Isles](https://github.com/islandfunster/mythastria-adventure-packs) is a free one, and its page shows how to load it.
+
 ## Playing with others
 
 - On one PC, everyone can play from the same screen.
