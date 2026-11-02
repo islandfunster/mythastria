@@ -6,6 +6,12 @@ Mythastria runs SRD 5.2.1 games. The rules engine runs on the GM's own PC, the t
 
 The rules and creature turns are plain Python. No AI model is needed to play.
 
+## Download
+
+[Download the latest Windows version](https://github.com/islandfunster/mythastria/releases/latest). It needs nothing installed: unzip it, then double-click `Start Mythastria.bat`.
+
+To run it from this repository instead, follow the steps below.
+
 ## What you need
 
 - Windows 10 or 11. Other systems haven't been tested.
