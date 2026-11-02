@@ -33,13 +33,14 @@ There's nothing else to install.
 
 ## Adventures
 
-Mythastria comes with no adventure. [Seven Isles](https://github.com/islandfunster/mythastria-adventure-packs) is a free one, and its page shows how to load it.
+Mythastria comes with no adventure; without one, Play live has the included test maps. [Seven Isles](https://github.com/islandfunster/mythastria-adventure-packs) is a free one, and its page shows how to load it.
+
+Adventure modules go in an `adventures` folder beside `engine`, as `adventures\<module>\adventure.json`. Load one on **Play an adventure**.
 
 ## Playing with others
 
 - On one PC, everyone can play from the same screen.
-- Players on their own devices join through the players' door at <http://127.0.0.1:8782/>. You let each one in on Play live, under **Players...**.
-- Reaching your PC from the internet needs a tunnel of your own: see [Playing over the internet](#playing-over-the-internet).
+- Players on their own devices join through the players' door. It opens only on your own PC, at <http://127.0.0.1:8782/>, so they need a tunnel to reach it: see [Playing over the internet](#playing-over-the-internet). You let each one in on Play live, under **Players...**.
 
 If you open a table to other people, you run it and you're responsible for it. Players accept the notice in `isles-table\dist\table-notice.json` before they join. Read it, change it to fit your table, and get your own legal advice. Change its `version` whenever you change its text, so players are asked again.
 
@@ -82,10 +83,6 @@ Keep your PC on and the Mythastria window open while you play.
 ### Other tunnels
 
 Another tunnel service can work if it sends the public name through to port 8782, but this hasn't been tested. The door can only tell visitors apart behind Cloudflare, so elsewhere one player's wrong invite codes may block everyone for five minutes.
-
-## Adventures
-
-Adventure modules go in an `adventures` folder beside `engine`, as `adventures\<module>\adventure.json`. Load one on **Play an adventure**. Mythastria comes with no adventure; without one, Play live has the included test maps.
 
 ## AI models (optional)
 

@@ -30,6 +30,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FG = Path(os.environ.get("MYTHASTRIA_FG_DIR") or Path(os.environ.get("APPDATA", "")) / "SmiteWorks" / "Fantasy Grounds")   # FG's own data (the SRD modules)
 SRD_MODULE = FG / "modules" / "DNDSRD521BESTIARY.mod"
+SRD_RECORDS = ROOT / "sim" / "creatures" / "srd_records.json"   # RELEASE-01: what play needs, shipped: nothing is read from outside
 OUT = ROOT / "mythastria_core" / "cache" / "catalog"
 OVERRIDES = OUT / "tone_overrides.json"          # {"Creature name": "family" | "spooky" | "dark" | "mature"}
 SRD_ATTRIBUTION = ('This work includes material from the System Reference Document 5.2.1 ("SRD 5.2.1") by Wizards of '
@@ -61,8 +62,31 @@ def _xml_value(el):
     return {k.tag: _xml_value(k) for k in kids}
 
 
+def srd_records(path=SRD_RECORDS):
+    """The SRD 5.2.1 numbers play needs (XP, CR, hit dice, saves, damage defenses), as load_srd's records, from the file
+    that ships with Mythastria. Play reads this, so every PC gets the same rules."""
+    return json.loads(Path(path).read_text(encoding="utf-8"))["records"]
+
+
+def write_srd_records(path=SRD_RECORDS):
+    """sim/creatures/srd_records.json, rebuilt from the module: numbers and defenses only, no stat-block text."""
+    keep = ("cr", "xp", "hd", "damageimmunities", "damageresistances", "damagevulnerabilities")
+    records = []
+    for r in sorted(load_srd(), key=lambda r: r["name"]):
+        f = r["fields"]
+        fields = {k: f[k] for k in keep if f.get(k)}
+        fields["abilities"] = {ab: {k: v[k] for k in ("bonus", "savemodifier") if k in v}
+                               for ab, v in (f.get("abilities") or {}).items() if isinstance(v, dict)}
+        records.append({"name": r["name"], "source": "srd", "fields": fields})
+    if len(records) < 300:
+        raise SystemExit("The SRD module wasn't read: %d records." % len(records))
+    Path(path).write_text(json.dumps({"attribution": SRD_ATTRIBUTION, "records": records}, indent=0, ensure_ascii=False) + "\n", encoding="utf-8")
+    return len(records)
+
+
 def load_srd(path=SRD_MODULE):
-    """SRD 5.2.1 bestiary records from the FG module: [{"name", "source": "srd", "fields": {...}}]."""
+    """SRD 5.2.1 bestiary records from the FG module: [{"name", "source": "srd", "fields": {...}}]. Only the tools that
+    rebuild the shipped files read it; play reads srd_records()."""
     if not Path(path).exists():
         return []
     z = zipfile.ZipFile(path)
@@ -414,6 +438,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("build")
+    sub.add_parser("records")
     q = sub.add_parser("query")
     for a in ("--theme", "--habitat", "--tone", "--role", "--type", "--behaviour", "--cr"):
         q.add_argument(a)
@@ -424,6 +449,8 @@ def main(argv=None):
     if a.cmd == "build":
         cat = build()
         print("catalogue: %d SRD creatures -> %s" % (len(cat), OUT / "bestiary.json"))
+    elif a.cmd == "records":
+        print("%d SRD creatures -> %s" % (write_srd_records(), SRD_RECORDS))
     elif a.cmd == "query":
         rows = query(load(), a.theme, a.habitat, a.tone, a.role, a.type, a.behaviour, a.cr, a.level)
         for c in rows[:a.limit]:

@@ -38,13 +38,13 @@ def srd_defenses(sc):
     """SIM-MECHANICS-01 (a), 2026-10-18: each creature without its own damage defenses takes them from its SRD 5.2.1
     bestiary record (DNDSRD521BESTIARY, the NPC fields FG copies to the Combat Tracker), found by its name without the
     number ("Shadow 2" -> Shadow). A combatant that sets any of the three fields keeps its own; characters and names
-    the SRD lacks get nothing. Without the module installed nothing changes."""
+    the SRD lacks get nothing. RELEASE-01: from sim/creatures/srd_records.json, which ships with Mythastria."""
     global _SRD_DEFENSES
     if _SRD_DEFENSES is None:
         sys.path.insert(0, str(ROOT / "tools"))
         import bestiary_catalog
         _SRD_DEFENSES = {}
-        for r in bestiary_catalog.load_srd():
+        for r in bestiary_catalog.srd_records():
             f, saves = r["fields"], {}
             for ab in ABILITIES:                                 # SIM-MECHANICS-01 (d): bonus + the save's modifier
                 a = (f.get("abilities") or {}).get(ab)

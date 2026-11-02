@@ -1,0 +1,12106 @@
+{
+"attribution": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+"records": [
+{
+"name": "Aboleth",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(20d10 + 40)",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Adult Black Dragon",
+"source": "srd",
+"fields": {
+"cr": "14",
+"xp": "11500",
+"hd": "(17d12 + 85)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Blue Dragon",
+"source": "srd",
+"fields": {
+"cr": "16",
+"xp": "15000",
+"hd": "(17d12 + 102)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Brass Dragon",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(15d12 + 75)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Bronze Dragon",
+"source": "srd",
+"fields": {
+"cr": "15",
+"xp": "13000",
+"hd": "(17d12 + 102)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Copper Dragon",
+"source": "srd",
+"fields": {
+"cr": "14",
+"xp": "11500",
+"hd": "(16d12 + 80)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Gold Dragon",
+"source": "srd",
+"fields": {
+"cr": "17",
+"xp": "18000",
+"hd": "(18d12 + 126)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Adult Green Dragon",
+"source": "srd",
+"fields": {
+"cr": "15",
+"xp": "13000",
+"hd": "(18d12 + 90)",
+"damageimmunities": "Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult Red Dragon",
+"source": "srd",
+"fields": {
+"cr": "17",
+"xp": "18000",
+"hd": "(19d12 + 133)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Adult Silver Dragon",
+"source": "srd",
+"fields": {
+"cr": "16",
+"xp": "15000",
+"hd": "(16d12 + 112)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Adult White Dragon",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(16d12 + 96)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Air Elemental",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d10 + 24)",
+"damageimmunities": "Poison, Thunder; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Bludgeoning, Lightning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Allosaurus",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 18)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ancient Black Dragon",
+"source": "srd",
+"fields": {
+"cr": "21",
+"xp": "33000",
+"hd": "(21d20 + 147)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Blue Dragon",
+"source": "srd",
+"fields": {
+"cr": "23",
+"xp": "50000",
+"hd": "(26d20 + 208)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Brass Dragon",
+"source": "srd",
+"fields": {
+"cr": "20",
+"xp": "25000",
+"hd": "(19d20 + 133)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Ancient Bronze Dragon",
+"source": "srd",
+"fields": {
+"cr": "22",
+"xp": "41000",
+"hd": "(24d20 + 192)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Copper Dragon",
+"source": "srd",
+"fields": {
+"cr": "21",
+"xp": "33000",
+"hd": "(21d20 + 147)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Gold Dragon",
+"source": "srd",
+"fields": {
+"cr": "24",
+"xp": "62000",
+"hd": "(28d20 + 252)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Green Dragon",
+"source": "srd",
+"fields": {
+"cr": "22",
+"xp": "41000",
+"hd": "(23d20 + 161)",
+"damageimmunities": "Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Red Dragon",
+"source": "srd",
+"fields": {
+"cr": "24",
+"xp": "62000",
+"hd": "(26d20 + 234)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient Silver Dragon",
+"source": "srd",
+"fields": {
+"cr": "23",
+"xp": "50000",
+"hd": "(24d20 + 216)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Ancient White Dragon",
+"source": "srd",
+"fields": {
+"cr": "20",
+"xp": "25000",
+"hd": "(18d20 + 144)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Animated Armor",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d8 + 6)",
+"damageimmunities": "Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-4",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Animated Flying Sword",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d6)",
+"damageimmunities": "Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Animated Rug of Smothering",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(5d10)",
+"damageimmunities": "Poison, Psychic; Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-4",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ankheg",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ankylosaurus",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d12 + 16)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ape",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d8 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Archmage",
+"source": "srd",
+"fields": {
+"cr": "12",
+"xp": "8000",
+"hd": "(31d8 + 31)",
+"damageimmunities": "Psychic; Charmed (with Mind Blank)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "5",
+"savemodifier": "4"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Assassin",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(15d8 + 30)",
+"damageresistances": "Poison",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Awakened Shrub",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(3d6)",
+"damageresistances": "Piercing",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Awakened Tree",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d12 + 14)",
+"damageresistances": "Bludgeoning, Piercing",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Axe Beak",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d10 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Azer Sentinel",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d8 + 12)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Baboon",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Badger",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 + 3)",
+"damageresistances": "Poison",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Balor",
+"source": "srd",
+"fields": {
+"cr": "19",
+"xp": "22000",
+"hd": "(23d12 + 138)",
+"damageimmunities": "Fire, Poison; Charmed, Frightened, Poisoned",
+"damageresistances": "Cold, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "6"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Bandit",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bandit Captain",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8 + 16)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Barbed Devil",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(13d8 + 52)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Barlgura",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(10d10 + 30)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Basilisk",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d8 + 16)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bat",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bearded Devil",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(9d8 + 18)",
+"damageimmunities": "Fire, Poison; Frightened, Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Behir",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(16d12 + 64)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Berserker",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(9d8 + 27)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Berserker Commander",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(16d8 + 64)",
+"damageimmunities": "Charmed, Frightened",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Black Bear",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d8 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Black Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d8 + 6)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Black Pudding",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(8d10 + 24)",
+"damageimmunities": "Acid, Cold, Lightning, Slashing; Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Blink Dog",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d8 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Blood Hawk",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d6)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Blue Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d8 + 20)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Boar",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bone Devil",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(17d10 + 68)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "4"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Brass Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d8 + 4)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Bronze Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d8 + 12)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Brown Bear",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(3d10 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bugbear Stalker",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d8 + 20)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Bugbear Warrior",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d8 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Bulette",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(9d10 + 45)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Camel",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d10 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Cat",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Centaur Trooper",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Chain Devil",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(10d8 + 40)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Bludgeoning, Cold, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Chimera",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(12d10 + 48)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Chuul",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(9d10 + 27)",
+"damageimmunities": "Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Clay Golem",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(13d10 + 52)",
+"damageimmunities": "Acid, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Cloaker",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(14d10 + 14)",
+"damageimmunities": "Frightened",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Cloud Giant",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(16d12 + 96)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Cockatrice",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d6 + 5)",
+"damageimmunities": "Petrified",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Commoner",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d8)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Constrictor Snake",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d10 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Copper Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d8 + 4)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Couatl",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(8d8 + 24)",
+"damageimmunities": "Psychic, Radiant",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "5",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Crab",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 + 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Crocodile",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(2d10 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Cultist",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Cultist Fanatic",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8 + 8)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Darkmantle",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d6 + 5)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Death Dog",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d8 + 12)",
+"damageimmunities": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Deer",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d8)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Deva",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(27d8 + 108)",
+"damageimmunities": "Charmed, Exhaustion, Frightened",
+"damageresistances": "Radiant",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "5",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Dire Wolf",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(3d10 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Djinni",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(19d10 + 114)",
+"damageimmunities": "Lightning, Thunder",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Doppelganger",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d8 + 16)",
+"damageimmunities": "Charmed",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Draft Horse",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d10 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Dragon Turtle",
+"source": "srd",
+"fields": {
+"cr": "17",
+"xp": "18000",
+"hd": "(23d20 + 115)",
+"damageresistances": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "6"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Dretch",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d6 + 4)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Drider",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(13d10 + 52)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Druid",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8 + 8)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Dryad",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(5d8)",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Dust Mephit",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d6)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Eagle",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d6 + 1)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Earth Elemental",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d10 + 70)",
+"damageimmunities": "Poison; Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious",
+"damagevulnerabilities": "Thunder",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Efreeti",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(17d10 + 119)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Elephant",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(8d12 + 24)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Elk",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d10)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Erinyes",
+"source": "srd",
+"fields": {
+"cr": "12",
+"xp": "8400",
+"hd": "(21d8 + 84)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ettercap",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8 + 8)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ettin",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(10d10 + 30)",
+"damageimmunities": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Fire Elemental",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(11d10 + 33)",
+"damageimmunities": "Fire, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Fire Giant",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(13d12 + 78)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Flesh Golem",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(15d8 + 60)",
+"damageimmunities": "Lightning, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Flying Snake",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d4)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Frog",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Frost Giant",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(13d12 + 65)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Gargoyle",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(9d8 + 27)",
+"damageimmunities": "Poison; Exhaustion, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Gelatinous Cube",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 30)",
+"damageimmunities": "Acid; Blinded, Charmed, Deafened, Exhaustion, Frightened, Prone",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ghast",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8)",
+"damageimmunities": "Poison; Charmed, Exhaustion, Poisoned",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Ghost",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(10d8)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained",
+"damageresistances": "Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ghoul",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(5d8)",
+"damageimmunities": "Poison; Charmed, Exhaustion, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Ape",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(16d12 + 64)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Badger",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 6)",
+"damageresistances": "Poison",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Bat",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d10)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Boar",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(5d10 + 15)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Centipede",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d6 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Constrictor Snake",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d12 + 8)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Crab",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "0",
+"hd": "(3d8)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Crocodile",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(9d12 + 27)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Eagle",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d10 + 4)",
+"damageresistances": "Necrotic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Elk",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(5d12 + 10)",
+"damageresistances": "Necrotic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Fire Beetle",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d6 + 1)",
+"damageresistances": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Frog",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d8)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Goat",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d10 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Hyena",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Lizard",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d10 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Octopus",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(7d10 + 7)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Owl",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d10 + 3)",
+"damageresistances": "Necrotic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Giant Rat",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d6)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Scorpion",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(7d10 + 14)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Seahorse",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d10)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Shark",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(8d12 + 40)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Spider",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d10 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Toad",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d10 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Venomous Snake",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Vulture",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(3d10 + 9)",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Wasp",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d8)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Weasel",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Giant Wolf Spider",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Gibbering Mouther",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d8 + 21)",
+"damageimmunities": "Prone",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Glabrezu",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(18d10 + 90)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "4"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Gladiator",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(15d8 + 45)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Gnoll Warrior",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(6d8)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Goat",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d8)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Goblin Boss",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d6)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Goblin Minion",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d6)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Goblin Warrior",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d6)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Gold Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "0",
+"hd": "(8d8 + 24)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Gorgon",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d10 + 48)",
+"damageimmunities": "Exhaustion, Petrified",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Gray Ooze",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d8 + 9)",
+"damageimmunities": "Blinded, Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained",
+"damageresistances": "Acid, Cold, Fire",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Green Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d8 + 7)",
+"damageimmunities": "Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Green Hag",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(11d8 + 33)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Grick",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(12d8)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Griffon",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d10 + 21)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Grimlock",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Guard",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Guard Captain",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(10d8 + 30)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Guardian Naga",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(16d10 + 48)",
+"damageimmunities": "Poison; Charmed, Paralyzed, Poisoned, Restrained",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "4",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Half-Dragon",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Damage type chosen for the Draconic Origin trait below",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Half-Dragon (Acid)",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Half-Dragon (Cold)",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Half-Dragon (Fire)",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Half-Dragon (Lightning)",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Half-Dragon (Poison)",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(14d8 + 42)",
+"damageresistances": "Poison",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Harpy",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(7d8 + 7)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hawk",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hell Hound",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(9d8 + 18)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hezrou",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(15d10 + 75)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Hill Giant",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(10d12 + 40)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hippogriff",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d10 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hippopotamus",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(11d10 + 22)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hobgoblin Captain",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(9d8 + 18)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hobgoblin Warrior",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Homunculus",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 + 2)",
+"damageimmunities": "Poison; Charmed, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "2"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Horned Devil",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(19d10 + 95)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "4"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "4"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Hunter Shark",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hydra",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(16d12 + 80)",
+"damageimmunities": "Blinded, Charmed, Deafened, Frightened, Stunned, Unconscious",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Hyena",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d8 + 1)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ice Devil",
+"source": "srd",
+"fields": {
+"cr": "14",
+"xp": "11500",
+"hd": "(24d10 + 96)",
+"damageimmunities": "Cold, Fire, Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Ice Mephit",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(6d6)",
+"damageimmunities": "Cold, Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Imp",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d4 + 6)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Incubus",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(12d8 + 12)",
+"damageresistances": "Cold, Fire, Poison, Psychic",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Invisible Stalker",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(13d10 + 26)",
+"damageimmunities": "Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Iron Golem",
+"source": "srd",
+"fields": {
+"cr": "16",
+"xp": "15000",
+"hd": "(24d10 + 120)",
+"damageimmunities": "Fire, Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Jackal",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Killer Whale",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(12d12 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Knight",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d8 + 16)",
+"damageimmunities": "Frightened",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Kobold Warrior",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(3d6 - 3)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Kraken",
+"source": "srd",
+"fields": {
+"cr": "23",
+"xp": "50000",
+"hd": "(26d20 + 208)",
+"damageimmunities": "Cold, Lightning; Frightened, Grappled, Paralyzed, Restrained",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "8",
+"savemodifier": "7"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "10",
+"savemodifier": "7"
+},
+"wisdom": {
+"bonus": "4",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Lamia",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(13d10 + 26)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Lemure",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(2d8)",
+"damageimmunities": "Fire, Poison; Charmed, Frightened, Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Lich",
+"source": "srd",
+"fields": {
+"cr": "21",
+"xp": "33000",
+"hd": "(42d8 + 126)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned",
+"damageresistances": "Cold, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "7"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "7"
+},
+"intelligence": {
+"bonus": "5",
+"savemodifier": "7"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "7"
+}
+}
+}
+},
+{
+"name": "Lion",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d10)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Lizard",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Mage",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(18d8)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Magma Mephit",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(4d6 + 4)",
+"damageimmunities": "Fire, Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Magmin",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d6 + 3)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Mammoth",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(11d12 + 55)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Manticore",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d10 + 24)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Marilith",
+"source": "srd",
+"fields": {
+"cr": "16",
+"xp": "15000",
+"hd": "(21d10 + 105)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Mastiff",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(1d8 + 1)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Medusa",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(17d8 + 51)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Merfolk Skirmisher",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Merrow",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Mimic",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(9d8 + 18)",
+"damageimmunities": "Acid; Prone",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Minotaur Skeleton",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Bludgeoning",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Minotaur of Baphomet",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d10 + 30)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Mule",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Mummy",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(9d8 + 18)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Mummy Lord",
+"source": "srd",
+"fields": {
+"cr": "15",
+"xp": "13000",
+"hd": "(25d8 + 75)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "5"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "4",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Nalfeshnee",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(16d10 + 96)",
+"damageimmunities": "Poison; Frightened, Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Night Hag",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(15d8 + 45)",
+"damageimmunities": "Charmed",
+"damageresistances": "Cold, Fire",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Nightmare",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(8d10 + 24)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Noble",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ochre Jelly",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d10 + 14)",
+"damageimmunities": "Lightning, Slashing; Charmed, Deafened, Exhaustion, Frightened, Grappled, Prone, Restrained",
+"damageresistances": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Octopus",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d6)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ogre",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d10 + 24)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Ogre Zombie",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(9d10 + 36)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Oni",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(14d10 + 42)",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Otherworldly Steed (Celestial)",
+"source": "srd",
+"fields": {
+"xp": "0",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Otherworldly Steed (Fey)",
+"source": "srd",
+"fields": {
+"xp": "0",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Otherworldly Steed (Fiend)",
+"source": "srd",
+"fields": {
+"xp": "0",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Owl",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Owlbear",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(7d10 + 21)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Panther",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d8)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pegasus",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d10 + 21)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "2"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Phase Spider",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(7d10 + 7)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Piranha",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pirate",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d8 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pirate Captain",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(13d8 + 26)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Pit Fiend",
+"source": "srd",
+"fields": {
+"cr": "20",
+"xp": "25000",
+"hd": "(27d10 + 189)",
+"damageimmunities": "Fire, Poison; Poisoned",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "4",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Planetar",
+"source": "srd",
+"fields": {
+"cr": "16",
+"xp": "15000",
+"hd": "(21d10 + 147)",
+"damageimmunities": "Charmed, Exhaustion, Frightened",
+"damageresistances": "Radiant",
+"abilities": {
+"charisma": {
+"bonus": "7",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "7",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "5"
+},
+"wisdom": {
+"bonus": "6",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Plesiosaurus",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d10 + 24)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Polar Bear",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(5d10 + 15)",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Poltergeist",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(5d8)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pony",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Priest",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d8 + 7)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Priest Acolyte",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pseudodragon",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d4 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Pteranodon",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(3d8)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Purple Worm",
+"source": "srd",
+"fields": {
+"cr": "15",
+"xp": "13000",
+"hd": "(15d20 + 90)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Quasit",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(10d4)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Rakshasa",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(26d8 + 104)",
+"damageimmunities": "Charmed, Frightened",
+"damagevulnerabilities": "Piercing damage from weapons wielded by creatures under the effect of a Bless spell",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Rat",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Raven",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Red Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(10d8 + 30)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Reef Shark",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(4d8 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Remorhaz",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(17d12 + 85)",
+"damageimmunities": "Cold, Fire",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Rhinoceros",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(6d10 + 12)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Riding Horse",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d10 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Roc",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(16d20 + 80)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Roper",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(11d10 + 33)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Rust Monster",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(6d8 + 6)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Saber-Toothed Tiger",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d10 + 14)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Sahuagin Warrior",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(4d8 + 4)",
+"damageresistances": "Acid, Cold",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Salamander",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d10 + 24)",
+"damageimmunities": "Fire",
+"damagevulnerabilities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Satyr",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(7d8)",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Scorpion",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Scout",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d8 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Sea Hag",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(7d8 + 21)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Seahorse",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "0",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Shadow",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d8 + 5)",
+"damageimmunities": "Necrotic, Poison; Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Cold, Fire, Lightning, Thunder",
+"damagevulnerabilities": "Radiant",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Shambling Mound",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(13d10 + 39)",
+"damageimmunities": "Lightning; Deafened, Exhaustion",
+"damageresistances": "Cold, Fire",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Shield Guardian",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(15d10 + 60)",
+"damageimmunities": "Poison; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Shrieker Fungus",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "0",
+"hd": "(3d8)",
+"damageimmunities": "Blinded, Charmed, Deafened, Frightened",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-4",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Silver Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "0",
+"hd": "(6d8 + 18)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Skeleton",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 4)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Bludgeoning",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Solar",
+"source": "srd",
+"fields": {
+"cr": "21",
+"xp": "33000",
+"hd": "(22d10 + 176)",
+"damageimmunities": "Poison, Radiant; Charmed, Exhaustion, Frightened, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "7",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "8",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "7",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Specter",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(5d8)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Sphinx of Lore",
+"source": "srd",
+"fields": {
+"cr": "11",
+"xp": "7200",
+"hd": "(20d10 + 60)",
+"damageimmunities": "Psychic; Charmed, Frightened",
+"damageresistances": "Necrotic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "4",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Sphinx of Valor",
+"source": "srd",
+"fields": {
+"cr": "17",
+"xp": "18000",
+"hd": "(19d10 + 95)",
+"damageimmunities": "Psychic; Charmed, Frightened",
+"damageresistances": "Necrotic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "6"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "6"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "6"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "6",
+"savemodifier": "6"
+}
+}
+}
+},
+{
+"name": "Sphinx of Wonder",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(7d4 + 7)",
+"damageresistances": "Necrotic, Psychic, Radiant",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Spider",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Spirit Naga",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(18d10 + 36)",
+"damageimmunities": "Poison; Charmed, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Sprite",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d4)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Spy",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(6d8)",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Steam Mephit",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(5d6)",
+"damageimmunities": "Fire, Poison; Exhaustion, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Stirge",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d4)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Stone Giant",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(11d12 + 55)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "3"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Stone Golem",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(21d10 + 105)",
+"damageimmunities": "Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Storm Giant",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(20d12 + 100)",
+"damageimmunities": "Lightning, Thunder",
+"damageresistances": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "9",
+"savemodifier": "5"
+},
+"wisdom": {
+"bonus": "5",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Succubus",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(13d8 + 13)",
+"damageresistances": "Cold, Fire, Poison, Psychic",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Bats",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d10)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Crawling Claws",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(11d8)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Frightened, Grappled, Incapacitated, Paralyzed, Petrified, Poisoned, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Insects",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d8 + 6)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Piranhas",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(8d8 - 8)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Rats",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d8 - 4)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Ravens",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Swarm of Venomous Snakes",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(8d8)",
+"damageimmunities": "Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Tarrasque",
+"source": "srd",
+"fields": {
+"cr": "30",
+"xp": "155000",
+"hd": "(34d20 + 340)",
+"damageimmunities": "Fire, Poison; Charmed, Deafened, Frightened, Paralyzed, Poisoned",
+"damageresistances": "Bludgeoning, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "9"
+},
+"constitution": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "9"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "9"
+},
+"strength": {
+"bonus": "10",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "9"
+}
+}
+}
+},
+{
+"name": "Tiger",
+"source": "srd",
+"fields": {
+"cr": "1",
+"xp": "200",
+"hd": "(4d10 + 8)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Tough",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(5d8 + 10)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Tough Boss",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(11d8 + 33)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Treant",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(12d12 + 60)",
+"damageresistances": "Bludgeoning, Piercing",
+"damagevulnerabilities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Triceratops",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d12 + 36)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Troll",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(9d10 + 45)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Troll Limb",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(4d6)",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Tyrannosaurus Rex",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(13d12 + 52)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "7",
+"savemodifier": "3"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Unicorn",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(13d10 + 26)",
+"damageimmunities": "Poison; Charmed, Paralyzed, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "3",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Vampire",
+"source": "srd",
+"fields": {
+"cr": "13",
+"xp": "10000",
+"hd": "(23d8 + 92)",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"dexterity": {
+"bonus": "4",
+"savemodifier": "5"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "5"
+}
+}
+}
+},
+{
+"name": "Vampire Familiar",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d8 + 20)",
+"damageimmunities": "Charmed (except from its vampire master)",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Vampire Spawn",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d8 + 36)",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Venomous Snake",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d4)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Violet Fungus",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(4d8)",
+"damageimmunities": "Blinded, Charmed, Deafened, Frightened",
+"abilities": {
+"charisma": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-4",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Vrock",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(16d10 + 64)",
+"damageimmunities": "Poison; Poisoned",
+"damageresistances": "Cold, Fire, Lightning",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "3"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Vulture",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d8 + 1)",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Warhorse",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d10 + 3)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Warhorse Skeleton",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(3d10 + 6)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"damagevulnerabilities": "Bludgeoning",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Warrior Infantry",
+"source": "srd",
+"fields": {
+"cr": "1/8",
+"xp": "25",
+"hd": "(2d8)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Warrior Veteran",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d8 + 20)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Water Elemental",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(12d10 + 48)",
+"damageimmunities": "Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Fire",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Weasel",
+"source": "srd",
+"fields": {
+"cr": "0",
+"xp": "10",
+"hd": "(1d4 - 1)",
+"abilities": {
+"charisma": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Werebear",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(18d8 + 54)",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Wereboar",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(15d8 + 30)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Wererat",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(11d8 + 11)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Weretiger",
+"source": "srd",
+"fields": {
+"cr": "4",
+"xp": "1100",
+"hd": "(16d8 + 48)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Werewolf",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(11d8 + 22)",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "White Dragon Wyrmling",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "0",
+"hd": "(5d8 + 10)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "2"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "2"
+}
+}
+}
+},
+{
+"name": "Wight",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(11d8 + 33)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"damageresistances": "Necrotic",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Will-o'-Wisp",
+"source": "srd",
+"fields": {
+"cr": "2",
+"xp": "450",
+"hd": "(11d4)",
+"damageimmunities": "Lightning, Poison; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Bludgeoning, Cold, Fire, Necrotic, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "9",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Winter Wolf",
+"source": "srd",
+"fields": {
+"cr": "3",
+"xp": "700",
+"hd": "(10d10 + 20)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Wolf",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 2)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Worg",
+"source": "srd",
+"fields": {
+"cr": "1/2",
+"xp": "100",
+"hd": "(4d10 + 4)",
+"abilities": {
+"charisma": {
+"bonus": "-1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Wraith",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(9d8 + 27)",
+"damageimmunities": "Necrotic, Poison; Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+"damageresistances": "Acid, Bludgeoning, Cold, Fire, Piercing, Slashing",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "2",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Wyvern",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(15d10 + 45)",
+"abilities": {
+"charisma": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Xorn",
+"source": "srd",
+"fields": {
+"cr": "5",
+"xp": "1800",
+"hd": "(8d8 + 48)",
+"damageimmunities": "Poison; Paralyzed, Petrified, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "0",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "0"
+}
+}
+}
+},
+{
+"name": "Young Black Dragon",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(15d10 + 45)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Young Blue Dragon",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(16d10 + 64)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Young Brass Dragon",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "2300",
+"hd": "(13d10 + 39)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Young Bronze Dragon",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(15d10 + 60)",
+"damageimmunities": "Lightning",
+"abilities": {
+"charisma": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Young Copper Dragon",
+"source": "srd",
+"fields": {
+"cr": "7",
+"xp": "2900",
+"hd": "(14d10 + 42)",
+"damageimmunities": "Acid",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Young Gold Dragon",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(17d10 + 85)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "2",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Young Green Dragon",
+"source": "srd",
+"fields": {
+"cr": "8",
+"xp": "3900",
+"hd": "(16d10 + 48)",
+"damageimmunities": "Poison; Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "1",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "1",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Young Red Dragon",
+"source": "srd",
+"fields": {
+"cr": "10",
+"xp": "5900",
+"hd": "(17d10 + 85)",
+"damageimmunities": "Fire",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Young Silver Dragon",
+"source": "srd",
+"fields": {
+"cr": "9",
+"xp": "5000",
+"hd": "(16d10 + 80)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "5",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "4"
+},
+"intelligence": {
+"bonus": "2",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "6",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "4"
+}
+}
+}
+},
+{
+"name": "Young White Dragon",
+"source": "srd",
+"fields": {
+"cr": "6",
+"xp": "0",
+"hd": "(13d10 + 52)",
+"damageimmunities": "Cold",
+"abilities": {
+"charisma": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "0",
+"savemodifier": "3"
+},
+"intelligence": {
+"bonus": "-2",
+"savemodifier": "4"
+},
+"strength": {
+"bonus": "4",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "0",
+"savemodifier": "3"
+}
+}
+}
+},
+{
+"name": "Zombie",
+"source": "srd",
+"fields": {
+"cr": "1/4",
+"xp": "50",
+"hd": "(2d8 + 6)",
+"damageimmunities": "Poison; Exhaustion, Poisoned",
+"abilities": {
+"charisma": {
+"bonus": "-3",
+"savemodifier": "0"
+},
+"constitution": {
+"bonus": "3",
+"savemodifier": "0"
+},
+"dexterity": {
+"bonus": "-2",
+"savemodifier": "0"
+},
+"intelligence": {
+"bonus": "-4",
+"savemodifier": "0"
+},
+"strength": {
+"bonus": "1",
+"savemodifier": "0"
+},
+"wisdom": {
+"bonus": "-2",
+"savemodifier": "2"
+}
+}
+}
+}
+]
+}

@@ -38,7 +38,7 @@ def base_name(name):
 
 def srd_stats():
     out = {}
-    for r in bc.load_srd():
+    for r in bc.srd_records():
         f = r["fields"]
         crv = bc.cr_value(f.get("cr"))
         stated = str(f.get("xp") or "").strip()
