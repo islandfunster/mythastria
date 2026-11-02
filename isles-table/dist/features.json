@@ -15,6 +15,15 @@
      "limits": "Remix proof fights are refused, because they played the test characters. See NOTES.md."
     },
     {
+     "id": "no-install-release",
+     "name": "No-install Windows download",
+     "status": "built",
+     "since": "2026-11-02",
+     "what": "A zip that carries its own Python, so a GM unzips it and plays with nothing to install. Every file and the zip have SHA-256 checksums.",
+     "how": "Unzip it somewhere you can write to, such as Documents, then double-click Start Mythastria.bat.",
+     "limits": "Windows 64-bit only. It isn't code-signed, so Windows shows an unknown publisher warning the first time."
+    },
+    {
      "id": "start",
      "name": "Starting Mythastria",
      "status": "built",

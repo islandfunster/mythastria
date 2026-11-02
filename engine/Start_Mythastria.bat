@@ -22,8 +22,14 @@ for %%I in ("%PACKS%") do set "PACKS=%%~fI"
 
 if not exist "%ENGINE%\tools\sim_service.py" goto no_service
 if not exist "%TABLE%\stage.html" goto no_table
+rem RELEASE-01: a downloaded release carries its own Python in ..\python; a clone uses the Python on this PC
+set "BUNDLED=%ENGINE%\..\python\python.exe"
+set "RUN=py -3"
+if exist "%BUNDLED%" set RUN="%BUNDLED%"
+if exist "%BUNDLED%" goto have_python
 where py >nul 2>nul
 if errorlevel 1 goto no_python
+:have_python
 netstat -ano -p TCP | "%SystemRoot%\System32\findstr.exe" /R /C:"127.0.0.1:%PORT% .*LISTENING" >nul
 if not errorlevel 1 goto already_running
 
@@ -51,7 +57,7 @@ echo  Leave this window open while you play. Close it (or Ctrl+C) to stop.
 echo  Everything below is also saved in %ENGINE%\logs
 echo.
 if not defined MYTHASTRIA_NO_BROWSER start "" "http://127.0.0.1:%PORT%/"
-py -3 "%ENGINE%\tools\run_logged.py" "%ENGINE%\tools\sim_service.py" --table "%TABLE%" %PACKARG% --port %PORT% --players-port %PLAYERS_PORT% %HOSTARG%
+%RUN% "%ENGINE%\tools\run_logged.py" "%ENGINE%\tools\sim_service.py" --table "%TABLE%" %PACKARG% --port %PORT% --players-port %PLAYERS_PORT% %HOSTARG%
 set "SIM_EXIT=%ERRORLEVEL%"
 echo.
 echo Simulator service stopped. Exit code: %SIM_EXIT%
