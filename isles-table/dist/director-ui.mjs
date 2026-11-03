@@ -5,11 +5,15 @@
 
 // The GM controls on Play live, by what the showrunner can hand over (Remix Prep is its own page, refused by the service).
 export const LOCKS = {
-  fights: ['start', 'remix-open', 'scenario', 'seed', 'remix-campaign', 'remix-enabled', 'setup-clear'],
-  undo: ['undo-approve', 'undo-refuse'],
+  fights: ['start', 'remix-open', 'scenario', 'seed', 'remix-campaign', 'remix-enabled', 'setup-clear', 'restore-party', 'scene-start', 'panic', 'gm-goon',
+    'freeze', 'gm-take', 'trap-mode', 'hazard-mode', 'monitor-open', 'map-light', 'reaction-auto', 'social-on', 'srd-on', 'timer-on', 'stealth-call'],
+  undo: ['undo-approve', 'undo-refuse', 'gm-undo'],
   reveal: ['fog-reveal', 'fog-reset'],
   notes: ['note-mode'],
-  maps: ['import-open'],
+  maps: ['import-open', 'paint-mode'],
+  players: ['seats-open'],
+  market: ['market-open'],
+  flavor: ['flavor-open'],
 };
 
 // The element ids to lock for a director state: nothing for the showrunner, the kept controls for a guest.

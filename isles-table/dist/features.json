@@ -293,7 +293,7 @@
      "name": "Guest director",
      "status": "built",
      "page": "./play.html",
-     "what": "Hand the GM console to a guest director.",
+     "what": "Hand the GM console to a guest director at your PC, with only the controls you tick, and take it back with an optional code. Since 3 November the limits cover every GM control: changes mid-fight, traps, hazards, the Panic button, GM Undo, The Stage, one-shots, map paint, the atlas and Flavor. Mythastria refuses what you kept and Play live locks its buttons. Handing the GM role to someone else always stays with the showrunner.",
      "how": "GM tools, Director..."
     }
    ]
